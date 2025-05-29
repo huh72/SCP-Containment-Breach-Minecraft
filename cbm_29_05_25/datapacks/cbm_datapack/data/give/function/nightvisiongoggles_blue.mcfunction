@@ -1,0 +1,1 @@
+function give:paper {"cmd":"19","name":"Night Vision Goggles Blue","lore":"*","data":"paper:nvg_blue"}

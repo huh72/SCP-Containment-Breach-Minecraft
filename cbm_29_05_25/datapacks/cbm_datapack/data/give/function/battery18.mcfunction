@@ -1,0 +1,1 @@
+function give:paper {"cmd":"10","name":"Battery 18V","lore":"*","data":"battery:18"}

@@ -1,0 +1,1 @@
+function give:paper {"cmd":"16","name":"EyeDrops","lore":"*","data":"paper:drops"}

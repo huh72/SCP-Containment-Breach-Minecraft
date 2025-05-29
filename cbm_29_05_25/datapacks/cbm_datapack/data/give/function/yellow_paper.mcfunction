@@ -1,0 +1,1 @@
+function give:paper {"cmd":"14","name":"Yellow Note","lore":"*","data":"paper:yellow"}

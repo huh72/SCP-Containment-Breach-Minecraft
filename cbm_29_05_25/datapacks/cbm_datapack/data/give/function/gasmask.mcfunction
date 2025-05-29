@@ -1,0 +1,1 @@
+function give:paper {"cmd":"20","name":"Gas Mask","lore":"*","data":"paper:gasmask"}

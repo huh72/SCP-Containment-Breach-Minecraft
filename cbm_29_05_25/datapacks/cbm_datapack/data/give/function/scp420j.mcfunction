@@ -1,0 +1,1 @@
+function give:paper {"cmd":"25","name":"Scp 420j","lore":"*","data":"paper:scp420j"}

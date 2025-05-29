@@ -1,0 +1,1 @@
+function give:paper {"cmd":"12","name":"Paper","lore":"*","data":"paper:_"}

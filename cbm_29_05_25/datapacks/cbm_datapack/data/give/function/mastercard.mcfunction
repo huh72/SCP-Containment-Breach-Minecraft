@@ -1,0 +1,1 @@
+function give:paper {"cmd":"8","name":"Master Card","lore":"*","data":"card:master"}

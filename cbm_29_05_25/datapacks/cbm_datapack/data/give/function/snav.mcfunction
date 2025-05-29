@@ -1,0 +1,1 @@
+function give:paper {"cmd":"15","name":"S-Nav","lore":"*","data":"paper:snav"}
