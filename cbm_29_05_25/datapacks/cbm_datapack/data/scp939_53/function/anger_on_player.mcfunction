@@ -1,0 +1,1 @@
+data modify entity @s AngryAt set from entity @p[tag=spotted] UUID

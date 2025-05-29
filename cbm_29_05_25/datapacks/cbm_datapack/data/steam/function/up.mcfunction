@@ -1,0 +1,1 @@
+particle minecraft:campfire_cosy_smoke ~ ~1 ~ 0 0 0 0.02 1 force

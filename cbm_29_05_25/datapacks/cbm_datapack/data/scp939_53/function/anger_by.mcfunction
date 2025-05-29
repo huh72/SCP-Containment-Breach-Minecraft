@@ -1,0 +1,1 @@
+data modify entity @s AngryAt set from entity @e[tag=scp173,limit=1] UUID
