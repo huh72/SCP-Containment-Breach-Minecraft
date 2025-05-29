@@ -1,0 +1,1 @@
+#execute if score @s _door_num_global >= 

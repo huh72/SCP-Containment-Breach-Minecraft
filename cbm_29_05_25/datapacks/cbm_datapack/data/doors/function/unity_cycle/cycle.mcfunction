@@ -1,0 +1,1 @@
+execute as @n[tag=door_marker0,tag=!duo] at @s run function doors:unity_cycle/iteraction
