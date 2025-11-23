@@ -2,21 +2,21 @@
 function animated_java:door0/remove/all
 function animated_java:door_check0/remove/all
 function animated_java:door_card0/remove/all
-kill @e[tag=door_marker]
-kill @e[tag=door_marker0]
-kill @e[tag=door_marker1]
-kill @e[tag=door_marker_hcz]
-kill @e[tag=door_marker_check0]
+kill @e[type=marker, tag=door_marker]
+kill @e[type=marker, tag=door_marker0]
+kill @e[type=marker, tag=door_marker1]
+kill @e[type=marker, tag=door_marker_hcz]
+kill @e[type=marker, tag=door_marker_check0]
 
 #removing rooms spawn markers
-kill @e[tag=str,tag=gen]
-kill @e[tag=corner,tag=gen]
-kill @e[tag=t_f,tag=gen]
-kill @e[tag=x_f,tag=gen]
-kill @e[tag=checkp,tag=gen]
-kill @e[tag=dd,tag=gen]
-#tesla
-kill @e[tag=tesla_origin]
+kill @e[type=marker, tag=str,tag=gen]
+kill @e[type=marker, tag=corner,tag=gen]
+kill @e[type=marker, tag=t_f,tag=gen]
+kill @e[type=marker, tag=x_f,tag=gen]
+kill @e[type=marker, tag=checkp,tag=gen]
+kill @e[type=marker, tag=dd,tag=gen]
+#tesla 
+kill @e[type=marker, tag=tesla_origin]
 
 schedule function generation:clear/0 1t
 schedule function generation:clear/1 10t
