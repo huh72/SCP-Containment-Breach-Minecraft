@@ -1,0 +1,35 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:item/green_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "animated_java:empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:blueprint/door/base"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:blueprint/door/door1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:blueprint/door/door0"
+		}
+	],
+	"animated_java": {
+		"door": [1, 2, 3, 4]
+	}
+}

@@ -1,0 +1,390 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/paper"
+    },
+    "cases": [
+      {
+        "when": "card_1",
+        "model": {
+          "type": "model",
+          "model": "item/card_1"
+        }
+      },
+      {
+        "when": "card_2",
+        "model": {
+          "type": "model",
+          "model": "item/card_2"
+        }
+      },
+      {
+        "when": "card_3",
+        "model": {
+          "type": "model",
+          "model": "item/card_3"
+        }
+      },
+      {
+        "when": "card_4",
+        "model": {
+          "type": "model",
+          "model": "item/card_4"
+        }
+      },
+      {
+        "when": "card_5",
+        "model": {
+          "type": "model",
+          "model": "item/card_5"
+        }
+      },
+      {
+        "when": "card_omni",
+        "model": {
+          "type": "model",
+          "model": "item/card_omni"
+        }
+      },
+      {
+        "when": "playing_card",
+        "model": {
+          "type": "model",
+          "model": "item/playing_card"
+        }
+      },
+      {
+        "when": "mastercard",
+        "model": {
+          "type": "model",
+          "model": "item/mastercard"
+        }
+      },
+      {
+        "when": "battery",
+        "model": {
+          "type": "model",
+          "model": "item/battery"
+        }
+      },
+      {
+        "when": "battery18",
+        "model": {
+          "type": "model",
+          "model": "item/battery18"
+        }
+      },
+      {
+        "when": "killbattery",
+        "model": {
+          "type": "model",
+          "model": "item/killbattery"
+        }
+      },
+      {
+        "when": "aidkit0",
+        "model": {
+          "type": "model",
+          "model": "item/aidkit0"
+        }
+      },
+      {
+        "when": "blackarm",
+        "model": {
+          "type": "model",
+          "model": "item/black_arm"
+        }
+      },
+      {
+        "when": "whitehand",
+        "model": {
+          "type": "model",
+          "model": "item/white_hand"
+        }
+      },
+      {
+        "when": "blooddrip0",
+        "model": {
+          "type": "model",
+          "model": "item/blooddrip0"
+        }
+      },  
+            {
+        "when": "blooddrip1",
+        "model": {
+          "type": "model",
+          "model": "item/blooddrip1"
+        }
+      },  
+      {
+        "when": "coin",
+        "model": {
+          "type": "model",
+          "model": "item/coin"
+        }
+      },
+      {
+        "when": "explosion",
+        "model": {
+          "type": "model",
+          "model": "item/explosion"
+        }
+      },  
+      {
+        "when": "gasmask",
+        "model": {
+          "type": "model",
+          "model": "item/gasmask"
+        }
+      },   
+      {
+        "when": "grenade",
+        "model": {
+          "type": "model",
+          "model": "item/grenade"
+        }
+      },   
+      {
+        "when": "hazmat",
+        "model": {
+          "type": "model",
+          "model": "item/hazmat"
+        }
+      },   
+      {
+        "when": "incindiery",
+        "model": {
+          "type": "model",
+          "model": "item/incindiery"
+        }
+      },     
+      {
+        "when": "m4a1",
+        "model": {
+          "type": "model",
+          "model": "item/m4a1"
+        }
+      },   
+      {
+        "when": "m4a1s",
+        "model": {
+          "type": "model",
+          "model": "item/m4a1s"
+        }
+      }, 
+      {
+        "when": "nightvisiongoggles",
+        "model": {
+          "type": "model",
+          "model": "item/nightvisiongoggles"
+        }
+      },    
+      {
+        "when": "nightvisiongoggles_blue",
+        "model": {
+          "type": "model",
+          "model": "item/nightvisiongoggles_blue"
+        }
+      },
+      {
+        "when": "nightvisiongoggles_red",
+        "model": {
+          "type": "model",
+          "model": "item/nightvisiongoggles_red"
+        }
+      },   
+      {
+        "when": "note",
+        "model": {
+          "type": "model",
+          "model": "item/note"
+        }
+      }, 
+      {
+        "when": "paper",
+        "model": {
+          "type": "model",
+          "model": "item/paper_"
+        }
+      }, 
+      {
+        "when": "pd_decal0",
+        "model": {
+          "type": "model",
+          "model": "item/pd_decal0"
+        }
+      },  
+      {
+        "when": "pd_decal1",
+        "model": {
+          "type": "model",
+          "model": "item/pd_decal1"
+        }
+      },  
+      {
+        "when": "radio",
+        "model": {
+          "type": "model",
+          "model": "item/radio"
+        }
+      },
+      {
+        "when": "revision",
+        "model": {
+          "type": "model",
+          "model": "item/revision"
+        }
+      },  
+      {
+        "when": "scp148",
+        "model": {
+          "type": "model",
+          "model": "item/scp148"
+        }
+      },  
+      {
+        "when": "scp420j",
+        "model": {
+          "type": "model",
+          "model": "item/scp420j"
+        }
+      },
+      {
+        "when": "scp500",
+        "model": {
+          "type": "model",
+          "model": "item/scp500"
+        }
+      }, 
+      {
+        "when": "scp714",
+        "model": {
+          "type": "model",
+          "model": "item/scp714"
+        }
+      }, 
+   {
+        "when": "scp860",
+        "model": {
+          "type": "model",
+          "model": "item/scp860"
+        }
+      },
+   {
+        "when": "scp1499",
+        "model": {
+          "type": "model",
+          "model": "item/scp1499"
+        }
+      },
+   {
+        "when": "snav",
+        "model": {
+          "type": "model",
+          "model": "item/snav"
+        }
+      },
+   {
+        "when": "syringe",
+        "model": {
+          "type": "model",
+          "model": "item/syringe"
+        }
+      },
+   {
+        "when": "tmp",
+        "model": {
+          "type": "model",
+          "model": "item/tmp"
+        }
+      },
+   {
+        "when": "usps",
+        "model": {
+          "type": "model",
+          "model": "item/usps"
+        }
+      },
+   {
+        "when": "vest",
+        "model": {
+          "type": "model",
+          "model": "item/vest"
+        }
+      },
+   {
+        "when": "yellowpaper",
+        "model": {
+          "type": "model",
+          "model": "item/yellowpaper"
+        }
+      },
+   {
+        "when": "scp173",
+        "model": {
+          "type": "model",
+          "model": "item/scp/173"
+        }
+      },
+         {
+        "when": "scp173contained",
+        "model": {
+          "type": "model",
+          "model": "item/scp/173contained"
+        }
+      },
+       {
+        "when": "locklcz1",
+        "model": {
+          "type": "model",
+          "model": "item/locklcz1"
+        }
+      },
+       {
+        "when": "dclasscorpse0",
+        "model": {
+          "type": "model",
+          "model": "item/dclasscorpse0"
+        }
+      },
+             {
+        "when": "dclasscorpse1",
+        "model": {
+          "type": "model",
+          "model": "item/dclasscorpse1"
+        }
+      },
+             {
+        "when": "dclasscorpse2",
+        "model": {
+          "type": "model",
+          "model": "item/dclasscorpse2"
+        }
+      },
+                   {
+        "when": "scp079_idle",
+        "model": {
+          "type": "model",
+          "model": "item/scp/079_idle"
+        }
+      },
+                         {
+        "when": "scp079_x",
+        "model": {
+          "type": "model",
+          "model": "item/scp/079_x"
+        }
+      },
+                         {
+        "when": "scp079_face",
+        "model": {
+          "type": "model",
+          "model": "item/scp/079_face"
+        }
+      }
+    ]
+  }
+}
