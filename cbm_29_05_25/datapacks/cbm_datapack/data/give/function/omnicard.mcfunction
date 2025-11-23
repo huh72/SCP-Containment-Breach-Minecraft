@@ -1,1 +1,0 @@
-function give:paper {"cmd":"6","name":"Omni Card","lore":"*","data":"card:6"}

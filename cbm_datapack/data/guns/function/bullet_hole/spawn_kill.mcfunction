@@ -1,0 +1,2 @@
+summon block_display ~ ~ ~ {Tags:['bullet_hole'],block_state:{Name:"minecraft:black_concrete",Properties:{}},transformation:[0.125f,0f,0f,0f,0f,0.125f,0f,0f,0f,0f,0.0011f,0f,0f,0f,0f,1f]}
+kill @e[tag=bullet,limit=1,sort=nearest]

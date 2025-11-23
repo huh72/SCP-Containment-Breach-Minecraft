@@ -1,0 +1,8 @@
+playsound cb:scp914.dooropen ambient @a ~ ~ ~ 0.85 1 1
+execute as @n[tag=aj.door914.root] run function animated_java:door914/animations/close/stop
+execute as @n[tag=aj.door914.root] run function animated_java:door914/animations/open/play
+
+setblock ^2 ^ ^-1 minecraft:air
+setblock ^1 ^ ^-1 minecraft:air
+setblock ^2 ^1 ^-1 minecraft:air
+setblock ^1 ^1 ^-1 minecraft:air

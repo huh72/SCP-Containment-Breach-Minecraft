@@ -1,1 +1,0 @@
-function give:paper {"cmd":"29","name":"Severed Hand","lore":"*","data":"paper:whitearm"}

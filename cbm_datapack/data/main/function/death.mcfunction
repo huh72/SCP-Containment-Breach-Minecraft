@@ -1,0 +1,31 @@
+# say @s death!
+scoreboard players set @s spot_level 0
+scoreboard players set @s bleeding 0
+scoreboard players set @s health 1000
+tag @s remove tesla_trigger
+tag @s add dead
+attribute @s minecraft:movement_speed modifier remove 1488-0-0-0-8
+attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
+effect give @s invisibility infinite 1 true
+effect give @s regeneration infinite 10 true
+
+execute at @s run summon armor_stand ~ ~ ~ {Tags:['new','corpse'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+data modify entity @n[tag=new,limit=1] Rotation set from entity @s Rotation
+execute at @n[tag=new] run tp @n[tag=new] ~ ~ ~ ~180 ~
+
+execute if entity @s[tag=d_mtf] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse1"]
+execute if entity @s[tag=d_049] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_1048a] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_939] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
+execute if entity @s[tag=d_tesla] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_173] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_fall] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_096] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
+
+data modify entity @n[tag=new,limit=1] Marker set value 1b
+tag @e[tag=new] remove new
+
+#full inventory drop
+function main:drop_items with storage minecraft:drop_pos
+
+function main:death_ui.mcfunction/setblack {"text":"*press right click to respawn"}

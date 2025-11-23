@@ -1,0 +1,1 @@
+function give:paper {"name":"Card level 1","model":"cb:card_1","data":"item:card1"}

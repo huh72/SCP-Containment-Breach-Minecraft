@@ -1,0 +1,1 @@
+function give:paper {"name":"Severed Hand","model":"cb:white_arm","data":"item:white_arm"}

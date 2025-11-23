@@ -1,0 +1,1 @@
+function give:paper {"name":"Omni Card","model":"cb:card_omni","data":"item:cardomni"}

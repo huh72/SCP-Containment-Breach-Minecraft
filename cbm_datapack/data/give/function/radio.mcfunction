@@ -1,0 +1,1 @@
+function give:paper {"name":"Radio Transceiver","model":"cb:radio","data":"item:radio"}

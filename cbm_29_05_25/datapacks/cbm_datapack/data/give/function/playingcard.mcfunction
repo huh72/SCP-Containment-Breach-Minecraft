@@ -1,1 +1,0 @@
-function give:paper {"cmd":"7","name":"Playing Card","lore":"*","data":"card:playing"}

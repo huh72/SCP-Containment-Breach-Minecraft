@@ -1,0 +1,2 @@
+execute if score PosSubtract 939posX matches ..-1 run scoreboard players operation PosSubtract 939posX *= -1 math
+execute if score PosSubtract 939posZ matches ..-1 run scoreboard players operation PosSubtract 939posZ *= -1 math

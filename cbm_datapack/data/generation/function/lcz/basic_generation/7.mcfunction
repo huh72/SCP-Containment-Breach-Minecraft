@@ -1,0 +1,14 @@
+execute as @e[tag=173] at @s positioned ~95 ~ ~114 run function generation:lcz/check {"pos":"71"}
+execute as @e[tag=173] at @s positioned ~76 ~ ~114 run function generation:lcz/check {"pos":"72"}
+execute as @e[tag=173] at @s positioned ~57 ~ ~114 run function generation:lcz/check {"pos":"73"}
+execute as @e[tag=173] at @s positioned ~38 ~ ~114 run function generation:lcz/check {"pos":"74"}
+execute as @e[tag=173] at @s positioned ~19 ~ ~114 run function generation:lcz/check {"pos":"75"}
+execute as @e[tag=173] at @s positioned ~ ~ ~114 run function generation:lcz/check {"pos":"76"}
+execute as @e[tag=173] at @s positioned ~-19 ~ ~114 run function generation:lcz/check {"pos":"77"}
+execute as @e[tag=173] at @s positioned ~-38 ~ ~114 run function generation:lcz/check {"pos":"78"}
+execute as @e[tag=173] at @s positioned ~-57 ~ ~114 run function generation:lcz/check {"pos":"79"}
+execute as @e[tag=173] at @s positioned ~-76 ~ ~114 run function generation:lcz/check {"pos":"710"}
+execute as @e[tag=173] at @s positioned ~-95 ~ ~114 run function generation:lcz/check {"pos":"711"}
+execute as @e[tag=173] at @s positioned ~-114 ~ ~114 run function generation:lcz/check {"pos":"712"}
+execute as @e[tag=173] at @s positioned ~-133 ~ ~114 run function generation:lcz/check {"pos":"713"}
+execute as @e[tag=173] at @s positioned ~-152 ~ ~114 run function generation:lcz/check {"pos":"714"}

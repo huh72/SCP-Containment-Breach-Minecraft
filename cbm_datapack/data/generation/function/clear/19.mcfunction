@@ -1,0 +1,16 @@
+execute as @e[tag=173] at @s positioned ~114 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~95 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~76 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~57 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~38 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~19 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~ ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-19 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-38 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-57 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-76 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-95 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-114 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-133 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-152 ~ ~344 run function generation:lcz/clear_
+execute as @e[tag=173] at @s positioned ~-171 ~ ~344 run function generation:lcz/clear_

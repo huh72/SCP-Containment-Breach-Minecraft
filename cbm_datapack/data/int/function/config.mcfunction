@@ -1,0 +1,1 @@
+scoreboard objectives add v0 dummy

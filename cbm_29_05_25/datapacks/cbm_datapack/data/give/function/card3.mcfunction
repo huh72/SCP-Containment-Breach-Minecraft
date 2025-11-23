@@ -1,1 +1,0 @@
-function give:paper {"cmd":"3","name":"Card Level 3","lore":"*","data":"card:3"}

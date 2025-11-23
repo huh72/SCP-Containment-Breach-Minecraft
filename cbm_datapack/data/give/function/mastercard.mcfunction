@@ -1,0 +1,1 @@
+function give:paper {"name":"MasterCard","model":"cb:mastercard","data":"item:mastercard"}

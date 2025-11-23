@@ -1,0 +1,2 @@
+execute if entity @n[tag=door_marker1,distance=0.01..1] unless entity @n[tag=door_marker_hcz,distance=..1] run summon marker ~ ~ ~ {Tags:['door_marker_hcz','closed','dr.not_rendered']}
+kill @e[tag=door_marker1,distance=..1]

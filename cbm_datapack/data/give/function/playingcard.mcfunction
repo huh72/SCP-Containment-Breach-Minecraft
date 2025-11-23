@@ -1,0 +1,1 @@
+function give:paper {"name":"Playing Card","model":"cb:playingcard","data":"item:playingcard"}

@@ -1,0 +1,12 @@
+execute if entity @s[tag=d_173] run function main:kill_feed/line1 {"text":" was killed by SCP-173"}
+execute if entity @s[tag=d_939] run function main:kill_feed/line1 {"text":" was killed by SCP-939"}
+execute if entity @s[tag=d_049] run function main:kill_feed/line1 {"text":" was cured by SCP-049"}
+execute if entity @s[tag=d_106] run function main:kill_feed/line1 {"text":" was decayed by SCP-106"}
+execute if entity @s[tag=d_1048a] run function main:kill_feed/line1 {"text":" was killed by SCP-1048A"}
+execute if entity @s[tag=d_tesla] run function main:kill_feed/line1 {"text":" was cooked by tesla gate"}
+execute if entity @s[tag=d_096] run function main:kill_feed/line1 {"text":" was killed by SCP-096"}
+execute if entity @s[tag=d_fall] run function main:kill_feed/line1 {"text":" was killed by gravity"}
+execute if entity @s[tag=d_mtf] run function main:kill_feed/line1 {"text":" was terminated by Mobile Task Force Unit"}
+execute if entity @s[tag=d_914] run function main:kill_feed/line1 {"text":" was killed by SCP-914"}
+execute if entity @s[tag=d_bleeding] run function main:kill_feed/line1 {"text":" died of blood loss"}
+execute if entity @s[tag=d_suicide] run function main:kill_feed/line1 {"text":" decided to gnaw their veins"}

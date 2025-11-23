@@ -1,0 +1,28 @@
+{
+    "values": [
+        "fps:tick",
+        "use:tick",
+        "fall:tick",
+        "main:tick",
+        "ms:tick",
+        "ini:tick",
+        "save_progress:tick",
+        "health:tick",
+        "drop:tick",
+        "guns:tick",
+        "ui:tick",
+        "mtf_sb:tick",
+        "door_render:tick",
+        "doors:tick",
+		"gates:tick",
+        "grenades:tick",
+		"steam:tick",
+		"tesla:tick",
+        "scps:tick",
+        "guns:bullet/tick",
+        "guns:bullet_hole/tick",
+        "elevators:tick",
+        "int:tick",
+        "inventory:tick"
+    ]
+}

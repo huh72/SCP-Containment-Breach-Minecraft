@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:marker",
+    "looking_at": {
+      "nbt": "{Tags:['scp939_53']}"
+    }
+  }
+}

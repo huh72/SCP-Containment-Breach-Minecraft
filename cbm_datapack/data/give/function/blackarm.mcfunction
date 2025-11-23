@@ -1,0 +1,1 @@
+function give:paper {"name":"Black Severed Hand","model":"cb:black_arm","data":"item:black_arm"}

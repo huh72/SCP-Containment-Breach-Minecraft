@@ -1,0 +1,1 @@
+function give:paper {"name":"Quarter","model":"cb:coin","data":"item:coin"}

@@ -1,1 +1,0 @@
-function give:paper {"cmd":"30","name":"Black Severed Hand","lore":"*","data":"paper:blackarm"}
