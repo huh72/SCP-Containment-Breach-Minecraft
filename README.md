@@ -8,7 +8,7 @@ A remake of SCP Containment Breach in Minecraft.
  - SCP Containment Breach Director's cut mod (https://www.moddb.com/mods/scp-containment-breach-directors-cut-edition).
 
 Light shaders were taken from JNNGL (https://github.com/JNNGL).
-No shadow-font shders were taken from ClouWolf.
+No shadow-font shders were taken from CloudWolf.
 
 The project is currently under early development.
 
