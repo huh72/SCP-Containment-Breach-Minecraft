@@ -1,0 +1,21 @@
+{
+	"values": [
+		"animated_java:914_button/root/on_load",
+		"animated_java:914_start/root/on_load",
+		"animated_java:door0/root/on_load",
+		"animated_java:door1/root/on_load",
+		"animated_java:door914/root/on_load",
+		"animated_java:door_card0/root/on_load",
+		"animated_java:door_check0/root/on_load",
+		"animated_java:gate/root/on_load",
+		"animated_java:m4a1/root/on_load",
+		"animated_java:mtf/root/on_load",
+		"animated_java:p/root/on_load",
+		"animated_java:scp049/root/on_load",
+		"animated_java:scp049_2/root/on_load",
+		"animated_java:scp049_2d/root/on_load",
+		"animated_java:scp096/root/on_load",
+		"animated_java:scp106/root/on_load",
+		"animated_java:scp939/root/on_load"
+	]
+}
