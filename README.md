@@ -7,7 +7,8 @@ A remake of SCP Containment Breach in Minecraft.
  - SCP Containment Breach Ultimate Edition mod (https://www.moddb.com/mods/scp-containment-breach-ultimate-edition).
  - SCP Containment Breach Director's cut mod (https://www.moddb.com/mods/scp-containment-breach-directors-cut-edition).
 
-Shaders were taken from JNNGL (https://github.com/JNNGL).
+Light shaders were taken from JNNGL (https://github.com/JNNGL).
+No shadow-font shders were taken from ClouWolf.
 
 The project is currently under early development.
 
