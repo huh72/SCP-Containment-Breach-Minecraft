@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/gate/gate",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [-1.85714, -2.28571, 6.28571],
+			"to": [18.71429, 21.71429, 9.71429],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [18.28571, -2.28571, 7.14286]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 3, 3.5],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [6, 0, 6.5, 3.5],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [3, 0, 6, 3.5],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [6, 3.5, 6.5, 7],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [3, 7.5, 0, 7],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [10, 0, 7, 0.5],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

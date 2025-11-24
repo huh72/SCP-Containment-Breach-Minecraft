@@ -3,7 +3,7 @@ execute store result score @s 939rotY run data get entity @s Rotation[1]
 execute if score @s 939rotY matches 1.. run data modify entity @s Rotation[1] set value 0.0f
 
 tp @n[tag=marker939_53] ~ ~1 ~
-tp @n[tag=aj.scp939.root] @s
+tp @n[tag=aj.scp939.root] ~ ~ ~
 data modify entity @n[tag=aj.scp939.root] Rotation[0] set from entity @s Rotation[0]
 
 #lure/phrase/chase/alert sound
@@ -24,7 +24,7 @@ scoreboard players set @a[tag=!dead,scores={walk=1..}] spot_level 2
 scoreboard players set @a[tag=!dead,scores={walk=0},predicate=!scp939:is_sneaking,predicate=!scp939:is_sprinting] spot_level 2
 scoreboard players set @a[tag=!dead,predicate=scp939:is_sprinting] spot_level 1
 scoreboard players set @a[tag=!dead,predicate=scp939:is_sneaking] spot_level 0
-scoreboard players set @a[tag=!dead,distance=..3] spot_level 3
+scoreboard players set @a[tag=!dead,distance=..2] spot_level 3
 
 #additional target check
 tag @a remove confirmed
@@ -35,10 +35,10 @@ scoreboard players set @a[tag=!confirmed] spot_level 0
 scoreboard players set @a walk 0
 
 ###spot func
-execute as @n[tag=chasing] run function scp939:53/unspot
-execute as @n[tag=!chasing] at @s if entity @p[scores={spot_level=1},distance=..16] run function scp939:53/spot {"level":"1"}
-execute as @n[tag=!chasing] at @s if entity @p[scores={spot_level=2},distance=..8] run function scp939:53/spot {"level":"2"}
-execute as @n[tag=!chasing] at @s if entity @p[scores={spot_level=3}] run function scp939:53/spot {"level":"3"}
+execute as @s[tag=chasing] run function scp939:53/unspot
+execute as @s[tag=!chasing] at @s if entity @p[scores={spot_level=1},distance=..20] run function scp939:53/spot {"level":"1"}
+execute as @s[tag=!chasing] at @s if entity @p[scores={spot_level=2},distance=..10] run function scp939:53/spot {"level":"2"}
+execute as @s[tag=!chasing] at @s if entity @p[scores={spot_level=3}] run function scp939:53/spot {"level":"3"}
 
 ###unspot func  & get 939 pos
 # execute store result score @n[tag=scp939_53] 939posX run data get entity @n[tag=scp939_53] Pos[0]
@@ -62,11 +62,11 @@ scoreboard players set @s[predicate=scp939:slow] speed_level 1
 scoreboard players set @s[predicate=scp939:fast] speed_level 2
 
 #end previous animations
-execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/pause
-execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk_fast/pause
+execute if score @s speed_level matches 0..2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/pause
+execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/pause
 
 execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/pause
-execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk_fast/pause
+execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/pause
 
 execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/pause
 execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/pause
@@ -74,7 +74,7 @@ execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function
 #start playing new ones, depends on previous tick speed level and current speed level
 execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/resume
 execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/resume
-execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk_fast/resume
+execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/resume
 
 #save 939's speed level from previous tick
 scoreboard players operation 939speedlevelprevtick speed_level = @s speed_level

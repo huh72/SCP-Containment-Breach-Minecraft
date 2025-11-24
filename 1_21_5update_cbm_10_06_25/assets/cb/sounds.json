@@ -117,5 +117,14 @@
 	"d9341.damage8":        {"sounds": ["cb:character/d9341/damage8"]},
 	"mtf.classdspotted":        {"sounds": ["cb:character/mtf/classd0","cb:character/mtf/classd1","cb:character/mtf/classd2","cb:character/mtf/classd3"]},
 	"mtf.searching":        {"sounds": ["cb:character/mtf/searching0","cb:character/mtf/searching1","cb:character/mtf/searching2","cb:character/mtf/searching3","cb:character/mtf/searching4","cb:character/mtf/searching5"]},
-	"mtf.terminated":        {"sounds": ["cb:character/mtf/terminated0","cb:character/mtf/terminated1","cb:character/mtf/terminated2","cb:character/mtf/terminated3"]}
+	"mtf.terminated":        {"sounds": ["cb:character/mtf/terminated0","cb:character/mtf/terminated1","cb:character/mtf/terminated2","cb:character/mtf/terminated3"]},
+	"scp066.rolling":		 {"sounds": ["cb:scp/066/rolling"]},
+	"scp066.beethoven":		 {"sounds": ["cb:scp/066/beethoven"]},
+	"scp066.eric":		 {"sounds": ["cb:scp/066/eric1","cb:scp/066/eric2","cb:scp/066/eric3"]},
+	"scp066.notes1":		 {"sounds": ["cb:scp/066/notes1"]},
+	"scp066.notes2":		 {"sounds": ["cb:scp/066/notes2"]},
+	"scp066.notes3":		 {"sounds": ["cb:scp/066/notes3"]},
+	"scp066.notes4":		 {"sounds": ["cb:scp/066/notes4"]},
+	"scp066.notes5":		 {"sounds": ["cb:scp/066/notes5"]},
+	"scp066.notes6":		 {"sounds": ["cb:scp/066/notes6"]}
 }

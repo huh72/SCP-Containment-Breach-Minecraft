@@ -10,7 +10,7 @@ scoreboard players remove @e[type=minecraft:wandering_trader,tag=scp939,scores={
 
 
 #hit func
-execute at @e[type=minecraft:wandering_trader,tag=scp939,scores={hit_cd=0}] anchored eyes positioned ^ ^0.25 ^1.5 as @a[distance=..1.25,tag=!dead] at @s run function scp939:hit
+execute at @e[type=minecraft:wandering_trader,tag=scp939,scores={hit_cd=0}] anchored eyes positioned ^ ^0.25 ^1.5 as @p[distance=..1.25,tag=!dead] at @s run function scp939:hit
 
 #move sounds
 # scoreboard players add @e[tag=scp939,predicate=scp939:slow] walk_ 1
