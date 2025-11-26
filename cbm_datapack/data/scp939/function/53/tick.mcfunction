@@ -2,9 +2,9 @@
 execute store result score @s 939rotY run data get entity @s Rotation[1]
 execute if score @s 939rotY matches 1.. run data modify entity @s Rotation[1] set value 0.0f
 
-tp @n[tag=marker939_53] ~ ~1 ~
-tp @n[tag=aj.scp939.root] ~ ~ ~
-data modify entity @n[tag=aj.scp939.root] Rotation[0] set from entity @s Rotation[0]
+tp @n[type=wandering_trader, tag=marker939_53] ~ ~1 ~
+tp @n[type=item_display, tag=aj.scp939.root] ~ ~ ~
+data modify entity @n[type=item_display, tag=aj.scp939.root] Rotation[0] set from entity @s Rotation[0]
 
 #lure/phrase/chase/alert sound
 #var
