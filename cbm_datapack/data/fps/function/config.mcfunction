@@ -20,7 +20,7 @@ scoreboard players set const stamina_remove 5
 scoreboard players set const stamina_restore_cd 5
 scoreboard players set const stamina_restore 5
 
-scoreboard players set max_player breath_cd 100
+scoreboard players set max_player breath_cd 75
 
 #blink config func()
 function fps:blink/config
