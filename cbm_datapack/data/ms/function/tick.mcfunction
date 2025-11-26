@@ -18,9 +18,9 @@ execute as @a if score @s run >= step* run at @s if block ~ ~-0.4 ~ #ms:stone ru
 execute as @a[tag=moved] if score @s sneak >= step* sneak at @s if block ~ ~-0.4 ~ #ms:stone run function ms:sneak {"sound":"step"}
 
 #step metal
-execute as @a if score @s walk_ >= step* walk_ at @s if block ~ ~-0.4 ~ #ms:metal run function ms:step {"sound":"stepmetal"}
-execute as @a if score @s run >= step* run at @s if block ~ ~-0.4 ~ #ms:metal run function ms:run {"sound":"runmetal"}
-execute as @a[tag=moved] if score @s sneak >= step* sneak at @s if block ~ ~-0.4 ~ #ms:metal run function ms:sneak {"sound":"stepmetal"}
+execute as @a if score @s walk_ >= step* walk_ at @s if block ~ ~-0.4 ~ #ms:metal run function ms:step {"sound":"runmetal"}
+execute as @a if score @s run >= step* run at @s if block ~ ~-0.4 ~ #ms:metal run function ms:run {"sound":"stepmetal"}
+execute as @a[tag=moved] if score @s sneak >= step* sneak at @s if block ~ ~-0.4 ~ #ms:metal run function ms:sneak {"sound":"runmetal"}
 
 execute as @a at @s if block ~ ~-0.1 ~ minecraft:air if block ~ ~-0.1 ~0.4 minecraft:air if block ~ ~-0.1 ~-0.4 minecraft:air if block ~0.4 ~-0.1 ~ minecraft:air if block ~-0.4 ~-0.1 ~ minecraft:air run scoreboard players add @s fall_step 1
 execute as @a at @s unless block ~ ~-0.1 ~ minecraft:air if score @s fall_step matches 10.. run function ms:fall/step {"sound":"step"}
