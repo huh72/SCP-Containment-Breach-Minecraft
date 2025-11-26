@@ -2,14 +2,17 @@ execute if score 049 door_open_cd matches 1.. run scoreboard players remove 049 
 scoreboard players add 049 phrase 1
 
 #tp the model
-execute as @e[type=minecraft:zombified_piglin,tag=scp049] at @s run tp @n[tag=aj.scp049.root] ~ ~ ~
+execute as @e[type=minecraft:vindicator,tag=scp049] at @s run tp @n[tag=aj.scp049.root] ~ ~ ~
 data modify entity @n[tag=aj.scp049.root] Rotation[0] set from entity @n[tag=scp049] Rotation[0]
 
 #kill 
 execute as @a[tag=!dead] at @s run function scp049:kill
 
 #subtick function - use @s
-execute as @n[type=minecraft:zombified_piglin,tag=scp049] at @s run function scp049:subtick
+execute as @n[type=minecraft:vindicator,tag=scp049] at @s run function scp049:subtick
 
-#door open
-execute if score 049 door_open_cd matches 0 at @n[type=minecraft:zombified_piglin,tag=scp049] if entity @n[type=minecraft:marker,tag=door_marker,distance=..3,tag=closed] run function scp049:open_door
+#door open lcz
+execute if score 049 door_open_cd matches 0 at @n[type=minecraft:vindicator,tag=scp049] if entity @n[type=minecraft:marker,tag=door_marker,distance=..3,tag=closed] run function scp049:open_door_lcz
+
+#door open hcz
+execute if score 049 door_open_cd matches 0 at @n[type=minecraft:vindicator,tag=scp049] if entity @n[type=minecraft:marker,tag=door_marker_hcz,distance=..3,tag=closed] run function scp049:open_door_hcz
