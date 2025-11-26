@@ -10,7 +10,7 @@ data modify storage scp066hitdecal z set from entity @n[tag=scp066hitdecalplacem
 function scp066:spawnhitdecal with storage minecraft:scp066hitdecal
 
 #
-tp @n[tag=scp066hitdecalplacementhander] ~1 ~ ~2
+tp @n[tag=scp066hitdecalplacementhander] ~1 ~0.01 ~2
 
 data modify storage scp066hitdecal x set from entity @n[tag=scp066hitdecalplacementhander] Pos[0]
 data modify storage scp066hitdecal y set from entity @n[tag=scp066hitdecalplacementhander] Pos[1]
@@ -19,7 +19,7 @@ data modify storage scp066hitdecal z set from entity @n[tag=scp066hitdecalplacem
 function scp066:spawnhitdecal with storage minecraft:scp066hitdecal
 
 #
-tp @n[tag=scp066hitdecalplacementhander] ~-2 ~ ~1
+tp @n[tag=scp066hitdecalplacementhander] ~-2 ~0.02 ~1
 
 data modify storage scp066hitdecal x set from entity @n[tag=scp066hitdecalplacementhander] Pos[0]
 data modify storage scp066hitdecal y set from entity @n[tag=scp066hitdecalplacementhander] Pos[1]

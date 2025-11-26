@@ -6,7 +6,7 @@ scoreboard players set @s touchCountScp066 0
 scoreboard players set @s ericPlaySoundTimerScp066 0
 scoreboard players set @s touchCountCdScp066 0
 
-execute store result score Max ericPlaySoundTimerScp066 run random roll 50..200
+execute store result score Max ericPlaySoundTimerScp066 run random value 50..200
 
 data modify storage scp066hitdecal x set value 0
 data modify storage scp066hitdecal y set value 0

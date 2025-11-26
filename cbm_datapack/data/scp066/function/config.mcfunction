@@ -7,7 +7,7 @@ scoreboard objectives add damageScp066 dummy
 
 scoreboard players set Max touchCountScp066 6
 scoreboard players set Max touchCountCdScp066 80
-execute store result score Max ericPlaySoundTimerScp066 run random roll 30..200
+execute store result score Max ericPlaySoundTimerScp066 run random value 30..200
 
 #hit marker handlers' vars
 scoreboard objectives add Xscp066 dummy
