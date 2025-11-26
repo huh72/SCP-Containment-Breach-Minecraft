@@ -4,8 +4,6 @@ function animated_java:door_check0/remove/all
 function animated_java:door_card0/remove/all
 kill @e[tag=door_marker]
 kill @e[tag=door_marker0]
-kill @e[tag=door_marker1]
-kill @e[tag=door_marker_hcz]
 kill @e[tag=door_marker_check0]
 
 #removing rooms spawn markers

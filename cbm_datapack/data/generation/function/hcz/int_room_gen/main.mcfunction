@@ -62,7 +62,7 @@ execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:
 function tesla:set_vars
 
 
-execute as @e[tag=door_marker0] at @s run function doors:unity_cycle_hcz/cycle
+execute as @e[type=marker,tag=door_marker1] at @s run function doors:unity_cycle_hcz/cycle
 
 #checkpoint door
 # execute as @e[tag=door_marker_check0] at @s rotated 0 0 run function animated_java:door_check0/summon with storage aj:temp
@@ -73,7 +73,7 @@ execute as @e[tag=door_marker0] at @s run function doors:unity_cycle_hcz/cycle
 # execute as @e[tag=door_marker,tag=card,tag=!door_marker_check0] at @s run function doors:spawn_door_card
 
 
-scoreboard players set @e[tag=door_marker] door_interact_cd 0
+scoreboard players set @e[type=marker,tag=door_marker_hcz] door_interact_cd 0
 
 kill @e[tag=str,tag=hcz]
 kill @e[tag=dd,tag=hcz]

@@ -57,6 +57,12 @@ execute as @e[tag=t_f,tag=ez,sort=random,limit=1] at @s run function generation:
 #setting tesla gates vars after zone 3 generation
 function tesla:set_vars
 
+#ez doors' markers unity
+execute as @e[type=marker,tag=door_marker2] at @s run function doors:unity_cycle_ez/cycle
+
+tag @e[tag=door_marker_ez] add door_marker
+scoreboard players set @e[type=marker,tag=door_marker_ez] door_interact_cd 0
+
 
 kill @e[tag=str,tag=ez]
 kill @e[tag=dd,tag=ez]

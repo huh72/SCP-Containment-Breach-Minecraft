@@ -1,5 +1,5 @@
-### straight
-#tesla
+## straight
+# tesla
 execute as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/tesla {"room":"lcz:str/tesla"}
 execute as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/tesla {"room":"lcz:str/tesla"}
 #chance tesla
@@ -81,18 +81,18 @@ execute as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int
 #setting tesla gates vars after zone 1 generation
 function tesla:set_vars
 
-execute as @e[tag=door_marker0] at @s run function doors:unity_cycle/cycle
+execute as @e[type=marker,tag=door_marker0] at @s run function doors:unity_cycle/cycle
 
 #checkpoint door
-execute as @e[tag=door_marker_check0] at @s rotated 0 0 run function animated_java:door_check0/summon with storage aj:temp
-tag @e[tag=door_marker_check0] add closed
-tag @e[tag=door_marker_check0] add blocked
-tag @e[tag=door_marker_check0] remove door_marker
+# execute as @e[tag=door_marker_check0] at @s rotated 0 0 run function animated_java:door_check0/summon with storage aj:temp
+# tag @e[tag=door_marker_check0] add closed
+# tag @e[tag=door_marker_check0] add blocked
+# tag @e[tag=door_marker_check0] remove door_marker
 
-execute as @e[tag=door_marker,tag=card,tag=!door_marker_check0] at @s run function doors:spawn_door_card
+# execute as @e[tag=door_marker,tag=card,tag=!door_marker_check0] at @s run function doors:spawn_door_card
 
 
-scoreboard players set @e[tag=door_marker] door_interact_cd 0
+scoreboard players set @e[type=marker,tag=door_marker] door_interact_cd 0
 
 kill @e[tag=str,tag=lcz]
 kill @e[tag=dd,tag=lcz]
