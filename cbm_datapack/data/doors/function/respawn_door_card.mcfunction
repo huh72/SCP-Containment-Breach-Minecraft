@@ -3,18 +3,18 @@ tag @s remove dr.not_rendered
 #R0
 execute if entity @s[tag=r0] rotated 0 0 run function animated_java:door_card0/summon with storage aj:temp
 #closed-ver
-execute if entity @s[tag=r0,tag=closed] run setblock ~-1 ~1 ~ minecraft:lightning_rod
-execute if entity @s[tag=r0,tag=closed] run setblock ~-1 ~ ~ minecraft:lightning_rod
-execute if entity @s[tag=r0,tag=closed] run setblock ~ ~1 ~ minecraft:lightning_rod
-execute if entity @s[tag=r0,tag=closed] run setblock ~ ~ ~ minecraft:lightning_rod
+execute if entity @s[tag=r0,tag=closed] run setblock ~-1 ~1 ~ minecraft:lightning_rod[facing=east]
+execute if entity @s[tag=r0,tag=closed] run setblock ~-1 ~ ~ minecraft:lightning_rod[facing=east]
+execute if entity @s[tag=r0,tag=closed] run setblock ~ ~1 ~ minecraft:lightning_rod[facing=east]
+execute if entity @s[tag=r0,tag=closed] run setblock ~ ~ ~ minecraft:lightning_rod[facing=east]
 
 #R1
 execute if entity @s[tag=r1] rotated 90 0 run function animated_java:door_card0/summon with storage aj:temp
 #closed-ver
-execute if entity @s[tag=r1,tag=closed] run setblock ~ ~1 ~-1 minecraft:lightning_rod
-execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~-1 minecraft:lightning_rod
-execute if entity @s[tag=r1,tag=closed] run setblock ~ ~1 ~ minecraft:lightning_rod
-execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~ minecraft:lightning_rod
+execute if entity @s[tag=r1,tag=closed] run setblock ~ ~1 ~-1 minecraft:lightning_rod[facing=north]
+execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~-1 minecraft:lightning_rod[facing=north]
+execute if entity @s[tag=r1,tag=closed] run setblock ~ ~1 ~ minecraft:lightning_rod[facing=north]
+execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~ minecraft:lightning_rod[facing=north]
 
 
 #main-opened
