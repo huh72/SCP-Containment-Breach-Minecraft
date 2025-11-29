@@ -5,3 +5,5 @@ scoreboard players set @s aj.openclosetoggle.frame 0
 tag @s add aj.transforms_only
 execute at @s run function animated_java:door_card0/animations/openclosetoggle/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
+
+scoreboard players set @a door_right_click 0 
