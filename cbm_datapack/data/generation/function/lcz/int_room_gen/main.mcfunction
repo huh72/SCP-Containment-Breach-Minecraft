@@ -84,15 +84,25 @@ function tesla:set_vars
 execute as @e[type=marker,tag=door_marker0] at @s run function doors:unity_cycle/cycle
 
 #checkpoint door
-# execute as @e[tag=door_marker_check0] at @s rotated 0 0 run function animated_java:door_check0/summon with storage aj:temp
-# tag @e[tag=door_marker_check0] add closed
-# tag @e[tag=door_marker_check0] add blocked
-# tag @e[tag=door_marker_check0] remove door_marker
+execute at @e[tag=door_marker_checkpoint,tag=hcz] rotated 0 0 run function animated_java:door_check0/summon with storage aj:temp
+scoreboard players set @e[tag=door_marker_checkpoint] door_checkpoint_timer 150
+tag @e[tag=door_marker_checkpoint] add blocked
+tag @e[tag=door_marker_checkpoint] remove door_marker
+
+tag @e[tag=door_marker] add door
+tag @e[tag=door_marker_hcz] add door
+tag @e[tag=door_marker_ez] add door
+tag @e[tag=door_marker_checkpoint] add door
+tag @e[tag=door_marker_checkpoint] add door_lock
+tag @e[tag=door_marker,tag=card] add door_lock
+
+scoreboard players set @e[type=marker,tag=door] door_interact_cd 0
+scoreboard players set @e[type=marker,tag=door_lock] card_interact_cd 0
+scoreboard players set @e[type=marker,tag=door_marker_checkpoint,tag=hcz] access_level 3
 
 # execute as @e[tag=door_marker,tag=card,tag=!door_marker_check0] at @s run function doors:spawn_door_card
 
 
-scoreboard players set @e[type=marker,tag=door_marker] door_interact_cd 0
 
 kill @e[tag=str,tag=lcz]
 kill @e[tag=dd,tag=lcz]

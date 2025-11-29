@@ -62,7 +62,13 @@ execute as @e[type=marker,tag=door_marker2] at @s run function doors:unity_cycle
 
 tag @e[tag=door_marker_ez] add door_marker
 scoreboard players set @e[type=marker,tag=door_marker_ez] door_interact_cd 0
+scoreboard players set @e[type=marker,tag=door_marker_checkpoint] card_interact_cd 0
+scoreboard players set @e[type=marker,tag=card] card_interact_cd 0
 
+tag @e[tag=door_marker] add door
+tag @e[tag=door_marker_hcz] add door
+tag @e[tag=door_marker_ez] add door
+tag @e[tag=door_marker_checkpoint] add door
 
 kill @e[tag=str,tag=ez]
 kill @e[tag=dd,tag=ez]

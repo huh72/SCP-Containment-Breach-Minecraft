@@ -1,6 +1,9 @@
 kill @e[tag=door_marker2]
 kill @e[tag=door_marker_ez]
-function animated_java:door1/remove/all
+kill @e[tag=door_marker_checkpoint]
+kill @e[tag=tesla]
+function animated_java:door0/remove/all
+function animated_java:door_check0/remove/all
 
 execute as @e[tag=173] at @s positioned ~114 ~ ~439 run function generation:lcz/clear_
 execute as @e[tag=173] at @s positioned ~95 ~ ~439 run function generation:lcz/clear_
