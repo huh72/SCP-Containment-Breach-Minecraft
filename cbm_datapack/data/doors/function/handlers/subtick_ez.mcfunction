@@ -1,7 +1,3 @@
-#
-scoreboard players remove @e[type=marker,scores={door_interact_cd=1..}] door_interact_cd 1
-scoreboard players remove @e[type=marker,scores={card_interact_cd=1..}] card_interact_cd 1
-
 #interact check 
 execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r0] at @s positioned ~2 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door
 execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door
@@ -23,8 +19,8 @@ tag @a[tag=can_interact_with_door_card] add looking_on_door
 
 
 #door
-execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door0.root] at @s if score @n[type=marker,tag=door_marker_ez,tag=!door_marker_check0,tag=closed,distance=..1] door_interact_cd matches 0 run function animated_java:door0/animations/openclosetoggle/play
-execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door0.root] at @s if score @n[type=marker,tag=door_marker_ez,tag=!door_marker_check0,tag=opened,distance=..1] door_interact_cd matches 0 run function animated_java:door0/animations/openclosetoggle/resume
+# execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door0.root] at @s if score @n[type=marker,tag=door_marker_ez,tag=!door_marker_check0,tag=closed,distance=..1] door_interact_cd matches 0 run function animated_java:door0/animations/openclosetoggle/play
+# execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door0.root] at @s if score @n[type=marker,tag=door_marker_ez,tag=!door_marker_check0,tag=opened,distance=..1] door_interact_cd matches 0 run function animated_java:door0/animations/openclosetoggle/resume
 
 #card
 
@@ -45,7 +41,7 @@ execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s ru
 # execute as @p[tag=can_interact_with_door_check,scores={door_right_click=1..}] at @s if entity @n[type=marker,tag=door_marker_check0,tag=blocked,distance=..3.5] run function doors:card_access_denied
 
 #
-scoreboard players set @a door_right_click 0
+# scoreboard players set @a door_right_click 0
 tag @a remove can_interact_with_door
 # tag @a remove can_interact_with_door_card
 # tag @a remove can_interact_with_door_check

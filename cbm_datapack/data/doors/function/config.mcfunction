@@ -7,10 +7,14 @@ scoreboard objectives add door.UUID dummy
 scoreboard objectives add door_right_click minecraft.used:minecraft.carrot_on_a_stick
 
 scoreboard objectives add door_interact_cd dummy
-scoreboard players set max door_interact_cd 50
+scoreboard players set max door_interact_cd 30
 
 scoreboard objectives add door_interact_cd dummy
-scoreboard players set max_hcz door_interact_cd 60
+scoreboard players set max_hcz door_interact_cd 30
 
 scoreboard objectives add card_interact_cd dummy
 scoreboard players set max card_interact_cd 15
+
+scoreboard objectives add door_checkpoint_timer dummy
+scoreboard players set max door_checkpoint_timer 150
+scoreboard players set alarm door_checkpoint_timer 30

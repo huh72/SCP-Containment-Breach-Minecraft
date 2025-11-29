@@ -1,45 +1,24 @@
-#
-scoreboard players remove @e[type=marker,scores={door_interact_cd=1..}] door_interact_cd 1
-scoreboard players remove @e[type=marker,scores={card_interact_cd=1..}] card_interact_cd 1
-
-#interact check 
-execute as @e[type=marker,tag=door_marker_hcz,tag=!card,tag=r0] at @s positioned ~1.5 ~ ~1.75 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_hcz,tag=!card,tag=r0] at @s positioned ~-1.5 ~ ~-1.75 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_hcz,tag=!card,tag=r1] at @s positioned ~-1.75 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_hcz,tag=!card,tag=r1] at @s positioned ~1.75 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door
-tag @a[tag=can_interact_with_door] add looking_on_door
-
-#interact check -card
-# execute as @e[type=marker,tag=door_marker1,tag=card,tag=r0] at @s positioned ~2 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door_card
-# execute as @e[type=marker,tag=door_marker1,tag=card,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door_card
-# execute as @e[type=marker,tag=door_marker1,tag=card,tag=r1] at @s positioned ~-1.5 ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door_card
-# execute as @e[type=marker,tag=door_marker1,tag=card,tag=r1] at @s positioned ~1.5 ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door_card
-# tag @a[tag=can_interact_with_door_card] add looking_on_door
-
-#interact check -card
-# execute as @e[type=marker,tag=door_marker_check0] at @s positioned ~ ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door_check
-# execute as @e[type=marker,tag=door_marker_check0] at @s positioned ~ ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door_check
-# tag @a[tag=can_interact_with_door_check] add looking_on_door
-
+tag @s add looking_on_door
 
 #door
-execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door1.root] at @s if score @n[type=marker,tag=door_marker_hcz,tag=!door_marker_check0,tag=closed,distance=..1] door_interact_cd matches 0 run function animated_java:door1/animations/open_close_toggle/play
-execute as @p[tag=can_interact_with_door,scores={door_right_click=1..}] at @s run execute as @n[tag=aj.door1.root] at @s if score @n[type=marker,tag=door_marker_hcz,tag=!door_marker_check0,tag=opened,distance=..1] door_interact_cd matches 0 run function animated_java:door1/animations/open_close_toggle/resume
+execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz,scores={door_interact_cd=0},tag=!card,tag=closed,distance=..4] as @n[type=item_display,tag=aj.door1.root] run function animated_java:door1/animations/open_close_toggle/play
+execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz,scores={door_interact_cd=0},tag=!card,tag=opened,distance=..4] as @n[type=item_display,tag=aj.door1.root] run function animated_java:door1/animations/open_close_toggle/resume
 
 #card
-# execute as @p[tag=can_interact_with_door_card,scores={door_right_click=1..}] if score @s access_level >= @n[type=marker,tag=door_marker,tag=card] access_level at @s run execute as @n[tag=aj.door_card0.root] at @s if score @n[tag=door_marker,tag=closed,distance=..1] door_interact_cd matches 0 run function animated_java:door_card0/animations/openclosetoggle/play
-# execute as @p[tag=can_interact_with_door_card,scores={door_right_click=1..}] if score @s access_level >= @n[type=marker,tag=door_marker,tag=card] access_level at @s run execute as @n[tag=aj.door_card0.root] at @s if score @n[tag=door_marker,tag=opened,distance=..1] door_interact_cd matches 0 run function animated_java:door_card0/animations/openclosetoggle/resume
-# execute as @p[tag=can_interact_with_door_card,scores={door_right_click=1..}] at @s if score @s access_level < @n[tag=door_marker,tag=card,scores={card_interact_cd=0}] access_level run function doors:card_denied
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0},tag=closed,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0},tag=closed,distance=..4] access_level as @n[type=item_display,tag=aj.door_card0.root] run function animated_java:door_card0/animations/open_close_toggle/play
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0},tag=opened,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0},tag=opened,distance=..4] access_level as @n[type=item_display,tag=aj.door_card0.root] run function animated_java:door_card0/animations/open_close_toggle/resume
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0},distance=..4] if score @s access_level < @n[type=marker,tag=door_marker_hcz,tag=card,scores={door_interact_cd=0,card_interact_cd=0},distance=..4] access_level positioned ~ ~1 ~ run function doors:card_denied
 
-# #checkpoint doors
-# execute as @p[tag=can_interact_with_door_check,scores={door_right_click=1..}] if score @s access_level >= @n[type=marker,tag=door_marker_check0,tag=!blocked] access_level at @s as @n[tag=aj.door_check0.root,limit=2] at @s if score @n[tag=door_marker_check0,tag=closed,distance=..1] door_interact_cd matches 0 run function animated_java:door_check0/animations/openclosetoggle/play
-# execute as @p[tag=can_interact_with_door_check,scores={door_right_click=1..}] if score @s access_level >= @n[type=marker,tag=door_marker_check0,tag=!blocked] access_level at @s as @n[tag=aj.door_check0.root,limit=2] at @s if score @n[tag=door_marker_check0,tag=opened,distance=..1] door_interact_cd matches 0 run function animated_java:door_check0/animations/openclosetoggle/resume
+#check point
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz_checkpoint,scores={door_interact_cd=0},tag=closed,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker_checkpoint,scores={door_interact_cd=0},tag=closed,distance=..4] access_level as @n[type=item_display,tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/play
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz_checkpoint,scores={door_interact_cd=0},tag=opened,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker_checkpoint,scores={door_interact_cd=0},tag=opened,distance=..4] access_level as @n[type=item_display,tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/resume
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz_checkpoint,scores={door_interact_cd=0},tag=opened,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker_checkpoint,scores={door_interact_cd=0},tag=opened,distance=..4] access_level as @n[type=item_display,tag=aj.door_check0.root] run playsound cb:interact.card ambient @a[distance=..24] ~ ~ ~ 2 1 1
+# execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker_hcz_checkpoint,scores={door_interact_cd=0},distance=..4] if score @s access_level < @n[type=marker,tag=door_marker_checkpoint,scores={door_interact_cd=0,card_interact_cd=0},distance=..4] access_level positioned ~ ~1 ~ run function doors:card_denied
+# #stop sound if door already closed
+# execute if entity @e[type=marker,tag=door_marker_checkpoint,tag=closed,distance=..4] run stopsound @a ambient cb:door.locksiren
 
-# #access denied
-# execute as @p[tag=can_interact_with_door_check,scores={door_right_click=1..}] at @s if score @s access_level < @n[type=marker,tag=door_marker_check0,scores={card_interact_cd=0},tag=!blocked,distance=..3.5] access_level run function doors:card_denied
-# execute as @p[tag=can_interact_with_door_check,scores={door_right_click=1..}] at @s if entity @n[type=marker,tag=door_marker_check0,tag=blocked,distance=..3.5] run function doors:card_access_denied
 
 #
-tag @a remove can_interact_with_door
-# tag @a remove can_interact_with_door_card
-# tag @a remove can_interact_with_door_check
+tag @s remove can_interact_with_door
+tag @s remove can_interact_with_door_card
+tag @s remove can_interact_with_door_check
