@@ -126,5 +126,6 @@
 	"scp066.notes3":		 {"sounds": ["cb:scp/066/notes3"]},
 	"scp066.notes4":		 {"sounds": ["cb:scp/066/notes4"]},
 	"scp066.notes5":		 {"sounds": ["cb:scp/066/notes5"]},
-	"scp066.notes6":		 {"sounds": ["cb:scp/066/notes6"]}
+	"scp066.notes6":		 {"sounds": ["cb:scp/066/notes6"]},
+	"door.locksiren":		 {"sounds": ["cb:facility/doors/locksiren"]}
 }
