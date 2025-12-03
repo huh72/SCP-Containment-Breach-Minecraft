@@ -1,0 +1,1 @@
+execute as @n[tag=gate_marker] at @s positioned ~-0.125 ~ ~-0.125 run execute as @a[dy=2] positioned ~-0.75 ~ ~-0.75 at @s[dy=2,tag=!dead] run function gates:kill
