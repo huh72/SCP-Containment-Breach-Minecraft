@@ -2,6 +2,11 @@
 scoreboard objectives add scp106state dummy
 #0 - no, 1- active, 2- passive
 
+
+#fall in pd animation
+scoreboard objectives add fallinpdanimation dummy
+scoreboard players set max fallinpdanimation 30
+
 ### appear timer
 scoreboard objectives add appear_timer dummy
 #max
@@ -24,9 +29,7 @@ scoreboard players set max_p 106hit_cd 20
 
 ### pd shrink
 scoreboard objectives add pd_shrink_scale dummy
-scoreboard players set max_p pd_shrink_scale 99
-# activate shrink cd
-# scoreboard objectives add pd_shrink_scale dummy
+scoreboard players set max pd_shrink_scale 99
 
 
 ### HUNTING values
@@ -34,6 +37,9 @@ scoreboard objectives add hunting dummy
 scoreboard players set max_a hunting 600
 scoreboard players set max_p hunting 2400
 
+#chasetheme
+scoreboard objectives add chasetheme_cd dummy
+scoreboard players set max chasetheme_cd 601
 
 # breath
 scoreboard objectives add breath_cd dummy
@@ -42,7 +48,7 @@ scoreboard players set max breath_cd 55
 
 # laugh 
 scoreboard objectives add laugh_cd dummy
-scoreboard players set max_a laugh_cd 175
+scoreboard players set max_a laugh_cd 120
 scoreboard players set max_p laugh_cd 350
 
 

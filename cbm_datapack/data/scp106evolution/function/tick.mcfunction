@@ -10,10 +10,10 @@
 #well...
 
 
-
+#scp106 handler:
 execute as @n[type=marker,tag=106origin] at @s run function scp106evolution:subtick
-
-
+#pocket dimension shrink handler:
+execute as @e[type=armor_stand,tag=pds] at @s run function scp106evolution:pd_shrink/subtick
 
 
 # execute as @e[type=minecraft:armor_stand,tag=ps] at @s store result storage minecraft:pd_shrink scale int 1 run scoreboard players get @s pd_shrink_scale

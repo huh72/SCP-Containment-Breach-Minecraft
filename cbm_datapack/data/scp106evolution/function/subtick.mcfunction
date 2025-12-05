@@ -9,13 +9,37 @@
 
 #well...
 
-function scp106evolution:definetarget/0
+#vars
+execute if score 106 106hit_cd matches 1.. run scoreboard players remove 106 106hit_cd 1
+execute if score 106 laugh_cd matches 1.. run scoreboard players remove 106 laugh_cd 1
+execute if score 106 breath_cd matches 1.. run scoreboard players remove 106 breath_cd 1
+execute if score 106 chasetheme_cd matches 1.. run scoreboard players remove 106 chasetheme_cd 1
+execute if score 106 scp106state matches 1..2 run scoreboard players add 106 hunting 1
 
 
-tp @n[type=item_display,tag=aj.scp106.root] ~ ~ ~
-data modify entity @n[type=item_display,tag=aj.scp106.root] Rotation[0] set from entity @s Rotation[0]
+#appear handle
+execute unless score 106 appear_timer matches -1 run function scp106evolution:appear/loop
+#disappear handle
+execute unless score 106 disappear_timer matches -1 run function scp106evolution:disappear/loop
 
-function scp106evolution:move {"walkspeed":"0.15"}
+#movement + model lineup
+execute if score 106 scp106state matches 1..2 run function scp106evolution:movement {"walkspeed":"0.15"}
+
+#defining targets
+execute if score 106 scp106state matches 1..2 run function scp106evolution:definetarget/0
+
+#change hunt state (active -> passive (if no kills))
+execute if score 106 hunting = max_a hunting run function scp106evolution:changestate
+execute if score 106 hunting = max_p hunting run function scp106evolution:despawn
+
+#laugh + breath sounds
+execute if score 106 chasetheme_cd matches 0 if score 106 scp106state matches 1..2 run function scp106evolution:sounds/chasetheme
+execute if score 106 laugh_cd matches 0 run function scp106evolution:sounds/laugh
+execute if score 106 breath_cd matches 0 run function scp106evolution:sounds/breath
+
+#hit + caught animation
+execute positioned ^ ^ ^0.5 as @p[tag=106target,distance=..1] if score 106 106hit_cd matches 0 run function scp106evolution:hit/hit
+execute as @a[tag=hitby106] at @s if score @s fallinpdanimation < max fallinpdanimation run function scp106evolution:hit/fallanimation
 
 
 
