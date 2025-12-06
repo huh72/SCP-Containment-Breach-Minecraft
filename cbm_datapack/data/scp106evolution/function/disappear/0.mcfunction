@@ -1,7 +1,7 @@
 tag @a remove 106target
 stopsound @a ambient cb:scp106.chase
 
-function scp106evolution:pd_shrink/spawn
+execute as @n[tag=106origin] at @s run function scp106evolution:pd_shrink/spawn
 
 scoreboard players set 106 disappear_timer 0
 scoreboard players set 106 scp106state 0

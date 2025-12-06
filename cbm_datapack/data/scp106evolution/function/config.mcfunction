@@ -14,11 +14,18 @@ scoreboard players set max_a appear_timer 40
 scoreboard players set max_p appear_timer 100
 
 
-### disaper timer
+### disappear timer
 scoreboard objectives add disappear_timer dummy
 #max
-scoreboard players set max_a disappear_timer 5
+scoreboard players set max_a disappear_timer 20
 scoreboard players set max_p disappear_timer 100
+
+
+### re-appear timer
+scoreboard objectives add reappear_timer dummy
+#max
+scoreboard players set down reappear_timer 20
+scoreboard players set up reappear_timer 40
 
 
 ### hit 
@@ -63,7 +70,7 @@ scoreboard players set max wall_cd 20
 
 #scp106 summon conditions variables
 scoreboard objectives add step_on_shrink dummy
-scoreboard players set max step_on_shrink 100
+scoreboard players set max step_on_shrink 140
 
 scoreboard objectives add step_on_shrink_cd dummy
-scoreboard players set max step_on_shrink_cd 400
+scoreboard players set max step_on_shrink_cd 800

@@ -23,14 +23,21 @@ execute unless score 106 appear_timer matches -1 run function scp106evolution:ap
 execute unless score 106 disappear_timer matches -1 run function scp106evolution:disappear/loop
 
 #movement + model lineup
-execute if score 106 scp106state matches 1..2 run function scp106evolution:movement {"walkspeed":"0.15"}
+execute if score 106 scp106state matches 1 run function scp106evolution:movement {"walkspeed":"0.215"}
+execute if score 106 scp106state matches 2 run function scp106evolution:movement {"walkspeed":"0.1975"}
 
 #defining targets
 execute if score 106 scp106state matches 1..2 run function scp106evolution:definetarget/0
 
 #change hunt state (active -> passive (if no kills))
 execute if score 106 hunting = max_a hunting run function scp106evolution:changestate
+
+#chase end conditions
 execute if score 106 hunting = max_p hunting run function scp106evolution:despawn
+execute if score 106 scp106state matches 1 run function scp106evolution:chasing/activechasingphasehandler
+execute if score 106 scp106state matches 2 run function scp106evolution:chasing/secondphasedisappearconditionshandler
+execute if entity @s[tag=reappearing] run function scp106evolution:chasing/handler
+
 
 #laugh + breath sounds
 execute if score 106 chasetheme_cd matches 0 if score 106 scp106state matches 1..2 run function scp106evolution:sounds/chasetheme
