@@ -1,0 +1,22 @@
+{
+  "values":[
+	"minecraft:air",
+	"minecraft:cave_air",
+	"#minecraft:buttons",
+	"#minecraft:candles",
+	"#minecraft:cave_vines",
+	"#minecraft:crops",
+	"#minecraft:fire",
+	"#minecraft:flowers",
+	"#minecraft:leaves",
+	"#minecraft:pressure_plates",
+	"#minecraft:bars",
+	"#minecraft:chains",
+	"#minecraft:rails",
+	"minecraft:redstone_wire",
+	"#minecraft:saplings",
+	"#minecraft:signs",
+	"#minecraft:small_flowers",
+	"#minecraft:wall_signs"
+  ]
+}

@@ -5,8 +5,9 @@ execute if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run data modi
 
 $tp @s ^ ^ ^$(walkspeed)
 
-execute if block ~ ~-0.5 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~-0.5 ~
-execute if block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~-0.1 ~
+function scp106evolution:ceiling_check
 
+execute if score is106InsideFacility v matches 1 if block ~ ~-0.5 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~-0.5 ~
+execute if score is106InsideFacility v matches 1 if block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~-0.1 ~
 
 tp @n[type=item_display,tag=aj.scp106.root] ~ ~ ~
