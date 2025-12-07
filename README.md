@@ -4,7 +4,7 @@ A remake of SCP Containment Breach in Minecraft.
 # The gamemode is based on the works of the:
  - SCP Foundation community (https://scpfoundation.net/).
  - SCP Containment Breach game (https://github.com/Regalis11/scpcb).
- - SCP Containment Breach Ultimate Edition mod (https://www.moddb.com/mods/scp-containment-breach-ultimate-edition).
+ - SCP Containment Breach 2 (https://www.moddb.com/mods/scp-containment-breach-ultimate-edition).
  - SCP Containment Breach Director's cut mod (https://www.moddb.com/mods/scp-containment-breach-directors-cut-edition).
 
 Light shaders were taken from JNNGL (https://github.com/JNNGL).  
