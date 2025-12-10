@@ -384,6 +384,13 @@
           "type": "model",
           "model": "item/scp/079_face"
         }
+      },
+        {
+        "when": "door0",
+        "model": {
+          "type": "model",
+          "model": "item/door0"
+        }
       }
     ]
   }
