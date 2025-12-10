@@ -2,7 +2,7 @@ kill @e[tag=door_empty]
 kill @e[tag=door_marker1]
 kill @e[tag=door_marker_hcz]
 kill @e[tag=door_marker_checkpoint]
-kill @e[tag=tesla]
+kill @e[tag=tesla_origin]
 function animated_java:door1/remove/all
 function animated_java:door_check0/remove/all
 

@@ -2,6 +2,7 @@ tag @s remove d_173
 tag @s remove d_106
 tag @s remove d_1048a
 tag @s remove d_tesla
+tag @s remove d_gate
 tag @s remove d_049
 tag @s remove d_939
 tag @s remove d_096

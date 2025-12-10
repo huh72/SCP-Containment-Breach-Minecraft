@@ -2,10 +2,20 @@
 function animated_java:door0/remove/all
 function animated_java:door_check0/remove/all
 function animated_java:door_card0/remove/all
+function animated_java:lever/remove/all
 kill @e[tag=door_empty]
 kill @e[tag=door_marker]
 kill @e[tag=door_marker0]
+kill @e[type=text_display]
 kill @e[tag=door_marker_check0]
+
+#cleaning event's markers
+kill @n[tag=event0_spawn173]
+kill @n[tag=event0_spawncard1]
+kill @n[tag=event1_spawn049]
+
+#clenaing 106's shrinks
+kill @e[tag=pds]
 
 #removing rooms spawn markers
 kill @e[tag=str,tag=gen]

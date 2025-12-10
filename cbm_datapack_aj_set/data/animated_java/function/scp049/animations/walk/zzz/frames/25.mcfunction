@@ -5,4 +5,4 @@ $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9999f,0.0138
 $data merge entity $(bone_l_arm) {transformation: [-1f,0f,0f,0.4938f,0f,0.9848f,-0.1736f,0.8728f,0f,-0.1736f,-0.9848f,0.1259f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_r_arm) {transformation: [-1f,0f,0f,-0.3062f,0f,0.1045f,-0.9945f,1.5646f,0f,-0.9945f,-0.1045f,-0.1152f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,0.9998f,0.0175f,1f,0f,0.0175f,-0.9998f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run execute if entity @e[tag=aj.scp106.root,tag=hunting] run function animated_java:scp049/animations/walk/zzz/frames/25_root_commands
+execute at @n[tag=scp049] run function animated_java:scp049/animations/walk/zzz/frames/25_root_commands

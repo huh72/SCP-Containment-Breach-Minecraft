@@ -16,6 +16,7 @@ scoreboard players set 4 math 4
 scoreboard players set 2 math 2
 scoreboard players set -1 math -1
 scoreboard players set 180 math 180
+scoreboard players set 100 math 100
 scoreboard players set -180 math -180
 
 #config max itt => max itt in blocks

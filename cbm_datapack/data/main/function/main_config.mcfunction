@@ -1,4 +1,4 @@
-tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 22/06/2025 on Minecraft version 1.21.1","color":"yellow"}]
+tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 03/12/2025 on Minecraft version 1.21.5","color":"yellow"}]
 
 function elevators:config
 function ms:config
@@ -8,6 +8,7 @@ function use:config
 function drop:config
 function fall:config
 function guns:config
+function lever:config
 function main:config
 function doors:config
 function gates:config

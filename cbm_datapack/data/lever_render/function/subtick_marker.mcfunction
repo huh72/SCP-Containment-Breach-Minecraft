@@ -1,0 +1,1 @@
+execute if entity @a[distance=..12] run function lever_render:load

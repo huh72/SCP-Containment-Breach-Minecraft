@@ -17,6 +17,7 @@ execute if entity @s[tag=d_mtf] run item replace entity @n[tag=new] armor.head w
 execute if entity @s[tag=d_049] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_1048a] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_939] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
+execute if entity @s[tag=d_gate] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
 execute if entity @s[tag=d_tesla] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_173] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_fall] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
