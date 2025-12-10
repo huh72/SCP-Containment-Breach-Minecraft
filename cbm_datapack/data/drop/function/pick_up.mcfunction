@@ -71,4 +71,5 @@ execute if entity @s[tag=radio] at @s run playsound cb:interact.pickitem1 ambien
 
 
 scoreboard players set @p[tag=caster,scores={right_click_item=1..}] right_click_item 0
+scoreboard players set @p[tag=caster,scores={right_click_item=1..}] door_right_click 0
 kill @s

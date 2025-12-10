@@ -18,7 +18,7 @@ execute as @a run title @s[scores={request_cd=0,item_selected=0..40},tag=!lookin
 execute as @e[type=armor_stand,tag=drop] at @s unless block ~ ~-0.05 ~ #drop:air run tag @s add is_picked_up
 
 #spawn armor stand as base for drop visual
-execute as @e[type=item,nbt={Item:{id:"minecraft:papper"}}] at @s if score @s drop_cd = max* drop_cd run function drop:spawn_as
+execute as @e[type=item,nbt={Item:{id:"minecraft:paper"}}] at @s if score @s drop_cd = max* drop_cd run function drop:spawn_as
 
 #&7 Drop physics
 #drop fall
