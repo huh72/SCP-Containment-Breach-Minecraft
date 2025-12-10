@@ -1,3 +1,4 @@
+kill @e[tag=door_empty]
 kill @e[tag=door_marker2]
 kill @e[tag=door_marker_ez]
 kill @e[tag=door_marker_checkpoint]

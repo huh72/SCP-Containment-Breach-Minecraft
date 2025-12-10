@@ -61,6 +61,7 @@ function tesla:set_vars
 execute as @e[type=marker,tag=door_marker2] at @s run function doors:unity_cycle_ez/cycle
 
 tag @e[tag=door_marker_ez] add door_marker
+tag @e[type=marker,tag=door_marker,tag=!card,tag=!checkpoint] add button
 scoreboard players set @e[type=marker,tag=door_marker_ez] door_interact_cd 0
 scoreboard players set @e[type=marker,tag=door_marker_checkpoint] card_interact_cd 0
 scoreboard players set @e[type=marker,tag=card] card_interact_cd 0
