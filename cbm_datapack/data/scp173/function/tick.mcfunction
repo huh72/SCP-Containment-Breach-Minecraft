@@ -1,6 +1,6 @@
 #vars
 execute if score scp173 move_cd matches 1.. run scoreboard players remove scp173 move_cd 1
-execute if score 173 rattle_cd matches 1.. run scoreboard players remove 173 rattle_cd 1
+execute if score 173 rattle_cd matches 1.. if score look_on_173y v matches 0 run scoreboard players remove 173 rattle_cd 1
 
 #rattle sound
 execute if score 173 rattle_cd matches 0 at @n[tag=scp173] run function scp173:rattle
