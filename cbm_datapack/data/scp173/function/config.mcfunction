@@ -26,3 +26,7 @@ scoreboard objectives add air dummy
 scoreboard objectives add horror_cd dummy
 scoreboard players set max horror_cd 400
 
+#
+scoreboard objectives add rattle_cd dummy
+scoreboard players set max rattle_cd 160
+

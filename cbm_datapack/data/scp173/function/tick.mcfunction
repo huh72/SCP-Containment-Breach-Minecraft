@@ -1,6 +1,9 @@
-#tp cooldown var
+#vars
 execute if score scp173 move_cd matches 1.. run scoreboard players remove scp173 move_cd 1
+execute if score 173 rattle_cd matches 1.. run scoreboard players remove 173 rattle_cd 1
 
+#rattle sound
+execute if score 173 rattle_cd matches 0 at @n[tag=scp173] run function scp173:rattle
 
 #tp a players' marker to a player
 execute at @a run tp @n[type=minecraft:marker,tag=scp173_playermarker] ~ ~1 ~ facing entity @n[type=minecraft:armor_stand,tag=scp173]
@@ -13,6 +16,7 @@ tag @a remove can_see_173
 execute at @n[type=minecraft:armor_stand,tag=scp173] run tp @n[type=minecraft:marker,tag=scp173_marker] ~ ~1 ~ facing entity @p[tag=!checked,tag=!dead] eyes
 
 #raycast -- 173's marker rotates to player to check that is no blocks between 173 and player
+tag @n[tag=scp173] remove seen_through_glass
 execute at @n[type=minecraft:marker,tag=scp173_marker] if entity @p[distance=..20,tag=!checked,tag=!dead] anchored eyes run function scp173:raycast/player_detect
 
 #is player looking on 173 directly

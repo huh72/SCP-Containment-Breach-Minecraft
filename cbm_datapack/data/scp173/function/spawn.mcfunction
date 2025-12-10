@@ -6,4 +6,5 @@ execute as @a at @s run summon marker ~ ~1 ~ {Tags:['scp173_playermarker']}
 scoreboard players set scp173 move_cd 20
 tag @n[tag=new] remove new
 
-execute as @a store result score @s horror_cd run random value 100..600 cb:scp173horror
+execute as @a store result score @s horror_cd run random value 10..30 cb:scp173horror
+execute store result score 173 rattle_cd run random value 60..200 cb:scp173horror
