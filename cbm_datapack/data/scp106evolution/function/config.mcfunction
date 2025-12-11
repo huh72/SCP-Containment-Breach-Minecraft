@@ -74,3 +74,9 @@ scoreboard players set max step_on_shrink 140
 
 scoreboard objectives add step_on_shrink_cd dummy
 scoreboard players set max step_on_shrink_cd 800
+
+
+#room shrink handler vars
+scoreboard objectives add roomsize_shrink dummy
+scoreboard players set max roomsize_shrink 100
+scoreboard players set 106 roomsize_shrink 20

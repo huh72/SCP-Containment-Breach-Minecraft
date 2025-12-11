@@ -54,6 +54,10 @@ execute if predicate generation:30 as @e[tag=corner,sort=random,limit=1] at @s r
 execute as @e[type=marker,tag=x_f,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/x_formed/type2 {"room":"lcz:x_formed1_0"}
 execute if predicate generation:50 as @e[tag=x_f,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/x_formed/type2 {"room":"lcz:x_formed1_0"}
 
+#x_formed type 3 (huge sinkhole)
+execute as @e[type=marker,tag=x_f,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/x_formed/type3 {"room":"lcz:x_formed2_0"}
+execute if predicate generation:50 as @e[tag=x_f,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/x_formed/type3 {"room":"lcz:x_formed2_0"}
+
 #173 trigger room [!]
 execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/173_trigger {"room":"lcz:str/173_tr"}
 execute unless predicate generation:30 as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/173_trigger {"room":"lcz:str/173_tr"}
