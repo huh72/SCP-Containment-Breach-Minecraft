@@ -18,6 +18,9 @@ kill @e[tag=gatelockmarker]
 function scp914:spawn/remove
 kill @e[tag=event2_handler]
 
+#event 3
+function animated_java:airlockdoors/remove/all
+
 #914 stuff
 function animated_java:door914/remove/all
 function animated_java:914_button/remove/all
@@ -25,3 +28,4 @@ function animated_java:914_start/remove/all
 
 #levers
 function animated_java:lever/remove/all
+kill @e[tag=lever_marker]

@@ -5,9 +5,7 @@
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
 				"assets/animated_java/items/blueprint/914_button/bone.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/914_button/bone.json",
-				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/914_button/914_button.png"
 			]
 		},
@@ -15,10 +13,16 @@
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
 				"assets/animated_java/items/blueprint/914_start/bone.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/914_start/bone.json",
-				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/914_start/914_start.png"
+			]
+		},
+		"airlockdoors": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/airlockdoors/wind0.json",
+				"assets/animated_java/models/blueprint/airlockdoors/wind0.json",
+				"assets/animated_java/textures/blueprint/airlockdoors/door0.png"
 			]
 		},
 		"door": {
@@ -63,9 +67,7 @@
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
 				"assets/animated_java/items/blueprint/door914/wind0.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/door914/wind0.json",
-				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/door914/door0.png"
 			]
 		},
@@ -107,6 +109,16 @@
 				"assets/animated_java/models/blueprint/gate/wind1.json",
 				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/gate/gate.png"
+			]
+		},
+		"lever": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/lever/base.json",
+				"assets/animated_java/items/blueprint/lever/lever.json",
+				"assets/animated_java/models/blueprint/lever/base.json",
+				"assets/animated_java/models/blueprint/lever/lever.json",
+				"assets/animated_java/textures/blueprint/lever/lever.png"
 			]
 		},
 		"m4a1": {
@@ -153,6 +165,24 @@
 				"assets/animated_java/models/blueprint/p/s.json",
 				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/p/p.png"
+			]
+		},
+		"scientist": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scientist/body.json",
+				"assets/animated_java/items/blueprint/scientist/head.json",
+				"assets/animated_java/items/blueprint/scientist/l_arm.json",
+				"assets/animated_java/items/blueprint/scientist/l_leg.json",
+				"assets/animated_java/items/blueprint/scientist/r_arm.json",
+				"assets/animated_java/items/blueprint/scientist/r_leg.json",
+				"assets/animated_java/models/blueprint/scientist/body.json",
+				"assets/animated_java/models/blueprint/scientist/head.json",
+				"assets/animated_java/models/blueprint/scientist/l_arm.json",
+				"assets/animated_java/models/blueprint/scientist/l_leg.json",
+				"assets/animated_java/models/blueprint/scientist/r_arm.json",
+				"assets/animated_java/models/blueprint/scientist/r_leg.json",
+				"assets/animated_java/textures/blueprint/scientist/scientist.png"
 			]
 		},
 		"scp049": {

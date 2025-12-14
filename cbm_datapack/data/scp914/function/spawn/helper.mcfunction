@@ -15,11 +15,11 @@ execute at @n[tag=aj.door914.root] positioned ^6.5 ^ ^ run summon marker ~ ~ ~ {
 execute at @n[tag=aj.door914.root] positioned ^-7.5 ^ ^-1.5 run summon marker ~ ~ ~ {Tags:["input","marker914"]}
 execute at @n[tag=aj.door914.root] positioned ^7.5 ^ ^-1.5 run summon marker ~ ~ ~ {Tags:["output","marker914"]}
 
-execute at @n[tag=doors_input] rotated as @s rotated ~90 ~ run tp @s ~ ~ ~ ~ ~
-execute at @n[tag=doors_output] rotated as @s rotated ~90 ~ run tp @s ~ ~ ~ ~ ~
+execute at @n[tag=doors_input] rotated as @s rotated ~90 ~ run tp @n[tag=doors_input] ~ ~ ~ ~ ~
+execute at @n[tag=doors_output] rotated as @s rotated ~90 ~ run tp @n[tag=doors_output] ~ ~ ~ ~ ~
 
-execute at @n[tag=input] rotated as @s rotated ~180 ~ run tp @s ~ ~ ~ ~ ~
-execute at @n[tag=output] rotated as @s rotated ~180 ~ run tp @s ~ ~ ~ ~ ~
+execute at @n[tag=input] rotated as @s rotated ~180 ~ run tp @n[tag=input] ~ ~ ~ ~ ~
+execute at @n[tag=output] rotated as @s rotated ~180 ~ run tp @n[tag=output] ~ ~ ~ ~ ~
 
 execute positioned ^ ^ ^-3.5 rotated as @s rotated ~180 ~ run function animated_java:gate/summon with storage aj:temp
 tag @n[tag=gate] add lvl2

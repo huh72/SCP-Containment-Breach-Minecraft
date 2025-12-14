@@ -12,6 +12,7 @@
 	"scp173.rattle":        {"sounds": ["cb:scp/173/rattle1", "cb:scp/173/rattle2", "cb:scp/173/rattle3"]},
 	"scp173.stonedrag":        {"sounds": ["cb:scp/173/stonedrag"]},
 	"scp173.glassbreak":        {"sounds": ["cb:scp/173/glassbreak"]},
+	"scp173.vent":        {"sounds": ["cb:scp/173/vent"]},
 	"scp173.horror":        {"sounds": ["cb:scp/173/horror/0", "cb:scp/173/horror/1", "cb:scp/173/horror/4", "cb:scp/173/horror/3", "cb:scp/173/horror/4", "cb:scp/173/horror/1", "cb:scp/173/horror/6"]},
 	"scp0492.breath":        {"sounds": ["cb:scp/0492/breath"]},
 	"scp049.spotted":        {"sounds": ["cb:scp/049/spotted0", "cb:scp/049/spotted1", "cb:scp/049/spotted2", "cb:scp/049/spotted3", "cb:scp/049/spotted4", "cb:scp/049/spotted5", "cb:scp/049/spotted6"]},
@@ -135,5 +136,8 @@
 	"scp066.notes4":		 {"sounds": ["cb:scp/066/notes4"]},
 	"scp066.notes5":		 {"sounds": ["cb:scp/066/notes5"]},
 	"scp066.notes6":		 {"sounds": ["cb:scp/066/notes6"]},
-	"door.locksiren":		 {"sounds": ["cb:facility/doors/locksiren"]}
+	"door.locksiren":		 {"sounds": ["cb:facility/doors/locksiren"]},
+	"event3.airlock":		 {"sounds": ["cb:events/3/airlock"]},
+	"event3.alarm":		 {"sounds": ["cb:events/3/alarm"]},
+	"event3_1.alarm":		 {"sounds": ["cb:events/3_1/alarm"]}
 }
