@@ -18,6 +18,7 @@
 		"gates:tick",
         "grenades:tick",
 		"steam:tick",
+        "events:tick",
 		"tesla:tick",
         "scps:tick",
         "guns:bullet/tick",

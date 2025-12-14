@@ -1,8 +1,8 @@
 ### cards
 #card 1
-execute if entity @s[tag=card1] run return run function spawn:drop/card2
+execute if entity @s[tag=card1] run return run function spawn:drop/card2 {"state":"914"}
 #card 2
-execute if entity @s[tag=card2] run return run function spawn:drop/card3
+execute if entity @s[tag=card2] run return run function spawn:drop/card3 {"state":"914"}
 #card 3
 execute store result score chance scp914 run random value 0..9 cb:scp914chances
 execute if entity @s[tag=card3] if score chance scp914 matches 0 run return run function spawn:drop/card4
@@ -27,7 +27,7 @@ execute if entity @s[tag=coin] run return run function spawn:drop/card2
 
 ### arms
 #white arm
-execute if entity @s[tag=white_arm] run function spawn:drop/blackarm
+execute if entity @s[tag=white_arm] run function spawn:drop/blackarm {"state":"914"}
 execute if entity @s[tag=white_arm] run return run kill @s
 #black arm
 execute if entity @s[tag=black_arm] run function spawn:drop/whitearm

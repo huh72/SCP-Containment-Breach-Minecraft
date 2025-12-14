@@ -21,7 +21,7 @@ execute if entity @s[tag=coin] run return run function spawn:drop/card1
 
 ### arms
 #white arm
-execute if entity @s[tag=white_arm] run function spawn:drop/blackarm
+execute if entity @s[tag=white_arm] run function spawn:drop/blackarm {"state":"914"}
 execute if entity @s[tag=white_arm] run return run kill @s
 #black arm
 execute if entity @s[tag=black_arm] run function spawn:drop/whitearm

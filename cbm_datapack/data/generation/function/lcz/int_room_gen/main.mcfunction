@@ -33,9 +33,6 @@ execute if predicate generation:40 as @e[tag=str,sort=random,limit=1] at @s run 
 #storeroom with trigger 173
 execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/storeroom {"room":"lcz:str/storeroom"}
 
-#room with trigger 173 and card 2 and snav
-execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/card2_173_trigger {"room":"lcz:str/card2_173_"}
-
 #scp860_714
 execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/scp714_860 {"room":"lcz:str/860_"}
 
@@ -79,12 +76,20 @@ execute as @e[type=marker,tag=dd,sort=random,limit=1] at @s run function generat
 execute as @e[type=marker,tag=dd,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/deadends/archive {"room":"lcz:deadend/archive_"}
 execute as @e[type=marker,tag=dd,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/deadends/elevator {"room":"lcz:deadend/elevator_"}
 
+#room with trigger 173 and card 2 and snav
+execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/card2_173_trigger {"room":"lcz:str/card2_173_"}
+
 #electrical centre with trigger 049
 execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/049_elc {"room":"lcz:str/049_elc"}
+
+
+
+# ENTITIES NEXT ==========================================
 
 #setting tesla gates vars after zone 1 generation
 function tesla:set_vars
 
+#generation door's marker positions
 execute as @e[type=marker,tag=door_marker0] at @s run function doors:unity_cycle/cycle
 
 #checkpoint door
@@ -92,6 +97,7 @@ execute at @e[type=marker,tag=door_marker_checkpoint,tag=hcz] rotated 0 0 run fu
 scoreboard players set @e[type=marker,tag=door_marker_checkpoint] door_checkpoint_timer 150
 tag @e[type=marker,tag=door_marker_checkpoint] add blocked
 
+#adding door tag to all doors
 tag @e[type=marker,tag=door_marker] add door
 tag @e[type=marker,tag=door_marker_hcz] add door
 tag @e[type=marker,tag=door_marker_ez] add door
@@ -104,12 +110,30 @@ scoreboard players set @e[type=marker,tag=door] door_interact_cd 0
 scoreboard players set @e[type=marker,tag=door_lock] card_interact_cd 0
 scoreboard players set @e[type=marker,tag=door_marker_checkpoint,tag=hcz] access_level 3
 
+#setup 914
+function scp914:spawn/dependencies
+
+#setup gate's access levels
+execute as @e[type=item_display,tag=gate] run function gates:setgateaccesslevel
+
+#spawn lcz door with card
 execute as @e[type=marker,tag=door_marker,tag=card] at @s run function doors:spawn_door_card
+
+#init event 3
+execute as @e[tag=airlockdoorsspawn] at @s rotated as @s run function animated_java:airlockdoors/summon with storage aj:temp
+execute as @e[tag=aj.airlockdoors.root] run function animated_java:airlockdoors/animations/openclosetoggle/apply_frame {"frame":"25"}
+tag @e[tag=aj.airlockdoors.root] add airlock
+tag @e[tag=aj.airlockdoors.root] add airlockdoors
+scoreboard players set @e[tag=airlockdoors] event3timer -60
+kill @e[tag=airlockdoorsspawn]
+
+#setting vars of event 3_1 handlers
+scoreboard players set @e[type=marker,tag=event3_1handler] event3_1timer 1
 
 #lever in 049elc
 execute as @n[type=item_display,tag=lever,tag=lczlockdown] run function animated_java:lever/animations/switch/play
 
-
+#clearing map
 kill @e[type=marker,tag=str,tag=lcz]
 kill @e[type=marker,tag=dd,tag=lcz]
 kill @e[type=marker,tag=corner,tag=lcz]

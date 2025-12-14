@@ -1,10 +1,11 @@
-kill @e[tag=door_empty]
-kill @e[tag=door_marker2]
-kill @e[tag=door_marker_ez]
-kill @e[tag=door_marker_checkpoint]
-kill @e[tag=tesla_origin]
+function generation:clear/clear_entities
+
 function animated_java:door0/remove/all
 function animated_java:door_check0/remove/all
+
+function animated_java:door_check0/remove/all
+
+function animated_java:airlockdoors/remove/all
 
 execute as @e[tag=173] at @s positioned ~114 ~ ~439 run function generation:lcz/clear_
 execute as @e[tag=173] at @s positioned ~95 ~ ~439 run function generation:lcz/clear_

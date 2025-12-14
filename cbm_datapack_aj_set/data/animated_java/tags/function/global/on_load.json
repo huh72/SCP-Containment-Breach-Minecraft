@@ -3,6 +3,7 @@
 	"values": [
 		"animated_java:914_button/on_load",
 		"animated_java:914_start/on_load",
+		"animated_java:airlockdoors/on_load",
 		"animated_java:door_card0/on_load",
 		"animated_java:door_check0/on_load",
 		"animated_java:door0/on_load",
@@ -12,6 +13,7 @@
 		"animated_java:lever/on_load",
 		"animated_java:m4a1/on_load",
 		"animated_java:mtf/on_load",
+		"animated_java:scientist/on_load",
 		"animated_java:scp049_2/on_load",
 		"animated_java:scp049_2d/on_load",
 		"animated_java:scp049/on_load",
