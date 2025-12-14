@@ -21,9 +21,9 @@ execute as @e[tag=startbutton914] on target if score timer scp914 matches 0 run 
 data remove entity @n[tag=startbutton914] interaction
 
 ### Looking detect, interact
-execute as @a at @s if entity @n[tag=startbutton914,distance=..6] if score timer scp914 matches 0 anchored eyes run function scp914:interact_detect
+execute as @a at @s if entity @n[type=marker,tag=startbutton914,distance=..6] if score timer scp914 matches 0 anchored eyes run function scp914:interact_detect
 
-execute at @e[tag=event2_handler] positioned ^ ^ ^1 run particle angry_villager
-execute at @e[tag=marker914] positioned ^ ^ ^1 run particle angry_villager
+# execute at @e[tag=event2_handler] positioned ^ ^ ^1 run particle angry_villager
+# execute at @e[tag=marker914] positioned ^ ^ ^1 run particle angry_villager
 
-execute at @e[tag=door914] positioned ^ ^ ^1 run particle happy_villager
+# execute at @e[tag=door914] positioned ^ ^ ^1 run particle happy_villager

@@ -7,4 +7,4 @@
 
 say 914 dependencies func()!
 
-execute as @n[tag=event2_handler] at @s run function scp914:spawn/helper with storage cb:spawn914
+execute as @n[type=marker,tag=event2_handler] at @s run function scp914:spawn/helper with storage cb:spawn914

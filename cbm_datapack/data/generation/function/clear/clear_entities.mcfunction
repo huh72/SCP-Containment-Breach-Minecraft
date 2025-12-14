@@ -1,22 +1,22 @@
-kill @e[tag=door_empty]
-kill @e[tag=door_marker1]
-kill @e[tag=door_marker_hcz]
-kill @e[tag=door_marker_checkpoint]
-kill @e[tag=tesla_origin]
-kill @e[tag=pds]
-kill @e[tag=pds_roomsize]
-kill @e[tag=event3_1handler]
-kill @e[tag=event3_handler173]
-kill @e[tag=event2_spawn049]
-kill @e[tag=door_empty]
-kill @e[tag=door_marker2]
-kill @e[tag=door_marker_ez]
-kill @e[tag=door_marker_checkpoint]
-kill @e[tag=tesla_origin]
-kill @e[tag=gatelockmarker]
+kill @e[type=marker,tag=door_empty]
+kill @e[type=marker,tag=door_marker1]
+kill @e[type=marker,tag=door_marker_hcz]
+kill @e[type=marker,tag=door_marker_checkpoint]
+kill @e[type=marker,tag=tesla_origin]
+kill @e[type=marker,tag=pds]
+kill @e[type=marker,tag=pds_roomsize]
+kill @e[type=marker,tag=event3_1handler]
+kill @e[type=marker,tag=event3_handler173]
+kill @e[type=marker,tag=event2_spawn049]
+kill @e[type=marker,tag=door_empty]
+kill @e[type=marker,tag=door_marker2]
+kill @e[type=marker,tag=door_marker_ez]
+kill @e[type=marker,tag=door_marker_checkpoint]
+kill @e[type=marker,tag=tesla_origin]
+kill @e[type=marker,tag=gatelockmarker]
 
 function scp914:spawn/remove
-kill @e[tag=event2_handler]
+kill @e[type=marker,tag=event2_handler]
 
 #event 3
 function animated_java:airlockdoors/remove/all
@@ -28,4 +28,4 @@ function animated_java:914_start/remove/all
 
 #levers
 function animated_java:lever/remove/all
-kill @e[tag=lever_marker]
+kill @e[type=marker,tag=lever_marker]

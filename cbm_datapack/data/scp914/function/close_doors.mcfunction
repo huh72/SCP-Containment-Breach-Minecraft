@@ -12,5 +12,5 @@ setblock ^ ^1 ^ minecraft:cobblestone_wall
 setblock ^ ^ ^1 minecraft:cobblestone_wall
 setblock ^ ^1 ^1 minecraft:cobblestone_wall
 
-execute as @n[tag=aj.door914.root] run function animated_java:door914/animations/open/stop
-execute as @n[tag=aj.door914.root] run function animated_java:door914/animations/close/play
+execute as @n[type=item_display,tag=aj.door914.root] run function animated_java:door914/animations/open/stop
+execute as @n[type=item_display,tag=aj.door914.root] run function animated_java:door914/animations/close/play
