@@ -21,5 +21,5 @@ execute if entity @n[tag=door_marker,tag=r1] as @a[distance=..0.5] run tp @s ~0.
 execute if entity @n[tag=door_marker,tag=r1] positioned ~ ~ ~0.5 as @a[distance=..0.5] run tp @s ~0.5 ~ ~
 execute if entity @n[tag=door_marker,tag=r1] positioned ~ ~ ~-0.5 as @a[distance=..0.5] run tp @s ~0.5 ~ ~
 
-#event 0 call
+#call event 0's init func
 execute as @n[tag=door_marker] at @s if entity @s[tag=event0] run function events:0/init

@@ -25,5 +25,3 @@ execute as @a at @s if entity @n[type=marker,tag=startbutton914,distance=..6] if
 
 # execute at @e[tag=event2_handler] positioned ^ ^ ^1 run particle angry_villager
 # execute at @e[tag=marker914] positioned ^ ^ ^1 run particle angry_villager
-
-# execute at @e[tag=door914] positioned ^ ^ ^1 run particle happy_villager
