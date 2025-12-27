@@ -1,7 +1,7 @@
 #step sound + move detect
 execute if entity @s[tag=!move_checked] run function scp049:ms/move_check
 scoreboard players add @s[predicate=ms:walk_mtf] mtf_step 1
-execute if score @s mtf_step >= step* mtf_step unless block ~ ~-0.4 ~ air run function mtf_sb:ms/step
+execute if score @s mtf_step >= step* mtf_step unless block ~ ~-0.4 ~ air run function mtf:ms/step
 tag @s remove move_checked
 tag @s remove moved
 

@@ -1,5 +1,6 @@
 {
     "values": [
-        "main:main_config"
+        "main:main_config",
+        "endings:config"
     ]
 }

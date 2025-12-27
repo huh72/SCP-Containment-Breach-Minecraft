@@ -12,7 +12,7 @@
         "drop:tick",
         "guns:tick",
         "ui:tick",
-        "mtf_sb:tick",
+        "mtf:tick",
         "door_render:tick",
         "doors:handlers/tick",
 		"gates:tick",
@@ -25,6 +25,7 @@
         "guns:bullet_hole/tick",
         "elevators:tick",
         "int:tick",
+        "endings:tick",
         "inventory:tick"
     ]
 }

@@ -25,6 +25,25 @@
 				"assets/animated_java/textures/blueprint/airlockdoors/door0.png"
 			]
 		},
+		"ci": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/ci/body.json",
+				"assets/animated_java/items/blueprint/ci/head.json",
+				"assets/animated_java/items/blueprint/ci/left_arm.json",
+				"assets/animated_java/items/blueprint/ci/left_leg.json",
+				"assets/animated_java/items/blueprint/ci/right_arm.json",
+				"assets/animated_java/items/blueprint/ci/right_leg.json",
+				"assets/animated_java/models/blueprint/ci/body.json",
+				"assets/animated_java/models/blueprint/ci/head.json",
+				"assets/animated_java/models/blueprint/ci/left_arm.json",
+				"assets/animated_java/models/blueprint/ci/left_leg.json",
+				"assets/animated_java/models/blueprint/ci/right_arm.json",
+				"assets/animated_java/models/blueprint/ci/right_leg.json",
+				"assets/animated_java/textures/blueprint/ci/p90.png",
+				"assets/animated_java/textures/blueprint/ci/texture.png"
+			]
+		},
 		"door": {
 			"versionedFiles": [
 				"assets/animated_java/models/empty.json",
@@ -99,6 +118,18 @@
 				"assets/animated_java/textures/blueprint/door_check0/door0.png"
 			]
 		},
+		"elevator_doors": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/elevator_doors/base.json",
+				"assets/animated_java/items/blueprint/elevator_doors/wing0.json",
+				"assets/animated_java/items/blueprint/elevator_doors/wing1.json",
+				"assets/animated_java/models/blueprint/elevator_doors/base.json",
+				"assets/animated_java/models/blueprint/elevator_doors/wing0.json",
+				"assets/animated_java/models/blueprint/elevator_doors/wing1.json",
+				"assets/animated_java/textures/blueprint/elevator_doors/texture.png"
+			]
+		},
 		"gate": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
@@ -109,6 +140,22 @@
 				"assets/animated_java/models/blueprint/gate/wind1.json",
 				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/gate/gate.png"
+			]
+		},
+		"hid_laser": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/hid_laser/main.json",
+				"assets/animated_java/models/blueprint/hid_laser/main.json",
+				"assets/animated_java/textures/blueprint/hid_laser/texture.png"
+			]
+		},
+		"hid_turret": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/hid_turret/main.json",
+				"assets/animated_java/models/blueprint/hid_turret/main.json",
+				"assets/animated_java/textures/blueprint/hid_turret/texture.png"
 			]
 		},
 		"lever": {
@@ -141,14 +188,14 @@
 				"assets/animated_java/items/blueprint/mtf/left_leg.json",
 				"assets/animated_java/items/blueprint/mtf/right_arm.json",
 				"assets/animated_java/items/blueprint/mtf/right_leg.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/mtf/body.json",
 				"assets/animated_java/models/blueprint/mtf/head.json",
 				"assets/animated_java/models/blueprint/mtf/left_arm.json",
 				"assets/animated_java/models/blueprint/mtf/left_leg.json",
 				"assets/animated_java/models/blueprint/mtf/right_arm.json",
 				"assets/animated_java/models/blueprint/mtf/right_leg.json",
-				"assets/animated_java/models/empty.json"
+				"assets/animated_java/textures/blueprint/mtf/mtf.png",
+				"assets/animated_java/textures/blueprint/mtf/p90.png"
 			]
 		},
 		"p": {
@@ -183,6 +230,16 @@
 				"assets/animated_java/models/blueprint/scientist/r_arm.json",
 				"assets/animated_java/models/blueprint/scientist/r_leg.json",
 				"assets/animated_java/textures/blueprint/scientist/scientist.png"
+			]
+		},
+		"scp008": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scp008/base.json",
+				"assets/animated_java/items/blueprint/scp008/cap.json",
+				"assets/animated_java/models/blueprint/scp008/base.json",
+				"assets/animated_java/models/blueprint/scp008/cap.json",
+				"assets/animated_java/textures/blueprint/scp008/texture.png"
 			]
 		},
 		"scp049": {

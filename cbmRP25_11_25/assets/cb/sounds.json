@@ -1,4 +1,5 @@
 {
+	"scp008.smoke":        {"sounds": ["cb:scp/008/smoke"]},
     "scp106.emerge":        {"sounds": ["cb:scp/106/decay0", "cb:scp/106/decay1", "cb:scp/106/decay2", "cb:scp/106/decay3"]},
 	"scp106.breath":        {"sounds": ["cb:scp/106/breathing"]},
 	"scp106.kill":        {"sounds": ["cb:scp/106/kill"]},
@@ -139,5 +140,14 @@
 	"door.locksiren":		 {"sounds": ["cb:facility/doors/locksiren"]},
 	"event3.airlock":		 {"sounds": ["cb:events/3/airlock"]},
 	"event3.alarm":		 {"sounds": ["cb:events/3/alarm"]},
-	"event3_1.alarm":		 {"sounds": ["cb:events/3_1/alarm"]}
+	"event3_1.alarm":		 {"sounds": ["cb:events/3_1/alarm"]},
+	"a1.announc":        {"sounds": ["cb:endings/a1/announc"]},
+	"a1.hidturret":        {"sounds": ["cb:endings/a1/hidturret"]},
+	"a1.escape106":        {"sounds": ["cb:endings/a1/escape106"]},
+	"a1.retreat106":        {"sounds": ["cb:endings/a1/retreat106"]},
+	"a1.speech":        {"sounds": ["cb:endings/a1/a1"]},
+	"a1.ci":        {"sounds": ["cb:endings/a1/ci"]},
+	"a1.cispawn":        {"sounds": ["cb:endings/a1/cispawn"]},
+	"a1.cifinal":        {"sounds": ["cb:endings/a1/cifinal"]},
+	"a1.music":        {"sounds": ["cb:endings/a1/music"]}
 }

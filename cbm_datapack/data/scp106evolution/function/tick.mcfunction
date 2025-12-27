@@ -15,6 +15,7 @@ execute as @n[type=marker,tag=106origin] at @s run function scp106evolution:subt
 #pocket dimension shrink handler:
 execute as @e[type=armor_stand,tag=pds] at @s run function scp106evolution:pd_shrink/subtick
 
+scoreboard players remove 106 roomsize_shrink 1
 execute as @e[type=item_display,tag=pds_roomsize] at @s run function scp106evolution:room_handler/subtick
 
 # execute as @e[type=minecraft:armor_stand,tag=ps] at @s store result storage minecraft:pd_shrink scale int 1 run scoreboard players get @s pd_shrink_scale

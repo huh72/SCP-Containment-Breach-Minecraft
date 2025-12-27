@@ -16,7 +16,7 @@ function gates:config
 function steam:config_cough
 function tesla:config
 function health:config
-function mtf_sb:config
+function mtf:config
 function inventory:config
 function generation:lcz/config
 function health:config

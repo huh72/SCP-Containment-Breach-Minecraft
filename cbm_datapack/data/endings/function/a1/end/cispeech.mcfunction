@@ -1,0 +1,1 @@
+playsound cb:a1.ci ambient @a ~ ~ ~ 1.5 1 1
