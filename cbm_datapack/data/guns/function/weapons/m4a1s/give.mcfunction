@@ -1,1 +1,0 @@
-give @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=1,minecraft:custom_name="M4A1-s",minecraft:custom_data={gun:1}]

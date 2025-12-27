@@ -1,1 +1,0 @@
-give @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=3,minecraft:custom_name="TMP-tactics",minecraft:custom_data={gun:3}]
