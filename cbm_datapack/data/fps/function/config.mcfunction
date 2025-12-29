@@ -1,8 +1,12 @@
-#fps
+#effect so player can sprint
+effect give @a saturation infinite 10 true
+
+#basic move speed control
 execute as @a run attribute @s minecraft:movement_speed base set 0.085
 
 # config
 scoreboard objectives add stamina dummy
+execite as @a unless score @s stamina matches 0.. run scoreboard players set @s stamina 100
 
 scoreboard objectives add stamina_remove_cd dummy
 scoreboard objectives add stamina_remove dummy

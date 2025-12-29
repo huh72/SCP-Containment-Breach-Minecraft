@@ -18,3 +18,7 @@ scoreboard players set max card_interact_cd 15
 scoreboard objectives add door_checkpoint_timer dummy
 scoreboard players set max door_checkpoint_timer 150
 scoreboard players set alarm door_checkpoint_timer 30
+
+scoreboard objectives add door_autoclose dummy
+scoreboard players set alarm door_autoclose 90
+scoreboard players set max door_autoclose 120

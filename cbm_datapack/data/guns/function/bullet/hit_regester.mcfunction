@@ -9,7 +9,7 @@ execute positioned ^ ^ ^-0.5 run particle crit ~ ~ ~ 0 0 0 0 1 force @a
 # data modify storage gun_main blood_x0 set from entity @n[tag=bullet] Rotation[0]
 # data modify storage gun_main blood_y0 set from entity @n[tag=bullet] Rotation[1]
 
-execute as @n[tag=bullet] at @s anchored eyes run function guns:bullet/blood/spawn
+# execute as @n[tag=bullet] at @s anchored eyes run function guns:bullet/blood/spawn
 
 # tellraw @a [{"text":"Hit regester! DAMAGE - "},{"score":{"name":"@n[tag=bullet]","objective":"damage"}},{"text":", BL - "},{"score":{"name":"@n[tag=bullet]","objective":"v"}}]
 

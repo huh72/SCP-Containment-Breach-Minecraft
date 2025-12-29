@@ -10,4 +10,7 @@ scoreboard players remove @e[type=armor_stand,tag=blooddrip,scores={blooddrip=1.
 #func
 execute as @e[type=armor_stand,tag=blooddrip,scores={blooddrip=0}] run function health:removeblooddrip
 
-execute as @e[type=armor_stand,tag=blooddrip,nbt={OnGround:1b}] run data modify entity @s Marker set value 1b
+#custom fall physics
+execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.65 ~ air run tp @s ~ ~-0.65 ~
+execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.09 ~ air run tp @s ~ ~-0.09 ~
+execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.01 ~ air run tp @s ~ ~-0.01 ~

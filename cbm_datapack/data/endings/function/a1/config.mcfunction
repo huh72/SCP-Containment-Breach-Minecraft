@@ -9,6 +9,8 @@ scoreboard players set .106stopRotation.time e 360
 scoreboard players set .hidShoot.time e 490
 scoreboard players set .hidEndShoot.time e 620
 
+scoreboard players set .music.time.max e 880
+scoreboard players set .music.time e 0
 
 scoreboard objectives add gameend dummy
 scoreboard players set @a gameend -1

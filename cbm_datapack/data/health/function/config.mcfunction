@@ -4,6 +4,8 @@ scoreboard players set classd health 100
 scoreboard objectives add bleeding dummy
 scoreboard objectives add bleeding_damage dummy
 
+execite as @a unless score @s blooddrip_cd mathces 0.. run scoreboard player set @s blooddrip_cd 1
+
 #
 scoreboard objectives add bleeding_level_up_cd dummy
 scoreboard objectives add bleeding_damage_cd dummy

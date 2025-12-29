@@ -1,10 +1,11 @@
 #timer
 scoreboard players add .timer e 1
+execute unless score .music.time e matches ..0 run scoreboard players remove .music.time e 1
 
 #start ending
 execute at @n[tag=aj.hid_turret.root] if score .timer e matches 1 run playsound cb:a1.escape106 ambient @a[distance=..96] ~ ~ ~ 1 1 1
 execute as @e[tag=a1.mtfspawnpoint] at @s if score .timer e matches 1 run function mtf:spawn {"NoAI":"1","additionaltag":"surface","rotatedAs":"@n[tag=a1.mtfspawnpoint]"}
-execute if score .timer e matches 1 run playsound cb:a1.music ambient @a ~ ~ ~ 1 1 1
+execute if score .timer e matches 1 run scoreboard players set .music.time e 1
 
 #not hostile 106 appear event
 execute if score .timer e = .106appear.time e run function endings:a1/events/106appear
@@ -38,18 +39,13 @@ execute at @n[tag=aj.hid_laser.root] if score .timer e > .hidShoot.time e if sco
 #106 retreat timewhen turret stops shooting
 execute if score .timer e = .hidEndShoot.time e at @n[tag=106origin] run function endings:a1/events/106retreat
 execute if score .timer e = .hidEndShoot.time e as @e[tag=mtf,tag=surface] run function mtf:switchhostility {"s":"@s"}
+execute if score .timer e = .hidEndShoot.time e as @e[tag=mtf,tag=surface] run data modify entity @s wander_target set from entity @p[tag=!dead] Pos
 
-
+#repeating music handler
+execute if score .music.time e matches 0 run function endings:a1/music
 
 # final ending scene handler
 execute as @a[scores={gameend=0..}] run function endings:a1/end/tick
 
 #spawn ci solders
 execute at @n[tag=a1.endingpoint] as @a[distance=..1.25,tag=!dead,scores={gameend=-1}] run function endings:a1/end/cispawn
-
-#start ci's speech for playert
-execute as @a[tag=!dead] if score @s gameend = .cispeech.time gameend run function endings:a1/end/cispeech
-
-#end game for player
-execute as @a[tag=!dead] if score @s gameend = .gameend.time gameend run function endings:a1/end/final
-execute as @a[tag=!dead] if score @s gameend > .gameend.time gameend run scoreboard players set @s blink_timer 0

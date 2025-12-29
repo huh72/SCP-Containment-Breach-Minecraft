@@ -1,6 +1,5 @@
-# say @s death!
+function health:reset_health
 scoreboard players set @s spot_level 0
-scoreboard players set @s bleeding 0
 scoreboard players set @s health 1000
 tag @s remove tesla_trigger
 tag @s add dead

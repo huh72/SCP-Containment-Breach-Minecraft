@@ -1,6 +1,7 @@
-# bullet' movement 
-tp @s ^ ^ ^4
+# Psssst! 'hit' tag means ~ vulnerable to bullet damage
 
+# bullet's movement 
+tp @s ^ ^ ^4
 
 #target (tag=hit) hit detection
 execute positioned ^ ^ ^ unless score @s global_num = @n[tag=hit] global_num positioned ~-0.15 ~-0.15 ~-0.15 as @e[tag=hit,dx=0] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] positioned ~0.9 ~0.9 ~0.9 run function guns:bullet/hit_regester

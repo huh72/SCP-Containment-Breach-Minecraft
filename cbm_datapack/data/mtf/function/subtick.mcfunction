@@ -23,10 +23,14 @@ tag @s[predicate=!mtf:idle] remove idle
 tag @s[predicate=!mtf:walk] remove walk
 
 
+#door interact
+# execute as @n[tag=door_marker,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open
+# execute as @n[tag=door_marker,tag=card,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open_card
+
+
 # sounds (beep & breath)
 #breath sound
 execute if score @s breath_cd matches 0 run function mtf:breath
-stopsound @a[distance=12..] ambient cb:mtf.breath
 #beep sound
 execute if score @s beep_cd matches 0 run function mtf:beep
 
@@ -37,4 +41,3 @@ execute if score @s health matches ..0 run function mtf:despawn
 
 #clear
 data modify entity @n[tag=aj.mtf.root] Rotation[1] set value 0
-tag @a remove mtf_target
