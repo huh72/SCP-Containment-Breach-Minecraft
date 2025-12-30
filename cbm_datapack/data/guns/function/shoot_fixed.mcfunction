@@ -1,5 +1,6 @@
 #shot sound
 playsound cb:p90.shot_in ambient @a[distance=..20] ~ ~ ~ 1.25 1 1
+execute as @n[tag=mtf] if entity @s[tag=surface] at @s run playsound cb:p90.shot_in ambient @a[distance=20..64] ~ ~ ~ 1.25 1 1
 
 
 #???
@@ -9,7 +10,7 @@ execute store result storage gun_main bullet_num int 1 run scoreboard players ge
 execute store result storage minecraft:gun_main damage int 1 run scoreboard players get damage stat_p90 
 
 #bullet start
-$execute as @s at @s anchored eyes positioned ^ ^ ^1 rotated ~$(acc0) ~$(acc1) run function guns:bullet/spawn with storage minecraft:gun_main
+$execute as @s at @s anchored eyes positioned ~ ~1.75 ~ positioned ^ ^ ^1 rotated ~$(acc0) ~$(acc1) run function guns:bullet/spawn with storage minecraft:gun_main
 
 #
 # /data modify entity 6f88f8eb-cfa3-44bf-a621-52b3e7d753e7 Pos set from storage game:player Spawn{target:'[{"selector":"@p"}]'}.location

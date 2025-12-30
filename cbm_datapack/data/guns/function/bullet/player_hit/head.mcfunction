@@ -2,7 +2,7 @@ particle block{block_state:{Name:redstone_block}} ~ ~ ~ 0 0 0 0 25
 
 # playsound minecraft:block.anvil.place record @a ~ ~ ~ 0.25 1.5 1
 
-say head!
+# say head!
 
 #damaging - head
 # * 4 | * 2

@@ -80,7 +80,7 @@
 	"scp1499.ambient":        {"sounds": ["cb:scp/1499/1499"]},
 	"general.save":        {"sounds": ["cb:general/save"]},
 	"p90.shot_out":        {"sounds": ["cb:guns/p90/shoot_out_01","cb:guns/p90/shoot_out_02","cb:guns/p90/shoot_out_03","cb:guns/p90/shoot_out_04","cb:guns/p90/shoot_out_05","cb:guns/p90/shoot_out_06","cb:guns/p90/shoot_out_07"]},
-	"p90.shot_in":        {"sounds": ["cb:guns/p90/shoot_in_01","cb:guns/p90/shoot_in_02","cb:guns/p90/shoot_in_03","cb:guns/p90/shoot_in_04","cb:guns/p90/shoot_in_05","cb:guns/p90/shoot_in_06","cb:guns/p90/shoot_in_07"]},
+	"p90.shot_in":        {"sounds": ["cb:guns/p90/shoot_in_01"]},
 	"mtf.breath":        {"sounds": ["cb:character/mtf/breath"]},
 	"mtf.beep":        {"sounds": ["cb:character/mtf/beep"]},
 	"mtf.step":        {"sounds": ["cb:character/mtf/step0","cb:character/mtf/step1","cb:character/mtf/step2"]},
@@ -149,5 +149,12 @@
 	"a1.ci":        {"sounds": ["cb:endings/a1/ci"]},
 	"a1.cispawn":        {"sounds": ["cb:endings/a1/cispawn"]},
 	"a1.cifinal":        {"sounds": ["cb:endings/a1/cifinal"]},
-	"a1.music":        {"sounds": ["cb:endings/a1/music"]}
+	"a1.music":        {"sounds": ["cb:endings/a1/music"]},
+	"a2.classdfound":        {"sounds": ["cb:endings/a2/classdfound"]},
+	"b1.battle682":        {"sounds": ["cb:endings/b1/battle682"]},
+	"b1.alphawarhead":        {"sounds": ["cb:endings/b1/alphawarhead"]},
+	"b1.nuke_explosion_far":        {"sounds": ["cb:endings/b1/nuke_explosion_far"]},
+	"b1.nuke_explosion":        {"sounds": ["cb:endings/b1/nuke_explosion"]},
+	"b1.music":        {"sounds": ["cb:endings/b1/music"]},
+	"b1.siren":        {"sounds": ["cb:endings/b1/siren"]}
 }

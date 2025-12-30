@@ -1,5 +1,3 @@
-
-
 scoreboard players set air0 v 1
 
 execute if score air0 v matches 1 positioned ^ ^ ^ run function mtf:player_interact/per_block
@@ -35,3 +33,33 @@ execute if score air0 v matches 1 positioned ^ ^ ^14.5 run function mtf:player_i
 execute if score air0 v matches 1 positioned ^ ^ ^15 run function mtf:player_interact/per_block
 execute if score air0 v matches 1 positioned ^ ^ ^15.5 run function mtf:player_interact/per_block
 execute if score air0 v matches 1 positioned ^ ^ ^16 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^16.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^17 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^17.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^18 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^18.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^19 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^19.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^20 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^20.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^21 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^21.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^22 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^23.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^24 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^24.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^25 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^25.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^26 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^26.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^27 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^27.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^28 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^28.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^29 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^29.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^30 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^30.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^31 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^31.5 run function mtf:player_interact/per_block
+execute if score air0 v matches 1 positioned ^ ^ ^32 run function mtf:player_interact/per_block

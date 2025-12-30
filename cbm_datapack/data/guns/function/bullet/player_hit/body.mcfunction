@@ -1,7 +1,7 @@
 particle block{block_state:{Name:redstone_block}} ~ ~ ~ 0 0 0 0 10
 # say = body shot!
 
-say body!
+# say body!
 
 #damaging - body
 # / 2 | * 2
