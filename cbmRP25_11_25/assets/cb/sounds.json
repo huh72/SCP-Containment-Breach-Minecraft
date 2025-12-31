@@ -158,5 +158,7 @@
 	"b1.music":        {"sounds": ["cb:endings/b1/music"]},
 	"b1.siren":        {"sounds": ["cb:endings/b1/siren"]},
 	"b2.shot":        {"sounds": ["cb:endings/b2/shot"]},
-	"b2.alphawarheadfail":        {"sounds": ["cb:endings/b2/alphawarheadfail"]}
+	"b2.alphawarheadfail":        {"sounds": ["cb:endings/b2/alphawarheadfail"]},
+	"i.music":        {"sounds": ["cb:int/music"]},
+	"i.ambient":        {"sounds": ["cb:int/ambient/0", "cb:int/ambient/1", "cb:int/ambient/2", "cb:int/ambient/3", "cb:int/ambient/4"]}
 }

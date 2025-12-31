@@ -1,0 +1,1 @@
+execute unless score .status i matches -1 run function int:subtick
