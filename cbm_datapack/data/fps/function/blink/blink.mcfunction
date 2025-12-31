@@ -1,4 +1,4 @@
-scoreboard players operation @s blink_timer = max blink_timer
+scoreboard players operation @s[tag=can_blink] blink_timer = max blink_timer
 tag @s add blink
 
 # REQUEST -> TITLE
