@@ -1,1 +1,0 @@
-execute if score gameStart v0 matches 1 run scoreboard players add gameIntTimer v0 1

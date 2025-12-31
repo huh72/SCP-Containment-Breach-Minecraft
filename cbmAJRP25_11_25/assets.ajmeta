@@ -25,6 +25,16 @@
 				"assets/animated_java/textures/blueprint/airlockdoors/door0.png"
 			]
 		},
+		"celldoor": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/celldoor/base.json",
+				"assets/animated_java/items/blueprint/celldoor/door.json",
+				"assets/animated_java/models/blueprint/celldoor/base.json",
+				"assets/animated_java/models/blueprint/celldoor/door.json",
+				"assets/animated_java/textures/blueprint/celldoor/texture.png"
+			]
+		},
 		"ci": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [

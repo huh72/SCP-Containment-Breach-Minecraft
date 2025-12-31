@@ -4,6 +4,7 @@
 		"animated_java:914_button/on_load",
 		"animated_java:914_start/on_load",
 		"animated_java:airlockdoors/on_load",
+		"animated_java:celldoor/on_load",
 		"animated_java:ci/on_load",
 		"animated_java:door_card0/on_load",
 		"animated_java:door_check0/on_load",

@@ -1,0 +1,118 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/celldoor/texture",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [5.05263, 29.89474, 4.58947],
+			"to": [10.94737, 32, 4.58947],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 30.31579, 4.16842]
+			},
+			"faces": {
+				"north": {
+					"uv": [14.25, 0, 16, 0.625],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 0, 0, 0.625],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [14.25, 0, 16, 0.625],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [0, 0, 0, 0.625],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0, 0, 1.75, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0, 0, 1.75, 0],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"from": [1.26737, 8, 6.31579],
+			"to": [1.26737, 28.21053, 9.68421],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [0.84211, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 0, 6],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 6, 1, 12],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 0, 0, 6],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [1, 6, 2, 12],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0, 1, 0, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0, 0, 0, 1],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"from": [14.73263, 8, 6.31579],
+			"to": [14.73263, 28.21053, 9.68421],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [14.31579, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 0, 6],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [2, 6, 3, 12],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 0, 0, 6],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [1, 6, 2, 12],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0, 1, 0, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0, 0, 0, 1],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

@@ -156,5 +156,7 @@
 	"b1.nuke_explosion_far":        {"sounds": ["cb:endings/b1/nuke_explosion_far"]},
 	"b1.nuke_explosion":        {"sounds": ["cb:endings/b1/nuke_explosion"]},
 	"b1.music":        {"sounds": ["cb:endings/b1/music"]},
-	"b1.siren":        {"sounds": ["cb:endings/b1/siren"]}
+	"b1.siren":        {"sounds": ["cb:endings/b1/siren"]},
+	"b2.shot":        {"sounds": ["cb:endings/b2/shot"]},
+	"b2.alphawarheadfail":        {"sounds": ["cb:endings/b2/alphawarheadfail"]}
 }
