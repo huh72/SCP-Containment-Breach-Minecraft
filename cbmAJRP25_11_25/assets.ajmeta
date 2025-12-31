@@ -152,6 +152,25 @@
 				"assets/animated_java/textures/blueprint/gate/gate.png"
 			]
 		},
+		"guard": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/guard/body.json",
+				"assets/animated_java/items/blueprint/guard/head.json",
+				"assets/animated_java/items/blueprint/guard/left_arm.json",
+				"assets/animated_java/items/blueprint/guard/left_leg.json",
+				"assets/animated_java/items/blueprint/guard/right_arm.json",
+				"assets/animated_java/items/blueprint/guard/right_leg.json",
+				"assets/animated_java/models/blueprint/guard/body.json",
+				"assets/animated_java/models/blueprint/guard/head.json",
+				"assets/animated_java/models/blueprint/guard/left_arm.json",
+				"assets/animated_java/models/blueprint/guard/left_leg.json",
+				"assets/animated_java/models/blueprint/guard/right_arm.json",
+				"assets/animated_java/models/blueprint/guard/right_leg.json",
+				"assets/animated_java/textures/blueprint/guard/guard.png",
+				"assets/animated_java/textures/blueprint/guard/p90_storm512.png"
+			]
+		},
 		"hid_laser": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [

@@ -13,6 +13,7 @@
 		"animated_java:door914/on_load",
 		"animated_java:elevator_doors/on_load",
 		"animated_java:gate/on_load",
+		"animated_java:guard/on_load",
 		"animated_java:hid_laser/on_load",
 		"animated_java:hid_turret/on_load",
 		"animated_java:lever/on_load",
