@@ -13,6 +13,7 @@
         "guns:tick",
         "ui:tick",
         "mtf:tick",
+        "guard:tick",
         "door_render:tick",
         "doors:handlers/tick",
 		"gates:tick",

@@ -5,3 +5,4 @@ execute on passengers if entity @s[tag=aj.guard.node.body] run data merge entity
 execute on passengers if entity @s[tag=aj.guard.node.left_arm] run data merge entity @s { transformation: [-1f,0f,0f,0.4063f,0f,1f,0f,1.25f,0f,0f,-1f,-0.0125f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.guard.node.right_arm] run data merge entity @s { transformation: [-1f,0f,0f,-0.4062f,0f,1f,0f,1.3125f,0f,0f,-1f,-0.0125f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.guard.node.head] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,1.6875f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
+execute on passengers if entity @s[tag=aj.guard.node.paper] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,1.3125f,0f,0f,-1f,-0.0625f,0f,0f,0f,1f], start_interpolation: -1 }

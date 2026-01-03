@@ -3,3 +3,4 @@ tag @s remove aj.guard.animation.walk.playing
 tag @s remove aj.guard.animation.idle.playing
 tag @s remove aj.guard.animation.idle2.playing
 tag @s remove aj.guard.animation.walk2.playing
+tag @s remove aj.guard.animation.paper.playing

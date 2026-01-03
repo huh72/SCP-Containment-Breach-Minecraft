@@ -1,5 +1,7 @@
 execute as @a[tag=caster] run function inventory:count_inventory_items
 
+execute if entity @s[tag=start] run function int:events/pickeduppaper
+
 #giving
 execute if entity @s[tag=card1] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card1
 execute if entity @s[tag=card2] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card2

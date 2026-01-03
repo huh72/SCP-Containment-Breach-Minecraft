@@ -1,5 +1,5 @@
 $summon armor_stand ~ ~ ~ {Tags:['drop','new','paper','$(state)'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
-item replace entity @n[tag=new] armor.head with paper[item_model="cb:yellowpaper"]
+item replace entity @n[tag=new] armor.head with paper[item_model="cb:paper_"]
 
 execute as @n[tag=new,tag=914] at @s run function spawn:drop/case914
 

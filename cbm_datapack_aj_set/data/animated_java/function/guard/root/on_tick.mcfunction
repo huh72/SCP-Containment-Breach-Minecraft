@@ -4,4 +4,5 @@ execute if entity @s[tag=aj.guard.animation.walk.playing] run function animated_
 execute if entity @s[tag=aj.guard.animation.idle.playing] run function animated_java:guard/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.guard.animation.idle2.playing] run function animated_java:guard/animations/idle2/zzz/on_tick
 execute if entity @s[tag=aj.guard.animation.walk2.playing] run function animated_java:guard/animations/walk2/zzz/on_tick
+execute if entity @s[tag=aj.guard.animation.paper.playing] run function animated_java:guard/animations/paper/zzz/on_tick
 execute on passengers run rotate @s ~ ~
