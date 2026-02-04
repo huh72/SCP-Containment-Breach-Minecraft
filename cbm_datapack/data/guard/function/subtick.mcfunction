@@ -6,21 +6,11 @@ data modify entity @n[tag=guardaj] Rotation[0] set from entity @s Rotation[0]
 function guard:player_interact/define_targets
 
 #switch idle and walk animations
-execute if entity @s[predicate=mtf:idle,tag=!idle] as @n[tag=guardaj] run function animated_java:guard/animations/idle2/play
-execute if entity @s[predicate=mtf:idle,tag=!idle] as @n[tag=guardaj] run function animated_java:guard/animations/walk2/stop
+execute as @n[tag=guardaj] run function animated_java:guard/animations/idle2/pause
+execute as @n[tag=guardaj] run function animated_java:guard/animations/walk2/pause
 
-execute if entity @s[predicate=mtf:walk,tag=!walk] as @n[tag=guardaj] run function animated_java:guard/animations/idle2/stop
-execute if entity @s[predicate=mtf:walk,tag=!walk] as @n[tag=guardaj] run function animated_java:guard/animations/walk2/play
-
-tag @s add idle
-tag @s add walk
-tag @s[predicate=!mtf:idle] remove idle
-tag @s[predicate=!mtf:walk] remove walk
-
-
-#door interact
-# execute as @n[tag=door_marker,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open
-# execute as @n[tag=door_marker,tag=card,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open_card
+execute if entity @s[predicate=mtf:idle,tag=!i.paper] as @n[tag=guardaj] run function animated_java:guard/animations/idle2/resume
+execute if entity @s[predicate=mtf:walk,tag=!i.paper] as @n[tag=guardaj] run function animated_java:guard/animations/walk2/resume
 
 
 #death func

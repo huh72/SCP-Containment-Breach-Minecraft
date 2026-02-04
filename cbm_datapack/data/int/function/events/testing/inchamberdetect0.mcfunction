@@ -1,0 +1,1 @@
+execute positioned ~-4 ~ ~-7 as @a[dx=10,dy=0,dz=13] run scoreboard players add @s v 1

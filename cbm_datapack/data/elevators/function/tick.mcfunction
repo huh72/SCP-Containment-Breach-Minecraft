@@ -1,1 +1,0 @@
-execute as @e[tag=elevator_doors] at @s run function elevators:subtick

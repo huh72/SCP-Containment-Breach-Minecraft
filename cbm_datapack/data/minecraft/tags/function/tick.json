@@ -1,6 +1,7 @@
 {
     "values": [
         "fps:tick",
+        "int:tick",
         "use:tick",
         "fall:tick",
         "main:tick",
@@ -24,8 +25,6 @@
         "scps:tick",
         "guns:bullet/tick",
         "guns:bullet_hole/tick",
-        "elevators:tick",
-        "int:tick",
         "endings:tick",
         "inventory:tick"
     ]

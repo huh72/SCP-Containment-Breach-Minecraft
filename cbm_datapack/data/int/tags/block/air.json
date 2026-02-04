@@ -1,0 +1,13 @@
+{
+  "values":[
+	"minecraft:air",
+	"minecraft:cave_air",
+	"#minecraft:buttons",
+	"#minecraft:pressure_plates",
+	"minecraft:chain",
+	"minecraft:iron_bars",
+	"#minecraft:signs",
+	"minecraft:light",
+	"minecraft:gray_carpet"
+  ]
+}
