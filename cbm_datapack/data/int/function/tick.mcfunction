@@ -1,4 +1,4 @@
-#all other handler
+#all other handler.
 execute unless score .status i matches -1 unless score .status i matches 11 run function int:subtick
 #after breach handler
 execute if score .status i matches 11 run function int:events/afterbreach/subtick
