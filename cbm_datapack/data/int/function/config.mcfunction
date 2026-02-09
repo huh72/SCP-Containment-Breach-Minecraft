@@ -103,7 +103,7 @@ scoreboard players set .final.time i 1830
 scoreboard players set .timer.sound i -1
 scoreboard players set .ab.sound0 i 0
 scoreboard players set .ab.sound1 i 94
-scoreboard players set .ab.sound2 i 223
+scoreboard players set .ab.sound2 i 212
 scoreboard players set .ab.sound3 i 360
 scoreboard players set .ab.sound4 i 542
 scoreboard players set .ab.sound5 i 660

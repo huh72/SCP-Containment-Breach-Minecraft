@@ -196,16 +196,6 @@
 	"i.balcony.alert":        {"sounds": ["cb:int/guards/balcony/alert0", "cb:int/guards/balcony/alert1"]},
 	"i.balcony.shit":        {"sounds": ["cb:int/guards/balcony/ohshit"]},
 	"i.balcony.wtf":        {"sounds": ["cb:int/guards/balcony/wtf0", "cb:int/guards/balcony/wtf1"]},
-	"start.breach.sound0":        {"sounds": ["cb:start/0"]},
-	"start.breach.sound1":        {"sounds": ["cb:start/1"]},
-	"start.breach.sound2":        {"sounds": ["cb:start/2"]},
-	"start.breach.sound3":        {"sounds": ["cb:start/3"]},
-	"start.breach.sound4":        {"sounds": ["cb:start/4"]},
-	"start.breach.sound5":        {"sounds": ["cb:start/5"]},
-	"start.breach.sound6":        {"sounds": ["cb:start/6"]},
-	"start.breach.sound7":        {"sounds": ["cb:start/7"]},
-	"start.breach.sound8":        {"sounds": ["cb:start/8"]},
-	"start.breach.sound9":        {"sounds": ["cb:start/9"]},
-	"start.breach.sound10":        {"sounds": ["cb:start/10"]}
+	"start.breach":        {"sounds": ["cb:start/whole"]}
 }
 
