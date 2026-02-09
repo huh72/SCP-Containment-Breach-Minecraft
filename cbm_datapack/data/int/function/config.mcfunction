@@ -89,9 +89,9 @@ scoreboard players set .cd0.approach2.stop.time i 1490
 scoreboard players set .cd0.phrase0.time i 1560
 
 #
-scoreboard players set .173move0.time i 1730
-scoreboard players set .173move1.time i 1745
-scoreboard players set .173move2.time i 1760
+scoreboard players set .173move0.time i 1725
+scoreboard players set .173move1.time i 1740
+scoreboard players set .173move2.time i 1755
 
 scoreboard players set .darkness.time i 1810
 scoreboard players set .final.time i 1830
