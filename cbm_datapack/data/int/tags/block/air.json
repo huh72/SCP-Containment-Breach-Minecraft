@@ -8,6 +8,7 @@
 	"minecraft:iron_bars",
 	"#minecraft:signs",
 	"minecraft:light",
-	"minecraft:gray_carpet"
+	"minecraft:gray_carpet",
+	"minecraft:lightning_rod"
   ]
 }

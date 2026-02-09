@@ -30,6 +30,15 @@ scoreboard players set .phrase0.time i 270
 #time after which guards will go to path point 0
 scoreboard players set .goto0.time i 360
 
+#exitrefuse phrase timing
+scoreboard players set .exitrefuse.time i 500
+
+#close door timing
+scoreboard players set .gas_chamber.time i 700
+
+#gas timing
+scoreboard players set .gas.time i 705
+
 #tset time tp 1000 after reaching room near chamber
 scoreboard players set 1000 i 1000
 
@@ -80,9 +89,9 @@ scoreboard players set .cd0.approach2.stop.time i 1490
 scoreboard players set .cd0.phrase0.time i 1560
 
 #
-scoreboard players set .173move0.time i 1720
-scoreboard players set .173move1.time i 1735
-scoreboard players set .173move2.time i 1750
+scoreboard players set .173move0.time i 1730
+scoreboard players set .173move1.time i 1745
+scoreboard players set .173move2.time i 1760
 
 scoreboard players set .darkness.time i 1810
 scoreboard players set .final.time i 1830

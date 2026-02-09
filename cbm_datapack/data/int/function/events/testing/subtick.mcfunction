@@ -1,13 +1,18 @@
 #detect if all players inside the chamber
 # execute at @n[tag=i.inGateDetector] if score .status i matches 7 run function int:events/testing/inchamberdetect
 #and run the function
-execute if entity @a[scores={v=2},tag=!dead] if score .status i matches 7 run function int:events/testing/start
+execute if entity @a[scores={v=1..2},tag=!dead] if score .status i matches 7 run function int:events/testing/start
 
 #approach... timing
 execute if score .timer i = .approach.sound.time i run playsound cb:i.franklin.approach ambient @a ~ ~100 ~ 100 1 1
 
 #gate re-open 
 execute if score .timer i = .gate.open.time i at @n[tag=i.lastRoomPoint] as @n[tag=gate] run function animated_java:gate/animations/openclosetoggle/play
+
+#alert by franklin
+execute as @a[tag=!dead] if score @s v matches 0 at @n[tag=balcony,tag=!alerted0] if score .status i matches 7 run function int:events/testing/alert0
+#alert by balcony guard
+execute as @a[tag=!dead] if score @s v matches 0 at @n[tag=balcony,tag=!alerted1] if score .status i matches 8 run function int:events/testing/alert1
 
 #stop cd0 approach and play breach sound
 execute as @n[tag=i.0] at @s if score .timer i > .cd0.approach2.time i if score .timer i < .cd0.approach2.stop.time i if score .status i matches 8 run function int:path/d/forward

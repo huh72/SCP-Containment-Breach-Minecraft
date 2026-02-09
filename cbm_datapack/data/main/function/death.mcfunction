@@ -13,6 +13,7 @@ data modify entity @n[tag=new,limit=1] Rotation set from entity @s Rotation
 execute at @n[tag=new] run tp @n[tag=new] ~ ~ ~ ~180 ~
 
 execute if entity @s[tag=d_mtf] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse1"]
+execute if entity @s[tag=d_guard] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse1"]
 execute if entity @s[tag=d_049] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_1048a] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_939] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
@@ -21,6 +22,7 @@ execute if entity @s[tag=d_tesla] run item replace entity @n[tag=new] armor.head
 execute if entity @s[tag=d_173] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_fall] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_096] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
+execute if entity @s[tag=d_gas] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 
 data modify entity @n[tag=new,limit=1] Marker set value 1b
 tag @e[tag=new] remove new

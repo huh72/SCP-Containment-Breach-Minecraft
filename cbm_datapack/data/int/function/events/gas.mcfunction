@@ -1,0 +1,1 @@
+execute at @n[tag=i.cellcenter] positioned ~ ~2.75 ~1 run particle minecraft:campfire_cosy_smoke ~ ~ ~ 0.25 0.5 0.25 0.065 3 force

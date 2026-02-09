@@ -13,4 +13,6 @@ execute if score .conv i matches 3 at @n[tag=guard,tag=!ulgrin] run playsound cb
 execute if score .conv i matches 4 at @n[tag=ulgrin] run playsound cb:i.4a ambient @a ~ ~100 ~ 100 1 1
 execute if score .conv i matches 4 at @n[tag=guard,tag=!ulgrin] run playsound cb:i.4b ambient @a ~ ~100 ~ 100 1 1
 
+execute at @n[tag=musicguard] positioned ~ ~1.75 ~ run playsound cb:i.guard.music ambient @a ~ ~2 ~ 0.15 1 1
+
 tag @n[tag=i.pathpoint1] add passed
