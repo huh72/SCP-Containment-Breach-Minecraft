@@ -95,20 +95,3 @@ scoreboard players set .173move2.time i 1755
 
 scoreboard players set .darkness.time i 1810
 scoreboard players set .final.time i 1830
-
-
-
-
-### after breach sound timings =============================
-scoreboard players set .timer.sound i -1
-scoreboard players set .ab.sound0 i 0
-scoreboard players set .ab.sound1 i 94
-scoreboard players set .ab.sound2 i 212
-scoreboard players set .ab.sound3 i 360
-scoreboard players set .ab.sound4 i 542
-scoreboard players set .ab.sound5 i 660
-scoreboard players set .ab.sound6 i 820
-scoreboard players set .ab.sound7 i 950
-scoreboard players set .ab.sound8 i 1020
-scoreboard players set .ab.sound9 i 1105
-scoreboard players set .ab.sound10 i 1250
