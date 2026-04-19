@@ -1,0 +1,1 @@
+playsound cb:interact.button ambient @a ~ ~ ~ 1 1 1
