@@ -13,8 +13,10 @@ execute as @e[tag=173] at @s positioned ~-114 ~ ~152 run function generation:lcz
 execute as @e[tag=173] at @s positioned ~-133 ~ ~152 run function generation:lcz/check {"pos":"913"}
 execute as @e[tag=173] at @s positioned ~-152 ~ ~152 run function generation:lcz/check {"pos":"914"}
 
-execute as @e[tag=173] at @s run place template lcz:start0 ~3 ~ ~ counterclockwise_90
-execute as @e[tag=173] at @s run place template lcz:start1 ~34 ~4 ~-13 counterclockwise_90
+execute as @e[tag=173] at @s run place template lcz:start0 ~2 ~ ~ counterclockwise_90
+execute as @e[tag=173] at @s run place template lcz:start1 ~33 ~4 ~-13 counterclockwise_90
+#in start0 at gateSpawnpoint spawn gate model
+execute at @n[tag=gateSpawnpoint] run function animated_java:gate/summon with storage aj:temp
 
 schedule function generation:lcz/int_room_gen/main 1t replace
 

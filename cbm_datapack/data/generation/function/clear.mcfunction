@@ -1,10 +1,11 @@
 #removing updated doors
-function animated_java:door0/remove/all
+# function animated_java:door0/remove/all
+execute as @e[tag=door_marker,tag=!i] run kill @s
 function animated_java:door_check0/remove/all
 function animated_java:door_card0/remove/all
 function animated_java:lever/remove/all
-kill @e[tag=door_empty]
-kill @e[tag=door_marker]
+kill @e[tag=door_empty,tag=!i]
+kill @e[tag=door_marker,tag=!i]
 kill @e[tag=door_marker0]
 kill @e[type=text_display]
 kill @e[tag=door_marker_check0]
