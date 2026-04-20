@@ -196,6 +196,10 @@
 	"i.balcony.alert":        {"sounds": ["cb:int/guards/balcony/alert0", "cb:int/guards/balcony/alert1"]},
 	"i.balcony.shit":        {"sounds": ["cb:int/guards/balcony/ohshit"]},
 	"i.balcony.wtf":        {"sounds": ["cb:int/guards/balcony/wtf0", "cb:int/guards/balcony/wtf1"]},
-	"start.breach":        {"sounds": ["cb:start/whole"]}
+	"start.breach":        {"sounds": ["cb:start/whole"]},
+	"scp1048.greet":        {"sounds": ["cb:scp/1048/greet"]},
+	"scp1048a.growth":        {"sounds": ["cb:scp/1048a/growth"]},
+	"scp1048a.shriek":        {"sounds": ["cb:scp/1048a/shriek"]},
+	"scp1048a.death":        {"sounds": ["cb:scp/1048a/death"]}
 }
 
