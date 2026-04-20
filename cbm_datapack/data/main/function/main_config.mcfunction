@@ -1,5 +1,6 @@
-tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 03/12/2025 on Minecraft version 1.21.5","color":"yellow"}]
+tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 19/04/2026 on Minecraft version 1.21.5","color":"yellow"}]
 
+function elevators:config
 function ms:config
 function fps:config
 function ini:config
