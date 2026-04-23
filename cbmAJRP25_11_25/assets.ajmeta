@@ -400,6 +400,24 @@
 				"assets/animated_java/textures/blueprint/scp096/scp096.png"
 			]
 		},
+		"scp1048a": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scp1048a/body.json",
+				"assets/animated_java/items/blueprint/scp1048a/head.json",
+				"assets/animated_java/items/blueprint/scp1048a/left_arm.json",
+				"assets/animated_java/items/blueprint/scp1048a/left_leg.json",
+				"assets/animated_java/items/blueprint/scp1048a/right_arm.json",
+				"assets/animated_java/items/blueprint/scp1048a/right_leg.json",
+				"assets/animated_java/models/blueprint/scp1048a/body.json",
+				"assets/animated_java/models/blueprint/scp1048a/head.json",
+				"assets/animated_java/models/blueprint/scp1048a/left_arm.json",
+				"assets/animated_java/models/blueprint/scp1048a/left_leg.json",
+				"assets/animated_java/models/blueprint/scp1048a/right_arm.json",
+				"assets/animated_java/models/blueprint/scp1048a/right_leg.json",
+				"assets/animated_java/textures/blueprint/scp1048a/texture2.png"
+			]
+		},
 		"scp106": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
@@ -418,6 +436,24 @@
 				"assets/animated_java/models/blueprint/scp106/right_leg.json",
 				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/scp106/scp106.png"
+			]
+		},
+		"scp1499_1": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scp1499_1/body.json",
+				"assets/animated_java/items/blueprint/scp1499_1/head.json",
+				"assets/animated_java/items/blueprint/scp1499_1/left_arm.json",
+				"assets/animated_java/items/blueprint/scp1499_1/left_leg.json",
+				"assets/animated_java/items/blueprint/scp1499_1/right_arm.json",
+				"assets/animated_java/items/blueprint/scp1499_1/right_leg.json",
+				"assets/animated_java/models/blueprint/scp1499_1/body.json",
+				"assets/animated_java/models/blueprint/scp1499_1/head.json",
+				"assets/animated_java/models/blueprint/scp1499_1/left_arm.json",
+				"assets/animated_java/models/blueprint/scp1499_1/left_leg.json",
+				"assets/animated_java/models/blueprint/scp1499_1/right_arm.json",
+				"assets/animated_java/models/blueprint/scp1499_1/right_leg.json",
+				"assets/animated_java/textures/blueprint/scp1499_1/scp1499_1.png"
 			]
 		},
 		"scp939": {
