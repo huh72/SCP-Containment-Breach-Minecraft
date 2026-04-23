@@ -6,6 +6,7 @@ tag @s remove d_gate
 tag @s remove d_049
 tag @s remove d_939
 tag @s remove d_096
+tag @s remove d_1499_1
 tag @s remove d_fall
 tag @s remove d_mtf
 tag @s remove d_guard

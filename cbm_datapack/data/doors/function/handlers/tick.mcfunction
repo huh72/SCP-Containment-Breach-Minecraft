@@ -24,3 +24,7 @@ execute as @e[type=marker,tag=checkpoint,tag=opened] at @s if score @s door_chec
 
 #reset player's right click
 scoreboard players set @a door_right_click 0
+
+
+
+execute if score .debug.facing.enabled door.UUID matches 1 as @e[tag=door] at @s positioned ~ ~12 ~ anchored eyes run function doors:debug/particle

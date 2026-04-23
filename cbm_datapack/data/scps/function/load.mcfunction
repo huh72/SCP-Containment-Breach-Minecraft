@@ -9,4 +9,6 @@ function scp914:config
 function scp066:config
 function scp008:config
 function scp1048:config
+function scp1048a:config
+function scp1499_1:config
 #function scp939_89:config

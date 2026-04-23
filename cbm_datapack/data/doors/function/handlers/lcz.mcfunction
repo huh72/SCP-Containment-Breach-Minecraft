@@ -18,3 +18,4 @@ execute as @n[type=marker,tag=door_marker] if entity @s[type=marker,tag=checkpoi
 
 #clear tag
 tag @s remove close_to_door
+

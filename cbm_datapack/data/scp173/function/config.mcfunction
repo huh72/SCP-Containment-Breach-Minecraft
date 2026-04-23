@@ -4,7 +4,6 @@ scoreboard objectives add rot173x_ dummy
 scoreboard objectives add rot173y dummy
 scoreboard objectives add rot173 dummy
 scoreboard objectives add rot dummy
-scoreboard objectives add math dummy
 scoreboard objectives add can_move dummy
 
 # tp:

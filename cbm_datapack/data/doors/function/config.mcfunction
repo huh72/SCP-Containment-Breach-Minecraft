@@ -22,3 +22,6 @@ scoreboard players set alarm door_checkpoint_timer 30
 scoreboard objectives add door_autoclose dummy
 scoreboard players set alarm door_autoclose 90
 scoreboard players set max door_autoclose 120
+
+
+execute unless score .debug.facing.enabled door.UUID matches 0..1 run scoreboard players set .debug.facing.enabled door.UUID 0

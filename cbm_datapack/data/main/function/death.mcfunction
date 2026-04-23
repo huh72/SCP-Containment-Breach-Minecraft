@@ -16,6 +16,7 @@ execute if entity @s[tag=d_mtf] run item replace entity @n[tag=new] armor.head w
 execute if entity @s[tag=d_guard] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse1"]
 execute if entity @s[tag=d_049] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_1048a] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_1499_1] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_939] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
 execute if entity @s[tag=d_gate] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
 execute if entity @s[tag=d_tesla] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
@@ -23,9 +24,15 @@ execute if entity @s[tag=d_173] run item replace entity @n[tag=new] armor.head w
 execute if entity @s[tag=d_fall] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_096] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse2"]
 execute if entity @s[tag=d_gas] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_suicide] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
+execute if entity @s[tag=d_bleeding] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 
 data modify entity @n[tag=new,limit=1] Marker set value 1b
 tag @e[tag=new] remove new
+
+scoreboard players operation @s timeNear1499_1 = 0 math
+tag @s remove 1499_1KillTarget
+tag @s remove 1499_1Target
 
 #full inventory drop
 function main:drop_items with storage minecraft:drop_pos

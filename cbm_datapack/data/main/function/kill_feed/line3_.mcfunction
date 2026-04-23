@@ -3,6 +3,7 @@ execute if entity @s[tag=d_049] run function main:kill_feed/line3 {"text":" was 
 execute if entity @s[tag=d_939] run function main:kill_feed/line3 {"text":" was killed by SCP-939"}
 execute if entity @s[tag=d_106] run function main:kill_feed/line3 {"text":" was decayed by SCP-106"}
 execute if entity @s[tag=d_1048a] run function main:kill_feed/line3 {"text":" overgrown with ears to death"}
+execute if entity @s[tag=d_1499_1] run function main:kill_feed/line3 {"text":" was killed by an instance of SCP-1499-1"}
 execute if entity @s[tag=d_tesla] run function main:kill_feed/line3 {"text":" was cooked by tesla gate"}
 execute if entity @s[tag=d_gate] run function main:kill_feed/line3 {"text":" was crushed by containment gate"}
 execute if entity @s[tag=d_096] run function main:kill_feed/line3 {"text":" was killed by SCP-096"}

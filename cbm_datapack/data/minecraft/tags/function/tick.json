@@ -1,6 +1,7 @@
 {
     "values": [
         "fps:tick",
+        "elevators:tick",
         "int:tick",
         "use:tick",
         "fall:tick",
