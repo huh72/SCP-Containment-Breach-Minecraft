@@ -3,8 +3,6 @@ function generation:clear/clear_entities
 function animated_java:door0/remove/all
 function animated_java:door_check0/remove/all
 
-function animated_java:door_check0/remove/all
-
 function animated_java:airlockdoors/remove/all
 
 execute as @e[tag=173] at @s positioned ~114 ~ ~439 run function generation:lcz/clear_
@@ -27,4 +25,4 @@ execute as @e[tag=173] at @s positioned ~-171 ~ ~439 run function generation:lcz
 #clear items
 kill @e[type=item]
 
-say clear end!
+tellraw @a [{"text":"[ ! ] ","color":"white"},{"text":"Facility has been cleared and now game can be started again!","color":"green"}]

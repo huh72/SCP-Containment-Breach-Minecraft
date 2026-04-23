@@ -1,1 +1,1 @@
-execute unless entity @a[distance=..12] run function lever_render:unload
+execute unless entity @a[distance=..12] unless entity @s[tag=alwaysRender] run function lever_render:unload

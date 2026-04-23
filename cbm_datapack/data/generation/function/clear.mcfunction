@@ -7,7 +7,7 @@ function animated_java:lever/remove/all
 kill @e[tag=door_empty,tag=!i]
 kill @e[tag=door_marker,tag=!i]
 kill @e[tag=door_marker0]
-kill @e[type=text_display]
+kill @e[type=text_display,tag=!neverRemove]
 kill @e[tag=door_marker_check0]
 
 #cleaning event's markers

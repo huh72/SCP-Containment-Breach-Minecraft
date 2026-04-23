@@ -1,5 +1,6 @@
 {
     "values": [
+        "lever:tick",
         "fps:tick",
         "elevators:tick",
         "int:tick",
@@ -10,7 +11,6 @@
         "ini:tick",
         "save_progress:tick",
         "health:tick",
-        "lever:tick",
         "drop:tick",
         "guns:tick",
         "ui:tick",

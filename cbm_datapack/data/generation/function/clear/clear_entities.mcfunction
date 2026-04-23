@@ -28,3 +28,7 @@ function animated_java:914_start/remove/all
 #levers
 function animated_java:lever/remove/all
 kill @e[type=marker,tag=lever_marker]
+
+#elevators
+kill @e[type=marker, tag=elevator, tag=!neverRemove]
+function animated_java:elevator_doors/remove/all
