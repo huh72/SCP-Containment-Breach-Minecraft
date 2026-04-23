@@ -125,6 +125,7 @@
 	"d9341.damage7":        {"sounds": ["cb:character/d9341/damage7"]},
 	"d9341.damage8":        {"sounds": ["cb:character/d9341/damage8"]},
 	"d9341.damage9":        {"sounds": ["cb:character/d9341/damage9"]},
+	"d9341.damage10":        {"sounds": ["cb:character/d9341/damage5", "cb:character/d9341/damage6", "cb:character/d9341/damage7", "cb:character/d9341/damage8"]},
 	"mtf.classdspotted":        {"sounds": ["cb:character/mtf/classd0","cb:character/mtf/classd1","cb:character/mtf/classd2","cb:character/mtf/classd3"]},
 	"mtf.searching":        {"sounds": ["cb:character/mtf/searching0","cb:character/mtf/searching1","cb:character/mtf/searching2","cb:character/mtf/searching3","cb:character/mtf/searching4","cb:character/mtf/searching5"]},
 	"mtf.terminated":        {"sounds": ["cb:character/mtf/terminated0","cb:character/mtf/terminated1","cb:character/mtf/terminated2","cb:character/mtf/terminated3"]},
