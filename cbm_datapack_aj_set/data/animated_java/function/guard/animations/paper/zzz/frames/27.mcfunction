@@ -3,3 +3,6 @@ $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,0.9998f,-0.020
 $data merge entity $(bone_left_arm) {transformation: [-0.9869f,0.124f,0.1031f,0.3651f,-0.0431f,0.4134f,-0.9095f,1.2552f,-0.1554f,-0.9021f,-0.4027f,0.2802f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [-0.8597f,-0.5078f,0.0552f,-0.2437f,-0.3442f,0.4961f,-0.7971f,1.3178f,0.3774f,-0.7043f,-0.6013f,0.1562f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9994f,0.0337f,1.6875f,0f,0.0337f,-0.9994f,0.006f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_paper) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.3125f,0f,0f,-1f,-0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+
+tag @n[tag=ulgrin] remove i.paper

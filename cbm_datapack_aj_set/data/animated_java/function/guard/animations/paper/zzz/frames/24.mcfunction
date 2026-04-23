@@ -3,3 +3,4 @@ $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,0.9998f,-0.020
 $data merge entity $(bone_left_arm) {transformation: [-0.9884f,0.091f,0.1215f,0.3946f,-0.0498f,0.5614f,-0.826f,1.2349f,-0.1434f,-0.8225f,-0.5504f,0.2472f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [-0.8597f,-0.5077f,0.0559f,-0.2437f,-0.3442f,0.495f,-0.7978f,1.3183f,0.3774f,-0.7051f,-0.6003f,0.1562f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9996f,0.0299f,1.6875f,0f,0.0299f,-0.9996f,0.0054f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_paper) {transformation: [-0.9976f,0.0685f,0.0132f,0.3125f,0.0271f,0.5548f,-0.8315f,0.9424f,-0.0643f,-0.8292f,-0.5553f,0.6032f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

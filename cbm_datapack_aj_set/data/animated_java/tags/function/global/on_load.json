@@ -6,6 +6,7 @@
 		"animated_java:airlockdoors/on_load",
 		"animated_java:celldoor/on_load",
 		"animated_java:ci/on_load",
+		"animated_java:class_d/on_load",
 		"animated_java:door_card0/on_load",
 		"animated_java:door_check0/on_load",
 		"animated_java:door0/on_load",
@@ -19,14 +20,15 @@
 		"animated_java:lever/on_load",
 		"animated_java:m4a1/on_load",
 		"animated_java:mtf/on_load",
-		"animated_java:scientist/on_load",
 		"animated_java:scp008/on_load",
 		"animated_java:scp049_2/on_load",
 		"animated_java:scp049_2d/on_load",
 		"animated_java:scp049/on_load",
 		"animated_java:scp066/on_load",
 		"animated_java:scp096/on_load",
+		"animated_java:scp1048a/on_load",
 		"animated_java:scp106/on_load",
+		"animated_java:scp1499_1/on_load",
 		"animated_java:scp939/on_load"
 	]
 }

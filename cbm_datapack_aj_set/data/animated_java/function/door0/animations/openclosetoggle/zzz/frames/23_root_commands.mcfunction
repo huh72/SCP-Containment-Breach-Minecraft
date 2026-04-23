@@ -1,1 +1,1 @@
-execute as @p at @s if predicate generation:10 run function animated_java:door0/animations/openclosetoggle/zzz/frames/close_door_by_079
+execute if predicate generation:10 run function animated_java:door0/animations/openclosetoggle/zzz/frames/close_door_by_079

@@ -3,3 +3,7 @@ $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,0.9998f,-0.020
 $data merge entity $(bone_left_arm) {transformation: [-0.9898f,0.1005f,0.1015f,0.3844f,-0.0539f,0.3956f,-0.9169f,1.2488f,-0.1323f,-0.9129f,-0.3861f,0.3f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [-0.8597f,-0.5077f,0.0559f,-0.2437f,-0.3442f,0.495f,-0.7978f,1.3183f,0.3774f,-0.7051f,-0.6003f,0.1562f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9995f,0.0324f,1.6875f,0f,0.0324f,-0.9995f,0.0058f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_paper) {transformation: [-0.9962f,0.0872f,0f,0.2969f,0.0338f,0.3862f,-0.9218f,1.01f,-0.0803f,-0.9183f,-0.3877f,0.7306f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+
+execute as @n[tag=guardaj] run function animated_java:guard/animations/paper/pause
+tag @n[tag=ulgrin] add i.paper
