@@ -41,6 +41,7 @@
 	"door.open":        {"sounds": ["cb:facility/doors/open0", "cb:facility/doors/open1", "cb:facility/doors/open2"]},
 	"door1.close":        {"sounds": ["cb:facility/doors/close1_0", "cb:facility/doors/close1_1", "cb:facility/doors/close1_2"]},
 	"door1.open":        {"sounds": ["cb:facility/doors/open1_0", "cb:facility/doors/open1_1", "cb:facility/doors/open1_2"]},
+	"door1.open_dist":        {"sounds": ["cb:facility/doors/hcz_open_dist"]},
 	"gate.close":        {"sounds": ["cb:facility/gates/close0", "cb:facility/gates/close1", "cb:facility/gates/close2"]},
 	"gate.open":        {"sounds": ["cb:facility/gates/open0", "cb:facility/gates/open1", "cb:facility/gates/open2"]},
 	"tesla.idle":        {"sounds": ["cb:facility/tesla/idle"]},
