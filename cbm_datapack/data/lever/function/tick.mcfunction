@@ -1,3 +1,3 @@
-execute as @e[tag=lever] at @s run function lever:subtick
+execute as @e[tag=lever,tag=!uninteractibale] at @s run function lever:subtick
 
 function lever_render:tick
