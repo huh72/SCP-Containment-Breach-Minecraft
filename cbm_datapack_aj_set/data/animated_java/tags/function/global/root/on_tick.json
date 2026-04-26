@@ -17,6 +17,7 @@
 		"animated_java:guard/root/on_tick",
 		"animated_java:hid_laser/root/on_tick",
 		"animated_java:hid_turret/root/on_tick",
+		"animated_java:infected008/root/on_tick",
 		"animated_java:lever/root/on_tick",
 		"animated_java:m4a1/root/on_tick",
 		"animated_java:mtf/root/on_tick",

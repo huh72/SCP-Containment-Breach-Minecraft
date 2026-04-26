@@ -17,6 +17,7 @@
 		"animated_java:guard/on_load",
 		"animated_java:hid_laser/on_load",
 		"animated_java:hid_turret/on_load",
+		"animated_java:infected008/on_load",
 		"animated_java:lever/on_load",
 		"animated_java:m4a1/on_load",
 		"animated_java:mtf/on_load",

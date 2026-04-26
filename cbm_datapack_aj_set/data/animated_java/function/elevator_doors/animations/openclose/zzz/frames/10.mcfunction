@@ -2,5 +2,5 @@
 $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.7837f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.7837f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
-execute if entity @s[tag=r0] run fill ~ ~ ~ ~ ~1 ~-1 air
-execute if entity @s[tag=r1] run fill ~ ~ ~ ~-1 ~1 ~ air
+execute as @n[tag=elevatorDoors] if entity @s[tag=r0] run fill ~ ~ ~ ~ ~1 ~-1 air
+execute as @n[tag=elevatorDoors] if entity @s[tag=r1] run fill ~ ~ ~ ~-1 ~1 ~ air
