@@ -30,6 +30,7 @@
 		"animated_java:scp1048a/on_load",
 		"animated_java:scp106/on_load",
 		"animated_java:scp1499_1/on_load",
-		"animated_java:scp939/on_load"
+		"animated_java:scp939/on_load",
+		"animated_java:singledoor0/on_load"
 	]
 }
