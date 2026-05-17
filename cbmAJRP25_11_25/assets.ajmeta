@@ -501,6 +501,18 @@
 				"assets/animated_java/models/blueprint/scp939/rlwrist.json",
 				"assets/animated_java/textures/blueprint/scp939/scp939.png"
 			]
+		},
+		"singledoor0": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/singledoor0/base.json",
+				"assets/animated_java/items/blueprint/singledoor0/wind0.json",
+				"assets/animated_java/items/blueprint/singledoor0/wind1.json",
+				"assets/animated_java/models/blueprint/singledoor0/base.json",
+				"assets/animated_java/models/blueprint/singledoor0/wind0.json",
+				"assets/animated_java/models/blueprint/singledoor0/wind1.json",
+				"assets/animated_java/textures/blueprint/singledoor0/door0.png"
+			]
 		}
 	}
 }
