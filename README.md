@@ -7,6 +7,7 @@ A remake of SCP: Containment Breach in Minecraft.
  - SCP: Containment Breach 2 (https://www.moddb.com/mods/scp-containment-breach-ultimate-edition).
  - SCP: Containment Breach Director's cut mod (https://www.moddb.com/mods/scp-containment-breach-directors-cut-edition).
 
+Newest shaders for 1.21.6 were made on base of ShaderSelectorV3 by HalbFettKaese (https://github.com/HalbFettKaese).
 Old light shaders for 1.21.5 were taken from JNNGL (https://github.com/JNNGL).  
 Old no shadow-font shaders for 1.21.5 were taken from CloudWolf (https://github.com/CloudWolfYT).
 
