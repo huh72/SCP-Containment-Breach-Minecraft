@@ -187,6 +187,24 @@
 				"assets/animated_java/textures/blueprint/hid_turret/texture.png"
 			]
 		},
+		"infected008": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/infected008/body.json",
+				"assets/animated_java/items/blueprint/infected008/head.json",
+				"assets/animated_java/items/blueprint/infected008/left_arm.json",
+				"assets/animated_java/items/blueprint/infected008/left_leg.json",
+				"assets/animated_java/items/blueprint/infected008/right_arm.json",
+				"assets/animated_java/items/blueprint/infected008/right_leg.json",
+				"assets/animated_java/models/blueprint/infected008/body.json",
+				"assets/animated_java/models/blueprint/infected008/head.json",
+				"assets/animated_java/models/blueprint/infected008/left_arm.json",
+				"assets/animated_java/models/blueprint/infected008/left_leg.json",
+				"assets/animated_java/models/blueprint/infected008/right_arm.json",
+				"assets/animated_java/models/blueprint/infected008/right_leg.json",
+				"assets/animated_java/textures/blueprint/infected008/infected008.png"
+			]
+		},
 		"lever": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
