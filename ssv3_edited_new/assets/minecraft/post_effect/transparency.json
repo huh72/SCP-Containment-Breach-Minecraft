@@ -1,12 +1,12 @@
 {
     "targets" : {
         "controller": {},
-        "previous": {},
+        "previous": {"persistent": true},
         "final": {},
         "swap": {},
         "swap2": {},
-        "data": {"width": 5, "height": 6, "persistent": true},
-        "data_swap": {"width": 5, "height": 6}
+        "data": {"width": 5, "height": 8, "persistent": true},
+        "data_swap": {"width": 5, "height": 8}
     },
     "passes": [
         {
@@ -309,8 +309,8 @@
             "output": "minecraft:main"
         },
         {
-            "vertex_shader": "minecraft:post/blit",
-            "fragment_shader": "minecraft:post/shader",
+            "vertex_shader": "shader_selector:post/internal/blit",
+            "fragment_shader": "shader_selector:post/shader",
             "inputs": [
                 {
                     "target": "swap",
@@ -332,6 +332,15 @@
                     "target": "final"
                 }
             ],
+            "uniforms": {
+                "BlitConfig": [
+                    {
+                        "name": "ColorModulate",
+                        "type": "vec4",
+                        "value": [ 1.0, 1.0, 1.0, 1.0 ]
+                    }
+                ]
+            },
             "output": "previous"
         }
     ]

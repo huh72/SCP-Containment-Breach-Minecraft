@@ -3,6 +3,7 @@
     "fragment": "shader_selector:post/shader",
     "samplers": [
         { "name": "MainSampler" },
+        { "name": "InSampler" },
         { "name": "DataSampler" },
         { "name": "BlurSampler" },
         { "name": "PrevSampler" }

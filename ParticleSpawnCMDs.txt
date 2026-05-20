@@ -4,3 +4,4 @@ GREEN_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.
 BLUE_CHANNEL     : particle minecraft:entity_effect{color:[0.996078431372549, 0.9803921568627451, 1.0, 0.984313725490196],scale:1f}
 SHAKE_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9764705882352941, 1.0, 0.984313725490196],scale:1f}
 BLUR_CHANNEL     : particle minecraft:entity_effect{color:[0.996078431372549, 0.9725490196078431, 1.0, 0.984313725490196],scale:1f}
+GOGGLES_CHANNEL  : particle minecraft:entity_effect{color:[0.996078431372549, 0.9686274509803922, 1.0, 0.984313725490196],scale:1f}
