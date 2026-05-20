@@ -1,0 +1,6 @@
+GRAY_CHANNEL     : particle minecraft:entity_effect{color:[0.996078431372549, 0.9921568627450981, 1.0, 0.984313725490196],scale:1f}
+ROTATION_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9882352941176471, 1.0, 0.984313725490196],scale:1f}
+GREEN_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.984313725490196, 1.0, 0.984313725490196],scale:1f}
+BLUE_CHANNEL     : particle minecraft:entity_effect{color:[0.996078431372549, 0.9803921568627451, 1.0, 0.984313725490196],scale:1f}
+SHAKE_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9764705882352941, 1.0, 0.984313725490196],scale:1f}
+BLUR_CHANNEL     : particle minecraft:entity_effect{color:[0.996078431372549, 0.9725490196078431, 1.0, 0.984313725490196],scale:1f}
