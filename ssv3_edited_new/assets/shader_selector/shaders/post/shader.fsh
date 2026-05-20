@@ -44,6 +44,18 @@ void main() {
 
 
 
+
+
+
+
+    // blur effect
+    float blurEffectStrenght = readChannel(BLUR_CHANNEL);
+    vec4 BlurTexel = texture(BlurSampler, shakenUV);
+
+    fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
+
+
+
     // screen rotation
     if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
         // beyond screen frame
@@ -55,11 +67,31 @@ void main() {
 
 
 
-    // blur effect
-    float blurEffectStrenght = readChannel(BLUR_CHANNEL);
-    vec4 BlurTexel = texture(BlurSampler, shakenUV);
+    // trail
+    float Time = GameTime;
+    float trailStrength = readChannel(TRAIL_CHANNEL);
+    
+    if (trailStrength > 0.0) {
+        int trailSamples = 16;
+        vec2 trailDirection = vec2(1.0, -1.0);
+        float trailSpacing = 0.005 * 0.8;
+        float opacityFalloff = 0.5;
+    
+        vec3 trailColor = vec3(0.0);
+        float totalWeight = 0.0;
+    
+        for (int i = 1; i <= trailSamples; i++) {
+            float weight = pow(1.0 - float(i) / (float(trailSamples) + 1.0), opacityFalloff * 10.0);
+            vec2 offset = trailDirection * trailSpacing * float(i) * sin(trailStrength * 1000);
+            trailColor += texture(MainSampler, shakenUV + offset).rgb * weight;
+            totalWeight += weight;
+        }
+        trailColor /= totalWeight;
+    
+    
+        fragColor.rgb = mix(fragColor.rgb, trailColor, 0.5);
+    }
 
-    fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
 
 
 
@@ -115,7 +147,14 @@ void main() {
     fragColor.rgb = fragColor.rgb * vignetteStrength;
 
 
+    // brightness and saturation
+    float brightness = readChannel(BRIGHTNESS_CHANNEL) * 2.0 + 1.0;
+    float saturation = readChannel(SATURATION_CHANNEL) * 5.0 + 1.0;
 
+    fragColor.rgb = fragColor.rgb * brightness;
+
+    float gray = dot(fragColor.rgb, vec3(0.2126, 0.7152, 0.0722));
+    fragColor.rgb = mix(vec3(gray), fragColor.rgb, saturation);
 
 
 
