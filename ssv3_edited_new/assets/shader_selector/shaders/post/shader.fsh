@@ -48,12 +48,10 @@ void main() {
 
 
 
-    // blur effect
-    float blurEffectStrenght = readChannel(BLUR_CHANNEL);
-    vec4 BlurTexel = texture(BlurSampler, shakenUV);
 
-    fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
 
+
+   
 
 
     // screen rotation
@@ -65,9 +63,14 @@ void main() {
         fragColor = texture(MainSampler, shakenUV);
     }
 
+    // blur effect
+    float blurEffectStrenght = readChannel(BLUR_CHANNEL);
+    vec4 BlurTexel = texture(BlurSampler, shakenUV);
+
+    fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
 
 
-    // trail
+ // trail
     float Time = GameTime;
     float trailStrength = readChannel(TRAIL_CHANNEL);
     
@@ -87,11 +90,9 @@ void main() {
             totalWeight += weight;
         }
         trailColor /= totalWeight;
-    
-    
+        
         fragColor.rgb = mix(fragColor.rgb, trailColor, 0.5);
     }
-
 
 
 
@@ -120,7 +121,7 @@ void main() {
 
 
 
-    //goggles
+    // goggles
     float gogglesOverlayStrngth = readChannel(GOGGLES_CHANNEL);
 
     // grid
@@ -157,6 +158,30 @@ void main() {
     fragColor.rgb = mix(vec3(gray), fragColor.rgb, saturation);
 
 
+    //gasmask
+    float gasmaskStrength = readChannel(GASMASK_CHANNEL); // 0..1
+
+    if (gasmaskStrength > 0) {
+        // eye holes postitioning
+        vec2 leftEyeCenter  = vec2(0.4, 0.5);
+        vec2 rightEyeCenter = vec2(0.6, 0.5);
+        float eyeRadius     = 0.275;
+
+        vec2 aspect = vec2(1.0, OutSize.x / (OutSize.y / 0.35));
+
+        float dLeft  = length((texCoord - leftEyeCenter) * aspect);
+        float dRight = length((texCoord - rightEyeCenter) * aspect);
+
+        float edgeSoftness = 0.175;
+        float leftEye  = 1.0 - smoothstep(eyeRadius - edgeSoftness, eyeRadius + edgeSoftness, dLeft);
+        float rightEye = 1.0 - smoothstep(eyeRadius - edgeSoftness, eyeRadius + edgeSoftness, dRight);
+
+        float insideEye = max(leftEye, rightEye);
+
+        float mask = (1.0 - insideEye) * gasmaskStrength;
+
+        fragColor.rgb = mix(fragColor.rgb, vec3(0.0), mask);
+    }
 
 
 // #define DEBUG
