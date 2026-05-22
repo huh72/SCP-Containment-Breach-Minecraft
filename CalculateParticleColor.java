@@ -1,19 +1,23 @@
 package org.example;
+import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
-        double x = 248;
-        double y = 255;
-        double z;
+        double finalNumber;
+        double colorMaxValue = 255;
+        String cmdBasicText = "_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, $(value), 1.0, 0.984313725490196],scale:1f}";
 
-        z = x / y;
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        scanner.close();
 
-        //String result = String.valueOf(z).replace('.', ',');
+        finalNumber = input / colorMaxValue;
+        cmdBasicText = cmdBasicText.replace("$(value)", String.valueOf(finalNumber));
 
-        System.out.println( z );
+        System.out.println( finalNumber );
+        System.out.println( cmdBasicText + " (" + input + ")");
 
     }
 }
