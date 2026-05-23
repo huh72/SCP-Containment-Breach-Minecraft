@@ -27,6 +27,7 @@
         "guns:bullet/tick",
         "guns:bullet_hole/tick",
         "endings:tick",
+        "shader_control:tick",
         "inventory:tick"
     ]
 }

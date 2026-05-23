@@ -1,0 +1,1 @@
+execute if score .shader.main .updated matches 0 as @a[tag=!dead] run function shader_control:math

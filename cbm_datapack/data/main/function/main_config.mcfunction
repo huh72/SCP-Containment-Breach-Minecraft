@@ -27,6 +27,7 @@ function incindiery:config
 function ui:list
 function ui:config
 function int:config
+function shader_control:config
 #scps
 function scps:load
 
