@@ -1,8 +1,11 @@
 package org.example;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.util.Scanner;
 
 
-public class Main {
+public class CalculateParticleColor {
     public static void main(String[] args) {
 
         double finalNumber;
@@ -19,5 +22,9 @@ public class Main {
         System.out.println( finalNumber );
         System.out.println( cmdBasicText + " (" + input + ")");
 
+        StringSelection selection = new StringSelection(cmdBasicText + " (" + input + ")");
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(selection, null);
     }
 }
+
