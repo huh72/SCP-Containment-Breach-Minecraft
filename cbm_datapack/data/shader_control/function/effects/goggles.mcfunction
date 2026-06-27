@@ -1,0 +1,1 @@
+$particle minecraft:entity_effect{color:[0.996078431372549, 0.9686274509803922, $(goggles), 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @s
