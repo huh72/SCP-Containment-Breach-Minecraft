@@ -5309,7 +5309,7 @@
   "options.forceUnicodeFont": "Force Unicode Font",
   "options.fov": "FOV",
   "options.fov.max": "Quake Pro",
-  "options.fov.min": "Normal",
+  "options.fov.min": "Normal (recommended)",
   "options.fovEffectScale": "FOV Effects",
   "options.fovEffectScale.tooltip": "Controls how much the field of view can change with gameplay effects.",
   "options.framerate": "%s fps",
