@@ -9,7 +9,7 @@ kill @e[tag=door_marker,tag=!i]
 kill @e[tag=door_marker0]
 kill @e[type=text_display,tag=!neverRemove]
 kill @e[tag=door_marker_check0]
-kill @e[type=item_display,tag=gate]
+function gates:remove
 
 #cleaning event's markers
 kill @n[tag=event0_spawn173]
