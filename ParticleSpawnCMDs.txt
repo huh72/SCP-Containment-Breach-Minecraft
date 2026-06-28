@@ -9,3 +9,4 @@ BRIGHTNESS_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 
 SATURATION_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9607843137254902, 1.0, 0.984313725490196],scale:1f}
 TRAIL_CHANNEL      : particle minecraft:entity_effect{color:[0.996078431372549, 0.9568627450980393, 1.0, 0.984313725490196],scale:1f}
 GASMASK_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9529411764705882, 1.0, 0.984313725490196],scale:1f} (243.0)
+ZOOM_CHANNEL       : particle minecraft:entity_effect{color:[0.996078431372549, 0.9490196078431372, 1.0, 0.984313725490196],scale:1f} (242.0)
