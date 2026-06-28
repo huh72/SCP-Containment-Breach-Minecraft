@@ -1,1 +1,1 @@
-execute as @n[tag=aj.infected008.root] at @s run function animated_java:infected008/animations/wake/play
+execute as @n[ type=zombie, tag=infected008, tag=passive ] at @s as @n[ tag= aj.infected008.root ] at @s run function animated_java:infected008/animations/wake/play

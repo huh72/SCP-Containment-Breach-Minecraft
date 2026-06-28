@@ -4,6 +4,8 @@ $data merge entity $(bone_head) {transformation: [-0.9714f,-0.0658f,-0.2282f,0f,
 $data merge entity $(bone_left_arm) {transformation: [-0.9252f,-0.3041f,-0.2272f,0.2708f,-0.2893f,0.9524f,-0.0967f,1.5125f,0.2458f,-0.0238f,-0.969f,0.0127f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [0.9618f,-0.2312f,0.1463f,-0.4687f,-0.0831f,0.2628f,0.9613f,1.5125f,-0.2607f,-0.9367f,0.2336f,0.1812f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
+playsound minecraft:item.dye.use ambient @a ~ ~ ~ 10 1 1
+
 execute store result storage cb:scp1499_1damage min int 1 run scoreboard players get damageMin 1499_1
 execute store result storage cb:scp1499_1damage max int 1 run scoreboard players get damageMax 1499_1
 execute store result storage cb:scp1499_1bleeding min int 1 run scoreboard players get bleedingMin 1499_1

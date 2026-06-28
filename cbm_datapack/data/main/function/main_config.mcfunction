@@ -9,7 +9,7 @@ function drop:config
 function fall:config
 function guns:config
 function events:config
-function lever:config
+# function lever:config
 function main:config
 function doors:config
 function gates:config
