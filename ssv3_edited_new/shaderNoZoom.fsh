@@ -21,68 +21,69 @@ in vec2 texCoord;
 
 out vec4 fragColor;
 
-
 void main() {
-    // screen rotation (остаётся без изменений)
+
+    // screen rotation
     float rotationAmount = readChannel(ROTATION_CHANNEL);
     float angle = radians(rotationAmount * 360.0);
+    
     vec2 uv = (texCoord - 0.5) * OutSize;
     uv *= mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
     uv = uv / OutSize + 0.5;
 
-    // screen shake (остаётся)
+
+
+
+    // screen shake
     float shake = readChannel(SHAKE_CHANNEL);
     float randValue = fract(sin(dot(vec2(-shake, shake), vec2(12.9898, 78.233))) * 43758.5453);
+
     randValue = randValue / 120.0;
     vec2 shakenUV = uv - randValue;
 
-    // === Zoom effect (НОВОЕ) ===
-    float zoomChannelVal = readChannel(ZOOM_CHANNEL);   // 0..1
-    float amplitude = zoomChannelVal * 0.5;             // амплитуда зума
-    float speed = 200.0;
-    float zoomFactor = 1.0 + sin(zoomChannelVal * speed);
-    zoomFactor = (clamp(zoomFactor, 1.0, 2.0));
-    zoomFactor = pow(zoomFactor, 0.015);
-    if (zoomFactor < 0.0) {
-        zoomFactor = zoomFactor + 1.0;
-    }
 
-    vec2 zoomedUV = (shakenUV - 0.5) / (zoomFactor) + 0.5;
-    zoomedUV = clamp(zoomedUV, 0.0, 1.0);
+   
 
-    // screen border / sampling (ИЗМЕНЕНО: shakenUV -> zoomedUV)
+
+    // screen rotation
     if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
-        fragColor = texture(BlurSampler, (zoomedUV - 0.5) * sqrt(0.5) + 0.5);
+        // beyond screen frame
+        fragColor = texture(BlurSampler, (shakenUV - 0.5) * sqrt(0.5) + 0.5);
     } else {
-        fragColor = texture(MainSampler, zoomedUV);
+        // inside screen
+        fragColor = texture(MainSampler, shakenUV);
     }
 
-    // blur effect (ИЗМЕНЕНО)
+    // blur effect
     float blurEffectStrenght = readChannel(BLUR_CHANNEL);
-    vec4 BlurTexel = texture(BlurSampler, zoomedUV);
+    vec4 BlurTexel = texture(BlurSampler, shakenUV);
+
     fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
 
-    // trail (ИЗМЕНЕНО: shakenUV -> zoomedUV в текстуре)
+
+    // trail
     float Time = GameTime;
     float trailStrength = readChannel(TRAIL_CHANNEL);
+    
     if (trailStrength > 0.0) {
         int trailSamples = 16;
         vec2 trailDirection = vec2(1.0, -1.0);
         float trailSpacing = 0.005 * 0.8;
         float opacityFalloff = 0.5;
+    
         vec3 trailColor = vec3(0.0);
         float totalWeight = 0.0;
+    
         for (int i = 1; i <= trailSamples; i++) {
             float weight = pow(1.0 - float(i) / (float(trailSamples) + 1.0), opacityFalloff * 10.0);
             vec2 offset = trailDirection * trailSpacing * float(i) * sin(trailStrength * 1000);
-            trailColor += texture(MainSampler, zoomedUV + offset).rgb * weight;
+            trailColor += texture(MainSampler, shakenUV + offset).rgb * weight;
             totalWeight += weight;
         }
         trailColor /= totalWeight;
+        
         fragColor.rgb = mix(fragColor.rgb, trailColor, 0.5);
     }
-
-    // ... дальше ваш код (green screen, полоски, круг и т.д.) без изменений ...
 
 
 
