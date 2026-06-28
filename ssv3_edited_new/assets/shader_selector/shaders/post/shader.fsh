@@ -43,9 +43,6 @@ void main() {
     float zoomFactor = 1.0 + sin(zoomChannelVal * speed);
     zoomFactor = (clamp(zoomFactor, 1.0, 2.0));
     zoomFactor = pow(zoomFactor, 0.015);
-    if (zoomFactor < 0.0) {
-        zoomFactor = zoomFactor + 1.0;
-    }
 
     vec2 zoomedUV = (shakenUV - 0.5) / (zoomFactor) + 0.5;
     zoomedUV = clamp(zoomedUV, 0.0, 1.0);
