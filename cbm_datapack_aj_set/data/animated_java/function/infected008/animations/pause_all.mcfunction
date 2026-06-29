@@ -3,3 +3,4 @@ tag @s remove aj.infected008.animation.idle.playing
 tag @s remove aj.infected008.animation.walk.playing
 tag @s remove aj.infected008.animation.attack.playing
 tag @s remove aj.infected008.animation.wake.playing
+tag @s remove aj.infected008.animation.death.playing

@@ -3,5 +3,5 @@ execute on passengers if entity @s[tag=aj.infected008.node.body] run data merge 
 execute on passengers if entity @s[tag=aj.infected008.node.head] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,1.65f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.infected008.node.left_arm] run data merge entity @s { transformation: [-1f,0f,0f,0.275f,0f,1f,0f,1.55f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.infected008.node.right_arm] run data merge entity @s { transformation: [-1f,0f,0f,-0.275f,0f,1f,0f,1.5313f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
-execute on passengers if entity @s[tag=aj.infected008.node.left_leg] run data merge entity @s { transformation: [-1f,0f,0f,0.125f,0f,1f,0f,0.8312f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
-execute on passengers if entity @s[tag=aj.infected008.node.right_leg] run data merge entity @s { transformation: [-1f,0f,0f,-0.125f,0f,1f,0f,0.8312f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
+execute on passengers if entity @s[tag=aj.infected008.node.left_leg] run data merge entity @s { transformation: [-1f,0f,0f,0.125f,0f,1f,0f,0.8313f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
+execute on passengers if entity @s[tag=aj.infected008.node.right_leg] run data merge entity @s { transformation: [-1f,0f,0f,-0.125f,0f,1f,0f,0.8313f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }

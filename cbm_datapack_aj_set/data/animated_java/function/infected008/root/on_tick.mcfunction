@@ -4,4 +4,5 @@ execute if entity @s[tag=aj.infected008.animation.idle.playing] run function ani
 execute if entity @s[tag=aj.infected008.animation.walk.playing] run function animated_java:infected008/animations/walk/zzz/on_tick
 execute if entity @s[tag=aj.infected008.animation.attack.playing] run function animated_java:infected008/animations/attack/zzz/on_tick
 execute if entity @s[tag=aj.infected008.animation.wake.playing] run function animated_java:infected008/animations/wake/zzz/on_tick
+execute if entity @s[tag=aj.infected008.animation.death.playing] run function animated_java:infected008/animations/death/zzz/on_tick
 execute on passengers run rotate @s ~ ~
