@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "animated_java:blueprint/scp049_2d",
+		"0": "animated_java:blueprint/scp049_2d/scp049_2d",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {

@@ -1,6 +1,3 @@
-
-scoreboard players operation @n[tag=scp049_2] hit_cd = max* hit_cd
-
 playsound cb:d9341.damage5 ambient @a[distance=..15] ~ ~ ~ 0.75 1 1
 
 attribute @s movement_speed modifier add 1488-0-0-0-2 -0.0285 add_value

@@ -318,14 +318,12 @@
 				"assets/animated_java/items/blueprint/scp049_2/left_leg.json",
 				"assets/animated_java/items/blueprint/scp049_2/right_arm.json",
 				"assets/animated_java/items/blueprint/scp049_2/right_leg.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/scp049_2/body.json",
 				"assets/animated_java/models/blueprint/scp049_2/head.json",
 				"assets/animated_java/models/blueprint/scp049_2/left_arm.json",
 				"assets/animated_java/models/blueprint/scp049_2/left_leg.json",
 				"assets/animated_java/models/blueprint/scp049_2/right_arm.json",
 				"assets/animated_java/models/blueprint/scp049_2/right_leg.json",
-				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/scp049_2/scp049_2.png"
 			]
 		},
@@ -338,14 +336,13 @@
 				"assets/animated_java/items/blueprint/scp049_2d/left_leg.json",
 				"assets/animated_java/items/blueprint/scp049_2d/right_arm.json",
 				"assets/animated_java/items/blueprint/scp049_2d/right_leg.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/scp049_2d/body.json",
 				"assets/animated_java/models/blueprint/scp049_2d/head.json",
 				"assets/animated_java/models/blueprint/scp049_2d/left_arm.json",
 				"assets/animated_java/models/blueprint/scp049_2d/left_leg.json",
 				"assets/animated_java/models/blueprint/scp049_2d/right_arm.json",
 				"assets/animated_java/models/blueprint/scp049_2d/right_leg.json",
-				"assets/animated_java/models/empty.json"
+				"assets/animated_java/textures/blueprint/scp049_2d/scp049_2d.png"
 			]
 		},
 		"scp066": {

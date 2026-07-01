@@ -4,4 +4,5 @@ $data merge entity $(bone_left_leg) {transformation: [-1f,0f,0f,0.125f,0f,0.9971
 $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,0.9999f,0.0157f,1.75f,0f,0.0157f,-0.9999f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [-0.999f,-0.0436f,0.0007f,-0.375f,-0.0038f,0.0714f,-0.9974f,1.4688f,0.0435f,-0.9965f,-0.0715f,0.175f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,1f,-0.0033f,1.4319f,0f,-0.0033f,-1f,-0.0056f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:scp049_2d/animations/walk/zzz/frames/41_root_commands
+
+function scps:sounds/step/basic {"pitch":"0.9"}
