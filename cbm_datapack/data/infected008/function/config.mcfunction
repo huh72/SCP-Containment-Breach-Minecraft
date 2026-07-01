@@ -6,4 +6,4 @@ scoreboard players set maxDamage infected008 46
 scoreboard players set minBleeding infected008 1
 scoreboard players set maxBleeding infected008 3
 
-scoreboard players set breathTimer infected008 200
+scoreboard players set breathTimer infected008 180
