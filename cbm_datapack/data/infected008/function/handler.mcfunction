@@ -1,3 +1,5 @@
+scoreboard players add @s infected008 1
+
 #align model and root entity
 tp @n[tag=aj.infected008.root] ~ ~ ~
 data modify entity @n[tag=aj.infected008.root] Rotation[0] set from entity @s Rotation[0]
@@ -14,3 +16,6 @@ execute if entity @s positioned ^ ^ ^0.5 if entity @p[tag=!dead,distance=..1] as
 
 #death
 execute if score @s health matches ..0 run function infected008:death
+
+#breath
+execute if score @s infected008 = breathTimer infected008 run function infected008:breath

@@ -18,4 +18,7 @@ execute as @n[type=zombie, tag=infected008, tag=new] at @s run function animated
 execute as @n[type=zombie, tag=infected008, tag=new] if entity @s[tag=passive] as @n[tag=aj.infected008.root] run function animated_java:infected008/animations/wake/apply_frame {"frame":"0"}
 
 #
+execute as @n[type=zombie, tag=infected008, tag=new] if entity @s[tag=active] run scoreboard players set @s infected008 185
+
+#
 tag @e[type=zombie, tag=infected008, tag=new] remove new

@@ -11,3 +11,5 @@ execute as @n[tag=aj.infected008.root] run function animated_java:infected008/an
 attribute @n[tag=infected008] movement_speed modifier remove 9843-0-0-0-1
 tag @n[tag=infected008] remove passive
 tag @n[tag=infected008] add active
+
+execute as @n[tag=infected008] run scoreboard players set @s infected008 185
