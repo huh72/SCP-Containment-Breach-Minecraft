@@ -17,4 +17,4 @@ scoreboard players set max* hit_cd 40
 
 # slowness after hit
 scoreboard objectives add slow_long dummy
-scoreboard players set max* slow_long 30
+scoreboard players set max* slow_long 45

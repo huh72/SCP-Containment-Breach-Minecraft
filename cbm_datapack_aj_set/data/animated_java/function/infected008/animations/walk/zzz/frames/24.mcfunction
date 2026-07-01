@@ -5,4 +5,4 @@ $data merge entity $(bone_left_arm) {transformation: [-0.999f,-0.0252f,-0.0358f,
 $data merge entity $(bone_right_arm) {transformation: [-0.9972f,0.0679f,0.0297f,-0.2667f,0.0666f,0.9968f,-0.0451f,1.5229f,-0.0326f,-0.043f,-0.9985f,0.0312f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_left_leg) {transformation: [-1f,0f,0f,0.125f,0f,0.999f,-0.0436f,0.8125f,0f,-0.0436f,-0.999f,0.0438f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
-function scps:sounds/step {"pitch":"0.9"}
+function scps:sounds/step/basic {"pitch":"0.9"}

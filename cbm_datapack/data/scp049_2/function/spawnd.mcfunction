@@ -1,7 +1,7 @@
 
 summon zombie ~ ~ ~ {Tags:['scp049_2','scp049_2d','tesla_trigger','new','hit'],Invulnerable:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1}]}
 attribute @n[tag=new] movement_speed base set 0.175
-attribute @n[tag=new] scale base set 1.25
+# attribute @n[tag=new] scale base set 1.25
 effect give @n[tag=new] invisibility infinite 0 true
 execute rotated 0 0 run function animated_java:scp049_2d/summon with storage aj:temp
 scoreboard players set @n[tag=new] breath 1
