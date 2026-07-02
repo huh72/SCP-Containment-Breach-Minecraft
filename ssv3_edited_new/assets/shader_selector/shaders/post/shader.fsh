@@ -22,23 +22,25 @@ in vec2 texCoord;
 out vec4 fragColor;
 
 
+
+
 void main() {
-    // screen rotation (остаётся без изменений)
+
+    // screen rotation
     float rotationAmount = readChannel(ROTATION_CHANNEL);
     float angle = radians(rotationAmount * 360.0);
     vec2 uv = (texCoord - 0.5) * OutSize;
     uv *= mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
     uv = uv / OutSize + 0.5;
 
-    // screen shake (остаётся)
+    // screen shake
     float shake = readChannel(SHAKE_CHANNEL);
     float randValue = fract(sin(dot(vec2(-shake, shake), vec2(12.9898, 78.233))) * 43758.5453);
     randValue = randValue / 120.0;
     vec2 shakenUV = uv - randValue;
 
-    // === Zoom effect (НОВОЕ) ===
-    float zoomChannelVal = readChannel(ZOOM_CHANNEL);   // 0..1
-    float amplitude = zoomChannelVal * 0.5;             // амплитуда зума
+    // Zoom effect
+    float zoomChannelVal = readChannel(ZOOM_CHANNEL);
     float speed = 200.0;
     float zoomFactor = 1.0 + sin(zoomChannelVal * speed);
     zoomFactor = (clamp(zoomFactor, 1.0, 2.0));
@@ -47,19 +49,27 @@ void main() {
     vec2 zoomedUV = (shakenUV - 0.5) / (zoomFactor) + 0.5;
     zoomedUV = clamp(zoomedUV, 0.0, 1.0);
 
-    // screen border / sampling (ИЗМЕНЕНО: shakenUV -> zoomedUV)
+    // screen border
     if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
         fragColor = texture(BlurSampler, (zoomedUV - 0.5) * sqrt(0.5) + 0.5);
     } else {
         fragColor = texture(MainSampler, zoomedUV);
     }
 
-    // blur effect (ИЗМЕНЕНО)
+    // motion blur effect
+    float motionBlurEffectStrenght = readChannel(MOTIONBLUR_CHANNEL);
+    vec4 MotionBlurTexel = texture(BlurSampler, zoomedUV);
+    fragColor.rgb = mix(fragColor.rgb, MotionBlurTexel.rgb, motionBlurEffectStrenght);
+
+
+    // blur effect
     float blurEffectStrenght = readChannel(BLUR_CHANNEL);
     vec4 BlurTexel = texture(BlurSampler, zoomedUV);
     fragColor.rgb = mix(fragColor.rgb, BlurTexel.rgb, blurEffectStrenght);
 
-    // trail (ИЗМЕНЕНО: shakenUV -> zoomedUV в текстуре)
+
+
+    // trai
     float Time = GameTime;
     float trailStrength = readChannel(TRAIL_CHANNEL);
     if (trailStrength > 0.0) {
@@ -78,12 +88,6 @@ void main() {
         trailColor /= totalWeight;
         fragColor.rgb = mix(fragColor.rgb, trailColor, 0.5);
     }
-
-    // ... дальше ваш код (green screen, полоски, круг и т.д.) без изменений ...
-
-
-
-
 
     // gray screen
     vec3 greyscale = vec3(dot(fragColor.rgb, vec3(0.2126, 0.7152, 0.0722)));
@@ -171,7 +175,10 @@ void main() {
     }
 
 
-#define DEBUG
+
+
+
+// #define DEBUG
 #ifdef DEBUG
     // Show data sampler on screen
     if (texCoord.x < .25 && texCoord.y < .25) {
