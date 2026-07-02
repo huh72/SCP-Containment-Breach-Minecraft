@@ -11,6 +11,7 @@ scoreboard objectives add itt dummy
 
 #setting max itterations + math
 scoreboard players set max itt 30
+scoreboard players set 10 math 10
 scoreboard players set 4 math 4
 scoreboard players set 2 math 2
 scoreboard players set 1 math 1
