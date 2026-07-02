@@ -13,3 +13,4 @@ tag @a remove scp372.target
 tag @e remove spotedPlayer
 
 scoreboard players set .temp scp372.playerSpotTimer 0
+scoreboard players set .temp scp372.searchTimer 0
