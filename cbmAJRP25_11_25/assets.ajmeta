@@ -471,6 +471,46 @@
 				"assets/animated_java/textures/blueprint/scp1499_1/scp1499_1.png"
 			]
 		},
+		"scp372": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scp372/2.json",
+				"assets/animated_java/items/blueprint/scp372/3.json",
+				"assets/animated_java/items/blueprint/scp372/body.json",
+				"assets/animated_java/items/blueprint/scp372/head.json",
+				"assets/animated_java/items/blueprint/scp372/l_arm.json",
+				"assets/animated_java/items/blueprint/scp372/l_leg.json",
+				"assets/animated_java/items/blueprint/scp372/r_arm.json",
+				"assets/animated_java/items/blueprint/scp372/r_leg.json",
+				"assets/animated_java/models/blueprint/scp372/2.json",
+				"assets/animated_java/models/blueprint/scp372/3.json",
+				"assets/animated_java/models/blueprint/scp372/body.json",
+				"assets/animated_java/models/blueprint/scp372/head.json",
+				"assets/animated_java/models/blueprint/scp372/l_arm.json",
+				"assets/animated_java/models/blueprint/scp372/l_leg.json",
+				"assets/animated_java/models/blueprint/scp372/r_arm.json",
+				"assets/animated_java/models/blueprint/scp372/r_leg.json",
+				"assets/animated_java/textures/blueprint/scp372/scp372.png"
+			]
+		},
+		"scp650": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/scp650/body.json",
+				"assets/animated_java/items/blueprint/scp650/head.json",
+				"assets/animated_java/items/blueprint/scp650/l_arm.json",
+				"assets/animated_java/items/blueprint/scp650/l_leg.json",
+				"assets/animated_java/items/blueprint/scp650/r_arm.json",
+				"assets/animated_java/items/blueprint/scp650/r_leg.json",
+				"assets/animated_java/models/blueprint/scp650/body.json",
+				"assets/animated_java/models/blueprint/scp650/head.json",
+				"assets/animated_java/models/blueprint/scp650/l_arm.json",
+				"assets/animated_java/models/blueprint/scp650/l_leg.json",
+				"assets/animated_java/models/blueprint/scp650/r_arm.json",
+				"assets/animated_java/models/blueprint/scp650/r_leg.json",
+				"assets/animated_java/textures/blueprint/scp650/scp650.png"
+			]
+		},
 		"scp939": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [

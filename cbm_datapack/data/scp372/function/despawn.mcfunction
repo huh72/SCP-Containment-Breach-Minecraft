@@ -1,0 +1,1 @@
+execute as @e[type=item_display, tag=scp372] run function animated_java:scp372/remove/this

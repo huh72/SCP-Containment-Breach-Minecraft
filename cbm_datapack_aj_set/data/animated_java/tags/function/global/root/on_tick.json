@@ -30,6 +30,8 @@
 		"animated_java:scp1048a/root/on_tick",
 		"animated_java:scp106/root/on_tick",
 		"animated_java:scp1499_1/root/on_tick",
+		"animated_java:scp372/root/on_tick",
+		"animated_java:scp650/root/on_tick",
 		"animated_java:scp939/root/on_tick",
 		"animated_java:singledoor0/root/on_tick"
 	]

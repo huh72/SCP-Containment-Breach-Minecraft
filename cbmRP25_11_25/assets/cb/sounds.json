@@ -202,6 +202,7 @@
 	"scp1048.greet":        {"sounds": ["cb:scp/1048/greet"]},
 	"scp1048a.growth":        {"sounds": ["cb:scp/1048a/growth"]},
 	"scp1048a.shriek":        {"sounds": ["cb:scp/1048a/shriek"]},
-	"scp1048a.death":        {"sounds": ["cb:scp/1048a/death"]}
+	"scp1048a.death":        {"sounds": ["cb:scp/1048a/death"]},
+	"scp372.rustle":        {"sounds": ["cb:scp/372/0", "cb:scp/372/1", "cb:scp/372/2"]}
 }
 
