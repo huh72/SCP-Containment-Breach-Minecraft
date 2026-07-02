@@ -1,9 +1,9 @@
 {
 	"pack": {
-		"pack_format": 71,
+		"pack_format": 63,
 		"description": "04.07.25 rp - aj for cbm",
 		"supported_formats": {
-			"min_inclusive": 71,
+			"min_inclusive": 63,
 			"max_inclusive": 79
 		}
 	}
