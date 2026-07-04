@@ -35,9 +35,14 @@ void main() {
 
     // screen shake
     float shake = readChannel(SHAKE_CHANNEL);
-    float randValue = fract(sin(dot(vec2(-shake, shake), vec2(12.9898, 78.233))) * 43758.5453);
-    randValue = randValue / 120.0;
-    vec2 shakenUV = uv - randValue;
+
+    float randX = fract(sin(dot(vec2(shake, 0.0), vec2(12.9898, 78.233))) * 43758.5453);
+    float randY = fract(sin(dot(vec2(0.0, shake), vec2(12.9898, 78.233))) * 43758.5453);
+    vec2 shakeOffset = (vec2(randX, randY) * shakeStrength);
+
+    vec2 shakenUV = uv + shakeOffset;
+
+
 
     // Zoom effect
     float zoomChannelVal = readChannel(ZOOM_CHANNEL);
@@ -69,7 +74,7 @@ void main() {
 
 
 
-    // trai
+    // trail
     float Time = GameTime;
     float trailStrength = readChannel(TRAIL_CHANNEL);
     if (trailStrength > 0.0) {
@@ -178,7 +183,7 @@ void main() {
 
 
 
-// #define DEBUG
+#define DEBUG
 #ifdef DEBUG
     // Show data sampler on screen
     if (texCoord.x < .25 && texCoord.y < .25) {
