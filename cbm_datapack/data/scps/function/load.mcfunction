@@ -14,4 +14,5 @@ function scp1499_1:config
 function infected008:config
 function scp372:config
 function scp650:config
+function look_check:config
 #function scp939_89:config
