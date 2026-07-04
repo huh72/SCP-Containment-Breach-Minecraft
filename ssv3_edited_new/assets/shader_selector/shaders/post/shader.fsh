@@ -38,6 +38,8 @@ void main() {
 
     float randX = fract(sin(dot(vec2(shake, 0.0), vec2(12.9898, 78.233))) * 43758.5453);
     float randY = fract(sin(dot(vec2(0.0, shake), vec2(12.9898, 78.233))) * 43758.5453);
+
+    float shakeStrength = 1.0 / 65.0;
     vec2 shakeOffset = (vec2(randX, randY) * shakeStrength);
 
     vec2 shakenUV = uv + shakeOffset;
