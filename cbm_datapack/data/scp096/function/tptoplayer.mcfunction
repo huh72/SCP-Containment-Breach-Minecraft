@@ -1,0 +1,1 @@
+tp @n[type=zombie, tag=scp096] @p[tag=!dead,tag=triggered096]

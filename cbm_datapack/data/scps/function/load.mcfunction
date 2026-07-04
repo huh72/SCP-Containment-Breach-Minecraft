@@ -1,5 +1,5 @@
 
-# function scp096:config
+function scp096:config
 function scp106evolution:config
 function scp173:config
 function scp049:config

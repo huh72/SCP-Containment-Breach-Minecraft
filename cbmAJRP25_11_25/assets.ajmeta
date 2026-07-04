@@ -357,6 +357,7 @@
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
 				"assets/animated_java/items/blueprint/scp096/body.json",
+				"assets/animated_java/items/blueprint/scp096/chest.json",
 				"assets/animated_java/items/blueprint/scp096/head.json",
 				"assets/animated_java/items/blueprint/scp096/l_arm.json",
 				"assets/animated_java/items/blueprint/scp096/l_arm0.json",
@@ -370,6 +371,7 @@
 				"assets/animated_java/items/blueprint/scp096/l_hand.json",
 				"assets/animated_java/items/blueprint/scp096/l_leg.json",
 				"assets/animated_java/items/blueprint/scp096/l_leg0.json",
+				"assets/animated_java/items/blueprint/scp096/mouth.json",
 				"assets/animated_java/items/blueprint/scp096/neck.json",
 				"assets/animated_java/items/blueprint/scp096/r_arm.json",
 				"assets/animated_java/items/blueprint/scp096/r_arm0.json",
@@ -383,8 +385,8 @@
 				"assets/animated_java/items/blueprint/scp096/r_hand.json",
 				"assets/animated_java/items/blueprint/scp096/r_leg.json",
 				"assets/animated_java/items/blueprint/scp096/r_leg0.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/scp096/body.json",
+				"assets/animated_java/models/blueprint/scp096/chest.json",
 				"assets/animated_java/models/blueprint/scp096/head.json",
 				"assets/animated_java/models/blueprint/scp096/l_arm.json",
 				"assets/animated_java/models/blueprint/scp096/l_arm0.json",
@@ -398,6 +400,7 @@
 				"assets/animated_java/models/blueprint/scp096/l_hand.json",
 				"assets/animated_java/models/blueprint/scp096/l_leg.json",
 				"assets/animated_java/models/blueprint/scp096/l_leg0.json",
+				"assets/animated_java/models/blueprint/scp096/mouth.json",
 				"assets/animated_java/models/blueprint/scp096/neck.json",
 				"assets/animated_java/models/blueprint/scp096/r_arm.json",
 				"assets/animated_java/models/blueprint/scp096/r_arm0.json",
@@ -411,7 +414,6 @@
 				"assets/animated_java/models/blueprint/scp096/r_hand.json",
 				"assets/animated_java/models/blueprint/scp096/r_leg.json",
 				"assets/animated_java/models/blueprint/scp096/r_leg0.json",
-				"assets/animated_java/models/empty.json",
 				"assets/animated_java/textures/blueprint/scp096/scp096.png"
 			]
 		},

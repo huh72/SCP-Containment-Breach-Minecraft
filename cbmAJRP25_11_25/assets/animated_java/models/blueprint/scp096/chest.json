@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/scp096/scp096",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [7, 16, 5.25],
+			"to": [16, 25, 10.25],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [11.5, 23, 8.25]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 2.25, 2.25],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [11.5, 12, 12.75, 14.25],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [2.25, 0, 4.5, 3.75],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [12.75, 12, 11.5, 14.25],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [15, 13.25, 12.75, 12],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [2.25, 3, 0, 2.25],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}
