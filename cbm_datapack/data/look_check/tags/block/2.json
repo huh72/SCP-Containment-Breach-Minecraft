@@ -1,0 +1,13 @@
+{
+    "values": [
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:iron_bars",
+    "#minecraft:fences",
+    "#minecraft:fence_gates",
+    "#minecraft:buttons",
+    "minecraft:lightning_rod",
+    "#scp173:glass"
+    ]
+}
