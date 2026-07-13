@@ -5,8 +5,8 @@
         "final": {},
         "swap": {},
         "swap2": {},
-        "data": {"width": 5, "height": 14, "persistent": true},
-        "data_swap": {"width": 5, "height": 14}
+        "data": {"width": 5, "height": 13, "persistent": true},
+        "data_swap": {"width": 5, "height": 13}
     },
     "passes": [
         {

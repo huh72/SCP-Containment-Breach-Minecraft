@@ -63,12 +63,6 @@ void main() {
         fragColor = texture(MainSampler, zoomedUV);
     }
 
-    // motion blur effect
-    float motionBlurEffectStrenght = readChannel(MOTIONBLUR_CHANNEL);
-    vec4 MotionBlurTexel = texture(BlurSampler, zoomedUV);
-    fragColor.rgb = mix(fragColor.rgb, MotionBlurTexel.rgb, motionBlurEffectStrenght);
-
-
     // blur effect
     float blurEffectStrenght = readChannel(BLUR_CHANNEL);
     vec4 BlurTexel = texture(BlurSampler, zoomedUV);
@@ -147,8 +141,8 @@ void main() {
 
 
     // brightness and saturation
-    float brightness = readChannel(BRIGHTNESS_CHANNEL) * 2.0 + 1.0;
     float saturation = readChannel(SATURATION_CHANNEL) * 5.0 + 1.0;
+    float brightness = readChannel(BRIGHTNESS_CHANNEL) + 0.5;
 
     fragColor.rgb = fragColor.rgb * brightness;
 
@@ -156,7 +150,7 @@ void main() {
     fragColor.rgb = mix(vec3(gray), fragColor.rgb, saturation);
 
 
-    //gasmask
+    // gasmask
     float gasmaskStrength = readChannel(GASMASK_CHANNEL);
 
     if (gasmaskStrength > 0) {
