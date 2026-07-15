@@ -49,6 +49,7 @@ $execute as $(subject) at @s positioned ~ ~1.5 ~ facing entity $(object)] eyes r
 # execute if entity @s[tag=hasLineOfSight3] run tellraw @a [{"text":"hasLineOfSight3"}]
 # execute if entity @s[tag=hasLineOfSight4] run tellraw @a [{"text":"hasLineOfSight4"}]
 
+
 $execute as $(subject)[tag=hasLineOfSight] run function look_check:rotation with storage cb:lookcheck
 execute as @a[tag=hasLineOfSight] run function look_check:clear with storage cb:lookcheck
 
