@@ -112,6 +112,12 @@ void main() {
 
 
 
+    // gray screen
+    vec3 yellowscale = vec3( dot(fragColor.rgb, vec3(0.1, 0.85, 0.1)), dot(fragColor.rgb, vec3(0.1, 0.85, 0.1)), 0.0);
+    float yellowscaleAmount = readChannel(YELLOW_CHANNEL);
+    fragColor.rgb = mix(fragColor.rgb, yellowscale, yellowscaleAmount);
+
+
 
     // goggles
     float gogglesOverlayStrngth = readChannel(GOGGLES_CHANNEL);
