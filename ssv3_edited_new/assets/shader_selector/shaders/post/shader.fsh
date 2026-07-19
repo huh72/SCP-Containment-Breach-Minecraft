@@ -204,7 +204,7 @@ void main() {
         vec3 fireColor = mix(vec3(1.0, 0.3, 0.0), vec3(1.0, 0.6, 0.1), fireAmount);
         float pulsation = 0.8 + 0.2 * sin(GameTime * 10.0 + texCoord.x * 5.0); // мерцание по экрану
         float fireIntensity = fireAmount * pulsation;
-        vec3 fireOverlay = mix(fireScene, fireColor, fireIntensity * 0.6);
+        vec3 fireOverlay = mix(fireScene, fireColor, fireIntensity * 1.5);
 
         // Применяем поверх текущего результата (сохраняя другие эффекты)
         fragColor.rgb = mix(fragColor.rgb, fireOverlay, fireAmount);
