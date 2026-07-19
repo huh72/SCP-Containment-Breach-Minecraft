@@ -1,4 +1,9 @@
 scoreboard objectives add playerOnFireTime dummy
+scoreboard objectives add dealDamageCd dummy
+scoreboard objectives add playerTo457Distance dummy
+
+scoreboard players set .max457 dealDamageCd 10
+scoreboard players set .max playerOnFireTime 100
 
 scoreboard objectives add setLightCd dummy
 scoreboard players set .max setLightCd 2

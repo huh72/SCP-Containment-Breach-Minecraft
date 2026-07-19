@@ -11,6 +11,7 @@ execute if predicate scp457:idle as @n[tag=aj.scp457.root,tag=aj.scp457.animatio
 
 #set light var reduce
 execute if score .scp457 setLightCd matches 1.. run scoreboard players remove .scp457 setLightCd 1
+execute if score .scp457 dealDamageCd matches 1.. run scoreboard players remove .scp457 dealDamageCd 1
 scoreboard players add .scp457 fireLoopSound 1
 
 #set light
@@ -22,6 +23,13 @@ execute if score .scp457 fireLoopSound = .0 fireLoopSound run function scp457:so
 execute if score .scp457 fireLoopSound = .1 fireLoopSound run function scp457:sounds/fire1
 execute if score .scp457 fireLoopSound = .2 fireLoopSound run function scp457:sounds/fire2
 execute if score .scp457 fireLoopSound = .restart fireLoopSound run scoreboard players set .scp457 fireLoopSound 0
+
+#define distance and deal damage
+scoreboard players set @a playerTo457Distance 0
+
+execute as @a[tag=!dead] run function scp457:definetargets
+
+scoreboard players remove @a[scores={playerTo457Distance=0,playerOnFireTime=1..}] playerOnFireTime 1
 
 # particles
 particle minecraft:end_rod ~ ~0.5 ~ 0.25 0.75 0.25 0 25 force
