@@ -1,4 +1,4 @@
-summon zombie ~ ~ ~ {Tags:['scp457', 'new'],Silent:1b,Invulnerable:1b}
+summon zombie ~ ~ ~ {Tags:['scp457', 'new'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
 
 effect give @n[tag=scp457, tag=new] invisibility infinite 1 true
 attribute @n[tag=scp457, tag=new] attack_damage base set 0

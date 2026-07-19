@@ -1,4 +1,4 @@
-summon wandering_trader ~ ~ ~ {Tags:['scp939_53','scp939','new'],Invulnerable:1b,Silent:1b}
+summon wandering_trader ~ ~ ~ {Tags:['scp939_53','scp939','new'],Invulnerable:1b,Silent:1b,PersistenceRequired:1b}
 summon marker ~ ~1 ~ {Tags:['marker939_53','marker939']}
 function animated_java:scp939/summon with storage aj:temp
 

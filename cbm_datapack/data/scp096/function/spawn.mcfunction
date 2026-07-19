@@ -1,4 +1,4 @@
-summon zombie ~ ~ ~ {Tags:['scp096', 'new', 'idle'], Invincible:1b, Silent:1b, NoAI:1b}
+summon zombie ~ ~ ~ {Tags:['scp096', 'new', 'idle'], Invincible:1b, Silent:1b, NoAI:1b, PersistenceRequired:1b}
 
 execute rotated 0 0 run function animated_java:scp096/summon with storage aj:temp
 

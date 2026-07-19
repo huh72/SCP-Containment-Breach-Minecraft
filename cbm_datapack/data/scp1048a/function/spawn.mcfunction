@@ -1,4 +1,4 @@
-summon husk ~ ~ ~ {Tags:['scp1048Aorigin'],Silent:1b,Invulnerable:1b}
+summon husk ~ ~ ~ {Tags:['scp1048Aorigin'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
 effect give @n[type=husk, tag=scp1048Aorigin] invisibility infinite 1 true
 attribute @n[type=husk, tag=scp1048Aorigin] minecraft:movement_speed base set 0.15
 
