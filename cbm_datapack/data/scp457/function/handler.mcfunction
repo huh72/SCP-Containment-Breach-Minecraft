@@ -32,4 +32,5 @@ execute as @a[tag=!dead] run function scp457:definetargets
 scoreboard players remove @a[scores={playerTo457Distance=0,playerOnFireTime=1..}] playerOnFireTime 1
 
 # particles
-particle minecraft:end_rod ~ ~0.5 ~ 0.25 0.75 0.25 0 25 force
+execute unless predicate scp457:idle run particle minecraft:end_rod ~ ~0.5 ~ 0.25 0.75 0.25 0.01 25 force @a
+execute if predicate scp457:idle run particle minecraft:end_rod ~ ~1 ~ 0.25 0.6 0.25 0.025 8 force @a
