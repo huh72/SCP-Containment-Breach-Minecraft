@@ -112,7 +112,7 @@ void main() {
 
 
 
-    // gray screen
+    // yellow screen
     vec3 yellowscale = vec3( dot(fragColor.rgb, vec3(0.1, 0.85, 0.1)), dot(fragColor.rgb, vec3(0.1, 0.85, 0.1)), 0.0);
     float yellowscaleAmount = readChannel(YELLOW_CHANNEL);
     fragColor.rgb = mix(fragColor.rgb, yellowscale, yellowscaleAmount);
@@ -164,7 +164,7 @@ void main() {
     float gasmaskStrength = readChannel(GASMASK_CHANNEL);
 
     if (gasmaskStrength > 0) {
-        // eye holes postitioning
+        // eye holes positioning
         vec2 leftEyeCenter  = vec2(0.4, 0.5);
         vec2 rightEyeCenter = vec2(0.6, 0.5);
         float eyeRadius     = 0.275;
@@ -186,10 +186,43 @@ void main() {
     }
 
 
+    // ================== ЭФФЕКТ ГОРЕНИЯ ==================
+    float fireAmount = readChannel(BURN_CHANNEL);   // значение от 0 до 1
+    if (fireAmount > 0.0) {
+        // 1. Тепловое искажение (heat haze)
+        float time = GameTime * 0.5;
+        float distortionStrength = fireAmount * 0.02; // сила искажения
+        vec2 distortedUV = zoomedUV + vec2(
+            sin(zoomedUV.y * 20.0 + time) * distortionStrength,
+            cos(zoomedUV.x * 20.0 + time) * distortionStrength
+        );
+        distortedUV = clamp(distortedUV, 0.0, 1.0);
+
+        vec3 fireScene = texture(MainSampler, distortedUV).rgb;
+
+        // 2. Огненный цвет
+        vec3 fireColor = mix(vec3(1.0, 0.3, 0.0), vec3(1.0, 0.6, 0.1), fireAmount);
+        float pulsation = 0.8 + 0.2 * sin(GameTime * 10.0 + texCoord.x * 5.0); // мерцание по экрану
+        float fireIntensity = fireAmount * pulsation;
+        vec3 fireOverlay = mix(fireScene, fireColor, fireIntensity * 0.6);
+
+        // Применяем поверх текущего результата (сохраняя другие эффекты)
+        fragColor.rgb = mix(fragColor.rgb, fireOverlay, fireAmount);
+
+        // 3. Виньетка пламени по краям
+        vec2 edgeDist = abs(zoomedUV - 0.5) * 2.0;           // 0 в центре, 1 на границе
+        float edgeFade = max(edgeDist.x, edgeDist.y);
+        float fireVignette = smoothstep(0.5, 1.0, edgeFade) * fireAmount * 0.6;
+        fragColor.rgb = mix(fragColor.rgb, fireColor * 1.5, fireVignette);
+
+        // 4. Мерцание яркости
+        float flicker = 1.0 + fireAmount * 0.25 * sin(GameTime * 20.0);
+        fragColor.rgb *= flicker;
+    }
+    // =====================================================
 
 
-
-#define DEBUG
+// #define DEBUG
 #ifdef DEBUG
     // Show data sampler on screen
     if (texCoord.x < .25 && texCoord.y < .25) {
