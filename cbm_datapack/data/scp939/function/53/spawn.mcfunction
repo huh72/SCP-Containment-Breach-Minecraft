@@ -6,6 +6,7 @@ attribute @n[tag=new] minecraft:movement_speed base set 0.55
 # data modify entity @n[tag=new] wander_target set from entity @n[tag=new] Pos
 
 #939 vars
+scoreboard players operation @n[tag=new] attack_cd = .max attack_cd
 scoreboard players operation @n[tag=new] hit_cd = max* hit_cd
 scoreboard players operation @n[tag=new] phrase_cd = max* phrase_cd
 scoreboard players set @n[tag=new] alert_cd 60

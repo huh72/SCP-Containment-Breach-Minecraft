@@ -1,6 +1,8 @@
 #hit vars
 scoreboard objectives add hit_cd dummy
+scoreboard objectives add attack_cd dummy
 
+scoreboard players set .max attack_cd 80
 scoreboard players set max* hit_cd 30
 scoreboard players set scp939 damage 30
 
@@ -21,7 +23,3 @@ scoreboard objectives add spot_level dummy
 
 scoreboard objectives add 939posX dummy
 scoreboard objectives add 939posZ dummy
-
-#move sounds
-scoreboard players set step939 walk_ 20
-scoreboard players set step939 run 14

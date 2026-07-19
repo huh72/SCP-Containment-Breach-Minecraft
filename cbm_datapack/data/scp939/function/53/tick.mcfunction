@@ -10,6 +10,7 @@ data modify entity @n[type=item_display, tag=aj.scp939.root] Rotation[0] set fro
 #var
 scoreboard players remove @s[scores={phrase_cd=1..}] phrase_cd 1
 scoreboard players remove @a[scores={chase_cd=1..}] chase_cd 1
+scoreboard players remove @s[scores={attack_cd=1..}] attack_cd 1
 scoreboard players remove @s[scores={alert_cd=1..}] alert_cd 1
 #func
 execute as @n[tag=scp939_53,scores={phrase_cd=0}] at @s run function scp939:53/lure

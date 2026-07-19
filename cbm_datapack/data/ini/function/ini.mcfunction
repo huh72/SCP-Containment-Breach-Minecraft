@@ -14,6 +14,8 @@ scoreboard players set @s breath_cd 1
 scoreboard players set @s item_selected 0
 scoreboard players set @s playerOnFireTime 0
 
+scoreboard players set @s chase_cd 0
+
 tag @s add can_blink
 tag @s add tesla_trigger
 
