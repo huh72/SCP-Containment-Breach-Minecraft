@@ -2,7 +2,7 @@
 execute store result score @s 939rotY run data get entity @s Rotation[1]
 execute if score @s 939rotY matches 1.. run data modify entity @s Rotation[1] set value 0.0f
 
-tp @n[type=wandering_trader, tag=marker939_53] ~ ~1 ~
+tp @n[type=marker, tag=marker939_53] ~ ~1 ~
 tp @n[type=item_display, tag=aj.scp939.root] ~ ~ ~
 data modify entity @n[type=item_display, tag=aj.scp939.root] Rotation[0] set from entity @s Rotation[0]
 
@@ -25,6 +25,10 @@ scoreboard players set @a[tag=!dead,scores={walk=0},predicate=!scp939:is_sneakin
 scoreboard players set @a[tag=!dead,predicate=scp939:is_sprinting] spot_level 1
 scoreboard players set @a[tag=!dead,predicate=scp939:is_sneaking] spot_level 0
 scoreboard players set @a[tag=!dead,distance=..2] spot_level 3
+
+# execute as @a[predicate=scp939:is_sneaking] run say @s sneaking!
+# execute as @a[scores={walk=1..}] run say @s walk!
+# execute as @a[predicate=scp939:is_sprinting] run say @s sprinting!
 
 #additional target check
 tag @a remove confirmed
@@ -57,24 +61,19 @@ execute as @s[tag=!chasing] at @s if entity @p[scores={spot_level=3}] run functi
 
 ###939 movement check for animations
 #getting speed level
-scoreboard players set @s[predicate=scp939:afk] speed_level 0
+scoreboard players set @s[predicate=scp939:idle] speed_level 0
 scoreboard players set @s[predicate=scp939:slow] speed_level 1
 scoreboard players set @s[predicate=scp939:fast] speed_level 2
 
-#end previous animations
-execute if score @s speed_level matches 0..2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/pause
-execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/pause
+#! 0 - idle, 1 - walk, 2 - run
+execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root, tag=!aj.scp939.animation.idle.playing] run function animated_java:scp939/animations/idle/play
+execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.walk.playing] run function animated_java:scp939/animations/walk/stop
+execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.run.playing] run function animated_java:scp939/animations/run/stop
 
-execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/pause
-execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/pause
+execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.idle.playing] run function animated_java:scp939/animations/idle/stop
+execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root, tag=!aj.scp939.animation.walk.playing] run function animated_java:scp939/animations/walk/play
+execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.run.playing] run function animated_java:scp939/animations/run/stop
 
-execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/pause
-execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/pause
-
-#start playing new ones, depends on previous tick speed level and current speed level
-execute if score @s speed_level matches 0 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/idle/resume
-execute if score @s speed_level matches 1 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/walk/resume
-execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root] run function animated_java:scp939/animations/run/resume
-
-#save 939's speed level from previous tick
-scoreboard players operation 939speedlevelprevtick speed_level = @s speed_level
+execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.idle.playing] run function animated_java:scp939/animations/idle/stop
+execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root, tag=aj.scp939.animation.walk.playing] run function animated_java:scp939/animations/walk/stop
+execute if score @s speed_level matches 2 as @n[tag=aj.scp939.root, tag=!aj.scp939.animation.run.playing] run function animated_java:scp939/animations/run/play

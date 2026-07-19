@@ -1,6 +1,6 @@
 summon wandering_trader ~ ~ ~ {Tags:['scp939_53','scp939','new'],Invulnerable:1b,Silent:1b,PersistenceRequired:1b}
 summon marker ~ ~1 ~ {Tags:['marker939_53','marker939']}
-function animated_java:scp939/summon with storage aj:temp
+execute rotated 0 0 run function animated_java:scp939/summon with storage aj:temp
 
 attribute @n[tag=new] minecraft:movement_speed base set 0.55
 # data modify entity @n[tag=new] wander_target set from entity @n[tag=new] Pos
