@@ -27,7 +27,9 @@ execute if score .scp457 fireLoopSound = .restart fireLoopSound run scoreboard p
 #define distance and deal damage
 scoreboard players set @a playerTo457Distance 0
 
-execute as @a[tag=!dead] run function scp457:definetargets
+execute as @a[tag=!dead,distance=..6.25] run function scp457:definetargets
+execute as @a[tag=!dead] run function scp457:applyshader
+execute as @a[tag=!dead] if score .scp457 dealDamageCd = 0 math run function scp457:dealdamage
 
 scoreboard players remove @a[scores={playerTo457Distance=0,playerOnFireTime=1..}] playerOnFireTime 1
 

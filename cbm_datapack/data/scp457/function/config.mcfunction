@@ -13,3 +13,6 @@ scoreboard players set .0 fireLoopSound 1
 scoreboard players set .1 fireLoopSound 70
 scoreboard players set .2 fireLoopSound 139
 scoreboard players set .restart fireLoopSound 204
+
+#math for burn shader effect calculating
+scoreboard players set 40 math 40
