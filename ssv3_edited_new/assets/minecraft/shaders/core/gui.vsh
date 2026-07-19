@@ -19,7 +19,7 @@ in vec4 Color;
 out vec4 vertexColor;
 
 void main() {
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0) + 0.002;
+    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
     vertexColor = Color / 1.2;
 }

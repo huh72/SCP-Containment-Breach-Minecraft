@@ -155,6 +155,10 @@ void main() {
     float gray = dot(fragColor.rgb, vec3(0.2126, 0.7152, 0.0722));
     fragColor.rgb = mix(vec3(gray), fragColor.rgb, saturation);
 
+    //flicker
+    // float flicker = readChannel(FLICKER_CHANNEL) + 1;
+    // float flickerRand = fract((dot(vec2(flicker, 1.0), vec2(12.9898, 78.233))) * 43758.5453);
+    // fragColor.rgb = fragColor.rgb * flickerRand;
 
     // gasmask
     float gasmaskStrength = readChannel(GASMASK_CHANNEL);
