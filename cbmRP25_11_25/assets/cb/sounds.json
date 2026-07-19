@@ -203,6 +203,17 @@
 	"scp1048a.growth":        {"sounds": ["cb:scp/1048a/growth"]},
 	"scp1048a.shriek":        {"sounds": ["cb:scp/1048a/shriek"]},
 	"scp1048a.death":        {"sounds": ["cb:scp/1048a/death"]},
-	"scp372.rustle":        {"sounds": ["cb:scp/372/0", "cb:scp/372/1", "cb:scp/372/2"]}
+	"scp372.rustle":        {"sounds": ["cb:scp/372/0", "cb:scp/372/1", "cb:scp/372/2"]},
+	"scp079.broadcast0": {"sounds": ["cb:scp/079/broadcast0"]},
+	"scp079.broadcast1": {"sounds": ["cb:scp/079/broadcast1"]},
+	"scp079.broadcast2": {"sounds": ["cb:scp/079/broadcast2"]},
+	"scp079.broadcast3": {"sounds": ["cb:scp/079/broadcast3"]},
+	"scp079.broadcast4": {"sounds": ["cb:scp/079/broadcast4"]},
+	"scp079.broadcast5": {"sounds": ["cb:scp/079/broadcast5"]},
+	"scp079.broadcast6": {"sounds": ["cb:scp/079/broadcast6"]},
+	"scp457.fire0": {"sounds": ["cb:scp/457/fire0"]},
+	"scp457.fire1": {"sounds": ["cb:scp/457/fire1"]},
+	"scp457.fire2": {"sounds": ["cb:scp/457/fire2"]}
+	
 }
 

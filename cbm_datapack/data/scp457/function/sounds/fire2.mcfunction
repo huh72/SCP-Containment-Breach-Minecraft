@@ -1,0 +1,1 @@
+playsound cb:scp457.fire2 ambient @a ~ ~1 ~ 1 1 1
