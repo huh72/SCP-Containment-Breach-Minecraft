@@ -10,3 +10,5 @@ $data merge entity $(bone_rhwrist) {transformation: [-0.9962f,0f,-0.0872f,-1.25f
 $data merge entity $(bone_lhwrist) {transformation: [-0.9962f,0f,0.0872f,1.2969f,0f,1f,0f,0.1406f,-0.0872f,0f,-0.9962f,0.2969f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_rlwrist) {transformation: [-0.9763f,0f,0.2164f,-1.2656f,0f,1f,0f,0.1563f,-0.2164f,0f,-0.9763f,-1.1719f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_llwrist) {transformation: [-0.9537f,0f,-0.3007f,1.125f,0f,1f,0f,0.1406f,0.3007f,0f,-0.9537f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+
+playsound cb:player.stepmetal ambient @a[distance=..16] ~ ~0.5 ~ 1 1 1
