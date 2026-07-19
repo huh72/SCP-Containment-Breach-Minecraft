@@ -14,3 +14,4 @@ tag @s remove d_914
 tag @s remove d_bleeding
 tag @s remove d_suicide
 tag @s remove d_gas
+tag @s remove d_burn

@@ -9,6 +9,9 @@ attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
 effect give @s invisibility infinite 1 true
 effect give @s regeneration infinite 10 true
 
+scoreboard players set @s playerOnFireTime 0
+scoreboard players set @s playerTo457Distance 0
+
 execute at @s run summon armor_stand ~ ~ ~ {Tags:['new','corpse'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
 data modify entity @n[tag=new,limit=1] Rotation set from entity @s Rotation
 execute at @n[tag=new] run tp @n[tag=new] ~ ~ ~ ~180 ~
