@@ -1,0 +1,24 @@
+# model align
+tp @n[tag=aj.scp457.root] ~ ~ ~
+data modify entity @n[tag=aj.scp457.root] Rotation[0] set from entity @s Rotation[0]
+
+#animations
+execute unless predicate scp457:idle as @n[tag=aj.scp457.root,tag=!aj.scp457.animation.walk.playing] run function animated_java:scp457/animations/walk/play
+execute unless predicate scp457:idle as @n[tag=aj.scp457.root,tag=aj.scp457.animation.idle.playing] run function animated_java:scp457/animations/idle/stop
+
+execute if predicate scp457:idle as @n[tag=aj.scp457.root,tag=!aj.scp457.animation.idle.playing] run function animated_java:scp457/animations/idle/play
+execute if predicate scp457:idle as @n[tag=aj.scp457.root,tag=aj.scp457.animation.walk.playing] run function animated_java:scp457/animations/walk/stop
+
+#set light var reduce
+execute if score .scp457 setLightCd matches 1.. run scoreboard players remove .scp457 setLightCd 1
+execute if score .scp457 fireLoopSound matches 1.. run scoreboard players remove .scp457 fireLoopSound 1
+
+#set light
+execute if score .scp457 setLightCd = 0 math if block ~ ~ ~ #scp457:air run function scp457:removelight
+execute if score .scp457 setLightCd = 0 math if block ~ ~ ~ #scp457:air run function scp457:setlight
+
+#fire sound
+execute if score .scp457 fireLoopSound = 0 math run function scp457:sounds/fire
+
+# particles
+particle minecraft:end_rod ~ ~0.5 ~ 0.25 0.75 0.25 0 25 force

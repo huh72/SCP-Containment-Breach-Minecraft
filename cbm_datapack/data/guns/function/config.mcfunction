@@ -1,3 +1,6 @@
+execute as @a unless score @s ammo matches -1.. run scoreboard players set @s ammo 12
+execute as @a unless score @s reload matches 0.. run scoreboard players set @a reload 0
+
 #config
 scoreboard objectives add shot_cd dummy
 scoreboard objectives add ammo dummy
@@ -88,8 +91,8 @@ scoreboard players set reload stat_tmp 75
 
 
 #USP-s
-scoreboard players set acc stat_usps 1
+scoreboard players set acc stat_usps 100
 scoreboard players set mag_size stat_usps 12
-scoreboard players set damage stat_usps 11
-scoreboard players set shot_cd stat_usps 6
+scoreboard players set damage stat_usps 16
+scoreboard players set shot_cd stat_usps 9
 scoreboard players set reload stat_usps 65

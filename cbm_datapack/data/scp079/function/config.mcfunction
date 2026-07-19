@@ -14,7 +14,7 @@ execute as @a unless score @s scp079.broadcast4 matches ..0 run scoreboard playe
 execute as @a unless score @s scp079.broadcast5 matches ..0 run scoreboard players set @s scp079.broadcast5 -1
 execute as @a unless score @s scp079.broadcast6 matches ..0 run scoreboard players set @s scp079.broadcast6 -1
 
-scoreboard players set max scp079.broadcast0 10
+scoreboard players set max scp079.broadcast0 20
 scoreboard players set max scp079.broadcast1 15
 scoreboard players set max scp079.broadcast2 5
 scoreboard players set max scp079.broadcast3 20
@@ -23,4 +23,5 @@ scoreboard players set max scp079.broadcast5 50
 scoreboard players set max scp079.broadcast6 30
 
 #reset brightness
-scoreboard players set @a shader.brightness 50
+# scoreboard players set @a shader.brightness 50
+particle minecraft:entity_effect{color:[0.996078431372549, 0.9647058823529412, 0.5, 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @a

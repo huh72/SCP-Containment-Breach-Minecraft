@@ -1,0 +1,3 @@
+function animated_java:scp457/remove/all
+execute as @e[tag=scp457] at @s run tp @s ~ ~35 ~
+kill @e[tag=scp457]

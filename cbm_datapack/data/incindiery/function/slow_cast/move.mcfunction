@@ -10,4 +10,4 @@ execute unless block ^0.5 ^ ^ air if score @s bounce_cd matches 0 run function i
 
 scoreboard players remove @s itt 1
 execute if score @s itt matches 0 run function incindiery:slow_cast/despawn
-# execute as @s at @s anchored eyes positioned ^ ^ ^1 if score @s itt matches 1.. if score @s itt_cd matches 0 run function grenades:slow_cast/move
+execute as @s at @s anchored eyes positioned ^ ^ ^1 if score @s itt matches 1.. if score @s itt_cd matches 0 run function incindiery:slow_cast/move {"rot":"1"}

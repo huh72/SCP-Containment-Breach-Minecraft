@@ -3,7 +3,7 @@ scoreboard objectives add objective dummy
 
 #time til mtf will start shooting after detecting a player
 scoreboard objectives add player_on_reticle dummy
-scoreboard players set max player_on_reticle 10
+scoreboard players set max player_on_reticle 35
 
 #sounds vars
 scoreboard objectives add breath_cd dummy

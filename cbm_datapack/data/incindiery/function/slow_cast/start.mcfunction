@@ -16,5 +16,5 @@ scoreboard players set @e[tag=new] bounce_sound_cd 0
 scoreboard players set @e[tag=new] bounces 0
 scoreboard players operation @e[tag=new] itt = max itt
 scoreboard players operation @e[tag=new] itt_cd = max itt_cd
-execute as @e[tag=grenade] at @s anchored eyes run function incindiery:slow_cast/move
+execute as @e[tag=grenade] at @s anchored eyes run function incindiery:slow_cast/move {"rot":"1"}
 tag @e remove new

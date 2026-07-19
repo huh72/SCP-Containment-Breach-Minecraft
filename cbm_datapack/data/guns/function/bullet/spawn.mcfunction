@@ -13,7 +13,11 @@ $scoreboard players set @n[tag=new] v $(blood_lost)
 
 # /summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:"minecraft:block_display",block_state:{Name:"minecraft:yellow_concrete",Properties:{}},transformation:[0.01f,0f,0f,-0.005f,0f,0.01f,0f,-0.005f,0f,0f,1f,0f,0f,0f,0f,1f]}]}
 
-$tp @e[tag=new] ~ ~ ~ ~$(xb).$(xa) ~$(yb).$(ya)
+# $tp @e[tag=new] ~ ~ ~ ~$(xb).$(xa) ~$(yb).$(ya)
+
+data modify entity @n[tag=new] Rotation set from entity @s Rotation
+$tp @n[tag=new] ~ ~ ~ ~$(acc0) ~$(acc1)
+
 scoreboard players operation @e[tag=new] bullet_live_time = max bullet_live_time
 
 tag @e[tag=new] remove new

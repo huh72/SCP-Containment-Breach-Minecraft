@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick[minecraft:item_model="cb:usps",minecraft:item_name="%USP-s"]

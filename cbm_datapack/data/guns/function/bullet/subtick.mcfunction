@@ -17,7 +17,6 @@ execute unless block ^ ^ ^2 #raycast:air run kill @s
 execute unless block ^ ^ ^3 #raycast:air run kill @s
 execute unless block ^ ^ ^4 #raycast:air run kill @s
 
-
 #particles
 execute positioned ^-0.5 ^-0.325 ^2 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
 execute positioned ^-0.5 ^-0.325 ^3 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]

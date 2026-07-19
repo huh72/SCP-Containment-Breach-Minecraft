@@ -1,6 +1,9 @@
 scoreboard players add @s[tag=on_reticle] player_on_reticle 1
+# execute as @a[tag=on_reticle] run say @s on reticle!
 
 execute if score @s player_on_reticle >= max player_on_reticle run tag @s add confirmed_target
+
+# execute as @a[tag=confirmed_target] run say @s confirmed!
 
 #clear
 tag @a[tag=dead] remove on_reticle

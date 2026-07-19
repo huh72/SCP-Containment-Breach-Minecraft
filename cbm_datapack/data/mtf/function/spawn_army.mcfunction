@@ -1,0 +1,10 @@
+execute positioned ~ ~-3 ~ run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~.5 ~-3 ~.5 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~1 ~-3 ~1 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~1.5 ~-3 ~1.5 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~2 ~-3 ~2 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~2.5 ~-3 ~-.5 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~-.5 ~-3 ~-1 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~-1 ~-3 ~-1.5 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~-1.5 ~-3 ~-2 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}
+execute positioned ~-2 ~-3 ~-2.5 run function mtf:spawn {"additionaltag":"none","NoAI":"0","rotatedAs":"@s"}

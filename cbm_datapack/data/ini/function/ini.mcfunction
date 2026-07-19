@@ -2,12 +2,17 @@
 
 tag @s add ini
 
-effect give @s saturation infinite 10 true
+effect give @s weakness infinite 255 true
+effect give @s regeneration infinite 255 true
+effect give @s saturation infinite 255 true
 attribute @s minecraft:jump_strength base set 0.0004
 attribute @s minecraft:movement_speed base set 0.085
+execute as @a run attribute @s minecraft:scale base set 1.2
+execute as @a run attribute @s minecraft:camera_distance base set 0.0
 scoreboard players operation @s stamina = max stamina
 scoreboard players set @s breath_cd 1
 scoreboard players set @s item_selected 0
+scoreboard players set @s playerOnFireTime 0
 
 tag @s add can_blink
 tag @s add tesla_trigger
@@ -26,6 +31,3 @@ scoreboard players set @s shot_cd 0
 
 #doors staff
 scoreboard players set @s access_level 0
-
-#scoreboard players operation @e[tag=new] global_num = @s global_num
-#tag @e remove new

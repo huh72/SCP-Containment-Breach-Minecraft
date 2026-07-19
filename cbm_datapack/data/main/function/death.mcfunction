@@ -3,6 +3,7 @@ scoreboard players set @s spot_level 0
 scoreboard players set @s health 1000
 tag @s remove tesla_trigger
 tag @s add dead
+tag @s remove hit
 attribute @s minecraft:movement_speed modifier remove 1488-0-0-0-8
 attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
 effect give @s invisibility infinite 1 true

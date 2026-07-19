@@ -26,3 +26,18 @@ execute as @e[tag=bullet_hole] at @s anchored eyes unless block ^ ^ ^-0.2 #drop:
 # execute as @e[type=item,scores={drop_live=1},nbt={Item:{id:"minecraft:carrot_on_a_stick",custom_data:{gun:1}}}] at @s run say @s 1
 # execute as @e[type=item,scores={drop_live=1},nbt={Item:{id:"minecraft:carrot_on_a_stick"}}] at @s run function guns:drop
 # scoreboard players set @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}] drop_live 1
+
+scoreboard players remove @a[scores={shot_cd=1..}] shot_cd 1
+scoreboard players remove @a[tag=armed,tag=reloading,scores={reload=1..}] reload 1
+
+execute as @a[tag=!armed] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="cb:usps"] run playsound cb:m4a1s.draw ambient @a ~ ~ ~ 0.05 1 1
+execute as @a[tag=!armed] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="cb:usps"] run tag @s add armed
+execute as @a[tag=armed] unless items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="cb:usps"] run tag @s remove armed
+
+execute as @a[tag=armed] if score @s ammo matches 0 run tag @s add reloading
+execute as @a[tag=armed] if score @s ammo matches 0 run scoreboard players set @s reload 60
+execute as @a[tag=armed] if score @s ammo matches 0 run scoreboard players set @s ammo -1
+execute as @a[tag=armed,tag=reloading] if score @s reload matches 0 run scoreboard players set @s ammo 12
+execute as @a[tag=armed,tag=reloading] if score @s reload matches 0 if score @s ammo matches 12 run tag @s remove reloading
+
+execute as @a[tag=armed] at @s run function guns:usp_handler
