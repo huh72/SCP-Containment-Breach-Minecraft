@@ -10,6 +10,7 @@ execute unless score @s shader.gasmask.prev = @s shader.gasmask run function sha
 execute unless score @s shader.goggles.prev = @s shader.goggles run function shader_control:effects/goggles/helper with storage cb:shader
 execute unless score @s shader.zoom.prev = @s shader.zoom run function shader_control:effects/zoom/helper with storage cb:shader
 execute unless score @s shader.yellow.prev = @s shader.yellow run function shader_control:effects/yellow/helper with storage cb:shader
+execute unless score @s shader.burn.prev = @s shader.burn run function shader_control:effects/burn/helper with storage cb:shader
 
 
 scoreboard players operation @s shader.green.prev = @s shader.green
@@ -17,7 +18,6 @@ scoreboard players operation @s shader.blue.prev = @s shader.blue
 scoreboard players operation @s shader.gray.prev = @s shader.gray
 scoreboard players operation @s shader.screenshake.prev = @s shader.screenshake
 scoreboard players operation @s shader.blur.prev = @s shader.blur
-
 scoreboard players operation @s shader.trail.prev = @s shader.trail
 scoreboard players operation @s shader.brightness.prev = @s shader.brightness
 scoreboard players operation @s shader.saturation.prev = @s shader.saturation
@@ -25,3 +25,4 @@ scoreboard players operation @s shader.gasmask.prev = @s shader.gasmask
 scoreboard players operation @s shader.goggles.prev = @s shader.goggles
 scoreboard players operation @s shader.zoom.prev = @s shader.zoom
 scoreboard players operation @s shader.yellow.prev = @s shader.yellow
+scoreboard players operation @s shader.burn.prev = @s shader.burn

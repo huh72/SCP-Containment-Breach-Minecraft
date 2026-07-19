@@ -10,6 +10,7 @@ scoreboard objectives add shader.gasmask dummy
 scoreboard objectives add shader.goggles dummy
 scoreboard objectives add shader.zoom dummy
 scoreboard objectives add shader.yellow dummy
+scoreboard objectives add shader.burn dummy
 
 scoreboard objectives add shader.green.prev dummy
 scoreboard objectives add shader.blue.prev dummy
@@ -23,6 +24,7 @@ scoreboard objectives add shader.gasmask.prev dummy
 scoreboard objectives add shader.goggles.prev dummy
 scoreboard objectives add shader.zoom.prev dummy
 scoreboard objectives add shader.yellow.prev dummy
+scoreboard objectives add shader.burn.prev dummy
 
 execute as @a unless score @s shader.green matches 0.. run scoreboard players set @s shader.green 0
 execute as @a unless score @s shader.blue matches 0.. run scoreboard players set @s shader.blue 0
@@ -36,3 +38,4 @@ execute as @a unless score @s shader.gasmask matches 0.. run scoreboard players 
 execute as @a unless score @s shader.goggles matches 0.. run scoreboard players set @s shader.goggles 0
 execute as @a unless score @s shader.zoom matches 0.. run scoreboard players set @s shader.zoom 0
 execute as @a unless score @s shader.yellow matches 0.. run scoreboard players set @s shader.yellow 0
+execute as @a unless score @s shader.burn matches 0.. run scoreboard players set @s shader.burn 0
