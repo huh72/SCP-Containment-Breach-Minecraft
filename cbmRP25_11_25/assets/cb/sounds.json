@@ -216,6 +216,7 @@
 	"scp457.fire2": {"sounds": ["cb:scp/457/fire2"]},
 	"scp457.encounter": {"sounds": ["cb:scp/457/encounter"]},
 	"scp650.chase": {"sounds": ["cb:scp/650/chase"]},
-	"scp650.heartbeat": {"sounds": ["cb:scp/650/heartbeat"]}
+	"scp650.heartbeat": {"sounds": ["cb:scp/650/heartbeat"]},
+	"scp650.encounter": {"sounds": ["cb:scp/650/encounter"]}
 }
 
