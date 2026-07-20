@@ -213,7 +213,7 @@
 	"scp079.broadcast6": {"sounds": ["cb:scp/079/broadcast6"]},
 	"scp457.fire0": {"sounds": ["cb:scp/457/fire0"]},
 	"scp457.fire1": {"sounds": ["cb:scp/457/fire1"]},
-	"scp457.fire2": {"sounds": ["cb:scp/457/fire2"]}
-	
+	"scp457.fire2": {"sounds": ["cb:scp/457/fire2"]},
+	"scp457.encounter": {"sounds": ["cb:scp/457/encounter"]}
 }
 
