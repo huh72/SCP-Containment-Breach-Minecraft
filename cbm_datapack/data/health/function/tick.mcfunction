@@ -14,3 +14,9 @@ execute as @e[type=armor_stand,tag=blooddrip,scores={blooddrip=0}] run function 
 execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.65 ~ air run tp @s ~ ~-0.65 ~
 execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.09 ~ air run tp @s ~ ~-0.09 ~
 execute as @e[type=armor_stand,tag=blooddrip] at @s if block ~ ~-0.01 ~ air run tp @s ~ ~-0.01 ~
+
+#heartbeat handler
+scoreboard players add @a[scores={heartbeatTimer=1..}] heartbeatCd 1
+scoreboard players remove @a[scores={heartbeatTimer=1..}] heartbeatTimer 1
+
+execute as @a[tag=!dead,scores={heartbeatTimer=1..}] at @s if score @s heartbeatCd = .max heartbeatCd run function health:heartbeat/play

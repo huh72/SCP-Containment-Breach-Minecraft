@@ -13,3 +13,7 @@ scoreboard objectives add blooddrip_cd dummy
 scoreboard objectives add blooddrip dummy
 scoreboard players set livetime blooddrip 1200
 # scoreboard players set cd bleeding_level_up_cd 400
+
+scoreboard objectives add heartbeatTimer dummy
+scoreboard objectives add heartbeatCd dummy
+scoreboard players set .max heartbeatCd 20
