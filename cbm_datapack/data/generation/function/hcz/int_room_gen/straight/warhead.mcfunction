@@ -9,6 +9,7 @@ execute at @n[type=marker,tag=warhead.elevatorspawnpoint,tag=r1] run place templ
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint,tag=r0] positioned ~ ~ ~0.5 rotated 180 0 run function animated_java:elevator_doors/summon with storage aj:temp
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint,tag=r1] positioned ~0.5 ~ ~ rotated 90 0 run function animated_java:elevator_doors/summon with storage aj:temp
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint] as @n[type=item_display,tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/play
+execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players set @n[tag=door_marker] access_level 5
 
 #::: init elevator:::
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run tag @n[tag=elevator] add 0
@@ -16,6 +17,10 @@ execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run tag @n[tag=elevato
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players set @n[tag=elevator] ID 2
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players set @n[tag=elevator] level 0
 execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players set @n[tag=elevator] onLevel 0
+execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players set @n[tag=elevator] moveTime -1
+
+scoreboard players set @n[tag=nuke, tag=1, tag=neverRemove] level 1
+scoreboard players set @n[tag=nuke, tag=1, tag=neverRemove] onLevel 0
 
 kill @n[type=marker,tag=warhead.elevatorspawnpoint]
 
