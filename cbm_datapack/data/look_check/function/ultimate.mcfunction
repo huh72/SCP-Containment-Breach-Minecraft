@@ -59,6 +59,9 @@ scoreboard players set .requestedIterations lookcheck 0
 #//g
 # kill @e[tag=look_check.helper]
 
+execute if score .result lookcheck matches 3 run return 1
+execute unless score .result lookcheck matches 3 run return 0
+
 #//g return → true
 #return 1
 

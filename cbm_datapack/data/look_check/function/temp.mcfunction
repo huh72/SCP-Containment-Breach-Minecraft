@@ -1,1 +1,1 @@
-function look_check:ultimate {"object":"@n[tag=f","subject":"@p","d":"2","n":"0","e":"test"}
+# function look_check:ultimate {"object":"@n[tag=f","subject":"@p","d":"2","n":"0","e":"test"}
