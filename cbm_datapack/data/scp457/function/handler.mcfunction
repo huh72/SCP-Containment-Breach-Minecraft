@@ -12,12 +12,17 @@ execute if predicate scp457:idle as @n[tag=aj.scp457.root,tag=aj.scp457.animatio
 #set light var reduce
 execute if score .scp457 setLightCd matches 1.. run scoreboard players remove .scp457 setLightCd 1
 execute if score .scp457 dealDamageCd matches 1.. run scoreboard players remove .scp457 dealDamageCd 1
+execute if score .scp457 encounterSoundCd < .scp457max encounterSoundCd run scoreboard players add .scp457 encounterSoundCd 1
 scoreboard players add .scp457 fireLoopSound 1
+
 
 #set light
 execute if score .scp457 setLightCd = 0 math if block ~ ~ ~ #scp457:air run function scp457:removelight
 execute if score .scp457 setLightCd = 0 math if block ~ ~ ~ #scp457:air run function scp457:setlight
 
+#encounter sound
+execute if score .scp457 encounterSoundCd = .scp457max encounterSoundCd as @a[tag=!dead] run function look_check:scps/457
+execute if score .scp457 encounterSoundCd = .scp457max encounterSoundCd as @a[tag=lookingAtScp457] run function scp457:sounds/encounter
 #fire sound
 execute if score .scp457 fireLoopSound = .0 fireLoopSound run function scp457:sounds/fire0
 execute if score .scp457 fireLoopSound = .1 fireLoopSound run function scp457:sounds/fire1

@@ -6,4 +6,4 @@ scoreboard players remove @s[scores={playerOnFireTime=400..}] health 33
 
 execute if score @s health < 0 math run tag @s add d_burn
 
-scoreboard players operation .scp457 dealDamageCd = .max457 dealDamageCd
+scoreboard players operation .scp457 dealDamageCd = .scp457max dealDamageCd
