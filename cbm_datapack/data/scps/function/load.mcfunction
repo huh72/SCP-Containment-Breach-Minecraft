@@ -16,6 +16,4 @@ function scp372:config
 function scp650:config
 function scp079:config
 function scp457:config
-#//g TEMP ->
-function look_check:config
 #function scp939_89:config

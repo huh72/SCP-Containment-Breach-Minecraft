@@ -28,6 +28,7 @@ function ui:list
 function ui:config
 function int:config
 function shader_control:config
+function look_check:config
 #scps
 function scps:load
 
