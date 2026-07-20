@@ -1,3 +1,4 @@
+execute as @n[type=wandering_trader, tag=scp939] at @s run tp @s ~ ~35 ~
 kill @e[tag=scp939]
 kill @e[tag=marker939]
 
