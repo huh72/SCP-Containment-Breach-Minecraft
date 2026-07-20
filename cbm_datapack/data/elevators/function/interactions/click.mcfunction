@@ -1,1 +1,1 @@
-playsound cb:interact.button ambient @a ~ ~ ~ 1 1 1
+playsound cb:interact.button ambient @a[distance=..10] ~ ~ ~ 1 1 1
