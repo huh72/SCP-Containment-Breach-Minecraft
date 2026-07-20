@@ -18,9 +18,65 @@ layout(std140) uniform SamplerInfo {
 #moj_import <shader_selector:data_reader.glsl>
 
 in vec2 texCoord;
-
 out vec4 fragColor;
 
+
+// Параметры шума
+const float noiseIntensity = 3.5;   // больше деталей
+const float noiseDefinition = 0.7;
+const float speed = 1800;            // скорость переливов
+
+// Шумовые функции
+float random(vec2 co) {
+    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+float noise(in vec2 p) {
+    p *= noiseIntensity;
+    vec2 i = floor(p);
+    vec2 f = fract(p);
+    vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(mix(random(i + vec2(0.0, 0.0)),
+                   random(i + vec2(1.0, 0.0)), u.x),
+               mix(random(i + vec2(0.0, 1.0)),
+                   random(i + vec2(1.0, 1.0)), u.x), u.y);
+}
+
+float fbm(in vec2 uv) {
+    uv *= 5.0;
+    mat2 m = mat2(1.6, 1.2, -1.2, 1.6);
+    float f  = 0.5000 * noise(uv); uv = m * uv;
+    f += 0.2500 * noise(uv); uv = m * uv;
+    f += 0.1250 * noise(uv); uv = m * uv;
+    f += 0.0625 * noise(uv); uv = m * uv;
+    return f;
+}
+
+// Анимированный фон с переливами
+vec3 animatedBackground(vec2 uv) {
+    float time0 = readChannel(TEST_CHANNEL);
+    float time = time0 * speed;
+
+    // Несколько слоёв ряби с разными скоростями
+    float ripple1 = fbm(vec2(uv.x * 0.9 + time * 0.2, uv.y));
+    float ripple2 = fbm(vec2(uv.y * 0.8 - time * 0.15, uv.x * 0.7));
+    float ripple = (ripple1 + ripple2) * 0.4;
+
+    // Плавно меняющаяся цветовая палитра (синие, фиолетовые, бирюзовые тона)
+    // vec3 colorA = vec3(0.05, 0.15, 0.5);  // глубокий синий
+    // vec3 colorB = vec3(0.5, 0.1, 0.6);    // фиолетовый
+    // vec3 colorC = vec3(0.0, 0.4, 0.6);    // бирюзовый
+    // float t1 = sin(time * 0.4) * 0.5 + 0.5;
+    // float t2 = cos(time * 0.7) * 0.5 + 0.5;
+    // vec3 baseColor = mix(mix(colorA, colorB, t1), colorC, t2);
+     vec3 baseColor = vec3(0.5, 0.5, 0.5);
+
+    // Усиливаем яркость рябью без тёмных провалов
+    float brightness = 0.7 + 0.6 * ripple;
+    brightness = clamp(brightness, 0.0, 1.0);   // гарантирует отсутствие чёрных пятен
+
+    return baseColor * brightness;
+}
 
 
 
@@ -220,6 +276,29 @@ void main() {
         fragColor.rgb *= flicker;
     }
     // =====================================================
+
+    float test = readChannel(TEST_CHANNEL);
+
+    // UV с коррекцией аспекта (заполняет весь экран)
+    uv = texCoord * 2.0 - 1.0;
+    uv.x *= OutSize.x / OutSize.y;
+
+    // Игровая сцена
+    vec3 sceneColor = texture(MainSampler, texCoord).rgb;
+
+    // Переливающаяся рябь
+    vec3 rippleColor = animatedBackground(uv);
+
+    // Степень прозрачности (регулируйте на свой вкус)
+    float effectAlpha = 0.85;
+
+    // Смешивание
+    vec3 finalColor = mix(sceneColor, rippleColor, effectAlpha);
+
+    fragColor = vec4(finalColor, 1.0);
+
+    
+
 
 
 // #define DEBUG
