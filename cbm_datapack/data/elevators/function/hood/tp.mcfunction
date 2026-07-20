@@ -1,5 +1,7 @@
 execute at @n[tag=finalElevator] run tp @p[tag=tpTarget] ~ ~ ~
 
+say @p[tag=tpTarget] -- tpTarget!
+
 $execute at @n[tag=finalElevator] as @p[tag=tpTarget] at @s run tp @s ~$(moveOnX) ~ ~$(moveOnZ) ~$(diffRotX) ~
 
 # $say movepnX:$(moveOnX), diffRot:$(diffRotX), tpTarget:@p[tag=tpTarget]

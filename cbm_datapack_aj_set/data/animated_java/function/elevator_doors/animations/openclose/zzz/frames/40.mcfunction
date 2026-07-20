@@ -2,4 +2,6 @@
 $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.5f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.5f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
+tag @n[tag=elevator] remove doorsCd
+
 execute as @n[tag=elevator_doors] run function animated_java:elevator_doors/animations/openclose/stop

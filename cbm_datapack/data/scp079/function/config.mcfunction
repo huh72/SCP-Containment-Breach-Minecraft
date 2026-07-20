@@ -23,5 +23,5 @@ scoreboard players set max scp079.broadcast5 50
 scoreboard players set max scp079.broadcast6 30
 
 #reset brightness
-# scoreboard players set @a shader.brightness 50
-particle minecraft:entity_effect{color:[0.996078431372549, 0.9647058823529412, 0.5, 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @a
+scoreboard players set @a shader.brightness 100
+# particle minecraft:entity_effect{color:[0.996078431372549, 0.9647058823529412, 0.5, 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @a

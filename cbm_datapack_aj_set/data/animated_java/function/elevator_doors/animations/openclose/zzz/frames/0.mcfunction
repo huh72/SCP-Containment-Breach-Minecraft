@@ -2,3 +2,5 @@
 $data merge entity $(bone_base) {transformation: [-2.9167f,0f,0f,0f,0f,2.9167f,0f,0f,0f,0f,-2.9167f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.5f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.5f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+
+tag @n[tag=elevator] add doorsCd

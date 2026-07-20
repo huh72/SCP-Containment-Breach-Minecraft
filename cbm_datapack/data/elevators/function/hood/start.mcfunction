@@ -4,7 +4,7 @@ tag @e[type=marker] remove finalElevator
 # say hood start - @s!
 
 scoreboard players operation _temp ID = @n[tag=currElevator] ID
-execute as @e[type=marker,tag=elevator,tag=!currElevator] if score @s ID = _temp ID run tag @s add finalElevator
+execute as @e[type=marker, tag=elevator, tag=!currElevator] if score @s ID = _temp ID run tag @s add finalElevator
 
 #Поворот / Rotation 
 # execute store result score .playerRotation elevator rundata get entity @n[tag=target] Rotation[0]

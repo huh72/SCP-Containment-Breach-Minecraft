@@ -36,7 +36,6 @@ scoreboard objectives add isCalled dummy
 scoreboard players set .moveSoundElevator moveTime 25
 scoreboard players set .playerTP moveTime 60
 scoreboard players set .max moveTime 170
-scoreboard players set @e[tag=elevator] moveTime -1
 
 # 0 - 0
 # 1 - 90

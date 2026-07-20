@@ -7,7 +7,7 @@ tag @a remove insideElevator
 execute as @e[type=marker, tag=elevator] at @s as @a[distance=..3.75] run tag @s add insideElevator
 
 #elevator interactions subtick
-execute as @e[type=item_display, tag=elevatorDoors] at @s run function elevators:interactions/subtick
+execute as @a[tag=!dead] at @s as @e[type=item_display, tag=elevatorDoors, distance=..5] at @s run function elevators:interactions/subtick
 
 #
 execute as @e[type=marker, tag=elevator] at @s run function elevators:handler
@@ -16,5 +16,5 @@ tag @a remove canCallElevator
 scoreboard players set @a elevatorRightClick 0
 
 #new elevator handler
-execute as @e[type=marker, tag=elevator,tag=new] at @s run tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" A new elevator detected! Don't forget to initialize it's tags and variables THROUGH vscode! (IDs, level(that marker level), onLevel(Virtual elevator's level), tags, check doors rotation tags)","color":"yellow"}]
-execute as @e[type=marker, tag=elevator,tag=new] run tag @s remove new
+execute as @e[type=marker, tag=elevator, tag=new] at @s run tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" A new elevator detected! Don't forget to initialize it's tags and variables THROUGH vscode! (IDs, level(that marker level), onLevel(Virtual elevator's level), tags, check doors rotation tags)","color":"yellow"}]
+execute as @e[type=marker, tag=elevator, tag=new] run tag @s remove new
