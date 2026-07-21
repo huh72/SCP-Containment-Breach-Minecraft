@@ -1,1 +1,1 @@
-playsound cb:elev.move ambient @a ~ ~ ~ 0.5 1 1
+playsound cb:elev.move ambient @s ~ ~250 ~ 100 1 1
