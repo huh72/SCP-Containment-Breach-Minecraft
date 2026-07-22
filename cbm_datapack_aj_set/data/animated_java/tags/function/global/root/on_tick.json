@@ -9,6 +9,7 @@
 		"animated_java:class_d/root/on_tick",
 		"animated_java:door_card0/root/on_tick",
 		"animated_java:door_check0/root/on_tick",
+		"animated_java:door0_sc/root/on_tick",
 		"animated_java:door0/root/on_tick",
 		"animated_java:door1/root/on_tick",
 		"animated_java:door914/root/on_tick",

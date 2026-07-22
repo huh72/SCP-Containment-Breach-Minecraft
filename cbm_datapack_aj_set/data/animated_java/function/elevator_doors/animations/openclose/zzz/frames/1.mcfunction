@@ -2,4 +2,7 @@
 $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.503f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.503f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
-playsound cb:elev.open ambient @a[distance=..24] ~ ~1 ~ 0.5 1 1
+tag @n[tag=elevator_doors] add doorsCd
+
+
+playsound cb:elev.open ambient @a[distance=..16] ~ ~1 ~ 0.5 1 1
