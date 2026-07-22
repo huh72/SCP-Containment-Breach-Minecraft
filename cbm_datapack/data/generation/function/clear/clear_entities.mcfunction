@@ -14,6 +14,11 @@ kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
 kill @e[type=item_display,tag=gatelockmarker]
 
+#g TEMP↓
+kill @e[tag=scp049.elevator0Spawn]
+kill @e[tag=scp049.elevator1Spawn]
+kill @e[tag=scp049sign]
+
 function scp914:spawn/remove
 kill @e[type=marker,tag=event2_handler]
 
