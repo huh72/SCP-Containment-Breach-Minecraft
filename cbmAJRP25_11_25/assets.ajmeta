@@ -69,12 +69,24 @@
 				"assets/animated_java/items/blueprint/door0/base.json",
 				"assets/animated_java/items/blueprint/door0/wind0.json",
 				"assets/animated_java/items/blueprint/door0/wind1.json",
-				"assets/animated_java/items/empty.json",
 				"assets/animated_java/models/blueprint/door0/base.json",
 				"assets/animated_java/models/blueprint/door0/wind0.json",
 				"assets/animated_java/models/blueprint/door0/wind1.json",
-				"assets/animated_java/models/empty.json",
-				"assets/animated_java/textures/blueprint/door0/door0.png"
+				"assets/animated_java/textures/blueprint/door0/door0.png",
+				"assets/animated_java/textures/blueprint/door0/locklcz.png"
+			]
+		},
+		"door0_sc": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/door0_sc/base.json",
+				"assets/animated_java/items/blueprint/door0_sc/wind0.json",
+				"assets/animated_java/items/blueprint/door0_sc/wind1.json",
+				"assets/animated_java/models/blueprint/door0_sc/base.json",
+				"assets/animated_java/models/blueprint/door0_sc/wind0.json",
+				"assets/animated_java/models/blueprint/door0_sc/wind1.json",
+				"assets/animated_java/textures/blueprint/door0_sc/door0.png",
+				"assets/animated_java/textures/blueprint/door0_sc/locklcz.png"
 			]
 		},
 		"door1": {
