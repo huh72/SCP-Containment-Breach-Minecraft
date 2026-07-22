@@ -1,4 +1,4 @@
-playsound cb:interact.card_denied ambient @a ~ ~ ~ 2 1 1
+playsound cb:interact.card_denied ambient @a[distance=..24] ~ ~ ~ 2 1 1
 title @p actionbar "Keycard was inserted into the slot, but nothing happened."
 
 scoreboard players operation @p[tag=close_to_door] card_interact_cd = max card_interact_cd
