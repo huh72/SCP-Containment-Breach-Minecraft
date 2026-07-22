@@ -13,8 +13,8 @@ execute as @a[tag=close_to_door] at @s run function doors:handlers/lcz
 execute as @a[tag=close_to_door_hcz] at @s run function doors:handlers/hcz
 
 #checkpoint auto-close
-execute as @e[type=marker,tag=checkpoint,tag=opened] at @s if score @s door_checkpoint_timer = alarm door_checkpoint_timer run playsound cb:door.locksiren ambient @a ~ ~1 ~ 1 1 1
-execute as @e[type=marker,tag=checkpoint,tag=opened] at @s if score @s door_checkpoint_timer matches 0 as @n[type=item_display,tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/resume
+execute as @e[type=marker, tag=checkpoint, tag=opened] at @s if score @s door_checkpoint_timer = alarm door_checkpoint_timer run playsound cb:door.locksiren ambient @a ~ ~1 ~ 1 1 1
+execute as @e[type=marker, tag=checkpoint, tag=opened] at @s if score @s door_checkpoint_timer matches 0 as @n[type=item_display,tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/resume
 
 #door opened by Mtf handler
 # execute as @e[tag=door_marker,tag=openedByMtf] at @s if score @s door_autoclose = alarm door_autoclose run playsound cb:door.locksiren ambient @a ~ ~1 ~ 1 1 1

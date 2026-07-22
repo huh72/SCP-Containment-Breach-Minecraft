@@ -1,8 +1,8 @@
 #interact check 
-execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r0] at @s positioned ~2 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r1] at @s positioned ~-1.5 ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door
-execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=r1] at @s positioned ~1.5 ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door
+execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=!sc,tag=r0] at @s positioned ~2 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door
+execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=!sc,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door
+execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=!sc,tag=r1] at @s positioned ~-1.5 ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door
+execute as @e[type=marker,tag=door_marker_ez,tag=!card,tag=!sc,tag=r1] at @s positioned ~1.5 ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door
 tag @a[tag=can_interact_with_door] add looking_on_door
 
 #interact check -card
@@ -10,6 +10,12 @@ execute as @e[type=marker,tag=door_marker,tag=card,tag=r0] at @s positioned ~2 ~
 execute as @e[type=marker,tag=door_marker,tag=card,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door_card
 execute as @e[type=marker,tag=door_marker,tag=card,tag=r1] at @s positioned ~-1.5 ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door_card
 execute as @e[type=marker,tag=door_marker,tag=card,tag=r1] at @s positioned ~1.5 ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door_card
+
+#interact check -sc
+execute as @e[type=marker,tag=door_marker,tag=sc,tag=r0] at @s positioned ~2 ~ ~1.5 run tag @a[distance=..1.25] add can_interact_with_door_sc
+execute as @e[type=marker,tag=door_marker,tag=sc,tag=r0] at @s positioned ~-2 ~ ~-1.5 run tag @a[distance=..1.25] add can_interact_with_door_sc
+execute as @e[type=marker,tag=door_marker,tag=sc,tag=r1] at @s positioned ~-1.5 ~ ~2 run tag @a[distance=..1.25] add can_interact_with_door_sc
+execute as @e[type=marker,tag=door_marker,tag=sc,tag=r1] at @s positioned ~1.5 ~ ~-2 run tag @a[distance=..1.25] add can_interact_with_door_sc
 tag @a[tag=can_interact_with_door_card] add looking_on_door
 
 #interact check -card

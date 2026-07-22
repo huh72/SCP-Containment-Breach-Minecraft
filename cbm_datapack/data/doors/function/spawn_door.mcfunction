@@ -16,4 +16,4 @@ say spawn doors!
 
 ###!
 scoreboard players set @e[tag=door_marker] door_interact_cd 0
-tag @e[tag=door_marker,tag=!card] add 079horror 
+tag @e[tag=door_marker,tag=!card,tag=!sc] add 079horror 

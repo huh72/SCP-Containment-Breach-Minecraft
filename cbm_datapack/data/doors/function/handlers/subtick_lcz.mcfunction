@@ -2,8 +2,8 @@ tag @s add looking_on_door
 
 
 #door
-execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker,scores={door_interact_cd=0},tag=!card,tag=closed,distance=..4] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/play
-execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker,scores={door_interact_cd=0},tag=!card,tag=opened,distance=..4] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
+execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker,scores={door_interact_cd=0},tag=!card,tag=!sc,tag=closed,distance=..4] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/play
+execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker,scores={door_interact_cd=0},tag=!card,tag=!sc,tag=opened,distance=..4] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
 
 #card
 execute if score @s[tag=can_interact_with_door] door_right_click matches 1.. at @n[type=marker,tag=door_marker,tag=card,scores={door_interact_cd=0},tag=closed,distance=..4] if score @s access_level >= @n[type=marker,tag=door_marker,tag=card,scores={door_interact_cd=0},tag=closed,distance=..4] access_level as @n[type=item_display,tag=aj.door_card0.root] run function animated_java:door_card0/animations/openclosetoggle/play
