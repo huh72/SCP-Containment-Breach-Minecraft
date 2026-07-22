@@ -1,4 +1,8 @@
 # В заготовке каждой комнаты в центре двери будут маркеры, при генерации комплекса маркер будет накладываться на маркер, и тогда в одной двери путем удаления случайного маркера останется один маркер, на его месте, получая его наклон будет спавниться дверь со спец номером, взятым от маркера
+#access
+scoreboard objectives add access_level dummy
+scoreboard objectives add scanner_value dummy
+
 #doors
 scoreboard objectives add dm.UUID dummy
 scoreboard objectives add door.UUID dummy
