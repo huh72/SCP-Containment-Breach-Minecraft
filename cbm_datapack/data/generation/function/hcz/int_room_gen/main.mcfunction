@@ -1,3 +1,6 @@
+#049 chamber room
+execute as @e[tag=str,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/straight/049 {"room":"hcz:049_"}
+
 #another type -- 3
 execute as @e[tag=str,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/straight/str3_0 {"room":"hcz:str3_"}
 execute as @e[tag=str,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/straight/str3_0 {"room":"hcz:str3_"}
