@@ -17,6 +17,8 @@ execute as @e[tag=173] at @s run place template lcz:start0 ~2 ~ ~ counterclockwi
 execute as @e[tag=173] at @s run place template lcz:start1 ~33 ~4 ~-13 counterclockwise_90
 #in start0 at gateSpawnpoint spawn gate model
 execute at @n[tag=gateSpawnpoint] run function animated_java:gate/summon with storage aj:temp
+execute at @n[tag=gateSpawnpoint] as @n[tag=gate] run function animated_java:gate/animations/openclosetoggle/apply_frame {"frame":"64"}
+kill @e[type=marker, tag=gateSpawnpoint]
 
 schedule function generation:lcz/int_room_gen/main 1t replace
 

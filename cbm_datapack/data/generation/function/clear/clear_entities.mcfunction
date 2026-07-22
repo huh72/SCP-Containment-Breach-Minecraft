@@ -32,3 +32,7 @@ kill @e[type=marker,tag=lever_marker]
 #elevators
 kill @e[type=marker, tag=elevator, tag=!neverRemove]
 function animated_java:elevator_doors/remove/all
+
+#
+kill @e[type=armor_stand,tag=mauallySpawnedPD]
+kill @e[type=marker, tag=firstSpawnpoint]
