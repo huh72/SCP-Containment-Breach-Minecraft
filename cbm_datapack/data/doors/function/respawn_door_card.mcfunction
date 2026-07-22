@@ -19,7 +19,7 @@ execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~ minecraft:lightning_r
 
 #main-opened
 tag @s add -commframe
-execute if entity @s[tag=opened] as @n[tag=aj.door0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/play
-execute if entity @s[tag=opened] as @n[tag=aj.door0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/apply_frame {"frame":"34"}
-execute if entity @s[tag=opened] as @n[tag=aj.door0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/pause
+execute if entity @s[tag=opened] as @n[tag=aj.door_card0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/play
+execute if entity @s[tag=opened] as @n[tag=aj.door_card0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/apply_frame {"frame":"34"}
+execute if entity @s[tag=opened] as @n[tag=aj.door_card0.root] at @s run function animated_java:door_card0/animations/openclosetoggle/pause
 tag @s remove -commframe
