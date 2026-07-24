@@ -6,6 +6,9 @@ summon minecraft:item_display ~ ~ ~ { Tags:[ 'aj.new', 'aj.global.entity', 'aj.g
 execute as @n[tag=warhead.elevatorspawnpoint, distance=..1] if entity @s[tag=r0] run tag @n[tag=aj.new] add r1
 execute as @n[tag=warhead.elevatorspawnpoint, distance=..1] if entity @s[tag=r1] run tag @n[tag=aj.new] add r0
 
+execute as @n[tag=warhead.elevatorspawnpoint, distance=..1] if entity @s[tag=r0] run tag @n[tag=aj.new] add r1
+execute as @n[tag=warhead.elevatorspawnpoint, distance=..1] if entity @s[tag=r1] run tag @n[tag=aj.new] add r0
+
 # execute if entity @s[y_rotation=90] run tag @n[tag=aj.new] add r0
 # execute if entity @s[y_rotation=270] run tag @n[tag=aj.new] add r0
 # execute if entity @s[y_rotation=0] run tag @n[tag=aj.new] add r1
