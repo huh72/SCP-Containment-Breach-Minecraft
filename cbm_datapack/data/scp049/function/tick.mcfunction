@@ -16,3 +16,7 @@ execute if score 049 door_open_cd matches 0 at @n[type=minecraft:vindicator,tag=
 
 #door open hcz
 execute if score 049 door_open_cd matches 0 at @n[type=minecraft:vindicator,tag=scp049] if entity @n[type=minecraft:marker,tag=door_marker_hcz,distance=..3,tag=closed] run function scp049:open_door_hcz
+
+#chamber ambient loop
+execute as @a[tag=!dead] if score @s chamber049.ambientTimer = .max chamber049.ambientTimer run function scp049:chamber_ambient
+execute as @a[tag=!dead] unless score @s chamber049.ambientTimer matches -1 run scoreboard players add @s chamber049.ambientTimer 1

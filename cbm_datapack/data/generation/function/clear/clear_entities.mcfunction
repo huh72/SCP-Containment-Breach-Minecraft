@@ -12,7 +12,8 @@ kill @e[type=marker,tag=door_marker2]
 kill @e[type=marker,tag=door_marker_ez]
 kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
-kill @e[type=item_display,tag=gatelockmarker]
+# kill @e[type=item_display,tag=gatelockmarker,tag=!neverRemove]
+function gates:remove
 
 #g TEMP↓
 kill @e[tag=scp049sign]
