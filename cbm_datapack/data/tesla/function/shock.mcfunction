@@ -5,7 +5,7 @@ playsound cb:tesla.shock ambient @a[distance=..16] ~ ~2 ~ 1 1 1
 execute if entity @s[tag=0] run summon block_display ~ ~ ~ {Tags:['tesla_shock'],block_state:{Name:"minecraft:light_blue_stained_glass",Properties:{}},transformation:[0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,6.0000f,0.0000f,0.0000f,0.0000f,0.0000f,6.0000f,-3.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Rotation:[90f,0f]}
 execute if entity @s[tag=1] run summon block_display ~ ~ ~ {Tags:['tesla_shock'],block_state:{Name:"minecraft:light_blue_stained_glass",Properties:{}},transformation:[0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,6.0000f,0.0000f,0.0000f,0.0000f,0.0000f,6.0000f,-3.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
 
-execute at @n[tag=tesla_shock] run fill ~ ~1 ~ ~ ~2 ~ light[level=15]
+execute at @n[tag=tesla_shock] run fill ~ ~2 ~ ~ ~3 ~ light[level=15]
 
 #vars
 scoreboard players operation @s tesla_shock_timer = max* tesla_shock_timer
