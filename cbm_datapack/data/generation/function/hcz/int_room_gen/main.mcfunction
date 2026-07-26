@@ -52,11 +52,11 @@ execute as @e[tag=x_f,tag=hcz] at @s run function generation:hcz/int_room_gen/x_
 
 ### DEADENDS
 # scp 035
-execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/106 {"room":"hcz:dd_035_"}
+execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/035 {"room":"hcz:dd_035_"}
 # scp 008
-execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/106 {"room":"hcz:dd_008_"}
+execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/008 {"room":"hcz:dd_008_"}
 # scp 079
-execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/106 {"room":"hcz:dd_079_"}
+execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/079 {"room":"hcz:dd_079_"}
 # scp 106
 execute as @e[tag=dd,tag=hcz,sort=random,limit=1] at @s run function generation:hcz/int_room_gen/deadends/106 {"room":"hcz:dd_106_"}
 
