@@ -1,0 +1,1 @@
+execute at @n[tag=106.monitor] run playsound cb:scp106.event.luresubject.idle3 ambient @a[distance=..20] ~ ~ ~ 1 1 1

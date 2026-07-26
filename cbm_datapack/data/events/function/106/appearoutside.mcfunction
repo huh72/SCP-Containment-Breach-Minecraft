@@ -1,0 +1,1 @@
+execute at @n[tag=106.monitor] at @p[tag=!dead] run function scp106evolution:spawn

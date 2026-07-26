@@ -1,0 +1,1 @@
+execute at @n[tag=106.monitor] if score .sound event106 matches 1 run playsound cb:scp106.event.femurbreaker13 ambient @a[distance=..20] ~ ~ ~ 1 1 1
