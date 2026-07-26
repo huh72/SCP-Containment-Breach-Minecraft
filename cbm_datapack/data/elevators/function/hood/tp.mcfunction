@@ -16,6 +16,9 @@ execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=049, tag=1,
 execute as @p[tag=tpTarget] at @s if entity @n[tag=elevator, tag=nuke, tag=1, distance=..5] run tag @s add location.nuke
 execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=nuke,tag=1, distance=..5] run tag @s remove location.nuke
 
+execute as @p[tag=tpTarget] at @s if entity @n[tag=elevator, tag=106, tag=1, distance=..5] run tag @s add location.106chamber
+execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=106,tag=1, distance=..5] run tag @s remove location.106chamber
+
 # $say movepnX:$(moveOnX), diffRot:$(diffRotX), tpTarget:@p[tag=tpTarget]
 
 # tell @p[tag=tpTarget] "Was teleported succesfully!"
