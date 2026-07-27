@@ -4,6 +4,7 @@ item replace entity @n[type=zombie, tag=infected008, tag=new] armor.head with mi
 
 #editing the entity's speed
 execute as @n[type=zombie, tag=infected008, tag=new] run attribute @s movement_speed base set 0.165
+execute as @n[type=zombie, tag=infected008, tag=new] run attribute @s follow_range base set 64
 
 #throw no macros value error
 # execute as @n[type=zombie,tag=infected008,tag=new] if entity @s[tag=] run tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" No 'infected008' spawned because there is no acceptable macros value! \n ","color":"red"},{"text":"Acceptable macros values are: 'active' or 'passive'","color":"yellow"}]
@@ -18,6 +19,8 @@ execute as @n[type=zombie, tag=infected008, tag=new] at @s run function animated
 execute as @n[type=zombie, tag=infected008, tag=new] if entity @s[tag=passive] as @n[tag=aj.infected008.root] run function animated_java:infected008/animations/wake/apply_frame {"frame":"0"}
 
 #
+execute as @n[type=zombie, tag=infected008, tag=new] if entity @s[tag=active] run scoreboard players set @s health 120
+
 execute as @n[type=zombie, tag=infected008, tag=new] if entity @s[tag=active] run scoreboard players set @s infected008 185
 
 #
