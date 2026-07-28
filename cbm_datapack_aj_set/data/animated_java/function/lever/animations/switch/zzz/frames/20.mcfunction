@@ -3,4 +3,7 @@ $data merge entity $(bone_lever) {transformation: [-1f,0f,0f,0f,0f,-1f,0f,0.5f,0
 tag @n[tag=lever] remove proceed
 tag @n[tag=lever] add up
 tag @n[tag=lever] remove down
+
+scoreboard players set @a right_click_item 0
+
 execute as @n[tag=lever] run function animated_java:lever/animations/switch/pause
