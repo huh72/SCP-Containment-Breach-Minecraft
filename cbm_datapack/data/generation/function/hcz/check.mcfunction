@@ -39,8 +39,8 @@ $execute if score $(pos) hsq matches 11 run summon marker ~ ~ ~ {Tags:['gen','x_
 
 
 #hcz-ez checkpoint
-$execute positioned ~-3 ~1 ~ if score $(pos) hsq matches 12 run place template lcz:hczcheck
-$execute positioned ~-3 ~1 ~ if score $(pos) hsq matches 17 run place template lcz:hczcheck
+$execute positioned ~-3 ~1 ~-1 if score $(pos) hsq matches 12 run place template lcz:hczcheck
+$execute positioned ~-3 ~1 ~-1 if score $(pos) hsq matches 17 run place template lcz:hczcheck
 
 
 #deadend
