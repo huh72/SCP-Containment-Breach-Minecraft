@@ -27,27 +27,27 @@ execute as @e[type=armor_stand,tag=drop] at @s if block ~ ~-0.2 ~ #drop:air run 
 
 #drop move 
 #move protect check
-execute as @e[type=armor_stand,tag=drop] at @s anchored eyes run function drop:move_protect
+# execute as @e[type=armor_stand,tag=drop] at @s anchored eyes run function drop:move_protect
 
 #another drop pos so drop can choose right direction ot move in
-execute as @e[type=armor_stand,tag=drop] at @s run function drop:drop_dir
+# execute as @e[type=armor_stand,tag=drop] at @s run function drop:drop_dir
 
 #item_move storage
 # data modify storage item_move huh? set value 1
-execute as @e[type=armor_stand,tag=drop,tag=!move_protected] at @s run tag @e[tag=drop,distance=0.01..0.3] add move
-# execute as @e[tag=move,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
+# execute as @e[type=armor_stand,tag=drop,tag=!move_protected] at @s run tag @e[tag=drop,distance=0.01..0.3] add move
+# # execute as @e[tag=move,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
 
-#move from walls
-execute as @e[type=armor_stand,tag=back,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
-execute as @e[type=armor_stand,tag=front,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"-0.3"}
-execute as @e[type=armor_stand,tag=left,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0.3","y":"0","z":"0"}
-execute as @e[type=armor_stand,tag=right,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"-0.3","y":"0","z":"0"}
+# #move from walls
+# execute as @e[type=armor_stand,tag=back,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
+# execute as @e[type=armor_stand,tag=front,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"-0.3"}
+# execute as @e[type=armor_stand,tag=left,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0.3","y":"0","z":"0"}
+# execute as @e[type=armor_stand,tag=right,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"-0.3","y":"0","z":"0"}
 
-#move from another drop
-execute as @e[type=armor_stand,tag=dback,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"-0.3"}
-execute as @e[type=armor_stand,tag=dfront,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
-execute as @e[type=armor_stand,tag=dleft,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0.3","y":"0","z":"0"}
-execute as @e[type=armor_stand,tag=dright,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"-0.3","y":"0","z":"0"}
+# #move from another drop
+# execute as @e[type=armor_stand,tag=dback,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"-0.3"}
+# execute as @e[type=armor_stand,tag=dfront,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0","y":"0","z":"0.3"}
+# execute as @e[type=armor_stand,tag=dleft,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"0.3","y":"0","z":"0"}
+# execute as @e[type=armor_stand,tag=dright,tag=!move_protected,limit=1] at @s run function drop:item_move {"x":"-0.3","y":"0","z":"0"}
 
 
 
