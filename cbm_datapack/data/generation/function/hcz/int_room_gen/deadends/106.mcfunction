@@ -14,7 +14,8 @@ execute if entity @s[tag=13] at @n[tag=106.elevatorSpawn] rotated 270 0 run func
 execute if entity @s[tag=15] at @n[tag=106.elevatorSpawn] rotated 90 0 run function animated_java:elevator_doors/summon with storage aj:temp
 execute if entity @s[tag=16] at @n[tag=106.elevatorSpawn] rotated 0 0 run function animated_java:elevator_doors/summon with storage aj:temp
 
-execute at @n[tag=106.elevatorSpawn] as @n[tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/play
+execute at @n[tag=106.elevatorSpawn] as @n[tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/set_frame {"frame":"10"}
+execute at @n[tag=106.elevatorSpawn] as @n[tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/set_frame {"frame":"0"}
 
 execute if entity @s[tag=13] run tag @n[tag=elevatorDoors] add r0
 execute if entity @s[tag=15] run tag @n[tag=elevatorDoors] add r0
@@ -27,12 +28,16 @@ execute at @n[tag=106.elevatorSpawn] run scoreboard players set @n[tag=elevator]
 execute at @n[tag=106.elevatorSpawn] run scoreboard players set @n[tag=elevator] level 0
 execute at @n[tag=106.elevatorSpawn] run scoreboard players set @n[tag=elevator] onLevel 1
 
-scoreboard players set @n[tag=106, tag=1, tag=neverRemove] level 1
-scoreboard players set @n[tag=106, tag=1, tag=neverRemove] onLevel 1
+scoreboard players set @n[tag=106, tag=1] level 1
+scoreboard players set @n[tag=106, tag=1] onLevel 1
+
+execute as @n[type=marker, tag=elevator, tag=106, tag=1] at @s as @n[tag=elevatorDoors] if entity @s[tag=closed] run function animated_java:elevator_doors/animations/openclose/resume
+# execute as @n[type=marker, tag=elevator, tag=106, tag=0] at @s as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
+
+
+
 
 #g LEVER TAGS: 'reboot', 'soundTransmission', 'femurBreaker'
-
-
 
 kill @n[tag=106.elevatorSpawn]
 kill @s
