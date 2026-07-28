@@ -20,6 +20,6 @@ execute at @n[tag=gateSpawnpoint] run function animated_java:gate/summon with st
 execute at @n[tag=gateSpawnpoint] as @n[tag=gate] run function animated_java:gate/animations/openclosetoggle/apply_frame {"frame":"64"}
 kill @e[type=marker, tag=gateSpawnpoint]
 
-schedule function generation:lcz/int_room_gen/main 1t replace
+schedule function generation:lcz/int_room_gen/main 5t replace
 
 # say end lcz!
