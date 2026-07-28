@@ -4,7 +4,7 @@ execute if score timer scp914 >= max scp914 run scoreboard players set timer scp
 
 ### doors close + sound
 execute if score timer scp914 matches 40 as @e[type=minecraft:marker,tag=door914] at @s positioned ^ ^ ^1 run function scp914:close_doors
-execute if score timer scp914 matches 40 as @e[type=minecraft:marker,tag=door914] at @s run playsound cb:scp914.doorclose ambient @a ~ ~ ~ 0.85 1 1
+execute if score timer scp914 matches 40 as @e[type=minecraft:marker,tag=door914] at @s run playsound cb:scp914.doorclose ambient @a[distance=..14] ~ ~ ~ 0.85 1 1
 
 execute if score timer scp914 matches 210 as @e[type=minecraft:armor_stand,tag=input_item] at @s run function scp914:rework_items
 execute if score timer scp914 matches 210 as @e[type=minecraft:armor_stand,tag=input_player] at @s run function scp914:rework_players
@@ -17,7 +17,7 @@ execute as @e[tag=mode914] on target if score timer scp914 matches 0 run functio
 data remove entity @n[tag=mode914] interaction
 
 ### start + interaction
-execute as @e[tag=startbutton914] on target if score timer scp914 matches 0 run function scp914:start
+execute as @e[tag=startbutton914] at @s on target if score timer scp914 matches 0 run function scp914:start
 data remove entity @n[tag=startbutton914] interaction
 
 ### Looking detect, interact

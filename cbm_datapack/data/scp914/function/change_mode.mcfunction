@@ -11,5 +11,5 @@ execute if score mode scp914 matches 2 at @n[tag=mode914] run summon minecraft:t
 
 data modify entity @n[tag=textdisplay914] Rotation set from entity @n[tag=aj.door914.root] Rotation
 
-execute at @n[tag=mode914] run playsound cb:interact.leverflip ambient @a ~ ~ ~ 1 1 1
+execute at @n[tag=mode914] run playsound cb:interact.leverflip ambient @a[distance=..10] ~ ~ ~ 1 1 1
 execute as @e[tag=aj.914_button.root] run function animated_java:914_button/animations/change_mode/play with storage aj:temp
