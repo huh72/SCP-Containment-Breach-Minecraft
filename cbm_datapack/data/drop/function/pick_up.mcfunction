@@ -39,13 +39,13 @@ execute if entity @s[tag=white_arm] as @a[tag=caster] if score @s right_click_it
 execute if entity @s[tag=black_arm] as @a[tag=caster] if score @s right_click_item matches 1 run function give:blackarm
 
 #sound
-execute if entity @s[tag=card1] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=card2] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=card3] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=card4] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=card5] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=cardomni] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @s[tag=playingcard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @s[tag=card1] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=card2] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=card3] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=card4] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=card5] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=cardomni] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
+execute if entity @s[tag=playingcard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 0.75 1 1
 execute if entity @s[tag=mastercard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=battery9] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=battery18] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
