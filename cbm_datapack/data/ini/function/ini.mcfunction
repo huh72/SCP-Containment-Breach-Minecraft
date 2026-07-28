@@ -26,6 +26,8 @@ scoreboard players set @s heartbeatCd 0
 tag @s add can_blink
 tag @s add tesla_trigger
 
+tag @s add elevatorTarget
+
 scoreboard players operation @s global_num = max* global_num
 scoreboard players add @s global_num 1
 scoreboard players operation max* global_num = @s global_num

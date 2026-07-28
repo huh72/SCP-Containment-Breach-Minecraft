@@ -1,5 +1,5 @@
 #for spawn instance "state" macros has to be defined [active/passive]
-$summon zombie ~ ~ ~ {Tags:['infected008', 'new', 'tesla_trigger', '$(state)', 'hit'],Silent:1b,Invulnerable:1b,Armor_items:[{},{},{},{id:"minecraft:air",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":1}}}}],PersistenceRequired:true}
+$summon zombie ~ ~ ~ {Tags:['infected008', 'new', 'tesla_trigger', '$(state)', 'hit', 'elevatorTarget'],Silent:1b,Invulnerable:1b,Armor_items:[{},{},{},{id:"minecraft:air",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":1}}}}],PersistenceRequired:true}
 item replace entity @n[type=zombie, tag=infected008, tag=new] armor.head with minecraft:carrot_on_a_stick
 
 #editing the entity's speed
