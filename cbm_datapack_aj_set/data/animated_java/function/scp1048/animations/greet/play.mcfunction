@@ -6,6 +6,7 @@ tag @s add aj.transforms_only
 execute at @s run function animated_java:scp1048/animations/greet/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
 
-rotate @n[type=pig, tag=scp1048origin] facing entity @p eyes
+tag @p[tag=!dead] add greetTarget
 attribute @n[type=pig, tag=scp1048origin] minecraft:movement_speed modifier add 1521-2-5-8-1 -1.0 add_value
-playsound cb:scp1048.greet ambient @a ~ ~ ~ 1.5 1 1
+playsound cb:scp1048.greet ambient @a[distance=..24] ~ ~0.5 ~ 1.5 1 1
+execute as @a[distance=24..128] at @s run playsound cb:scp1048.greet ambient @s ~ ~ ~ 0.05 1 1

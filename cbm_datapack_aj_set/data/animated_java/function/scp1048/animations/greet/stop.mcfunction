@@ -5,5 +5,6 @@ tag @s add aj.transforms_only
 execute at @s run function animated_java:scp1048/animations/greet/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
 
-scoreboard players operation @n[type=marker,tag=scp1048origin] greet = .max greet
-attribute @n[type=marker,tag=scp1048origin] minecraft:movement_speed modifier remove 1521-2-5-8-1
+tag @p[tag=!dead,tag=greetTarget] remove greetTarget
+scoreboard players operation @n[type=pig, tag=scp1048origin] greet = .max greet
+attribute @n[type=pig, tag=scp1048origin] minecraft:movement_speed modifier remove 1521-2-5-8-1
