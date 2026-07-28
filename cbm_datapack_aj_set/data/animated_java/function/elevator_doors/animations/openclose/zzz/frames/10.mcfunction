@@ -4,3 +4,5 @@ $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.7837f,0f,2f,0f,0
 
 execute as @n[tag=elevatorDoors] if entity @s[tag=r0] run fill ~ ~ ~ ~ ~1 ~-1 air
 execute as @n[tag=elevatorDoors] if entity @s[tag=r1] run fill ~ ~ ~ ~-1 ~1 ~ air
+tag @n[tag=elevatorDoors] add opened
+tag @n[tag=elevatorDoors] remove closed
