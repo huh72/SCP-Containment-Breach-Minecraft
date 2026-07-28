@@ -2,7 +2,7 @@ summon zombie ~ ~ ~ {Tags:['scp457', 'new'],Silent:1b,Invulnerable:1b,Persistenc
 
 effect give @n[tag=scp457, tag=new] invisibility infinite 1 true
 attribute @n[tag=scp457, tag=new] attack_damage base set 0
-attribute @n[tag=scp457, tag=new] movement_speed base set 0.165
+attribute @n[tag=scp457, tag=new] movement_speed base set 0.225
 scoreboard players set .scp457 setLightCd 10
 scoreboard players set .scp457 fireLoopSound 10
 scoreboard players set .scp457 dealDamageCd 100
