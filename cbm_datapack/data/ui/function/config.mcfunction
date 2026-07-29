@@ -5,4 +5,4 @@
 # title -> "selected items icons/ possible interactions/blink"
 
 scoreboard objectives add request_cd dummy
-execite as @a unless score @s item_selected matches 0.. run scoreboard players set @s item_selected 0
+execute as @a unless score @s item_selected matches 0.. run scoreboard players set @s item_selected 0

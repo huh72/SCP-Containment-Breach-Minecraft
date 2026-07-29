@@ -1,6 +1,5 @@
 $scoreboard players set @s $(slotcd) -1
 #$say $(slotd)
-
 $scoreboard players set @s slot_used $(slot)
 
 #tellraw @a {"score":{"name":"@s","objective":"slot_used"}}
@@ -31,7 +30,6 @@ tag @s remove slot_d21
 tag @s remove slot_d22
 tag @s remove slot_d23
 tag @s remove slot_d24
-
 
 
 #### USE FUNCTION: ###
