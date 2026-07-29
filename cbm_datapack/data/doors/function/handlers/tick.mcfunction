@@ -1,3 +1,5 @@
+tag @a remove looking_on_door
+
 scoreboard players remove @e[type=marker,tag=door,scores={door_interact_cd=1..}] door_interact_cd 1
 scoreboard players remove @a[scores={card_interact_cd=1..}] card_interact_cd 1
 scoreboard players remove @e[type=marker,tag=door_marker_checkpoint,tag=opened,scores={door_checkpoint_timer=1..}] door_checkpoint_timer 1

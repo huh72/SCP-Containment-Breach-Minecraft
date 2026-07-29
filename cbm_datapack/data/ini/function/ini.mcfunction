@@ -12,6 +12,7 @@ execute as @a run attribute @s minecraft:camera_distance base set 0.0
 scoreboard players operation @s stamina = max stamina
 scoreboard players set @s breath_cd 1
 scoreboard players set @s item_selected 0
+scoreboard players set @s request_cd 0
 scoreboard players set @s playerOnFireTime 0
 
 scoreboard players set @s card_interact_cd 5
