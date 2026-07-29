@@ -22,6 +22,8 @@ execute at @n[type=marker,tag=warhead.elevatorspawnpoint] run scoreboard players
 scoreboard players set @n[tag=nuke, tag=1, tag=neverRemove] level 1
 scoreboard players set @n[tag=nuke, tag=1, tag=neverRemove] onLevel 0
 
-kill @n[type=marker,tag=warhead.elevatorspawnpoint]
+#sent elevator
+execute as @n[tag=elevator, tag=nuke, tag=1] as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
 
+kill @n[type=marker,tag=warhead.elevatorspawnpoint]
 kill @s
