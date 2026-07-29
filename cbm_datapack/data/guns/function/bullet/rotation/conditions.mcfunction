@@ -22,12 +22,12 @@ execute store result score RotY bullet run data get entity @s Rotation[1]
 
 ### X ROTAION CHECK
 #1)
-execute if score RotX bullet matches -45..45 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"0","RotY":"0"}
-#2)
-execute if score RotX bullet matches 45..135 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"90","RotY":"0"}
-#3) divides into two cases
-#1 = 2
-execute if score RotX bullet matches 135..180 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"180","RotY":"0"}
-execute if score RotX bullet matches -180..-135 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"180","RotY":"0"}
-#4)
-execute if score RotX bullet matches -135..-45 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"270","RotY":"0"}
+# execute if score RotX bullet matches -45..45 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"0","RotY":"0"}
+# #2)
+# execute if score RotX bullet matches 45..135 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"90","RotY":"0"}
+# #3) divides into two cases
+# #1 = 2
+# execute if score RotX bullet matches 135..180 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"180","RotY":"0"}
+# execute if score RotX bullet matches -180..-135 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"180","RotY":"0"}
+# #4)
+# execute if score RotX bullet matches -135..-45 run function guns:bullet_hole/spawn {"block":"black_concrete","transformation":"0.1f,0f,0f,-0.05f,0f,0.1f,0f,-0.05f,0f,0f,0.0011f,0f,0f,0f,0f,1f","RotX":"270","RotY":"0"}
