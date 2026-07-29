@@ -19,6 +19,9 @@ execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=nuke,tag=1,
 execute as @p[tag=tpTarget] at @s if entity @n[tag=elevator, tag=106, tag=1, distance=..5] run tag @s add location.106chamber
 execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=106,tag=1, distance=..5] run tag @s remove location.106chamber
 
+execute as @p[tag=tpTarget] at @s if entity @n[tag=elevator, tag=939, tag=1, distance=..5] run tag @s add location.939storage
+execute as @p[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=939, tag=1, distance=..5] run tag @s remove location.939storage
+
 tag @p[tag=tpTarget] remove tpTarget
 
 # $say movepnX:$(moveOnX), diffRot:$(diffRotX), tpTarget:@p[tag=tpTarget]
