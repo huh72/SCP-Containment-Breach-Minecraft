@@ -41,4 +41,4 @@ tag @s remove 1499_1Target
 #full inventory drop
 function main:drop_items with storage minecraft:drop_pos
 
-function main:death_ui.mcfunction/setblack {"text":"*press right click to respawn"}
+function main:death_ui/setblack {"text":"*press right click to respawn"}

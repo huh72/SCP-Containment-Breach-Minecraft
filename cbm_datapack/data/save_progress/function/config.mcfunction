@@ -2,7 +2,7 @@ scoreboard objectives add q minecraft.dropped:minecraft.carrot_on_a_stick
 
 #save cd:
 scoreboard objectives add save_cd dummy
-scoreboard players set max* save_cd 20
+scoreboard players set max* save_cd 35
 #ini
 execute as @a unless score @s save_cd matches 1.. run scoreboard players operation @s save_cd = max* save_cd
 
