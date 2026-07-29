@@ -13,7 +13,6 @@ execute if entity @s[tag=2] run function generation:hcz/int_room_gen/straight/in
 
 execute at @e[tag=elevator,tag=049,tag=0] as @n[tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/play
 
-
 # init chamber elevators
 
 # 049chamber.elevator0spawn , 049chamber.elevator1spawn
