@@ -1,0 +1,1 @@
+execute as @e[tag=loot.spawn] at @s run function drop:loop/spawn_helper
