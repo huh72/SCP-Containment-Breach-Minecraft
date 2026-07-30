@@ -1,6 +1,6 @@
 kill @e[type=marker,tag=door_empty,tag=!i]
-kill @e[type=marker,tag=door_marker1]
-kill @e[type=marker,tag=door_marker_hcz]
+kill @e[type=marker,tag=door_marker1,tag=!i]
+kill @e[type=marker,tag=door_marker_hcz,tag=!i]
 kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
 kill @e[type=marker,tag=pds]

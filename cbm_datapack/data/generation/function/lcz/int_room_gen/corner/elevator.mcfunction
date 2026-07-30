@@ -28,6 +28,10 @@ execute at @n[tag=elevatorSpawnpoint] as @n[tag=elevatorDoors] run function anim
 
 execute at @n[tag=elevator, tag=939_1, tag=1] as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
 
+#init storage door and levers
+execute at @n[type=marker,tag=door_marker_hcz,tag=storage939door] as @n[tag=aj.door1.root] if entity @s[tag=opened] run function doors:open_storage_939
+tag @e[tag=lever, tag=storage939] remove uninteractable
+
 
 #init elevator
 execute at @n[tag=elevatorSpawnpoint] run scoreboard players set @n[tag=elevator] ID 1
