@@ -5,7 +5,7 @@ effect give @n[type=minecraft:wandering_trader,tag=scp939] slowness 1 5 true
 execute if predicate scp939:40 run scoreboard players add @s bleeding 1
 
 playsound cb:d9341.damage3 ambient @s ~ ~ ~ 2 1 1
-playsound cb:d9341.damage3 ambient @a[distance=0.01..] ~ ~ ~ 1 1 1
+playsound cb:d9341.damage3 ambient @a[distance=0.01..24] ~ ~ ~ 1.25 1 1
 
 execute store result score scp939 damage run random value 35..78 cb:scp939damage
 execute if score scp939 damage >= @s health run tag @s add d_939
