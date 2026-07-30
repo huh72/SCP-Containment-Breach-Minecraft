@@ -25,3 +25,4 @@ schedule function generation:ez/basic_generation/21 210t
 schedule function generation:ez/basic_generation/22 220t
 schedule function generation:ez/basic_generation/23 230t
 schedule function generation:ez/basic_generation/24 240t
+

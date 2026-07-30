@@ -1,1 +1,1 @@
-execute as @a[tag=!dead] at @s run function ms:subtick 
+execute as @a[tag=!dead] at @s run function ms:subtick

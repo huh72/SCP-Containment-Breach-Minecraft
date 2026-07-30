@@ -1,4 +1,4 @@
-tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP: CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 28/07/2026 on Minecraft version 1.21.6","color":"yellow"}]
+tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP: CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion ... on Date 30/07/2026 on Minecraft version 1.21.6","color":"yellow"}]
 
 function elevators:config
 function ms:config

@@ -33,8 +33,8 @@ execute if score .timer e >= .hidShoot.time e if score .timer e <= .hidEndShoot.
 execute if score .timer e = .hidEndShoot.time e at @n[tag=aj.hid_turret.root] run tp @n[tag=aj.hid_laser.root] ~ ~-64 ~
 
 #flash particles
-execute at @n[tag=106origin] if score .timer e > .hidShoot.time e if score .timer e < .hidEndShoot.time e run particle minecraft:flash ~ ~1 ~ 0.25 0.25 0.25 0 1 force
-execute at @n[tag=aj.hid_laser.root] if score .timer e > .hidShoot.time e if score .timer e < .hidEndShoot.time e run particle minecraft:flash ^ ^ ^4 0.25 0.25 0.25 0 1 force
+# execute at @n[tag=106origin] if score .timer e > .hidShoot.time e if score .timer e < .hidEndShoot.time e run particle minecraft:flash ~ ~1 ~ 0.25 0.25 0.25 0 1 force
+# execute at @n[tag=aj.hid_laser.root] if score .timer e > .hidShoot.time e if score .timer e < .hidEndShoot.time e run particle minecraft:flash ^ ^ ^4 0.25 0.25 0.25 0 1 force
 
 #106 retreat timewhen turret stops shooting
 execute if score .timer e = .hidEndShoot.time e at @n[tag=106origin] run function endings:a1/events/106retreat
