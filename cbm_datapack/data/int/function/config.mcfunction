@@ -1,6 +1,7 @@
 scoreboard objectives add i dummy
 scoreboard objectives add i2 dummy
 
+
 scoreboard players set .timer i -1
 
 
@@ -95,3 +96,8 @@ scoreboard players set .173move2.time i 1755
 
 scoreboard players set .darkness.time i 1810
 scoreboard players set .final.time i 1830
+
+scoreboard players set .afterbreach i 0
+scoreboard players set .screenshakeOn i 980
+scoreboard players set .screenshakeOff i 1050
+scoreboard players set .ambientSounds i 1700
