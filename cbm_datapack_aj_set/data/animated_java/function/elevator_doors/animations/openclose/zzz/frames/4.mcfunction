@@ -4,4 +4,8 @@ $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.5474f,0f,2f,0f,0
 
 # basic ambient stopsound goes here
 scoreboard players operation @a[tag=location.049chamber, tag=insideElevator] chamber049.ambientTimer = .max chamber049.ambientTimer
+scoreboard players operation @a[tag=location.939storage, tag=insideElevator] 939.ambient = .loop 939.ambient
+
+effect clear @a[tag=location.106chamber] darkness
+effect give @a[tag=!location.106chamber] darkness infinite 1 true
 # playsound cb:scp049.chamber0 ambient @a[tag=location.049chamber, tag=insideElevator] ~ ~ ~ 0.6 1 1

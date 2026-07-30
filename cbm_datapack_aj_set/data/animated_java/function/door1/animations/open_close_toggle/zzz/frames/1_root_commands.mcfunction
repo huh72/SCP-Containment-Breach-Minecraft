@@ -2,7 +2,7 @@
 playsound cb:door1.open ambient @a[distance=..24] ~ ~ ~ 1 1 1
 tag @n[tag=door_marker_hcz] add opened
 tag @n[tag=door_marker_hcz] remove closed
-scoreboard players operation @n[tag=door_marker_hcz] door_interact_cd = max_hcz door_interact_cd
+scoreboard players operation @n[tag=door_marker_hcz,tag=!uninteractable] door_interact_cd = max_hcz door_interact_cd
 execute as @n[tag=door_marker_hcz,tag=r0] at @s run setblock ~-1 ~1 ~ minecraft:lightning_rod[facing=east]
 execute as @n[tag=door_marker_hcz,tag=r0] at @s run setblock ~-1 ~ ~ minecraft:lightning_rod[facing=east]
 execute as @n[tag=door_marker_hcz,tag=r0] at @s run setblock ~ ~1 ~ minecraft:lightning_rod[facing=east]

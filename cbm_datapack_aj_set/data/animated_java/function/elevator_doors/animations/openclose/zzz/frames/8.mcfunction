@@ -4,3 +4,6 @@ $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.685f,0f,2f,0f,0f
 
 scoreboard players set @a[tag=!location.049chamber, tag=insideElevator] chamber049.ambientTimer -1
 stopsound @a[tag=!location.049chamber, tag=insideElevator] ambient cb:scp049.chamber0
+
+scoreboard players set @a[tag=!location.939storage, tag=insideElevator] 939.ambient -1
+stopsound @a[tag=!location.939storage, tag=insideElevator] ambient cb:scp939.ambient
