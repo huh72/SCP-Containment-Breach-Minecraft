@@ -1,8 +1,8 @@
 tag @s add looking_on_door
 
 #button
-execute if score @s door_right_click matches 1.. as @n[type=marker,tag=door_marker] at @s if entity @s[type=marker,tag=button,scores={door_interact_cd=0},tag=closed] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/play
-execute if score @s door_right_click matches 1.. as @n[type=marker,tag=door_marker] at @s if entity @s[type=marker,tag=button,scores={door_interact_cd=0},tag=opened] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
+execute if score @s door_right_click matches 1.. as @n[type=marker, tag=door_marker] at @s if entity @s[tag=button, scores={door_interact_cd=0}, tag=closed, tag=!uninteractable] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/play
+execute if score @s door_right_click matches 1.. as @n[type=marker, tag=door_marker] at @s if entity @s[tag=button, scores={door_interact_cd=0}, tag=opened, tag=!uninteractable] as @n[type=item_display,tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
 
 #card
 execute if score @s[scores={door_right_click=1..}] access_level >= @n[type=marker,tag=door_marker] access_level as @n[type=marker,tag=door_marker] if entity @s[tag=card,scores={door_interact_cd=0},tag=closed] as @n[type=item_display,tag=aj.door_card0.root] run function animated_java:door_card0/animations/openclosetoggle/play
