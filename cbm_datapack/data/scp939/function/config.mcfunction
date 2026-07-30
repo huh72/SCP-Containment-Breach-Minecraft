@@ -23,3 +23,8 @@ scoreboard objectives add spot_level dummy
 
 scoreboard objectives add 939posX dummy
 scoreboard objectives add 939posZ dummy
+
+#ambient
+scoreboard objectives add 939.ambient dummy
+scoreboard players set .loop 939.ambient 150
+execute as @a unless score @s 939.ambient matches -1.. run scoreboard players set @s 939.ambient -1
