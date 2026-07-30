@@ -10,6 +10,9 @@ execute at @n[tag=firstSpawnpoint] run playsound cb:scp173.vent ambient @a ~ ~10
 #full-breach sound
 playsound cb:start.breach ambient @a ~ ~ ~ 5 1 1
 
+stopsound @a * cb:zone1.mainambient
+function ambient:mainambientz0
+
 kill @e[type=interaction,tag=interaction]
 
 scoreboard players set .status i 11
