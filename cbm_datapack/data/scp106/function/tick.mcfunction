@@ -22,7 +22,7 @@ execute if score 106 disappear_timer = max disappear_timer run function scp106:d
 
 #hit + hit cd
 execute if score 106 106hit_cd matches 1.. run scoreboard players remove 106 106hit_cd 1
-execute as @e[type=minecraft:armor_stand,tag=hunting] at @s if entity @p[distance=..1] if score 106 106hit_cd matches 0 anchored eyes positioned ^ ^ ^0.5 run function scp106:hit/hit
+execute as @e[type=minecraft:armor_stand,tag=hunting] at @s as @p[distance=..1] if score 106 106hit_cd matches 0 anchored eyes positioned ^ ^ ^0.5 run function scp106:hit/hit
 
 #fall physics
 execute as @e[type=minecraft:armor_stand,tag=hunting] at @s if block ~ ~-0.15 ~ air run tp @s ~ ~-0.15 ~
