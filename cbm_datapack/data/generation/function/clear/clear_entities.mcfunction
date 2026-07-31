@@ -12,6 +12,10 @@ kill @e[type=marker,tag=door_marker2]
 kill @e[type=marker,tag=door_marker_ez]
 kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
+kill @e[type=marker, tag=save]
+kill @e[type=marker, tag=corpse]
+
+
 function gates:remove
 
 #g TEMP↓

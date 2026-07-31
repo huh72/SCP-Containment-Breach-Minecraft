@@ -2,6 +2,9 @@
 tag @s remove dead
 tag @s add tesla_trigger
 tag @s add hit
+tag @s remove hitby106
+tag @s remove fall
+tag @s remove fall_into_shrinkhole
 
 tag @s add save_f
 execute as @e[type=marker, tag=save] at @s if score @s global_num = @p[tag=save_f] global_num run tp @p[tag=save_f] @s

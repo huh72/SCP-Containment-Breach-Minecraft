@@ -16,9 +16,11 @@ execute if entity @s[tag=13] at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevat
 execute if entity @s[tag=14] rotated 180 0 at @n[tag=elevatorSpawnpoint] run function animated_java:elevator_doors/summon with storage aj:temp
 execute if entity @s[tag=14] at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevatorDoors] add r1
 
+#15
 execute if entity @s[tag=15] rotated 270 0 at @n[tag=elevatorSpawnpoint] run function animated_java:elevator_doors/summon with storage aj:temp
 execute if entity @s[tag=15] at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevatorDoors] add r0
 
+#16
 execute if entity @s[tag=16] rotated 0 0 at @n[tag=elevatorSpawnpoint] run function animated_java:elevator_doors/summon with storage aj:temp
 execute if entity @s[tag=16] at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevatorDoors] add r1
 

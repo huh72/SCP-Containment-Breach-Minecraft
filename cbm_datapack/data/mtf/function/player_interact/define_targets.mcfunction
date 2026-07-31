@@ -8,10 +8,10 @@ rotate @n[tag=aj.mtf.root] facing entity @p[tag=mtf_target]
 execute as @n[tag=aj.mtf.root] at @s positioned ~ ~1.75 ~ anchored eyes run function mtf:player_interact/raycast
 
 
-execute as @a[tag=!confirmed_target,tag=!mtf_target] run title @s actionbar {"text":"none"}
-execute as @a[tag=mtf_target,tag=!confirmed_target] run title @s actionbar {"text":"mtf_target"}
-execute as @a[tag=confirmed_target,tag=!mtf_target] run title @s actionbar {"text":"confirmed_target"}
-execute as @a[tag=confirmed_target,tag=mtf_target] run title @s actionbar {"text":"both"}
+# execute as @a[tag=!confirmed_target,tag=!mtf_target] run title @s actionbar {"text":"none"}
+# execute as @a[tag=mtf_target,tag=!confirmed_target] run title @s actionbar {"text":"mtf_target"}
+# execute as @a[tag=confirmed_target,tag=!mtf_target] run title @s actionbar {"text":"confirmed_target"}
+# execute as @a[tag=confirmed_target,tag=mtf_target] run title @s actionbar {"text":"both"}
 
 #shoot func() and dependencies:
 execute store result storage cb:mtf acc int 1 run scoreboard players get @s acc

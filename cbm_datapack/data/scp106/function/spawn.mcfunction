@@ -9,6 +9,7 @@ scoreboard players set 106 breath_cd 10000
 scoreboard players set 106 wall_cd 50
 scoreboard players operation 106 laugh_cd = max laugh_cd
 scoreboard players set 106 step_on_shrink_cd 1200
+tag @a remove hitby106
 tag @e[tag=new] remove hunting
 
 tag @e[tag=new] remove new
