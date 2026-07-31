@@ -45,8 +45,9 @@ execute as @e[tag=dd,tag=ez,sort=random,limit=1] at @s run function generation:e
 
 # dead end - gate A
 execute as @e[tag=dd,tag=ez,sort=random,limit=1] at @s run function generation:ez/int_room_gen/dd/gatea {"room":"ez:gatea_"}
+# execute as @e[tag=dd,tag=ez] at @s run function generation:ez/int_room_gen/dd/gateb {"room":"ez:gateb_"}
 
-# dead end - gate B
+# # # dead end - gate B
 execute as @e[tag=dd,tag=ez,sort=random,limit=1] at @s run function generation:ez/int_room_gen/dd/gateb {"room":"ez:gateb_"}
 
 
@@ -76,3 +77,4 @@ kill @e[tag=dd,tag=ez]
 kill @e[tag=corner,tag=ez]
 kill @e[tag=t_f,tag=ez]
 kill @e[tag=x_f,tag=ez]
+kill @e[type=item]
