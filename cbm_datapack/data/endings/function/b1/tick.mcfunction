@@ -9,7 +9,7 @@ execute if score .timer e matches 1 run function endings:b1/init
 
 #repeating musics handler
 execute if score .music.time e matches 0 run function endings:b1/music
-execute if score .music.time e matches 1000 run function endings:b1/music2
+execute if score .music.time e matches 1000 as @a[tag=b1.themechanged] run function endings:b1/music2
 
 #change music theme handler
 execute as @a[tag=!b1.themechanged] at @s if entity @n[tag=b1.changethemepoint,distance=..2] run function endings:b1/changetheme
