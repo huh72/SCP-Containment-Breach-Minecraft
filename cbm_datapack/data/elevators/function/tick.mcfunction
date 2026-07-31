@@ -1,6 +1,6 @@
-execute at @e[type=marker, tag=elevator] positioned ~ ~0.25 ~ run particle flame
-execute at @e[type=marker, tag=currElevator] positioned ~ ~0.35 ~ run particle happy_villager
-execute at @e[type=marker, tag=finalElevator] positioned ~ ~0.45 ~ run particle damage_indicator
+# execute at @e[type=marker, tag=elevator] positioned ~ ~0.25 ~ run particle flame
+# execute at @e[type=marker, tag=currElevator] positioned ~ ~0.35 ~ run particle happy_villager
+# execute at @e[type=marker, tag=finalElevator] positioned ~ ~0.45 ~ run particle damage_indicator
 
 #detect if player is inside the elevator
 tag @a remove insideElevator

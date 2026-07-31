@@ -1,7 +1,7 @@
 scoreboard players add @s[tag=moving] moveTime 1
 scoreboard players add @s[tag=onCd] moveTime 1
 
-execute at @e[tag=moving] run particle angry_villager
+# execute at @e[tag=moving] run particle angry_villager
 
 execute if score @s[tag=moving] moveTime = .moveSoundElevator moveTime as @a[distance=..3.75, tag=!dead] run function elevators:playmovesound
 execute if score @s[tag=moving] moveTime = .moveSoundElevator moveTime run playsound cb:elev.move ambient @a[distance=..8,tag=!insideElevator] ~ ~-7.5 ~ 0.35 1 1
