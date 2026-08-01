@@ -17,3 +17,5 @@ function scp650:config
 function scp079:config
 function scp457:config
 #function scp939_89:config
+
+function scps:spawnsystem/config

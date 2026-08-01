@@ -17,3 +17,5 @@ execute as @e[type=zombie, tag=scp457] at @s run function scp457:handler
 # execute as @a[tag=!dead] at @s run function scp079:tick
 #function scp939_89:tick
 
+# spawn sys
+function scps:spawnsystem/tick
