@@ -14,6 +14,9 @@ kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
 kill @e[type=marker, tag=save]
 kill @e[type=marker, tag=corpse]
+kill @e[type=marker, tag=ventroomtrigger]
+kill @e[type=marker, tag=scp1048spawnpoint]
+
 
 
 function gates:remove
