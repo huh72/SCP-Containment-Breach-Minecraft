@@ -7,5 +7,11 @@ scoreboard players operation @a[tag=location.049chamber, tag=insideElevator] cha
 scoreboard players operation @a[tag=location.939storage, tag=insideElevator] 939.ambient = .loop 939.ambient
 
 effect clear @a[tag=location.106chamber] darkness
+effect clear @a[tag=location.049chamber] darkness
+effect clear @a[tag=location.surfaceA] darkness
+effect clear @a[tag=location.surfaceB] darkness
+
 effect give @a[tag=!location.106chamber] darkness infinite 1 true
-# playsound cb:scp049.chamber0 ambient @a[tag=location.049chamber, tag=insideElevator] ~ ~ ~ 0.6 1 1
+effect give @a[tag=!location.049chamber] darkness infinite 1 true
+effect give @a[tag=!location.surfaceA] darkness infinite 1 true
+effect give @a[tag=!location.surfaceB] darkness infinite 1 true

@@ -7,7 +7,7 @@ $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_d
 
 #scp500
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp500}] run function use:scp500/use
-say u
+
 # card level 1
 scoreboard players set @s used_a 0
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:card1}] if score @s used_a matches 0 unless score @s item_selected matches 1 run function use:card1/use

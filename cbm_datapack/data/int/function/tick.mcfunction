@@ -11,4 +11,4 @@ scoreboard players operation .status i2 = .status i
 # title @p[scores={v=0}] actionbar "inChamber == 0"
 # title @p[scores={v=1}] actionbar "inChamber == 1"
 # title @p[scores={v=2}] actionbar "inChamber == 2"
-# title @p[scores={v=3..}] actionbar "inChamber == 3.."
+# title @p[scores={v=3..}] actionbar "inChamber == 3.." 
