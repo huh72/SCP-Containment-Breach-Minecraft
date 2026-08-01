@@ -19,10 +19,14 @@ scoreboard players set @s card_interact_cd 5
 
 #939
 scoreboard players set @s chase_cd 0
+scoreboard players set @s 939.ambient -1
+scoreboard players set @s chamber049.ambientTimer -1
 
 #heartbeat
 scoreboard players set @s heartbeatTimer 0
 scoreboard players set @s heartbeatCd 0
+
+tag @s add can_ii
 
 tag @s add can_blink
 tag @s add tesla_trigger
@@ -43,3 +47,4 @@ scoreboard players set @s shot_cd 0
 
 #doors staff
 scoreboard players set @s access_level 0
+scoreboard players set @s scanner_value 0
