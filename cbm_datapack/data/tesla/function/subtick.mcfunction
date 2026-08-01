@@ -17,9 +17,12 @@ execute if entity @s[scores={activating=1,activate_cd=0}] run function tesla:act
 execute if entity @s[scores={tesla_shock_cd=0,activate_cd=20}] run function tesla:shock
 #death func
 #health
-execute if entity @s[tag=0,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^-0.5 as @e[dy=1,dx=4] run scoreboard players set @s[tag=!dead] health 0
-execute if entity @s[tag=1,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^0.5 as @e[dy=1,dz=4] run scoreboard players set @s[tag=!dead] health 0
-#death tag
+execute if entity @s[tag=0,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^-0.5 as @n[tag=aj.scp106.root,tag=!caughtByTesla,distance=..3] at @s run function tesla:hit106
+execute if entity @s[tag=1,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^0.5 as @n[tag=aj.scp106.root,tag=!caughtByTesla,distance=..3] at @s run function tesla:hit106
+
+execute if entity @s[tag=0,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^-0.5 as @e[dy=1,dx=4] run function tesla:hit
+execute if entity @s[tag=1,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^0.5 as @e[dy=1,dz=4] run function tesla:hit
+
 execute if entity @s[tag=0,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^-0.5 as @e[dy=1,dx=4] run tag @s[tag=!dead] add d_tesla
 execute if entity @s[tag=1,scores={tesla_shock_timer=1..}] positioned ^-2.5 ^ ^0.5 as @e[dy=1,dz=4] run tag @s[tag=!dead] add d_tesla
 
