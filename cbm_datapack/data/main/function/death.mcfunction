@@ -9,10 +9,27 @@ attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
 effect give @s invisibility infinite 1 true
 effect give @s regeneration infinite 10 true
 
+scoreboard players set @s item_selected 0
+
 scoreboard players set @s playerOnFireTime 0
 scoreboard players set @s playerTo457Distance 0
 
-execute at @s run summon armor_stand ~ ~ ~ {Tags:['new','corpse'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+execute if entity @s[tag=d_mtf] run tag @s add d
+execute if entity @s[tag=d_guard] run tag @s add d
+execute if entity @s[tag=d_049] run tag @s add d
+execute if entity @s[tag=d_1048a] run tag @s add d
+execute if entity @s[tag=d_1499_1] run tag @s add d
+execute if entity @s[tag=d_939] run tag @s add d
+execute if entity @s[tag=d_gate] run tag @s add d
+execute if entity @s[tag=d_tesla] run tag @s add d
+execute if entity @s[tag=d_173] run tag @s add d
+execute if entity @s[tag=d_fall] run tag @s add d
+execute if entity @s[tag=d_096] run tag @s add d
+execute if entity @s[tag=d_gas] run tag @s add d
+execute if entity @s[tag=d_suicide] run tag @s add d
+execute if entity @s[tag=d_bleeding] run tag @s add d
+
+execute at @s[tag=d] run summon armor_stand ~ ~ ~ {Tags:['new','corpse'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
 data modify entity @n[tag=new,limit=1] Rotation set from entity @s Rotation
 execute at @n[tag=new] run tp @n[tag=new] ~ ~ ~ ~180 ~
 
@@ -31,6 +48,7 @@ execute if entity @s[tag=d_gas] run item replace entity @n[tag=new] armor.head w
 execute if entity @s[tag=d_suicide] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 execute if entity @s[tag=d_bleeding] run item replace entity @n[tag=new] armor.head with minecraft:paper[item_model="cb:dclasscorpse0"]
 
+tag @s remove d
 data modify entity @n[tag=new,limit=1] Marker set value 1b
 tag @e[tag=new] remove new
 
