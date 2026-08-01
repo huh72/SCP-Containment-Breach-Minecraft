@@ -6,7 +6,7 @@ execute as @e[type=minecraft:vindicator,tag=scp049] at @s run tp @n[tag=aj.scp04
 data modify entity @n[tag=aj.scp049.root] Rotation[0] set from entity @n[tag=scp049] Rotation[0]
 
 #kill 
-execute as @a[tag=!dead] at @s run function scp049:kill
+execute as @a[tag=!dead] at @s if entity @n[tag=scp049,distance=0..1.1] run function scp049:kill
 
 #subtick function - use @s
 execute as @n[type=minecraft:vindicator,tag=scp049] at @s run function scp049:subtick
