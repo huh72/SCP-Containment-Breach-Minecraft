@@ -6,3 +6,6 @@ attribute @n[type=pig, tag=scp1048origin] minecraft:follow_range base set 16
 scoreboard players operation @n[type=pig, tag=scp1048origin] greet = 0 math
 
 execute rotated 0 0 run function animated_java:scp1048/summon with storage aj:temp
+
+scoreboard players set .canSpawn 1048spawnTimer 0
+scoreboard players set .timerCanBeIncreased 1048spawnTimer 0

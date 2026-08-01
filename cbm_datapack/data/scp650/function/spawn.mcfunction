@@ -5,6 +5,9 @@ effect give @n[tag=scp650] weakness infinite 255 true
 
 execute rotated 0 0 run function animated_java:scp650/summon with storage aj:temp
 
+scoreboard players set .canSpawn 650spawnTimer 0
+scoreboard players set .timerCanBeIncreased 650spawnTimer 0
+
 scoreboard players set .scp650 isSpotted 0
 scoreboard players set .scp650 despawnTime 0
 execute store result score .scp650max despawnTime run random value 160..300 cb:scp650despawntime

@@ -10,4 +10,7 @@ scoreboard players set .scp457 encounterSoundCd 20
 
 execute rotated 0 0 run function animated_java:scp457/summon with storage aj:temp
 
+scoreboard players set .canSpawn 457spawnTimer 0
+scoreboard players set .timerCanBeIncreased 457spawnTimer 0
+
 tag @n[tag=new] remove new
