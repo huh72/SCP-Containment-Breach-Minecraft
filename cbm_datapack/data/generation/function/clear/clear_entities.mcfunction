@@ -17,6 +17,7 @@ kill @e[type=marker, tag=corpse]
 kill @e[type=marker, tag=ventroomtrigger]
 kill @e[type=marker, tag=scp1048spawnpoint]
 
+execute as @e[tag=scientist] run function animated_java:scientist/remove/all
 
 
 function gates:remove
