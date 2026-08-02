@@ -22,6 +22,7 @@
 		"animated_java:lever/root/on_tick",
 		"animated_java:m4a1/root/on_tick",
 		"animated_java:mtf/root/on_tick",
+		"animated_java:scientist/root/on_tick",
 		"animated_java:scp008/root/on_tick",
 		"animated_java:scp049_2/root/on_tick",
 		"animated_java:scp049_2d/root/on_tick",
