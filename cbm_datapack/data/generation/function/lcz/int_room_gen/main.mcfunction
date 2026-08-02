@@ -19,7 +19,8 @@ execute unless predicate generation:40 as @e[type=marker,tag=str,sort=random,lim
 
 #fake elevators
 execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/fake_elev {"room":"lcz:str/fake_elev"}
-execute unless predicate generation:20 as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/fake_elev {"room":"lcz:str/fake_elev"}
+execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/fake_elev {"room":"lcz:str/fake_elev"}
+execute unless predicate generation:30 as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/fake_elev {"room":"lcz:str/fake_elev"}
 
 #vents room
 execute as @e[tag=str,sort=random,limit=1] at @s run function generation:lcz/int_room_gen/straight/vents {"room":"lcz:str/vents"}
@@ -132,6 +133,8 @@ scoreboard players set @e[type=marker,tag=event3_1handler] event3_1timer 1
 
 #lever in 049elc
 execute as @n[type=item_display,tag=lever,tag=lczlockdown] run function animated_java:lever/animations/switch/play
+
+execute store result storage cb:events corpse int 1 run random value -180..180 cb:eventcorpse
 
 #clearing map
 kill @e[type=marker,tag=str,tag=lcz]
