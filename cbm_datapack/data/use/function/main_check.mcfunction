@@ -6,7 +6,7 @@ $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_d
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp420j}] run function use:scp420j/use
 
 #scp500
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp500}] run function use:scp500/use
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp500}] run function use:scp500/use
 
 # card level 1
 scoreboard players set @s used_a 0
@@ -55,18 +55,18 @@ $execute if items entity @s weapon.offhand minecraft:lightning_rod if items enti
 
 # battery
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:9}] if score @s used_a matches 0 unless score @s item_selected matches 9 run function use:battery/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:9}] if score @s used_a matches 0 run function use:battery/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:9}] if score @s used_a matches 0 run function use:battery/end
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:9}] if score @s used_a matches 0 run function use:battery/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:9}] if score @s used_a matches 0 run function use:battery/end
 
 # battery 19
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:18}] if score @s used_a matches 0 unless score @s item_selected matches 10 run function use:battery18/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:18}] if score @s used_a matches 0 run function use:battery18/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:18}] if score @s used_a matches 0 run function use:battery18/end
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:18}] if score @s used_a matches 0 run function use:battery18/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:18}] if score @s used_a matches 0 run function use:battery18/end
 
 # kill battery
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] if score @s used_a matches 0 unless score @s item_selected matches 11 run function use:batterykill/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] if score @s used_a matches 0 run function use:batterykill/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] if score @s used_a matches 0 run function use:batterykill/end
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] run function use:batterykill/use
+# $execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] if score @s used_a matches 0 run function use:batterykill/use
+# $execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={battery:kill}] if score @s used_a matches 0 run function use:batterykill/end
 
 # paper
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:_}] if score @s used_a matches 0 unless score @s item_selected matches 12 run function use:paper/use
@@ -95,13 +95,15 @@ $execute if items entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Slot:
 
 # gasmask
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:carved_pumpkin",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 run function use:gasmask/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:carved_pumpkin",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 run function use:gasmask/end
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/denied
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/end
 
 # super gasmask
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:carved_pumpkin",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:super_gasmask}] if score @s used_a matches 0 run function use:super_gasmask/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:carved_pumpkin",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:super_gasmask}] if score @s used_a matches 0 run function use:super_gasmask/end
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!gasmask] used_a matches 0 run function use:super_gasmask/denied
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!gasmask] used_a matches 0 run function use:super_gasmask/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=supergasmask] used_a matches 0 run function use:super_gasmask/end
 
 # vest
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
@@ -113,7 +115,7 @@ $execute if items entity @s[nbt={Inventory:[{id:"minecraft:carved_pumpkin",Slot:
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:vest}] if score @s used_a matches 0 run function use:vest/diswear
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:vest}] if score @s used_a matches 0 run function use:vest/end
 
-# gasmask
+# scp 714
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
 $execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:leather_chestplate",Slot:102b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp714}] if score @s used_a matches 0 run function use:scp714/use
 $execute if items entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate",Slot:102b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp714}] if score @s used_a matches 0 run function use:scp714/end
@@ -124,19 +126,19 @@ $execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:
 $execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp860}] if score @s used_a matches 0 run function use:scp860/end
 
 # scp 148
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp148}] if score @s used_a matches 0 unless score @s item_selected matches 28 run function use:scp148/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp148}] if score @s used_a matches 0 run function use:scp148/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:scp148}] if score @s used_a matches 0 run function use:scp148/end
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp148}] if score @s used_a matches 0 unless score @s item_selected matches 29 run function use:scp148/use
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp148}] if score @s used_a matches 0 run function use:scp148/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp148}] if score @s used_a matches 0 run function use:scp148/end
 
 # white arm
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:whitearm}] if score @s used_a matches 0 unless score @s item_selected matches 29 run function use:whitearm/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:whitearm}] if score @s used_a matches 0 run function use:whitearm/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:whitearm}] if score @s used_a matches 0 run function use:whitearm/end
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:white_arm}] if score @s used_a matches 0 unless score @s item_selected matches 30 run function use:whitearm/use
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:white_arm}] if score @s used_a matches 0 run function use:whitearm/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:white_arm}] if score @s used_a matches 0 run function use:whitearm/end
 
-# white arm
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:blackarm}] if score @s used_a matches 0 unless score @s item_selected matches 30 run function use:blackarm/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:blackarm}] if score @s used_a matches 0 run function use:blackarm/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-106b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:blackarm}] if score @s used_a matches 0 run function use:blackarm/end
+# black arm
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:black_arm}] if score @s used_a matches 0 unless score @s item_selected matches 31 run function use:blackarm/use
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:black_arm}] if score @s used_a matches 0 run function use:blackarm/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:black_arm}] if score @s used_a matches 0 run function use:blackarm/end
 
 # scp1499
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use

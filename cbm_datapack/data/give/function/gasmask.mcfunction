@@ -1,1 +1,1 @@
-function give:paper {"cmd":"20","name":"Gas Mask","lore":"*","data":"paper:gasmask"}
+function give:paper {"model":"cb:gasmask","name":"Gas Mask","data":"item:gasmask"}

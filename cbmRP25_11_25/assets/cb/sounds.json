@@ -41,6 +41,7 @@
 	"scp173.glassbreak":        {"sounds": ["cb:scp/173/glassbreak"]},
 	"scp173.vent":        {"sounds": ["cb:scp/173/vent"]},
 	"scp173.horror":        {"sounds": ["cb:scp/173/horror/0", "cb:scp/173/horror/1", "cb:scp/173/horror/4", "cb:scp/173/horror/3", "cb:scp/173/horror/4", "cb:scp/173/horror/1", "cb:scp/173/horror/6"]},
+
 	"scp0492.breath":        {"sounds": ["cb:scp/0492/breath"]},
 	"scp049.spotted":        {"sounds": ["cb:scp/049/spotted0", "cb:scp/049/spotted1", "cb:scp/049/spotted2", "cb:scp/049/spotted3", "cb:scp/049/spotted4", "cb:scp/049/spotted5", "cb:scp/049/spotted6"]},
 	"scp049.searching":        {"sounds": ["cb:scp/049/searching0", "cb:scp/049/searching1", "cb:scp/049/searching2", "cb:scp/049/searching", "cb:scp/049/searching4", "cb:scp/049/searching5", "cb:scp/049/searching6"]},
@@ -53,6 +54,13 @@
 	"scp049.blackout": {"sounds": ["cb:scp/049/blackout"]},
 	"scp049.inchamber": {"sounds": ["cb:scp/049/inchamber"]},
 	"scp049.lightson": {"sounds": ["cb:events/049/lightson"]},
+	"scp049.kill": {"sounds": ["cb:scp/049/kill"]},
+
+	"event.914_0": {"sounds": ["cb:events/914/horror"]},
+
+	"event.corpse_horror": {"sounds": ["cb:events/corpse/horror"]},
+	"event.corpse_fall": {"sounds": ["cb:events/corpse/fall"]},
+
 	"scp096.angered":        {"sounds": ["cb:scp/096/angered"]},
 	"scp096.scream":        {"sounds": ["cb:scp/096/scream"]},
 	"scp096.triggered":        {"sounds": ["cb:scp/096/triggered"]},
@@ -130,7 +138,6 @@
 	"m4a1s.fire":		{"sounds": ["cb:guns/m4a1s/shot"]},
 	"m4a1s.draw":		{"sounds": ["cb:guns/m4a1s/draw"]},
 	"m4a1s.reload":		{"sounds": ["cb:guns/m4a1s/reload"]},
-	"scp079.horror":		{"sounds": ["cb:scp/079/horror"]},
 	"zone1.ambient":		{"sounds": ["cb:ambient/zone1/ambient1","cb:ambient/zone1/ambient2","cb:ambient/zone1/ambient3","cb:ambient/zone1/ambient4","cb:ambient/zone1/ambient5","cb:ambient/zone1/ambient6","cb:ambient/zone1/ambient7","cb:ambient/zone1/ambient8","cb:ambient/zone1/ambient9","cb:ambient/zone1/ambient10","cb:ambient/zone1/ambient11"]},
 	"zone1.mainambient":		{"sounds": ["cb:ambient/ambientzone1"]},
 	"zone2.mainambient":		{"sounds": ["cb:ambient/ambientzone2"]},
@@ -177,6 +184,9 @@
 	"event3.airlock":		 {"sounds": ["cb:events/3/airlock"]},
 	"event3.alarm":		 {"sounds": ["cb:events/3/alarm"]},
 	"event3_1.alarm":		 {"sounds": ["cb:events/3_1/alarm"]},
+	"eventvent.fanon":		 {"sounds": ["cb:events/vent/fanon"]},
+	"eventvent.fan":		 {"sounds": ["cb:events/vent/fan"]},
+	"eventvent.fanoff":		 {"sounds": ["cb:events/vent/fanoff"]},
 	"a1.announc":        {"sounds": ["cb:endings/a1/announc"]},
 	"a1.hidturret":        {"sounds": ["cb:endings/a1/hidturret"]},
 	"a1.escape106":        {"sounds": ["cb:endings/a1/escape106"]},
@@ -238,6 +248,7 @@
 	"scp1048a.shriek":        {"sounds": ["cb:scp/1048a/shriek"]},
 	"scp1048a.death":        {"sounds": ["cb:scp/1048a/death"]},
 	"scp372.rustle":        {"sounds": ["cb:scp/372/0", "cb:scp/372/1", "cb:scp/372/2"]},
+
 	"scp079.broadcast0": {"sounds": ["cb:scp/079/broadcast0"]},
 	"scp079.broadcast1": {"sounds": ["cb:scp/079/broadcast1"]},
 	"scp079.broadcast2": {"sounds": ["cb:scp/079/broadcast2"]},
@@ -245,6 +256,20 @@
 	"scp079.broadcast4": {"sounds": ["cb:scp/079/broadcast4"]},
 	"scp079.broadcast5": {"sounds": ["cb:scp/079/broadcast5"]},
 	"scp079.broadcast6": {"sounds": ["cb:scp/079/broadcast6"]},
+	"scp079.gateb":		{"sounds": ["cb:scp/079/gateb"]},
+	"scp079.refuse":		{"sounds": ["cb:scp/079/refuse"]},
+	"scp079.speech":		{"sounds": ["cb:scp/079/speech"]},
+	"scp079.testroom":		{"sounds": ["cb:scp/079/testroom"]},
+	"scp079.door0":		{"sounds": ["cb:scp/079/door0"]},
+	"scp079.door1":		{"sounds": ["cb:scp/079/door1"]},
+	"scp079.horror":		{"sounds": ["cb:scp/079/horror"]},
+
+	"ambience.lowdrone":		{"sounds": ["cb:ambient/roomambience/lowdrone"]},
+	"ambience.pulsing":		{"sounds": ["cb:ambient/roomambience/pulsing"]},
+	"ambience.rumble":		{"sounds": ["cb:ambient/roomambience/rumble"]},
+	"ambience.servers1":		{"sounds": ["cb:ambient/roomambience/servers1"]},
+	"ambience.ventilation":		{"sounds": ["cb:ambient/roomambience/ventilation"]},
+
 	"scp457.fire0": {"sounds": ["cb:scp/457/fire0"]},
 	"scp457.fire1": {"sounds": ["cb:scp/457/fire1"]},
 	"scp457.fire2": {"sounds": ["cb:scp/457/fire2"]},

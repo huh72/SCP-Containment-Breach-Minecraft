@@ -1,5 +1,4 @@
 {
-	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"parent": "173_contained",
 	"texture_size": [128, 128],
@@ -234,8 +233,8 @@
 	],
 	"display": {
 		"head": {
-			"translation": [1, -18.75, 2.25],
-			"scale": [2, 2, 2]
+			"translation": [1, -14.75, 2.25],
+			"scale": [2.35, 2.35, 2.35]
 		}
 	},
 	"groups": [
@@ -257,5 +256,6 @@
 			"color": 0,
 			"children": [9, 10, 11, 12, 13, 14, 15, 16]
 		}
-	]
+	],
+	"format_version": "1.9.0"
 }

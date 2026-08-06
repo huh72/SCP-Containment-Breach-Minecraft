@@ -1,1 +1,1 @@
-function give:paper {"cmd":"10","name":"Battery 18V","lore":"*","data":"battery:18"}
+function give:paper {"model":"cb:battery18","name":"Battery 18V","lore":"*","data":"battery:18"}

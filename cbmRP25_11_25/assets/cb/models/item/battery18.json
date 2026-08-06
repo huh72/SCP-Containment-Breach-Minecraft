@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "battery18",
 	"textures": {
-		"0": "item/battery18",
-		"particle": "item/battery18"
+		"0": "item/battery",
+		"particle": "item/battery"
 	},
 	"elements": [
 		{

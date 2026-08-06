@@ -2,3 +2,5 @@
 $data merge entity $(bone_wind0) {transformation: [-2f,0f,0f,0.9163f,0f,2f,0f,0f,0f,0f,-2f,0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wind1) {transformation: [-2f,0f,0f,-0.9163f,0f,2f,0f,0f,0f,0f,-2f,-0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:door0/animations/openclosetoggle/zzz/frames/17_root_function
+
+tag @n[tag=aj.door0.root] add frame.17

@@ -54,6 +54,24 @@
 				"assets/animated_java/textures/blueprint/ci/texture.png"
 			]
 		},
+		"class_d": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/class_d/body.json",
+				"assets/animated_java/items/blueprint/class_d/head.json",
+				"assets/animated_java/items/blueprint/class_d/l_arm.json",
+				"assets/animated_java/items/blueprint/class_d/l_leg.json",
+				"assets/animated_java/items/blueprint/class_d/r_arm.json",
+				"assets/animated_java/items/blueprint/class_d/r_leg.json",
+				"assets/animated_java/models/blueprint/class_d/body.json",
+				"assets/animated_java/models/blueprint/class_d/head.json",
+				"assets/animated_java/models/blueprint/class_d/l_arm.json",
+				"assets/animated_java/models/blueprint/class_d/l_leg.json",
+				"assets/animated_java/models/blueprint/class_d/r_arm.json",
+				"assets/animated_java/models/blueprint/class_d/r_leg.json",
+				"assets/animated_java/textures/blueprint/class_d/texture_ultimate_character.png"
+			]
+		},
 		"door": {
 			"versionedFiles": [
 				"assets/animated_java/models/empty.json",
@@ -283,12 +301,26 @@
 				"assets/animated_java/items/blueprint/scientist/r_arm.json",
 				"assets/animated_java/items/blueprint/scientist/r_leg.json",
 				"assets/animated_java/models/blueprint/scientist/body.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/body.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/head.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/l_arm.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/l_leg.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/r_arm.json",
+				"assets/animated_java/models/blueprint/scientist/decayed/r_leg.json",
 				"assets/animated_java/models/blueprint/scientist/head.json",
 				"assets/animated_java/models/blueprint/scientist/l_arm.json",
 				"assets/animated_java/models/blueprint/scientist/l_leg.json",
 				"assets/animated_java/models/blueprint/scientist/r_arm.json",
 				"assets/animated_java/models/blueprint/scientist/r_leg.json",
-				"assets/animated_java/textures/blueprint/scientist/scientist.png"
+				"assets/animated_java/models/blueprint/scientist/standart/body.json",
+				"assets/animated_java/models/blueprint/scientist/standart/head.json",
+				"assets/animated_java/models/blueprint/scientist/standart/l_arm.json",
+				"assets/animated_java/models/blueprint/scientist/standart/l_leg.json",
+				"assets/animated_java/models/blueprint/scientist/standart/r_arm.json",
+				"assets/animated_java/models/blueprint/scientist/standart/r_leg.json",
+				"assets/animated_java/textures/blueprint/scientist/texture.png",
+				"assets/animated_java/textures/blueprint/scientist/texture1.png",
+				"assets/animated_java/textures/blueprint/scientist/texture2.png"
 			]
 		},
 		"scp008": {

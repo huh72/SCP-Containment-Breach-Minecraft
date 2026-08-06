@@ -1,1 +1,1 @@
-function give:paper {"cmd":"11","name":"Strange Battery","lore":"*","data":"battery:kill"}
+function give:paper {"model":"cb:killbattery","name":"Strange Battery","lore":"*","data":"battery:kill"}

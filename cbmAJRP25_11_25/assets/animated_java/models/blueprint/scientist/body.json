@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "animated_java:blueprint/scientist/scientist",
+		"0": "animated_java:blueprint/scientist/texture1",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -10,12 +10,12 @@
 	},
 	"elements": [
 		{
-			"from": [4, 8, 6],
-			"to": [12, 20, 10],
+			"from": [3.6, 8.1, 5.8],
+			"to": [12.4, 21.3, 10.2],
 			"rotation": {
 				"angle": 0,
 				"axis": "y",
-				"origin": [5, 8, 8]
+				"origin": [5.4, 8.1, 7.8]
 			},
 			"faces": {
 				"north": {
@@ -23,15 +23,15 @@
 					"texture": "#0"
 				},
 				"east": {
-					"uv": [11, 0, 10, 3],
+					"uv": [8, 8, 9, 11],
 					"texture": "#0"
 				},
 				"south": {
-					"uv": [0, 0, 2, 3],
+					"uv": [2, 0, 4, 3],
 					"texture": "#0"
 				},
 				"west": {
-					"uv": [10, 0, 11, 3],
+					"uv": [9, 2, 10, 5],
 					"texture": "#0"
 				},
 				"up": {
@@ -45,12 +45,12 @@
 			}
 		},
 		{
-			"from": [3.875, 7.875, 5.875],
-			"to": [12.125, 20.125, 10.125],
+			"from": [3.5, 8, 5.7],
+			"to": [12.5, 21.4, 10.4],
 			"rotation": {
 				"angle": 0,
 				"axis": "y",
-				"origin": [5, 8, 8]
+				"origin": [5.4, 8.1, 7.95]
 			},
 			"faces": {
 				"north": {
@@ -58,15 +58,15 @@
 					"texture": "#0"
 				},
 				"east": {
-					"uv": [1, 10, 2, 13],
+					"uv": [11, 0, 12, 3],
 					"texture": "#0"
 				},
 				"south": {
-					"uv": [2, 0, 4, 3],
+					"uv": [2, 3, 4, 6],
 					"texture": "#0"
 				},
 				"west": {
-					"uv": [10, 3, 11, 6],
+					"uv": [2, 11, 3, 14],
 					"texture": "#0"
 				},
 				"up": {

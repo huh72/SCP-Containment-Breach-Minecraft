@@ -3,3 +3,6 @@ $data merge entity $(bone_lever) {transformation: [-1f,0f,0f,0f,0f,1f,0f,0.5f,0f
 execute as @n[tag=lever] run function animated_java:lever/animations/switch/stop
 tag @n[tag=lever] remove proceed
 scoreboard players set @a right_click_item 0
+
+execute as @n[tag=lever] if entity @s[tag=elc.doorControl, tag=up] run function events:scp079/0/doorcontrol/on
+execute as @n[tag=lever] if entity @s[tag=elc.doorControl, tag=down] run function events:scp079/0/doorcontrol/off

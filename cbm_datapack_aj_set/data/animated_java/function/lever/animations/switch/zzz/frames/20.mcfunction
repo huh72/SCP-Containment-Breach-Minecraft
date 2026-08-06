@@ -4,6 +4,11 @@ tag @n[tag=lever] remove proceed
 tag @n[tag=lever] add up
 tag @n[tag=lever] remove down
 
+execute as @n[tag=elc.secondaryLighting] if entity @s[tag=up] as @n[tag=elc.primaryLighting] if entity @s[tag=down] if score .state event.079 matches 1 run function events:scp079/0/lighton
+execute as @n[tag=lever] if entity @s[tag=elc.doorControl, tag=up] run function events:scp079/0/doorcontrol/on
+execute as @n[tag=lever] if entity @s[tag=elc.doorControl, tag=down] run function events:scp079/0/doorcontrol/off
+execute as @n[tag=lever] if entity @s[tag=elc.doorControl, tag=up] if score .speech event.079 matches -2 run function events:scp079/0/doorcontrol/finalon
+
 scoreboard players set @a right_click_item 0
 
 execute as @n[tag=lever] run function animated_java:lever/animations/switch/pause

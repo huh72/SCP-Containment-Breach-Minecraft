@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "animated_java:blueprint/scientist/scientist",
+		"0": "animated_java:blueprint/scientist/texture1",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -10,12 +10,12 @@
 	},
 	"elements": [
 		{
-			"from": [4, 8, 4],
-			"to": [12, 16, 12],
+			"from": [3.6, 8, 3.6],
+			"to": [12.4, 16.8, 12.4],
 			"rotation": {
 				"angle": 0,
 				"axis": "y",
-				"origin": [5, 8, 8]
+				"origin": [5.4, 8, 7.6]
 			},
 			"faces": {
 				"north": {
@@ -23,7 +23,7 @@
 					"texture": "#0"
 				},
 				"east": {
-					"uv": [2, 6, 0, 8],
+					"uv": [4, 2, 6, 4],
 					"texture": "#0"
 				},
 				"south": {
@@ -45,12 +45,12 @@
 			}
 		},
 		{
-			"from": [3.875, 7.875, 3.875],
-			"to": [12.125, 16.125, 12.125],
+			"from": [3.5, 7.9, 3.5],
+			"to": [12.5, 16.9, 12.5],
 			"rotation": {
 				"angle": 0,
 				"axis": "y",
-				"origin": [5, 8, 8]
+				"origin": [5.4, 8, 7.6]
 			},
 			"faces": {
 				"north": {

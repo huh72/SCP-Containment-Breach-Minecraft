@@ -1,49 +1,6 @@
 {
-	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
-	"textures": {
-		"0": "item/scp148",
-		"particle": "item/scp148"
-	},
-	"elements": [
-		{
-			"from": [2.5, 0, 3],
-			"to": [13.5, 2, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 7.5]},
-			"faces": {
-				"north": {"uv": [5.5, 0, 11, 1], "texture": "#0"},
-				"east": {"uv": [5.5, 2, 10, 3], "texture": "#0"},
-				"south": {"uv": [5.5, 1, 11, 2], "texture": "#0"},
-				"west": {"uv": [5.5, 3, 10, 4], "texture": "#0"},
-				"up": {"uv": [5.5, 4.5, 0, 0], "texture": "#0"},
-				"down": {"uv": [5.5, 4.5, 0, 9], "texture": "#0"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0, 0, 0]
-		},
-		"thirdperson_lefthand": {
-			"scale": [0, 0, 0]
-		},
-		"firstperson_righthand": {
-			"scale": [0, 0, 0]
-		},
-		"firstperson_lefthand": {
-			"scale": [0, 0, 0]
-		},
-		"ground": {
-			"scale": [0, 0, 0]
-		},
-		"gui": {
-			"rotation": [41.75, 37.5, 0],
-			"translation": [0, 5.75, 0],
-			"scale": [1.1, 1.1, 1.1]
-		},
-		"head": {
-			"translation": [0, -27.25, 0],
-			"scale": [2, 2, 2]
-		}
-	}
+  "model": {
+    "type": "minecraft:model",
+    "model": "cb:item/scp148"
+  }
 }

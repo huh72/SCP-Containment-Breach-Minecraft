@@ -1,1 +1,1 @@
-function give:paper {"cmd":"9","name":"Battery 9V","lore":"*","data":"battery:9"}
+function give:paper {"model":"cb:battery","name":"Battery 9V","data":"battery:9"}
