@@ -1,5 +1,5 @@
-summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
-say 1
+execute at @s run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+
 scoreboard players operation @e[tag=new,tag=drop] item_num = max* item_num
 scoreboard players add max* item_num 1
 

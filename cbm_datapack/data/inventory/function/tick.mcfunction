@@ -21,8 +21,9 @@ item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:8b,id:"minecra
 
 ### drop if not in custom inventory:
 #left
-execute as @a at @s[nbt={Inventory:[{Slot:-106b,id:'minecraft:paper'}]}] run function inventory:drop_lh
+# execute as @a at @s[nbt={Inventory:[{Slot:-106b,id:'minecraft:paper'}]}] run function inventory:drop_lh
 #hotbar
+execute as @a[tag=!dead] if items entity @s weapon.offhand paper run function inventory:drop_lh
 execute as @a[tag=!dead] if items entity @s container.0 paper run function inventory:drop {"dropslot":"0"}
 execute as @a[tag=!dead] if items entity @s container.1 paper run function inventory:drop {"dropslot":"1"}
 execute as @a[tag=!dead] if items entity @s container.2 paper run function inventory:drop {"dropslot":"2"}
@@ -32,13 +33,14 @@ execute as @a[tag=!dead] if items entity @s container.5 paper run function inven
 execute as @a[tag=!dead] if items entity @s container.6 paper run function inventory:drop {"dropslot":"6"}
 execute as @a[tag=!dead] if items entity @s container.7 paper run function inventory:drop {"dropslot":"7"}
 execute as @a[tag=!dead] if items entity @s container.8 paper run function inventory:drop {"dropslot":"8"}
-execute as @a[tag=!dead] if items entity @s container.8 paper run function inventory:drop {"dropslot":"9"}
+execute as @a[tag=!dead] if items entity @s container.9 paper run function inventory:drop {"dropslot":"9"}
 execute as @a[tag=!dead] if items entity @s container.10 paper run function inventory:drop {"dropslot":"10"}
 
 execute as @a[tag=!dead] if items entity @s container.16 paper run function inventory:drop {"dropslot":"16"}
 execute as @a[tag=!dead] if items entity @s container.17 paper run function inventory:drop {"dropslot":"17"}
 execute as @a[tag=!dead] if items entity @s container.18 paper run function inventory:drop {"dropslot":"18"}
 execute as @a[tag=!dead] if items entity @s container.19 paper run function inventory:drop {"dropslot":"19"}
+
 execute as @a[tag=!dead] if items entity @s container.25 paper run function inventory:drop {"dropslot":"25"}
 execute as @a[tag=!dead] if items entity @s container.26 paper run function inventory:drop {"dropslot":"26"}
 execute as @a[tag=!dead] if items entity @s container.27 paper run function inventory:drop {"dropslot":"27"}
@@ -50,6 +52,8 @@ execute as @a[tag=!dead] if items entity @s container.32 paper run function inve
 execute as @a[tag=!dead] if items entity @s container.33 paper run function inventory:drop {"dropslot":"33"}
 execute as @a[tag=!dead] if items entity @s container.34 paper run function inventory:drop {"dropslot":"34"}
 execute as @a[tag=!dead] if items entity @s container.35 paper run function inventory:drop {"dropslot":"35"}
+
+#execute if items entity @s container.* paper unless items entity @s container.11 ??? - and then just remove all vanilla inentory
 
 ### use:
 # ?каждый тик получаем в каком слоте лежит какой предмет: $slot/"id" или
