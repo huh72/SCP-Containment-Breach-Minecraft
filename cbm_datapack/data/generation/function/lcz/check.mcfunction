@@ -30,7 +30,7 @@ $execute positioned ~ ~ ~ if score $(pos) sq matches 9 run place template lcz:t_
 $execute positioned ~ ~ ~ if score $(pos) sq matches 8 run place template lcz:t_formed0_3
 $execute positioned ~ ~ ~ if score $(pos) sq matches 7 run place template lcz:t_formed0_4
 
-execute if predicate generation:40 run kill @n[tag=corpse_event_trigger]
+execute unless predicate generation:30 run kill @n[tag=corpse_event_trigger]
 
 $execute if score $(pos) sq matches 7 run summon marker ~ ~ ~ {Tags:['gen','t_f','7','lcz']}
 $execute if score $(pos) sq matches 8 run summon marker ~ ~ ~ {Tags:['gen','t_f','8','lcz']}
