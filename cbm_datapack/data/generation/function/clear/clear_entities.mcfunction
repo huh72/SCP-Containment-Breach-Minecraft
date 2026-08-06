@@ -16,8 +16,25 @@ kill @e[type=marker, tag=save]
 kill @e[type=marker, tag=corpse]
 kill @e[type=marker, tag=ventroomtrigger]
 kill @e[type=marker, tag=scp1048spawnpoint]
+kill @e[type=marker, tag=event.914]
+kill @e[type=marker, tag=str4.event]
+#g 008 event
+kill @e[type=marker, tag=008spawnpoint]
+kill @e[type=item_display, tag=singleButton0]
+function animated_java:singledoor0/remove/all
+function animated_java:scp008/remove/all
 
 execute as @e[tag=scientist] run function animated_java:scientist/remove/all
+
+#g clear 079_1 event
+kill @e[type=item_display, tag=079face]
+kill @e[type=item_display, tag=079x]
+kill @e[type=marker, tag=event079.trigger]
+kill @e[type=marker, tag=079.spawnpoint]
+kill @e[type=marker, tag=079gate.spawnpoint0]
+kill @e[type=marker, tag=079gate.spawnpoint1]
+
+kill @e[type=marker, tag=doorsspawnpoint]
 
 
 function gates:remove
