@@ -1,4 +1,5 @@
 tag @n[tag=lczlockdown] remove lczlockdown
+execute as @e[tag=checkpoint, tag=hcz] run tag @s remove blocked
 
 function scp049:despawn
 execute at @n[type=marker,tag=event1_spawn049] run function scp049:spawn
