@@ -1,9 +1,12 @@
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-item replace entity @s armor.head with minecraft:leather_helmet
+item replace entity @s weapon.offhand with minecraft:lightning_rod
 tag @s add nvg
 function messages:usual {"text":"You put on the night vision goggles."}
-# attribute @s minecraft:generic.movement_speed modifier add 1488-0-0-0-8 0.01 add_value
 effect give @s night_vision infinite 1 true
 
-# scoreboard players set @s item_selected 20
+#g goggles effect
+particle minecraft:entity_effect{color:[0.996078431372549, 0.9686274509803922, 1, 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @s
+#g green effect
+particle minecraft:entity_effect{color:[0.996078431372549, 0.984313725490196, 1, 0.984313725490196],scale:1f} ~ ~ ~ ~ ~ ~ 0 1 force @s
+
 scoreboard players set @s used_a 1
