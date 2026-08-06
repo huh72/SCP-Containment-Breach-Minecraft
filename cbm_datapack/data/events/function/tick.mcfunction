@@ -25,5 +25,17 @@ execute as @e[type=marker, tag=corpse_event_trigger] at @s run function events:c
 #g 106's chamber event
 function events:106/handler
 
-#g lcz corpse event
-execute as @e[tag=corpse_event_trigger] at @s if score @s corpse.event matches 0.. run function events:corpse/handler
+#g 914 corpse event
+execute as @e[type=marker, tag=event.914] at @s as @n[tag=aj.door0.root] if entity @s[tag=frame.17] run function events:914/play
+
+#g hcz str4 event
+execute as @e[type=marker, tag=str4.event] at @s if score @s event.str4.dummylifetime < .remove event.str4.dummylifetime run function events:str4/handler
+execute as @e[type=marker, tag=str4.event] at @s run function events:str4/handler0
+
+#g ez elc center event (079_0)
+#g note: do not set entity type value here ( lever = makrer || item_display ):
+execute as @e[tag=elc.primaryLighting] at @s positioned ~ ~5 ~ if entity @p[tag=!dead, distance=..8] if score .state event.079 matches 0 run function events:scp079/0/lightoff
+
+#g ez elc center event (079_1)
+execute as @e[type=marker, tag=event079.trigger] at @s if entity @p[tag=!dead, distance=..6] if score .speech event.079 matches -1 run function events:scp079/1/speech
+execute if score .speech event.079 matches 0.. run function events:scp079/1/handler
