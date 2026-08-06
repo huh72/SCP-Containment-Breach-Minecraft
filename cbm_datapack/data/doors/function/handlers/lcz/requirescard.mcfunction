@@ -1,0 +1,1 @@
+title @p[scores={door_right_click=1}] actionbar "This door requires a keycard."
