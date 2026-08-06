@@ -90,19 +90,19 @@ $execute if items entity @s[nbt={Inventory:[{id:"minecraft:lightning_rod",Slot:-
 
 # night vision goggles
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:snav}] if score @s used_a matches 0 unless score @s item_selected matches 17 run function use:nightvisiongoggles/use
-$execute if items entity @s[nbt=!{Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:nvg}] if score @s used_a matches 0 run function use:nightvisiongoggles/use
-$execute if items entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Slot:103b}]}] container.$(slot) minecraft:paper[minecraft:custom_data={paper:nvg}] if score @s used_a matches 0 run function use:nightvisiongoggles/end
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:nvg}] if score @s used_a matches 0 run function use:nightvisiongoggles/use
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:nvg}] if score @s used_a matches 0 run function use:nightvisiongoggles/end
 
 # gasmask
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
 $execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/denied
 $execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/use
-$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=!supergasmask] used_a matches 0 run function use:gasmask/end
+$execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:gasmask}] if score @s[tag=basicgasmask] used_a matches 0 run function use:gasmask/end
 
 # super gasmask
 # $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={paper:gasmask}] if score @s used_a matches 0 unless score @s item_selected matches 20 run function use:gasmask/use
-$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!gasmask] used_a matches 0 run function use:super_gasmask/denied
-$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!gasmask] used_a matches 0 run function use:super_gasmask/use
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!basicgasmask] used_a matches 0 run function use:super_gasmask/denied
+$execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=!basicgasmask] used_a matches 0 run function use:super_gasmask/use
 $execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:super_gasmask}] if score @s[tag=supergasmask] used_a matches 0 run function use:super_gasmask/end
 
 # vest
