@@ -1,7 +1,8 @@
-setblock ~ ~12 ~ minecraft:oak_sign[rotation=1]{front_text:{messages:['[{"text":"15 (2)}]','[{"text":"15 (2)"}]','[{"text":"15 (2)"}]','[{"text":"15 (2)"}]']}}
+# setblock ~ ~12 ~ minecraft:oak_sign[rotation=1]{front_text:{messages:['[{"text":"15 (2)}]','[{"text":"15 (2)"}]','[{"text":"15 (2)"}]','[{"text":"15 (2)"}]']}}
 
 #g gate
 execute at @n[tag=gateSpawnpoint] rotated 90 0 run function animated_java:gate/summon with storage aj:temp
+tag @s add gate.gateB
 kill @n[tag=gateSpawnpoint]
 execute at @n[tag=gateSpawnpoint] rotated 90 0 run function animated_java:gate/summon with storage aj:temp
 
@@ -11,3 +12,6 @@ execute at @n[tag=elevatorSpawnpoint] run place template lcz:elevator ~ ~-1 ~3 1
 #g elevator doors
 execute at @n[tag=elevatorSpawnpoint] rotated 90 0 run function animated_java:elevator_doors/summon with storage aj:temp
 execute at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevatorDoors] add r0
+
+execute at @n[tag=gateSpawnpoint] as @n[tag=elevatorDoors] at @s run tag @n[tag=gate] add gateNearestToElevatorB
+execute at @n[tag=gateSpawnpoint] run tag @n[tag=gate, tag=!gateNearestToElevatorB] add gate.gateB
