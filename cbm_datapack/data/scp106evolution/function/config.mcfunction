@@ -37,6 +37,7 @@ scoreboard players set max_p 106hit_cd 20
 ### pd shrink
 scoreboard objectives add pd_shrink_scale dummy
 scoreboard players set max pd_shrink_scale 99
+scoreboard players set max_wall pd_shrink_scale 4
 
 
 ### HUNTING values

@@ -2,6 +2,7 @@ summon husk ~ ~ ~ {Tags:['scp1048Aorigin'],Silent:1b,Invulnerable:1b,Persistence
 effect give @n[type=husk, tag=scp1048Aorigin] invisibility infinite 1 true
 attribute @n[type=husk, tag=scp1048Aorigin] minecraft:movement_speed base set 0.15
 attribute @n[type=husk, tag=scp1048Aorigin] minecraft:follow_range base set 64
+attribute @n[type=husk, tag=scp1048Aorigin] minecraft:attack_damage base set 0
 
 #free "no damage" time for players
 scoreboard players operation @a shriek = -20 math
