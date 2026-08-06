@@ -52,8 +52,7 @@ execute as @a[tag=player] if score @s _wear_timer matches 0 run function use:ves
 
 
 ### GAS MASK ###
-# item replace entity @a[tag=gasmask] armor.head with minecraft:carved_pumpkin
-scoreboard players operation @a[tag=super_gasmask] stamina = max stamina
+scoreboard players operation @a[tag=supergasmask] stamina = max stamina
 
 ### NIGHT VISION GOGGLES ###
 # title @a[tag=nvg] title {"text":"0-=-0","color":"green"}

@@ -1,6 +1,6 @@
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 item replace entity @s weapon.offhand with minecraft:lightning_rod
-tag @s add super_gasmask
+tag @s add supergasmask
 tag @s add gasmask
 function messages:usual {"text":"You put on the gas mask and you can breathe easier."}
 attribute @s minecraft:movement_speed modifier add 4567-0-0-0-9 0.015 add_value

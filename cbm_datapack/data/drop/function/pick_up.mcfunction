@@ -2,7 +2,7 @@ execute as @a[tag=caster] run function inventory:count_inventory_items
 
 execute if entity @s[tag=start] run function int:events/pickeduppaper
 
-#giving
+#g put item in inventory
 execute if entity @s[tag=card1] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card1
 execute if entity @s[tag=card2] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card2
 execute if entity @s[tag=card3] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card3
@@ -23,8 +23,10 @@ execute if entity @s[tag=nvg] as @a[tag=caster] if score @s right_click_item mat
 execute if entity @s[tag=nvg_red] as @a[tag=caster] if score @s right_click_item matches 1 run function give:nightvisiongoggles_red
 execute if entity @s[tag=nvg_blue] as @a[tag=caster] if score @s right_click_item matches 1 run function give:nightvisiongoggles_blue
 execute if entity @s[tag=gasmask] as @a[tag=caster] if score @s right_click_item matches 1 run function give:gasmask
+execute if entity @s[tag=supergasmask] as @a[tag=caster] if score @s right_click_item matches 1 run function give:super_gasmask
 execute if entity @s[tag=radio] as @a[tag=caster] if score @s right_click_item matches 1 run function give:radio
 #vest
+
 execute if entity @s[tag=vest] as @a[tag=caster] if score @s right_click_item matches 1 run function give:vest
 execute if entity @s[tag=vest] as @a[tag=caster] if score @s right_click_item matches 1 run function use:vest/use
 
@@ -59,6 +61,7 @@ execute if entity @s[tag=nvg] at @s run playsound cb:interact.pickitem2 ambient 
 execute if entity @s[tag=nvg_red] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=nvg_blue] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=gasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @s[tag=supergasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=vest] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=aidkit0] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=coin] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1

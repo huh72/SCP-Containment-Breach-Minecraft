@@ -1,6 +1,6 @@
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 item replace entity @s weapon.offhand with minecraft:air
-tag @s remove super_gasmask
+tag @s remove supergasmask
 tag @s remove gasmask
 function messages:usual {"text":"You removed the gas mask."}
 attribute @s minecraft:movement_speed modifier remove 4567-0-0-0-9
