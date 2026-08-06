@@ -15,7 +15,7 @@ scoreboard players set @s item_selected 0
 scoreboard players set @s request_cd 0
 scoreboard players set @s playerOnFireTime 0
 
-scoreboard players set @s card_interact_cd 5
+scoreboard players set @s card_interact_cd 0
 
 #939
 scoreboard players set @s chase_cd 0

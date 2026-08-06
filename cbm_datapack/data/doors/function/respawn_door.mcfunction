@@ -16,7 +16,6 @@ execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~-1 minecraft:lightning
 execute if entity @s[tag=r1,tag=closed] run setblock ~ ~1 ~ minecraft:lightning_rod[facing=north]
 execute if entity @s[tag=r1,tag=closed] run setblock ~ ~ ~ minecraft:lightning_rod[facing=north]
 
-
 #main-opened
 tag @s add -commframe
 execute if entity @s[tag=opened] as @n[tag=aj.door0.root] at @s run function animated_java:door0/animations/openclosetoggle/play

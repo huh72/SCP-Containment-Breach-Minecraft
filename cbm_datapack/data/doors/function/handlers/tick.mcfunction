@@ -23,10 +23,12 @@ execute as @e[type=marker, tag=checkpoint, tag=opened] at @s if score @s door_ch
 # execute as @e[tag=door_marker,tag=openedByMtf,tag=!card] at @s if score @s door_autoclose = max door_autoclose as @n[tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
 # execute as @e[tag=door_marker,tag=openedByMtf,tag=card] at @s if score @s door_autoclose = max door_autoclose as @n[tag=aj.door_card0.root] run function animated_java:door_card0/animations/openclosetoggle/resume
 
+execute as @e[tag=singleButton0] at @s positioned ~ ~-1.5 ~ if entity @p[tag=!dead, distance=..1.25] run function doors:singlebutton0/handler
 
 #reset player's right click
 scoreboard players set @a door_right_click 0
 
+# execute as @a[tag=looking_on_door] run say @s looking on door!
 
 
 execute if score .debug.facing.enabled door.UUID matches 1 as @e[tag=door] at @s positioned ~ ~12 ~ anchored eyes run function doors:debug/particle
