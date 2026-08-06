@@ -13,5 +13,6 @@ execute if score @s corpse.event = .fall corpse.event run function events:corpse
 execute if score @s corpse.event = .spawn corpse.event positioned ~ ~6.5 ~ run function events:corpse/summon with storage cb:events
 
 #g fall handler
-execute as @e[tag=scientist_corpse.event] at @s if block ~ ~-0.1 ~ #events:air run tp @s ~ ~-0.1 ~
-execute as @e[tag=scientist_corpse.event] at @s unless block ~ ~-0.075 ~ #events:air run tag @s remove scientist_corpse.event
+execute as @e[tag=scientist_corpse.event] at @s if block ~ ~-0.2 ~ #events:air run tp @s ~ ~-0.2 ~
+execute as @e[tag=scientist_corpse.event] at @s if block ~ ~-0.75 ~ #events:air run tp @s ~ ~-0.75 ~
+execute as @e[tag=scientist_corpse.event] at @s unless block ~ ~-0.1 ~ #events:air run tag @s remove scientist_corpse.event
