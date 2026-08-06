@@ -26,3 +26,6 @@ tag @n[type=item_display,tag=gate] add lvl2
 
 scoreboard players set mode scp914 -1
 function scp914:change_mode
+
+execute as @n[tag=input] if entity @s[y_rotation=270] run tag @s add 270
+execute as @n[tag=input] if entity @s[y_rotation=180] run tag @s add 180
