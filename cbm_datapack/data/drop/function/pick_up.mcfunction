@@ -13,7 +13,7 @@ execute if entity @s[tag=playingcard] as @a[tag=caster] if score @s right_click_
 execute if entity @s[tag=mastercard] as @a[tag=caster] if score @s right_click_item matches 1 run function give:mastercard
 execute if entity @s[tag=battery9] as @a[tag=caster] if score @s right_click_item matches 1 run function give:battery
 execute if entity @s[tag=battery18] as @a[tag=caster] if score @s right_click_item matches 1 run function give:battery18
-execute if entity @s[tag=killbattery] as @a[tag=caster] if score @s right_click_item matches 1 run function give:killbatery
+execute if entity @s[tag=killbattery] as @a[tag=caster] if score @s right_click_item matches 1 run function give:killbattery
 execute if entity @s[tag=paper] as @a[tag=caster] if score @s right_click_item matches 1 run function give:paper_
 execute if entity @s[tag=note] as @a[tag=caster] if score @s right_click_item matches 1 run function give:note
 execute if entity @s[tag=yellowpaper] as @a[tag=caster] if score @s right_click_item matches 1 run function give:yellow_paper
@@ -37,6 +37,7 @@ execute if entity @s[tag=scp420j] as @a[tag=caster] if score @s right_click_item
 execute if entity @s[tag=scp500] as @a[tag=caster] if score @s right_click_item matches 1 run function give:scp500
 execute if entity @s[tag=scp860] as @a[tag=caster] if score @s right_click_item matches 1 run function give:scp860
 execute if entity @s[tag=scp148] as @a[tag=caster] if score @s right_click_item matches 1 run function give:scp148
+execute if entity @s[tag=scp1499] as @a[tag=caster] if score @s right_click_item matches 1 run function give:scp1499
 execute if entity @s[tag=white_arm] as @a[tag=caster] if score @s right_click_item matches 1 run function give:whitearm
 execute if entity @s[tag=black_arm] as @a[tag=caster] if score @s right_click_item matches 1 run function give:blackarm
 
@@ -70,10 +71,10 @@ execute if entity @s[tag=scp420j] at @s run playsound cb:interact.pickitem2 ambi
 execute if entity @s[tag=scp500] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=scp860] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=scp148] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @s[tag=scp1499] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=white_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=black_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=radio] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-
 
 scoreboard players set @p[tag=caster,scores={right_click_item=1..}] right_click_item 0
 scoreboard players set @p[tag=caster,scores={right_click_item=1..}] door_right_click 0
