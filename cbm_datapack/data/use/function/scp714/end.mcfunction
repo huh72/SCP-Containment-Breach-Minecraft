@@ -1,5 +1,5 @@
 execute at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-item replace entity @s armor.chest with minecraft:air
+item replace entity @s weapon.offhand with air
 tag @s remove scp714
 function messages:usual {"text":"You removed the ring."}
 

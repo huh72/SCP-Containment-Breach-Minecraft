@@ -1,1 +1,1 @@
-function give:paper {"cmd":"24","name":"Scp 714","lore":"*","data":"paper:scp714"}
+function give:paper {"model":"cb:scp714","name":"SCP-714","data":"item:scp714"}
