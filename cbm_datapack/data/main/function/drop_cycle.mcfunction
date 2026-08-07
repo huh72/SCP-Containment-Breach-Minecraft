@@ -37,6 +37,28 @@ execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_da
 execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"card4"}] run tag @n[type=armor_stand, tag=new] add card4
 execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"card5"}] run tag @n[type=armor_stand, tag=new] add card5
 execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"cardomni"}] run tag @n[type=armor_stand, tag=new] add cardomni
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"playingcard"}] run tag @n[type=armor_stand, tag=new] add playingcard
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"mastercard"}] run tag @n[type=armor_stand, tag=new] add mastercard
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"aidkit0"}] run tag @n[type=armor_stand, tag=new] add aidkt0
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"gasmask"}] run tag @n[type=armor_stand, tag=new] add gasmask
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"supergasmask"}] run tag @n[type=armor_stand, tag=new] add supergasmask
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp500"}] run tag @n[type=armor_stand, tag=new] add scp500
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp714"}] run tag @n[type=armor_stand, tag=new] add scp714
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp420j"}] run tag @n[type=armor_stand, tag=new] add scp420j
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp860"}] run tag @n[type=armor_stand, tag=new] add scp860
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"vest"}] run tag @n[type=armor_stand, tag=new] add vest
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp1499"}] run tag @n[type=armor_stand, tag=new] add scp1499
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"scp148"}] run tag @n[type=armor_stand, tag=new] add scp148
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"nvg"}] run tag @n[type=armor_stand, tag=new] add nvg
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"nvg_blue"}] run tag @n[type=armor_stand, tag=new] add nvg_blue
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"nvg_red"}] run tag @n[type=armor_stand, tag=new] add nvg_red
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"radio"}] run tag @n[type=armor_stand, tag=new] add radio
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"whitearm"}] run tag @n[type=armor_stand, tag=new] add whitearm
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"blackarm"}] run tag @n[type=armor_stand, tag=new] add blackarm
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={item:"coin"}] run tag @n[type=armor_stand, tag=new] add coin
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={battery:9}] run tag @n[type=armor_stand, tag=new] add battery9
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={battery:18}] run tag @n[type=armor_stand, tag=new] add battery18
+execute if items entity @n[type=armor_stand, tag=new] armor.head paper[custom_data={battery:kill}] run tag @n[type=armor_stand, tag=new] add killbattery
 
 tag @n[type=armor_stand, tag=new] remove new
 
