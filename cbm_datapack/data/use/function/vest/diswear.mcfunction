@@ -1,7 +1,16 @@
-attribute @s minecraft:movement_speed modifier add 1488-0-0-1-9 -1 add_value
-attribute @s minecraft:movement_speed modifier remove 1488-0-0-2-0
-scoreboard players operation @s _wear_timer = max_vest* _wear_timer
-execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+attribute @s minecraft:movement_speed modifier remove 4567-0-0-1-9
+
+
+execute at @s run summon armor_stand ~ ~1 ~ {Tags:['drop','new','vest'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+item replace entity @n[type=armor_stand, tag=new] armor.head with minecraft:paper[item_model="cb:vest"]
+
+tag @s remove vest
+tag @e remove new
 function use:remove_item
 
-tag @s remove can_ii
+# function messages:usual {"text":"You feel much better."}
+
+say drop!
+
+tag @s add can_ii
+

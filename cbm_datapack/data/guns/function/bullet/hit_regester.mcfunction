@@ -13,6 +13,11 @@ execute positioned ^ ^ ^-0.5 run particle crit ~ ~ ~ 0 0 0 0 1 force @a
 
 # tellraw @a [{"text":"Hit regester! DAMAGE - "},{"score":{"name":"@n[tag=bullet]","objective":"damage"}},{"text":", BL - "},{"score":{"name":"@n[tag=bullet]","objective":"v"}}]
 
+execute if entity @s[tag=vest] run scoreboard players operation @n[tag=bullet] damage /= 3 math
+# tellraw @a [{"score":{"name":"@n[tag=bullet]","objective":"damage"}}]
+execute store result storage cb:vest pitch int 1 run random value 15..99 cb:vestrandom
+execute unless score @n[tag=bullet] damage matches 1.. run return run function guns:bullet/player_hit/vestabsorb with storage cb:vest
+
 #hit types ( damage - in head/body/legs)
 #head
 execute if entity @s[distance=1.7..] run function guns:bullet/player_hit/head
@@ -23,7 +28,7 @@ execute if entity @s[distance=..1] run function guns:bullet/player_hit/legs
 
 # tellraw @a [{"text":"DAMAGE FINAL: "},{"score":{"name":"@n[tag=bullet]","objective":"damage"}}]
 
-scoreboard players operation @s bleeding += @n[tag=bullet] v
+scoreboard players operation @s[tag=!vest] bleeding += @n[tag=bullet] v
 
 #end --> despawn phys bullet
 execute as @n[tag=bullet] run function guns:bullet/despawn
