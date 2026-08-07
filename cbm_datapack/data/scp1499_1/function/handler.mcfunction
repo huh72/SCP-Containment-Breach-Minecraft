@@ -14,7 +14,7 @@ execute as @a at @s if score @s[tag=!1499_1KillTarget] timeNear1499_1 >= timing1
 
 #pursiuting targets
 data modify entity @s wander_target set from entity @n[tag=1499_1Target] Pos
-execute as @p[tag=1499_1KillTarget,distance=..3,tag=!dead] as @n[tag=scp1499_1] if entity @s[tag=!aj.scp1499_1.animation.attack.playing] run function animated_java:scp1499_1/animations/attack/play
+execute as @p[tag=1499_1KillTarget,distance=..2.25,tag=!dead] as @n[tag=scp1499_1] if entity @s[tag=!aj.scp1499_1.animation.attack.playing] run function animated_java:scp1499_1/animations/attack/play
 # execute as @a[tag=1499_1KillTarget, tag=!dead] at @s if entity @n[tag=scp1499_1, distance=..3, tag=!aj.scp1499_1.animation.attack.playing] run function animated_java:scp1499_1/animations/attack/play
 
 #animations

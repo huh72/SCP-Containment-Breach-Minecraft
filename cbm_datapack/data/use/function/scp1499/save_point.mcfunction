@@ -1,6 +1,7 @@
 kill @e[tag=1499_point]
 
 summon marker ~ ~ ~ {Tags:['1499_point','new']}
+forceload add ~ ~ ~ ~
 
 data modify entity @e[tag=new,limit=1] Rotation set from entity @s Rotation
 

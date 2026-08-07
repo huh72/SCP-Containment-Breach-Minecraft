@@ -1,7 +1,12 @@
+function scp1499_1:despawn
+function scp1499_1:despawn
+function scp1499_1:despawn
+say end
+
 execute in minecraft:overworld run tp @s ~ ~64 ~ ~ ~
 
 stopsound @s ambient cb:scp1499.ambient
-item replace entity @s armor.feet with air
+item replace entity @s weapon.offhand with air
 scoreboard players set @s 1499_ambient 40
 tag @s remove scp1499
 tag @s add h_scp1499
