@@ -1,0 +1,1 @@
+function give:paper {"model":"cb:killbattery","name":"Strange Battery","lore":"*","data":"battery:kill"}

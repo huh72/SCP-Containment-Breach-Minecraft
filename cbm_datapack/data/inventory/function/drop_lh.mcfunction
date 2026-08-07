@@ -14,9 +14,9 @@ execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:cardomni}] run tag @e[type=armor_stand, tag=new] add cardomni
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:playingcard}] run tag @e[type=armor_stand, tag=new] add playingcard
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:mastercard}] run tag @e[type=armor_stand, tag=new] add mastercard
-execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:battery9}] run tag @e[type=armor_stand, tag=new] add battery9
-execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:battery18}] run tag @e[type=armor_stand, tag=new] add battery18
-execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:killbatteru}] run tag @e[type=armor_stand, tag=new] add killbattery
+execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={battery:9}] run tag @e[type=armor_stand, tag=new] add battery9
+execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={battery:18}] run tag @e[type=armor_stand, tag=new] add battery18
+execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={battery:kill}] run tag @e[type=armor_stand, tag=new] add killbattery
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:paper}] run tag @e[type=armor_stand, tag=new] add paper
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:note}] run tag @e[type=armor_stand, tag=new] add note
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:yellowpaper}] run tag @e[type=armor_stand, tag=new] add yellowpaper
@@ -40,38 +40,38 @@ execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:scp1499}] run tag @e[type=armor_stand, tag=new] add scp1499
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:radio}] run tag @e[type=armor_stand, tag=new] add radio
 
-execute if entity @n[type=armor_stand, tag=new,tag=card1] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=card2] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=card3] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=card4] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=card5] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=cardomni] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=playingcard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=mastercard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=battery9] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=battery18] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=killbattery] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=paper] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=note] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=yellowpaper] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=snav] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=eyedrops] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=nvg] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=nvg_red] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=nvg_blue] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=gasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=supergasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=vest] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=aidkit0] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=coin] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp714] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp420j] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp500] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp860] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp148] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=white_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=black_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new,tag=scp1499] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=card1] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=card2] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=card3] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=card4] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=card5] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=cardomni] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=playingcard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=mastercard] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=battery9] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=battery18] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=killbattery] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=paper] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=note] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=yellowpaper] at @s run playsound cb:interact.pickitem0 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=snav] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=eyedrops] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=nvg] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=nvg_red] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=nvg_blue] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=gasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=supergasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=vest] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=aidkit0] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=coin] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp714] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp420j] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp500] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp860] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp148] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=white_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=black_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+execute if entity @n[type=armor_stand, tag=new, tag=scp1499] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 
 tag @e remove new
 
