@@ -1,4 +1,3 @@
-say remove item!
 item replace entity @s[scores={slot_used=11}] container.11 with minecraft:air
 item replace entity @s[scores={slot_used=12}] container.12 with minecraft:air
 item replace entity @s[scores={slot_used=13}] container.13 with minecraft:air

@@ -63,7 +63,7 @@
 
 	"scp096.angered":        {"sounds": ["cb:scp/096/angered"]},
 	"scp096.scream":        {"sounds": ["cb:scp/096/scream"]},
-	"scp096.triggered":        {"sounds": ["cb:scp/096/triggered"]},
+	"scp096.triggered":        {"sounds": ["cb:scp/096/triggered"]},	
 	"scp096.chase":        {"sounds": ["cb:scp/096/chase"]},
 	"scp096.ambient":        {"sounds": ["cb:scp/096/ambient"]},
 	"scp939.chase":        {"sounds": ["cb:scp/939/attack"]},

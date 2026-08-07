@@ -25,6 +25,7 @@ scoreboard objectives add tempMath dummy
 
 scoreboard objectives add math dummy
 scoreboard players set 1000 math 1000
+scoreboard players set 3 math 3
 
 #logic elevator
 scoreboard objectives add ID dummy

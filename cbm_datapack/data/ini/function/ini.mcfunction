@@ -7,8 +7,10 @@ effect give @s regeneration infinite 255 true
 effect give @s saturation infinite 255 true
 attribute @s minecraft:jump_strength base set 0.0004
 attribute @s minecraft:movement_speed base set 0.085
-execute as @a run attribute @s minecraft:scale base set 1.2
-execute as @a run attribute @s minecraft:camera_distance base set 0.0
+attribute @s minecraft:scale base set 1.2
+attribute @s minecraft:camera_distance base set 0.0
+attribute @s minecraft:step_height base set 0.65
+attribute @s minecraft:safe_fall_distance base set 1000
 scoreboard players operation @s stamina = max stamina
 scoreboard players set @s breath_cd 1
 scoreboard players set @s item_selected 0
