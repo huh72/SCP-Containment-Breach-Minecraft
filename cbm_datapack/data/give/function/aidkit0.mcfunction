@@ -1,1 +1,1 @@
-function give:paper {"cmd":"22","name":"First Aid Kit","lore":"*","data":"paper:aidkit0"}
+function give:paper {"model":"cb:aidkit0","name":"First Aid Kit","data":"item:aidkit0"}
