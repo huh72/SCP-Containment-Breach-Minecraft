@@ -107,21 +107,6 @@
 				"assets/animated_java/textures/blueprint/door0_sc/locklcz.png"
 			]
 		},
-		"door1": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
-			"versionedFiles": [
-				"assets/animated_java/items/blueprint/door1/base.json",
-				"assets/animated_java/items/blueprint/door1/wing0.json",
-				"assets/animated_java/items/blueprint/door1/wing1.json",
-				"assets/animated_java/items/empty.json",
-				"assets/animated_java/models/blueprint/door1/base.json",
-				"assets/animated_java/models/blueprint/door1/wing0.json",
-				"assets/animated_java/models/blueprint/door1/wing1.json",
-				"assets/animated_java/models/empty.json",
-				"assets/animated_java/textures/blueprint/door1/door1.png",
-				"assets/animated_java/textures/blueprint/door1/locklcz.png"
-			]
-		},
 		"door914": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
@@ -631,6 +616,18 @@
 				"assets/animated_java/models/blueprint/singledoor0/wind0.json",
 				"assets/animated_java/models/blueprint/singledoor0/wind1.json",
 				"assets/animated_java/textures/blueprint/singledoor0/door0.png"
+			]
+		},
+		"singledoor1": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/singledoor1/base.json",
+				"assets/animated_java/items/blueprint/singledoor1/wing0.json",
+				"assets/animated_java/items/blueprint/singledoor1/wing1.json",
+				"assets/animated_java/models/blueprint/singledoor1/base.json",
+				"assets/animated_java/models/blueprint/singledoor1/wing0.json",
+				"assets/animated_java/models/blueprint/singledoor1/wing1.json",
+				"assets/animated_java/textures/blueprint/singledoor1/door1.png"
 			]
 		}
 	}
