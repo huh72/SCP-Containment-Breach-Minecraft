@@ -1,6 +1,7 @@
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 item replace entity @s weapon.offhand with minecraft:lightning_rod
 tag @s add nvg
+tag @s add nvgbasic
 function messages:usual {"text":"You put on the night vision goggles."}
 effect give @s night_vision infinite 1 true
 
