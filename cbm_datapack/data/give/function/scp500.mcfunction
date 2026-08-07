@@ -1,1 +1,1 @@
-function give:paper {"model":"cb:scp500","name":"Scp 500","lore":"*","data":"item:scp500"}
+function give:paper {"model":"cb:scp500","name":"SCP-500","lore":"*","data":"item:scp500"}
