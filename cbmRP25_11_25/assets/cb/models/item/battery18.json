@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/battery",
-		"particle": "item/battery"
+		"0": "item/battery18",
+		"particle": "item/battery18"
 	},
 	"elements": [
 		{
