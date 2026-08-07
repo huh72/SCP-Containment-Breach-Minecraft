@@ -29,7 +29,7 @@ execute at @n[tag=elevatorSpawnpoint] run tag @n[tag=elevator] add 939
 execute at @n[tag=elevatorSpawnpoint] as @n[tag=elevatorDoors] run function animated_java:elevator_doors/animations/openclose/play
 
 execute at @n[tag=elevator, tag=939_0, tag=1] as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
-
+scoreboard players set @n[tag=elevator, tag=939_0, tag=1] onLevel 0
 
 #init elevator
 execute at @n[tag=elevatorSpawnpoint] run scoreboard players set @n[tag=elevator] moveTime -1

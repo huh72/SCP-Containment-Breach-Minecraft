@@ -24,6 +24,9 @@ kill @e[type=item_display, tag=singleButton0]
 function animated_java:singledoor0/remove/all
 function animated_java:scp008/remove/all
 
+#g hcz single door clear
+function animated_java:singledoor1/remove/all
+
 execute as @e[tag=scientist] run function animated_java:scientist/remove/all
 
 #g clear 079_1 event
