@@ -4,10 +4,22 @@ scoreboard players set @s health 1000
 tag @s remove tesla_trigger
 tag @s add dead
 tag @s remove hit
+
+function use:super_gasmask/end
+function use:gasmask/end
+function use:nightvisiongoggles/end
+attribute @s minecraft:movement_speed modifier remove 8990-0-0-0-9
+attribute @s minecraft:movement_speed modifier remove 8990-0-0-0-9
 attribute @s minecraft:movement_speed modifier remove 1488-0-0-0-8
 attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
+#g vest
+attribute @s minecraft:movement_speed modifier remove 4589-0-0-2-0
+attribute @s minecraft:movement_speed modifier remove 4567-0-0-1-9
+
 effect give @s invisibility infinite 1 true
 effect give @s regeneration infinite 10 true
+tag @s remove scp714
+tag @s remove vest
 
 scoreboard players set @s item_selected 0
 
