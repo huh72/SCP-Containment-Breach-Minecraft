@@ -113,6 +113,7 @@
 	"d9341.cough":        {"sounds": ["cb:character/d9341/cough1","cb:character/d9341/cough2","cb:character/d9341/cough3"]},
 	"music.scp420j":        {"sounds": ["cb:music/420j"]},
 	"d9341.breath_long":        {"sounds": ["cb:character/d9341/breath0"]},
+	"d9341.death":        {"sounds": ["cb:character/d9341/death"]},
 	"d9341.breath":        {"sounds": ["cb:character/d9341/breath1","cb:character/d9341/breath2","cb:character/d9341/breath3"]},
 	"scp1499.enter":        {"sounds": ["cb:scp/1499/enter"]},
 	"scp1499.exit":        {"sounds": ["cb:scp/1499/exit"]},
@@ -218,6 +219,8 @@
 	"i.3b":        {"sounds": ["cb:int/guards/3b"]},
 	"i.4a":        {"sounds": ["cb:int/guards/4a"]},
 	"i.4b":        {"sounds": ["cb:int/guards/4b"]},
+	"i.5a":        {"sounds": ["cb:int/guards/5a"]},
+	"i.5b":        {"sounds": ["cb:int/guards/5b"]},
 	"i.guard.music":        {"sounds": ["cb:int/guards/music0", "cb:int/guards/music1", "cb:int/guards/music2", "cb:int/guards/music/3", "cb:int/guards/music4"]},
 	"i.guard.escape":        {"sounds": ["cb:int/guards/playerescape"]},
 	"i.ulgrin.bytheway":        {"sounds": ["cb:int/guards/ulgrin/bytheway"]},
@@ -276,6 +279,24 @@
 	"scp457.encounter": {"sounds": ["cb:scp/457/encounter"]},
 	"scp650.chase": {"sounds": ["cb:scp/650/chase"]},
 	"scp650.heartbeat": {"sounds": ["cb:scp/650/heartbeat"]},
-	"scp650.encounter": {"sounds": ["cb:scp/650/encounter"]}
+	"scp650.encounter": {"sounds": ["cb:scp/650/encounter"]},
+
+	"annouc.0": {"sounds": ["cb:character/mtf/announc"]},
+	"annouc.049": {"sounds": ["cb:character/mtf/announc049"]},
+	"annouc.096": {"sounds": ["cb:character/mtf/announc096"]},
+	"annouc.939": {"sounds": ["cb:character/mtf/announc939"]},
+	"annouc.966": {"sounds": ["cb:character/mtf/announc966"]},
+	"annouc.173": {"sounds": ["cb:character/mtf/announc173"]},
+	"annouc.1": {"sounds": ["cb:character/mtf/announc1"]},
+	"annouc.2": {"sounds": ["cb:character/mtf/announc2"]},
+	"annouc.cameracheck": {"sounds": ["cb:character/mtf/announccameracheck"]},
+	"annouc.cameranofound0": {"sounds": ["cb:character/mtf/announccamerafound0"]},
+	"annouc.cameranofound1": {"sounds": ["cb:character/mtf/announccamerafound1"]},
+	"annouc.cameranofound2": {"sounds": ["cb:character/mtf/announccameranofound2"]},
+	"annouc.threat0": {"sounds": ["cb:character/mtf/threatannounc0"]},
+	"annouc.threat1": {"sounds": ["cb:character/mtf/threatannounc1"]},
+	"annouc.threat2": {"sounds": ["cb:character/mtf/threatannounc2"]},
+	"annouc.threatfinal": {"sounds": ["cb:character/mtf/threatannouncfinal"]},
+	"annouc.threatpos": {"sounds": ["cb:character/mtf/threatannouncpos"]}
 }
 
