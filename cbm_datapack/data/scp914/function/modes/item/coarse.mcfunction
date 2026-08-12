@@ -19,6 +19,9 @@ execute if entity @s[tag=playingcard] run return run kill @s
 ### coin
 execute if entity @s[tag=coin] run return run kill @s
 
+#g aidkit
+execute if entity @s[tag=aidkit0] run return run function spawn:drop/firstaidkit {"state":"914"}
+
 ### arms
 #white arm
 execute if entity @s[tag=white_arm] run return run kill @s

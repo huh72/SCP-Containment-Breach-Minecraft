@@ -25,6 +25,12 @@ execute if entity @s[tag=playingcard] run return run function spawn:drop/card2 {
 ### coin
 execute if entity @s[tag=coin] run return run function spawn:drop/mastercard {"state":"914"}
 
+#g aidkit
+execute store result score chance scp914 run random value 0..99 cb:scp914chances
+execute if entity @s[tag=aidkit0] if score chance scp914 matches 0..9 run return run function spawn:drop/scp500 {"state":"914"}
+execute if entity @s[tag=aidkit0] if score chance scp914 matches 10..99 run function spawn:drop/firstaidkit {"state":"914"}
+execute if entity @s[tag=aidkit0] if score chance scp914 matches 10..99 run return run kill @s
+
 ### arms
 #white arm
 execute if entity @s[tag=white_arm] run function spawn:drop/blackarm {"state":"914"}
@@ -36,5 +42,5 @@ execute if entity @s[tag=black_arm] run return run kill @s
 ### radio
 execute if entity @s[tag=radio] run return run function spawn:drop/radio {"state":"914"}
 
-### radio
+### scp1499_1
 execute if entity @s[tag=scp1499] run return run function spawn:drop/spawn1499_1
