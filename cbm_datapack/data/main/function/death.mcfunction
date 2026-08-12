@@ -5,6 +5,23 @@ tag @s remove tesla_trigger
 tag @s add dead
 tag @s remove hit
 
+#g death animation
+function main:animation/ini
+attribute @s minecraft:jump_strength base set 0
+scoreboard players set @s deathAnimation 0
+
+#g disable blinking
+tag @s remove can_blink
+scoreboard players set @s blink_timer -1
+
+#g death sound
+playsound cb:d9341.death ambient @a[distance=0.01..6] ~ ~0.5 ~ 0.33 1 1
+playsound cb:d9341.death ambient @s ~ ~1000000 ~ 100000 1 1
+
+#g death shader effects
+function shader_control:effects/blur/set {"value":"1"}
+function shader_control:effects/trail/set {"value":"1"}
+
 function use:super_gasmask/end
 function use:gasmask/end
 function use:nightvisiongoggles/end
@@ -19,6 +36,7 @@ attribute @s minecraft:movement_speed modifier remove 4567-0-0-1-9
 effect give @s invisibility infinite 1 true
 effect give @s regeneration infinite 10 true
 tag @s remove scp714
+scoreboard players set @s scp714timer 0
 tag @s remove vest
 
 scoreboard players set @s item_selected 0

@@ -33,3 +33,12 @@ scoreboard players set drop pos_neg 0
 
 data modify storage minecraft:drop_pos x set value 0
 data modify storage minecraft:drop_pos z set value 0
+
+scoreboard objectives add respawnCountdown dummy
+scoreboard objectives add deathAnimation dummy
+scoreboard players set .setBlackScreen deathAnimation 55
+scoreboard players set .removeEffects deathAnimation 130
+scoreboard players set .canRespawn deathAnimation 200
+scoreboard objectives add scaleDeathAnimation dummy
+scoreboard players set .step scaleDeathAnimation 6
+scoreboard players set .min scaleDeathAnimation 16
