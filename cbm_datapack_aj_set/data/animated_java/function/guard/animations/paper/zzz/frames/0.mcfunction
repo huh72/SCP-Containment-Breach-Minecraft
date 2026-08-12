@@ -6,3 +6,6 @@ $data merge entity $(bone_left_arm) {transformation: [-0.9081f,0.376f,0.1841f,0.
 $data merge entity $(bone_right_arm) {transformation: [-0.8597f,-0.5093f,0.0388f,-0.2437f,-0.3442f,0.5215f,-0.7808f,1.3063f,0.3774f,-0.6846f,-0.6236f,0.1562f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.6875f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_paper) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.3125f,0f,0f,-1f,-0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+
+execute as @n[tag=guardaj] run function animated_java:guard/animations/idle2/stop
+execute as @n[tag=guardaj] run function animated_java:guard/animations/walk2/stop

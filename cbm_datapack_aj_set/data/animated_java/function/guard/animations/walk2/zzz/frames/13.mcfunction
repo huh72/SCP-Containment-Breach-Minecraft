@@ -5,4 +5,5 @@ $data merge entity $(bone_body) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.75f,0f
 $data merge entity $(bone_left_arm) {transformation: [-0.9081f,0.376f,0.1841f,0.2688f,0.0727f,0.5746f,-0.8152f,1.2875f,-0.4123f,-0.7269f,-0.5492f,0.1813f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_right_arm) {transformation: [-0.8597f,-0.5093f,0.0388f,-0.2437f,-0.3442f,0.5215f,-0.7808f,1.3063f,0.3774f,-0.6846f,-0.6236f,0.1562f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9999f,0.0138f,1.6875f,0f,0.0138f,-0.9999f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-playsound cb:mtf.step ambient @a[distance=..16] ~ ~ ~ 1 1 1
+
+playsound cb:mtf.step ambient @a[distance=..16] ~ ~1 ~ 1 1 1
