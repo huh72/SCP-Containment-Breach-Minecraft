@@ -4,7 +4,7 @@
   "predicate": {
     "movement": {
       "speed": {
-        "min": 1.59,
+        "min": 1.6,
         "max": 10
       }
     }

@@ -6,12 +6,15 @@ data modify entity @n[tag=guardaj] Rotation[0] set from entity @s Rotation[0]
 function guard:player_interact/define_targets
 
 #switch idle and walk animations
-execute as @n[tag=guardaj] run function animated_java:guard/animations/idle2/pause
-execute as @n[tag=guardaj] run function animated_java:guard/animations/walk2/pause
+execute if entity @s[predicate=guard:idle] as @n[tag=guardaj] if entity @s[tag=!aj.guard.animation.idle2.playing,tag=!aj.guard.animation.paper.playing] run function animated_java:guard/animations/idle2/play
+execute if entity @s[predicate=guard:walk] as @n[tag=guardaj] if entity @s[tag=!aj.guard.animation.walk2.playing,tag=!aj.guard.animation.paper.playing] run function animated_java:guard/animations/walk2/play
 
-execute if entity @s[predicate=mtf:idle,tag=!i.paper] as @n[tag=guardaj] run function animated_java:guard/animations/idle2/resume
-execute if entity @s[predicate=mtf:walk,tag=!i.paper] as @n[tag=guardaj] run function animated_java:guard/animations/walk2/resume
+execute unless entity @s[predicate=guard:idle] as @n[tag=guardaj] if entity @s[tag=aj.guard.animation.idle2.playing] run function animated_java:guard/animations/idle2/stop
+execute unless entity @s[predicate=guard:walk] as @n[tag=guardaj] if entity @s[tag=aj.guard.animation.walk2.playing] run function animated_java:guard/animations/walk2/stop
 
+# execute if entity @s[predicate=guard:idle] run say idle
+# execute if entity @s[predicate=guard:walk] run say walk
+# say u
 
 #death func
 execute if score @s health matches ..0 run function guard:despawn
