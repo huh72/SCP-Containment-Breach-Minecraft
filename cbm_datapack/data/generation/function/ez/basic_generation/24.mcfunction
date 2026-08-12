@@ -17,4 +17,4 @@ execute as @e[tag=173] at @s positioned ~-171 ~ ~439 run function generation:ez/
 
 schedule function generation:ez/int_room_gen/main 5t replace
 
-function drop:loop/spawn
+function drop:loot/spawn
