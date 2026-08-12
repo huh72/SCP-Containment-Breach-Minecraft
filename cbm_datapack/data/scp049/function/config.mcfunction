@@ -8,6 +8,10 @@ scoreboard players set .max chamber049.ambientTimer 767
 
 scoreboard objectives add chamber049.event dummy
 
+scoreboard objectives add scp714timer dummy
+scoreboard players set .max scp714timer 150
+execute as @a unless score @s scp714timer matches 0.. run scoreboard players set @s scp714timer 0
+
 # default - 0
 # lights is off = 1
 # generator is on = 2

@@ -11,11 +11,13 @@ attribute @s minecraft:scale base set 1.2
 attribute @s minecraft:camera_distance base set 0.0
 attribute @s minecraft:step_height base set 0.65
 attribute @s minecraft:safe_fall_distance base set 1000
+attribute @s minecraft:entity_interaction_range base set 0
 scoreboard players operation @s stamina = max stamina
 scoreboard players set @s breath_cd 1
 scoreboard players set @s item_selected 0
 scoreboard players set @s request_cd 0
 scoreboard players set @s playerOnFireTime 0
+scoreboard players set @s scp714timer 0
 
 scoreboard players set @s card_interact_cd 0
 
@@ -23,6 +25,10 @@ scoreboard players set @s card_interact_cd 0
 scoreboard players set @s chase_cd 0
 scoreboard players set @s 939.ambient -1
 scoreboard players set @s chamber049.ambientTimer -1
+
+#g death animation setup
+scoreboard players set @s deathAnimation -1
+scoreboard players set @s respawnCountdown 6
 
 #heartbeat
 scoreboard players set @s heartbeatTimer 0
