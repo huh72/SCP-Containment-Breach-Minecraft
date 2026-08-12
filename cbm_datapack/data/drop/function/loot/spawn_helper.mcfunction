@@ -13,5 +13,6 @@ execute if entity @s[tag=whitearm] run function spawn:drop/whitearm {"state":"lo
 execute if entity @s[tag=nvg] run function spawn:drop/nvg {"state":"loot"}
 execute if entity @s[tag=scp1499] run function spawn:drop/scp1499 {"state":"loot"}
 execute if entity @s[tag=scp500] run function spawn:drop/scp500 {"state":"loot"}
+execute if entity @s[tag=coin] run function spawn:drop/coin {"state":"loot"}
 
 kill @s[tag=!neverRemove]
