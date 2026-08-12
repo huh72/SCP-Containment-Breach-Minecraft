@@ -11,7 +11,6 @@
 		"animated_java:door_check0/on_load",
 		"animated_java:door0_sc/on_load",
 		"animated_java:door0/on_load",
-		"animated_java:door1/on_load",
 		"animated_java:door914/on_load",
 		"animated_java:elevator_doors/on_load",
 		"animated_java:gate/on_load",
@@ -37,6 +36,7 @@
 		"animated_java:scp457/on_load",
 		"animated_java:scp650/on_load",
 		"animated_java:scp939/on_load",
-		"animated_java:singledoor0/on_load"
+		"animated_java:singledoor0/on_load",
+		"animated_java:singledoor1/on_load"
 	]
 }
