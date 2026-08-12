@@ -6,3 +6,6 @@ kill @e[tag=scp457]
 
 scoreboard players set .canSpawn 457spawnTimer 1
 scoreboard players set .timerCanBeIncreased 457spawnTimer 1
+scoreboard players set . 457spawnTimer 0
+
+function scps:spawnsystem/getnumebr/loop/457 with storage cb:scpspawn

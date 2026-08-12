@@ -8,5 +8,6 @@ scoreboard players set 049 phrase 140
 scoreboard players set 049 door_open_cd 200
 tag @e remove new
 
+scoreboard players set .049 despawnTimer 0
 scoreboard players set .canSpawn 049spawnTimer 0
 scoreboard players set .timerCanBeIncreased 049spawnTimer 0

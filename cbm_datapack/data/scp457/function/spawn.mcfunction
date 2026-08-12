@@ -12,5 +12,6 @@ execute rotated 0 0 run function animated_java:scp457/summon with storage aj:tem
 
 scoreboard players set .canSpawn 457spawnTimer 0
 scoreboard players set .timerCanBeIncreased 457spawnTimer 0
+scoreboard players set .457 despawnTimer 0
 
 tag @n[tag=new] remove new

@@ -46,8 +46,8 @@ data modify storage cb:scpspawn SpawnMax106 set value 20400
 
 
 #g 173 ============================================================
-scoreboard players set .timerCanBeIncreased 173spawnTimer 0
-scoreboard players set .canSpawn 173spawnTimer 0
+execute unless score .timerCanBeIncreased 173spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 173spawnTimer 0
+execute unless score .canSpawn 173spawnTimer matches 0..1 run scoreboard players set .canSpawn 173spawnTimer 0
 
 #g timings
 data modify storage cb:scpspawn firstSpawnMin173 set value 16800
@@ -58,8 +58,8 @@ data modify storage cb:scpspawn SpawnMax173 set value 10800
 
 
 #g 650 ============================================================
-scoreboard players set .timerCanBeIncreased 650spawnTimer 0
-scoreboard players set .canSpawn 650spawnTimer 0
+execute unless score .timerCanBeIncreased 650spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 650spawnTimer 0
+execute unless score .canSpawn 650spawnTimer matches 0..1 run scoreboard players set .canSpawn 650spawnTimer 0
 
 #g timings
 data modify storage cb:scpspawn firstSpawnMin650 set value 9600
@@ -70,8 +70,8 @@ data modify storage cb:scpspawn SpawnMax650 set value 6000
 
 
 #g 457 ============================================================
-scoreboard players set .timerCanBeIncreased 457spawnTimer 0
-scoreboard players set .canSpawn 457spawnTimer 0
+execute unless score .timerCanBeIncreased 457spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 457spawnTimer 0
+execute unless score .canSpawn 457spawnTimer matches 0..1 run scoreboard players set .canSpawn 457spawnTimer 0
 
 #g timings
 data modify storage cb:scpspawn firstSpawnMin457 set value 19200
@@ -81,8 +81,8 @@ data modify storage cb:scpspawn SpawnMin457 set value 10800
 data modify storage cb:scpspawn SpawnMax457 set value 14400
 
 #g 049 ============================================================
-scoreboard players set .timerCanBeIncreased 049spawnTimer 0
-scoreboard players set .canSpawn 049spawnTimer 0
+execute unless score .timerCanBeIncreased 049spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 049spawnTimer 0
+execute unless score .canSpawn 049spawnTimer matches 0..1 run scoreboard players set .canSpawn 049spawnTimer 0
 
 #g timings
 data modify storage cb:scpspawn SpawnMin049 set value 9600
@@ -93,15 +93,12 @@ data modify storage cb:scpspawn SpawnMax049 set value 21600
 
 
 #g 1048 ============================================================
-scoreboard players set .timerCanBeIncreased 1048spawnTimer 0
-scoreboard players set .canSpawn 1048spawnTimer 0
+execute unless score .timerCanBeIncreased 1048spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 1048spawnTimer 0
+execute unless score .canSpawn 1048spawnTimer matches 0..1 run scoreboard players set .canSpawn 1048spawnTimer 0
 
 #g timings
 data modify storage cb:scpspawn SpawnMin1048 set value 24000
 data modify storage cb:scpspawn SpawnMax1048 set value 33600
 
-
-function scps:spawnsystem/getnumebr/first with storage cb:scpspawn
-# function scps:spawnsystem/getnumebr/basic with storage cb:scpspawn
-
-scoreboard players set .despawnRequest despawnTimer 1200
+#g set despawn timer
+scoreboard players set .despawnRequest despawnTimer 600

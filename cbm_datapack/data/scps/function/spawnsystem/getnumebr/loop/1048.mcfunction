@@ -1,0 +1,1 @@
+$execute store result score .request 1048spawnTimer run random value $(SpawnMin1048)..$(SpawnMax1048) cb:scp1048

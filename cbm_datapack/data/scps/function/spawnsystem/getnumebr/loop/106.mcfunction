@@ -1,0 +1,1 @@
+$execute store result score .request 106spawnTimer run random value $(SpawnMin106)..$(SpawnMax106) cb:scp106

@@ -9,3 +9,4 @@ execute rotated 0 0 run function animated_java:scp1048/summon with storage aj:te
 
 scoreboard players set .canSpawn 1048spawnTimer 0
 scoreboard players set .timerCanBeIncreased 1048spawnTimer 0
+scoreboard players set .1048 despawnTimer 0

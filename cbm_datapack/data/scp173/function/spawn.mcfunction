@@ -15,3 +15,7 @@ tag @n[tag=new] remove new
 
 execute as @a store result score @s horror_cd run random value 10..30 cb:scp173horror
 execute store result score 173 rattle_cd run random value 60..200 cb:scp173horror
+
+scoreboard players set .173 despawnTimer 0
+scoreboard players set .canSpawn 173spawnTimer 0
+scoreboard players set .timerCanBeIncreased 173spawnTimer 0

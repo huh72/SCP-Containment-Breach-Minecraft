@@ -1,2 +1,2 @@
-$execute positioned ^ ^ ^12 at @n[tag=door] rotated as @s positioned ^ ^ ^16 at @n[tag=door] positioned ^ ^ ^1 run function scp$(scp):spawn
+$execute as @r[tag=!dead] at @s positioned ^ ^ ^12 at @n[tag=door] rotated as @s positioned ^ ^ ^16 at @n[tag=door] positioned ^ ^ ^1 run function scp$(scp):spawn
 # execute positioned ^ ^ ^12 at @n[tag=door] rotated as @s positioned ^ ^ ^16 at @n[tag=door] positioned ^ ^ ^1 run particle explosion_emitter ~ ~ ~ 1 1 1 0 10
