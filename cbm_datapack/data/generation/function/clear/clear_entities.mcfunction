@@ -18,6 +18,7 @@ kill @e[type=marker, tag=ventroomtrigger]
 kill @e[type=marker, tag=scp1048spawnpoint]
 kill @e[type=marker, tag=event.914]
 kill @e[type=marker, tag=str4.event]
+kill @e[type=marker, tag=p.smokeup]
 #g 008 event
 kill @e[type=marker, tag=008spawnpoint]
 kill @e[type=item_display, tag=singleButton0]

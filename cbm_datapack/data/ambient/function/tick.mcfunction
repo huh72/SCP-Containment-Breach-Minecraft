@@ -1,0 +1,1 @@
+execute as @a[tag=!dead] at @s run function ambient:handler
