@@ -1,4 +1,4 @@
-execute positioned ~ ~1 ~ run place template lcz:empty_small
+# execute positioned ~ ~1 ~ run place template lcz:empty_small
 
 $execute if entity @s[tag=7] positioned ~ ~1 ~ run place template $(room)3
 $execute if entity @s[tag=8] positioned ~ ~1 ~-1 run place template $(room)0
