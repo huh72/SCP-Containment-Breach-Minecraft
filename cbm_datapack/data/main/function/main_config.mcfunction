@@ -29,6 +29,9 @@ function ui:config
 function int:config
 function shader_control:config
 function look_check:config
+function ambient:config
+function announc:config
+
 #scps
 function scps:load
 

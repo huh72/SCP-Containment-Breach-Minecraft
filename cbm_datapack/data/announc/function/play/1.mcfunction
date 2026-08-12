@@ -1,0 +1,1 @@
+playsound cb:annouc.1 ambient @a ~ ~1000000 ~ 100000 1 1

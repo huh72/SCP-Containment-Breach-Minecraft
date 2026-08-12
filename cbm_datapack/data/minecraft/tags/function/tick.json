@@ -17,6 +17,7 @@
         "scps:tick",
         "drop:tick",
         "guns:tick",
+        "ambient:tick",
         "ui:tick",
         "mtf:tick",
         "guard:tick",
@@ -27,6 +28,7 @@
         "guns:bullet/tick",
         "endings:tick",
         "shader_control:tick",
+        "announc:tick",
         "inventory:tick"
     ]
 }
