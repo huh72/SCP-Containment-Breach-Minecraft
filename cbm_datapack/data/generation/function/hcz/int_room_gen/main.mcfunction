@@ -86,6 +86,8 @@ tag @e[tag=door_marker_checkpoint] add door
 tag @e[tag=door_marker_checkpoint] add door_lock
 tag @e[tag=door_marker,tag=card] add door_lock
 
+scoreboard players set .speech event.079 -1
+
 tag @e[type=marker,tag=door_marker_hcz,tag=!card,tag=!sc,tag=!checkpoint] add button
 scoreboard players set @e[type=marker,tag=door] door_interact_cd 0
 scoreboard players set @e[type=marker,tag=door_lock] card_interact_cd 0

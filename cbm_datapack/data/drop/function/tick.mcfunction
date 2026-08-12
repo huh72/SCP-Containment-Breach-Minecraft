@@ -9,7 +9,7 @@ execute as @e[tag=drop,nbt={OnGround:1b}] run data modify entity @s Marker set v
 
 #UI -- OUTPUT
 #interactions <- ui:subtick(title)
-execute as @a run title @s[scores={request_cd=0}] times 0t 5t 0t
+execute as @a[tag=!dead] run title @s[scores={request_cd=0}] times 0t 5t 0t
 # execute as @a run title @s[scores={request_cd=0,item_selected=0..40},tag=!looking_on_item] title {"text":"\uE078"}
 
 execute as @a[tag=!dead] run title @s[scores={request_cd=0,item_selected=0..40},tag=looking_on_item] title {"text":"\uE002","shadow_color":0}
