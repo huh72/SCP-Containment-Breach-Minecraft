@@ -3,8 +3,8 @@ function ui:subtitle
 
 scoreboard players remove @s[scores={request_cd=1..}] request_cd 1
 
-title @s[scores={request_cd=0}] times 0t 20t 0t
-title @s[scores={request_cd=0,item_selected=0},tag=!looking_on_item,tag=!looking_on_door] title {"text":"\uE078"}
+title @s[scores={request_cd=0},tag=!dead] times 0t 20t 0t
+title @s[scores={request_cd=0,item_selected=0},tag=!looking_on_item,tag=!looking_on_door,tag=!dead] title {"text":"\uE078"}
 
 #interactions -> drop:tick(because of tags)
 
