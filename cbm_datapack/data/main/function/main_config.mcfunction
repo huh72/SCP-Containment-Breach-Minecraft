@@ -31,6 +31,7 @@ function shader_control:config
 function look_check:config
 function ambient:config
 function announc:config
+function mtf:path_finding/config
 
 #scps
 function scps:load

@@ -1,10 +1,3 @@
-# если у игрока Bleeding = 1, + тэг, 
-#
-#
-
-
-
-
 ###increase bleeding level after cd
 #var
 scoreboard players remove @s[scores={bleeding_level_up_cd=1..}] bleeding_level_up_cd 1

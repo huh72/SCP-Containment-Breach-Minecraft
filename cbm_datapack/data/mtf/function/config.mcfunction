@@ -9,3 +9,6 @@ scoreboard players set max player_on_reticle 35
 scoreboard objectives add breath_cd dummy
 scoreboard players set max breath_cd 80
 scoreboard objectives add beep_cd dummy
+
+scoreboard objectives add classdDetect dummy
+scoreboard players set max classdDetect 120
