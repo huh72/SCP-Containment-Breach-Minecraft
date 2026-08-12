@@ -1,7 +1,7 @@
 #vars
 scoreboard players remove @s[scores={breath_cd=1..}] breath_cd 1
 scoreboard players remove @s[scores={beep_cd=1..}] beep_cd 1
-
+execute if score .mtf classdDetect matches 1.. run scoreboard players remove .mtf classdDetect 1
 
 #tp and rotate model
 tp @n[tag=aj.mtf.root] ~ ~ ~
@@ -9,6 +9,11 @@ data modify entity @n[tag=aj.mtf.root] Rotation[0] set from entity @s Rotation[0
 
 #define targets
 function mtf:player_interact/define_targets
+
+#g follow path
+execute unless entity @n[tag=mtf_target] run data modify entity @s wander_target set from entity @n[tag=pf.point] Pos
+#g remove reached path markers
+execute as @e[tag=pf.point] at @s if entity @n[tag=mtf,distance=..2] run kill @s
 
 #switch idle and walk animations
 execute if entity @s[predicate=mtf:idle,tag=!idle] as @n[tag=aj.mtf.root] run function animated_java:mtf/animations/idle/play
@@ -24,7 +29,8 @@ tag @s[predicate=!mtf:walk] remove walk
 
 
 #door interact
-# execute as @n[tag=door_marker,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open
+execute as @n[tag=door_marker,distance=..4] at @s if entity @s[tag=closed] if entity @n[tag=aj.door0.root,distance=..0.1] run function mtf:doors_interact/open
+execute as @n[tag=door_marker,distance=..4] at @s if entity @s[tag=closed] unless entity @n[tag=aj.door0.root,distance=..0.1] run function mtf:doors_interact/open_unrendered
 # execute as @n[tag=door_marker,tag=card,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open_card
 
 
@@ -39,5 +45,5 @@ execute if score @s beep_cd matches 0 run function mtf:beep
 execute if score @s health matches ..0 run function mtf:despawn
 
 
-#clear
+#g clear y rotation
 data modify entity @n[tag=aj.mtf.root] Rotation[1] set value 0
