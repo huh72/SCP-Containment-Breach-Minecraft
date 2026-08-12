@@ -2,8 +2,11 @@
 $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.685f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.685f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
+
+execute as @n[tag=elevator] at @s if entity @s[tag=049, tag=0] run scoreboard players set @a[tag=!location.049chamber, tag=insideElevator, scores={chamber049.ambientTimer=0..},distance=..6] zoneambienthcz 0
 scoreboard players set @a[tag=!location.049chamber, tag=insideElevator] chamber049.ambientTimer -1
 stopsound @a[tag=!location.049chamber, tag=insideElevator] ambient cb:scp049.chamber0
 
+execute as @n[tag=elevator] at @s if entity @s[tag=939, tag=0] run scoreboard players set @a[tag=!location.939chamber, tag=insideElevator, scores={939.ambient=0..},distance=..6] zoneambientlcz 0
 scoreboard players set @a[tag=!location.939storage, tag=insideElevator] 939.ambient -1
 stopsound @a[tag=!location.939storage, tag=insideElevator] ambient cb:scp939.ambient

@@ -3,15 +3,25 @@ $data merge entity $(bone_wing1) {transformation: [-2f,0f,0f,0.5474f,0f,2f,0f,0f
 $data merge entity $(bone_wing0) {transformation: [-2f,0f,0f,-0.5474f,0f,2f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 
 # basic ambient stopsound goes here
+stopsound @a[tag=location.939storage, tag=insideElevator] * cb:zone1.mainambient
+scoreboard players set @a[tag=location.939storage, tag=insideElevator] zoneambientlcz -1
+
+
+stopsound @a[tag=location.049chamber, tag=insideElevator] * cb:zone2.mainambient
+scoreboard players set @a[tag=location.939chamber, tag=insideElevator] zoneambienthcz -1
+
+
 scoreboard players operation @a[tag=location.049chamber, tag=insideElevator] chamber049.ambientTimer = .max chamber049.ambientTimer
 scoreboard players operation @a[tag=location.939storage, tag=insideElevator] 939.ambient = .loop 939.ambient
+
+
+effect give @a[tag=!location.106chamber, tag=insideElevator] darkness infinite 1 true
+effect give @a[tag=!location.049chamber, tag=insideElevator] darkness infinite 1 true
+effect give @a[tag=!location.surfaceA, tag=insideElevator] darkness infinite 1 true
+effect give @a[tag=!location.surfaceB, tag=insideElevator] darkness infinite 1 true
+
 
 effect clear @a[tag=location.106chamber] darkness
 effect clear @a[tag=location.049chamber] darkness
 effect clear @a[tag=location.surfaceA] darkness
 effect clear @a[tag=location.surfaceB] darkness
-
-effect give @a[tag=!location.106chamber] darkness infinite 1 true
-effect give @a[tag=!location.049chamber] darkness infinite 1 true
-effect give @a[tag=!location.surfaceA] darkness infinite 1 true
-effect give @a[tag=!location.surfaceB] darkness infinite 1 true
