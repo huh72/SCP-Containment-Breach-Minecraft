@@ -1,0 +1,1 @@
+execute unless entity @p[distance=..48,tag=106target] if entity @a[tag=106target] if entity @s[tag=!reappearing] run function scp106:chasing/down/0
