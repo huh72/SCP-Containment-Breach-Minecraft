@@ -1,3 +1,6 @@
+#g remove path markers if present
+function mtf:path_finding/clear
+
 #removing updated doors
 execute as @e[tag=door_marker,tag=!i] run kill @s
 function animated_java:door_check0/remove/all
