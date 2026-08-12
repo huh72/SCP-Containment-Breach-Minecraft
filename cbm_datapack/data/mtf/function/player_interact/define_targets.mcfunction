@@ -13,6 +13,8 @@ execute as @n[tag=aj.mtf.root] at @s positioned ~ ~1.75 ~ anchored eyes run func
 # execute as @a[tag=confirmed_target,tag=!mtf_target] run title @s actionbar {"text":"confirmed_target"}
 # execute as @a[tag=confirmed_target,tag=mtf_target] run title @s actionbar {"text":"both"}
 
+execute if entity @a[tag=confirmed_target,tag=!dead,distance=..32] if score .mtf classdDetect matches 0 run function mtf:player_interact/classddetected
+
 #shoot func() and dependencies:
 execute store result storage cb:mtf acc int 1 run scoreboard players get @s acc
 execute store result storage cb:mtf shot_cd int 1 run scoreboard players get shot_cd stat_p90
