@@ -3,6 +3,7 @@ summon marker ~ ~1 ~ {Tags:['marker939_53','marker939']}
 execute rotated 0 0 run function animated_java:scp939/summon with storage aj:temp
 
 attribute @n[tag=new] minecraft:movement_speed base set 0.55
+attribute @n[tag=new] minecraft:jump_strength base set 0.0
 # data modify entity @n[tag=new] wander_target set from entity @n[tag=new] Pos
 
 #939 vars
