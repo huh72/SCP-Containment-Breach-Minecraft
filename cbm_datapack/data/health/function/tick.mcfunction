@@ -2,7 +2,7 @@ tag @a add bleeding
 tag @a[scores={bleeding=0}] remove bleeding
 scoreboard players set @a[scores={bleeding=11..}] bleeding 10
 
-execute as @a[tag=bleeding] at @s run function health:subtick
+execute as @a[tag=bleeding,tag=!dead] at @s run function health:subtick
 
 ###blooddrip remove
 #var
