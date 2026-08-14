@@ -28,7 +28,6 @@ execute if score 106 scp106state matches 2 if entity @s[tag=!a1.ending] run func
 
 #defining targets
 execute if score 106 scp106state matches 1..2 if entity @s[tag=!a1.ending] run function scp106:definetarget/0
-execute if entity @p[tag=106target] run say @s - target
 
 #change hunt state (active -> passive (if no kills))
 execute if score 106 hunting = max_a hunting run function scp106:changestate
@@ -47,7 +46,7 @@ execute if score 106 breath_cd matches 0 run function scp106:sounds/breath
 
 #hit + caught animation
 execute positioned ^ ^ ^0.5 as @p[tag=106target, distance=..1, tag=!god] if score 106 106hit_cd matches 0 run function scp106:hit/hit
-execute as @a[tag=hitby106] at @s if score @s fallinpdanimation < max fallinpdanimation run function scp106:hit/fallanimation
+execute as @a[tag=hitby106] at @s unless score @s fallinpdanimation matches -1 if score @s fallinpdanimation < max fallinpdanimation run function scp106:hit/fallanimation
 
 
 

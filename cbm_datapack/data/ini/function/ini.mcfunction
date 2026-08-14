@@ -19,6 +19,8 @@ scoreboard players set @s request_cd 0
 scoreboard players set @s playerOnFireTime 0
 scoreboard players set @s scp714timer 0
 
+scoreboard players set @s fallinpdanimation -1
+
 scoreboard players set @s card_interact_cd 0
 
 #939

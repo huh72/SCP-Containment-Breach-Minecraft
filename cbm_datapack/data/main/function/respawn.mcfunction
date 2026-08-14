@@ -46,7 +46,9 @@ scoreboard players set @s deathAnimation -1
 tag @s remove can_respawn
 scoreboard players set @s respawnCountdown 6
 
-#vars
+#g vars
+scoreboard players set @s fallinpdanimation -1
+
 function health:reset_health
 scoreboard players set @s fall 0
 scoreboard players operation @s stamina = max stamina

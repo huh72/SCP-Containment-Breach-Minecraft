@@ -5,7 +5,7 @@ scoreboard objectives add scp106state dummy
 
 #fall in pd animation
 scoreboard objectives add fallinpdanimation dummy
-scoreboard players set max fallinpdanimation 30
+scoreboard players set max fallinpdanimation 50
 
 ### appear timer
 scoreboard objectives add appear_timer dummy
@@ -81,3 +81,7 @@ scoreboard players set max step_on_shrink_cd 800
 scoreboard objectives add roomsize_shrink dummy
 scoreboard players set max roomsize_shrink 95
 scoreboard players set 106 roomsize_shrink 20
+
+#g pocket dimension
+scoreboard objectives add pocketDimension dummy
+scoreboard players set .ambient pocketDimension 540

@@ -1,11 +1,18 @@
-#sneak speed control
+#g sneak speed control in pocketsimension
+attribute @s movement_speed modifier remove 0106-0-0-0-1
+execute if entity @s[tag=location.pocketDimension] run attribute @s movement_speed modifier add 0106-0-0-0-1 -0.03 add_value
+
+execute if entity @s[tag=location.pocketDimension] if score @s walk_ >= step* walk_ run return run function ms:step_pd
+execute if entity @s[tag=location.pocketDimension] if score @s sneak >= step* sneak run return run function ms:step_pd
+scoreboard players set @s[tag=location.pocketDimension] stamina 0
+
+#g sneak speed control
 attribute @s movement_speed modifier remove 0000-0-0-0-1
 attribute @s[scores={bleeding=0},predicate=ms:sneak] movement_speed modifier add 0000-0-0-0-1 0.1 add_value
 attribute @s[scores={bleeding=1..2},predicate=ms:sneak] movement_speed modifier add 0000-0-0-0-1 0.095 add_value
 attribute @s[scores={bleeding=3..4},predicate=ms:sneak] movement_speed modifier add 0000-0-0-0-1 0.07 add_value
 attribute @s[scores={bleeding=5..9},predicate=ms:sneak] movement_speed modifier add 0000-0-0-0-1 0.06 add_value
 attribute @s[scores={bleeding=10},predicate=ms:sneak] movement_speed modifier add 0000-0-0-0-1 0.05 add_value
-
 
 tag @s[predicate=ms:sneak] add sneaking
 tag @s[predicate=!ms:sneak] remove sneaking

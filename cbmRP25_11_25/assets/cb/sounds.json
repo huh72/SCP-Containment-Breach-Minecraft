@@ -10,6 +10,10 @@
 	"scp106.sinkhole":        {"sounds": ["cb:scp/106/sinkhole"]},
 	"scp106.sinkhole_fall":        {"sounds": ["cb:scp/106/sinkhole_fall"]},
 
+	"pd.enter":        {"sounds": ["cb:scp/106/enter"]},
+	"pd.ambient":        {"sounds": ["cb:scp/106/pd"]},
+	"pd.exit":        {"sounds": ["cb:scp/106/exit"]},
+
 	"scp106.event.magnetdown":        {"sounds": ["cb:events/106/magnetsown"]},
 	"scp106.event.magnetup":        {"sounds": ["cb:events/106/magnetup"]},
 	"scp106.event.appear106":        {"sounds": ["cb:events/106/luresubject/appear106"]},

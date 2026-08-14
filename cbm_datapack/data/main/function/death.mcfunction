@@ -4,6 +4,16 @@ scoreboard players set @s health 1000
 tag @s remove tesla_trigger
 tag @s add dead
 tag @s remove hit
+tag @s remove location.pocketDimension
+
+tag @s remove caughtInLcz
+tag @s remove caughtInHcz
+tag @s remove caughtInEz
+
+
+#g death in pd
+playsound cb:pd.exit ambient @s[tag=d_pd] ~ ~ ~ 1 1 1
+stopsound @s[tag=d_pd] * cb:pd.ambient
 
 #g death animation
 function main:animation/ini
