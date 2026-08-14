@@ -7,7 +7,7 @@ scoreboard players set 106 chasetheme_cd 0
 
 say triggered!
 
-scoreboard players set @e[tag=str4.event] event.str4.dummylifetime 76
+scoreboard players set @e[tag=str4.event] event.str4.dummylifetime 91
 tag @e[tag=str4.event] add encountered
 
 tag @a[tag=!dead] add 106target

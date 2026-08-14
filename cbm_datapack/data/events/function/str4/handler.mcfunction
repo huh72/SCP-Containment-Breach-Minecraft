@@ -1,10 +1,6 @@
 #g vars
 scoreboard players add @s[scores={event.str4.dummylifetime=0..}] event.str4.dummylifetime 1
 
-
-#g start event - spawn 106's dummy
-execute unless entity @s[tag=encountered] if entity @p[tag=!dead, distance=..9] run function events:str4/init
-
 #g start event - remove 106's dummy
 execute if score @s event.str4.dummylifetime = .remove event.str4.dummylifetime run function events:str4/dummy/remove
 
