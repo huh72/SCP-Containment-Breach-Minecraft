@@ -1,5 +1,6 @@
 playsound cb:door.open ambient @a[distance=..24] ~ ~ ~ 1 1 1
 
+tag @n[tag=door_marker] add proceed
 tag @n[tag=door_marker] add opened
 tag @n[tag=door_marker] remove closed
 scoreboard players operation @n[tag=door_marker,tag=!uninteractibale] door_interact_cd = max door_interact_cd

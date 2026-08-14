@@ -19,8 +19,9 @@ effect give @a[tag=!location.106chamber, tag=insideElevator] darkness infinite 1
 effect give @a[tag=!location.049chamber, tag=insideElevator] darkness infinite 1 true
 effect give @a[tag=!location.surfaceA, tag=insideElevator] darkness infinite 1 true
 effect give @a[tag=!location.surfaceB, tag=insideElevator] darkness infinite 1 true
+effect give @a[tag=!location.nuke, tag=insideElevator] darkness infinite 1 true
 
-
+effect clear @a[tag=location.nuke] darkness
 effect clear @a[tag=location.106chamber] darkness
 effect clear @a[tag=location.049chamber] darkness
 effect clear @a[tag=location.surfaceA] darkness

@@ -11,6 +11,7 @@
 		"animated_java:door_check0/root/on_tick",
 		"animated_java:door0_sc/root/on_tick",
 		"animated_java:door0/root/on_tick",
+		"animated_java:door1/root/on_tick",
 		"animated_java:door914/root/on_tick",
 		"animated_java:elevator_doors/root/on_tick",
 		"animated_java:gate/root/on_tick",
@@ -36,7 +37,6 @@
 		"animated_java:scp457/root/on_tick",
 		"animated_java:scp650/root/on_tick",
 		"animated_java:scp939/root/on_tick",
-		"animated_java:singledoor0/root/on_tick",
-		"animated_java:singledoor1/root/on_tick"
+		"animated_java:singledoor0/root/on_tick"
 	]
 }
