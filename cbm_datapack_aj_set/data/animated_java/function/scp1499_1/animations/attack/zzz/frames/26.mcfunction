@@ -15,7 +15,7 @@ function scp1499_1:define_damage with storage cb:scp1499_1damage
 function scp1499_1:define_bleeding with storage cb:scp1499_1bleeding
 
 execute anchored eyes positioned ^ ^ ^1 as @p[distance=..1.6] if predicate scp1499_1:60 run function scp1499_1:apply_bleeding
-execute anchored eyes positioned ^ ^ ^1 as @p[distance=..1.6] run scoreboard players operation @s health -= damage 1499_1
+execute anchored eyes positioned ^ ^ ^1 as @p[distance=..1.6] run scoreboard players operation @s[tag=!god] health -= damage 1499_1
 
 execute anchored eyes positioned ^ ^ ^1 as @p[distance=..1.6] run playsound cb:d9341.damage10 ambient @s ~ ~ ~ 1 1 1
 execute anchored eyes positioned ^ ^ ^1 as @p[distance=..1.6] run playsound cb:d9341.damage10 ambient @a[distance=0.01..] ~ ~1 ~ 1.25 1 1

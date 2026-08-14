@@ -19,5 +19,5 @@ execute as @a[tag=!dead] if score @s chamber049.ambientTimer = .max chamber049.a
 execute as @a[tag=!dead] unless score @s chamber049.ambientTimer matches -1 run scoreboard players add @s chamber049.ambientTimer 1
 
 #kill
-execute as @a[tag=!dead] at @s if entity @n[tag=scp049,distance=0..1.1] run return run function scp049:kill_helper
+execute as @a[tag=!dead, tag=!god] at @s if entity @n[tag=scp049, distance=0..1.1] run return run function scp049:kill_helper
 scoreboard players remove @a[scores={scp714timer=1..}] scp714timer 2

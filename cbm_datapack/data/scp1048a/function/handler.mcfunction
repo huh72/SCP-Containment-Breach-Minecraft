@@ -9,7 +9,7 @@ execute if entity @s[tag=shriek] as @n[tag=scp1048a] run data modify entity @s R
 execute if entity @p[tag=!dead,distance=..4] as @n[type=item_display, tag=scp1048a, tag=!aj.scp1048a.animation.shriek.playing] run function animated_java:scp1048a/animations/shriek/play
 #DOT
 execute if entity @s[tag=shriek] run scoreboard players add @a[distance=..9,tag=!dead] shriek 1
-execute as @a[tag=!dead] at @s if score @s shriek >= .DamageTime shriek run function scp1048a:playerdamage
+execute as @a[tag=!dead, tag=!god] at @s if score @s shriek >= .DamageTime shriek run function scp1048a:playerdamage
 
 
 #animations "aj.scp1048a.animation.idle.playing"

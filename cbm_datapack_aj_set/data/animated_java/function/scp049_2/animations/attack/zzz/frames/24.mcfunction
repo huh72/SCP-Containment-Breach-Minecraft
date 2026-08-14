@@ -6,4 +6,4 @@ $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.4375f,
 
 playsound minecraft:item.dye.use ambient @a ~ ~ ~ 10 1 1
 
-execute positioned ^ ^ ^0.5 as @a[distance=..1.35,tag=!dead] run function scp049_2:hit
+execute positioned ^ ^ ^0.5 as @a[distance=..1.35, tag=!dead, tag=!god] run function scp049_2:hit

@@ -1,2 +1,2 @@
 #hit player
-scoreboard players set @s[tag=!dead] health 0
+scoreboard players set @s[tag=!dead, tag=!god] health 0
