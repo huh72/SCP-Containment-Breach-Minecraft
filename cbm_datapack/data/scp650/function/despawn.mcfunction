@@ -8,5 +8,6 @@ scoreboard players set .timerCanBeIncreased 650spawnTimer 0
 scoreboard players set .canSpawn 650spawnTimer 1
 scoreboard players set .timerCanBeIncreased 650spawnTimer 1
 scoreboard players set . 650spawnTimer 0
+scoreboard players set .650 despawnTimer 0
 
 function scps:spawnsystem/getnumebr/loop/650 with storage cb:scpspawn

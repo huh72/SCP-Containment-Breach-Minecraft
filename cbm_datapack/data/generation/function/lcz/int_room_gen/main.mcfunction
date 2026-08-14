@@ -87,6 +87,11 @@ execute as @e[type=marker,tag=str,sort=random,limit=1] at @s run function genera
 
 # ENTITIES NEXT ==========================================
 
+#g corpse event
+execute unless predicate generation:20 run kill @n[tag=corpse_event_trigger, sort=random]
+execute if predicate generation:50 run kill @n[tag=corpse_event_trigger, sort=random]
+execute if predicate generation:30 run kill @n[tag=corpse_event_trigger, sort=random]
+
 #setting tesla gates vars after zone 1 generation
 function tesla:set_vars
 
