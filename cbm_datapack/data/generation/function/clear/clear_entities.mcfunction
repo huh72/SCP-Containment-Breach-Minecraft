@@ -1,3 +1,15 @@
+#g clear all scps + mtf
+function scp049:despawn
+function scp173:despawn
+function scp106:despawn
+function scp650:despawn
+function scp457:despawnall
+function scp1048:despawn
+function scp1048a:despawn
+function mtf:despawn_all
+function scp049_2:despawn
+function scp049_2:despawnd
+
 kill @e[type=marker,tag=door_empty,tag=!i]
 kill @e[type=marker,tag=door_marker1,tag=!i]
 kill @e[type=marker,tag=door_marker_hcz,tag=!i]
