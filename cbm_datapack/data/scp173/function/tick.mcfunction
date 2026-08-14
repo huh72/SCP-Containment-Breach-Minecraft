@@ -30,7 +30,7 @@ execute if score scp173 move_cd matches 0 if score look_on_173y v matches 0 as @
 execute if score scp173 move_cd matches 0 if score look_on_173y v matches 0 as @n[type=minecraft:armor_stand,tag=scp173] at @s if score @p[tag=can_see_173,tag=!dead] distance matches ..5 run function scp173:tp_en
 
 #kill func
-execute if score look_on_173y v matches 0 at @n[type=minecraft:armor_stand,tag=scp173] anchored eyes positioned ^ ^0.5 ^0.5 as @a[distance=..1,tag=!dead] at @s run function scp173:kill
+execute if score look_on_173y v matches 0 at @n[type=minecraft:armor_stand,tag=scp173] anchored eyes positioned ^ ^0.5 ^0.5 as @a[distance=..1,tag=!dead,tag=!god] at @s run function scp173:kill
 
 #horror sounds
 execute as @a[tag=!dead] run function scp173:horror
