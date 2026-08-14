@@ -1,5 +1,5 @@
 #g vars : spawn
-execute if score .timerCanBeIncreased 106spawnTimer matches 1 if score . 106spawnTimer < .request 106spawnTimer run scoreboard players add . 106spawnTimer 1
+execute if score .timerCanBeIncreased 106spawnTimer matches 1 if score . 106spawnTimer < .request 106spawnTimer unless entity @p[tag=location.939storage] unless entity @p[tag=location.049chamber] unless entity @p[tag=location.106chamber] unless entity @p[tag=location.surfaceA] unless entity @p[tag=location.surfaceB] unless score .speech event.079 matches 0..1099 run scoreboard players add . 106spawnTimer 1
 execute if score .timerCanBeIncreased 173spawnTimer matches 1 if score . 173spawnTimer < .request 173spawnTimer run scoreboard players add . 173spawnTimer 1
 execute if score .timerCanBeIncreased 650spawnTimer matches 1 if score . 650spawnTimer < .request 650spawnTimer run scoreboard players add . 650spawnTimer 1
 execute if score .timerCanBeIncreased 457spawnTimer matches 1 if score . 457spawnTimer < .request 457spawnTimer run scoreboard players add . 457spawnTimer 1
