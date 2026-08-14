@@ -28,10 +28,13 @@ tag @s[predicate=!mtf:idle] remove idle
 tag @s[predicate=!mtf:walk] remove walk
 
 
-#door interact
-execute as @n[tag=door_marker,distance=..4] at @s if entity @s[tag=closed] if entity @n[tag=aj.door0.root,distance=..0.1] run function mtf:doors_interact/open
-execute as @n[tag=door_marker,distance=..4] at @s if entity @s[tag=closed] unless entity @n[tag=aj.door0.root,distance=..0.1] run function mtf:doors_interact/open_unrendered
-# execute as @n[tag=door_marker,tag=card,distance=..4] if entity @s[tag=closed,scores={door_interact_cd=0}] run function mtf:doors_interact/open_card
+#g door interact
+#g lcz + ez
+execute as @n[tag=door_marker, tag=!card, tag=!sc, distance=..4] at @s if entity @s[tag=closed, tag=!proceed] if entity @n[tag=aj.door0.root, distance=..0.1] run function mtf:doors_interact/open
+execute as @n[tag=door_marker, tag=!card, tag=!sc, distance=..4] at @s if entity @s[tag=closed, tag=!proceed] unless entity @n[tag=aj.door0.root, distance=..0.1] run function mtf:doors_interact/open_unrendered
+#g hcz
+execute as @n[tag=door_marker_hcz, tag=!card, distance=..4] at @s if entity @s[tag=closed, tag=!proceed] if entity @n[tag=aj.door1.root, distance=..0.1] run function mtf:doors_interact/open_hcz
+execute as @n[tag=door_marker_hcz, tag=!card, distance=..4] at @s if entity @s[tag=closed, tag=!proceed] unless entity @n[tag=aj.door1.root, distance=..0.1] run function mtf:doors_interact/open_unrendered_hcz
 
 
 # sounds (beep & breath)
