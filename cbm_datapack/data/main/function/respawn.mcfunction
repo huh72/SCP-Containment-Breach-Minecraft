@@ -28,6 +28,9 @@ execute as @n[type=marker, tag=save] if entity @s[tag=save.lcz] run tag @p[tag=s
 execute as @n[type=marker, tag=save] if entity @s[tag=save.hcz] run tag @p[tag=save_f] add hcz
 execute as @n[type=marker, tag=save] if entity @s[tag=save.ez] run tag @p[tag=save_f] add ez
 
+execute if entity @s[tag=hcz] run function shader_control:effects/yellow/set {"value":"0.075"}
+execute if entity @s[tag=ez] run function shader_control:effects/blue/set {"value":"0.075"}
+
 #g play zone ambient
 execute if entity @s[tag=lcz, tag=!location.939storage] run scoreboard players set @s zoneambientlcz 1
 execute if entity @s[tag=hcz, tag=!location.106chamber, tag=!location.049chamber] run scoreboard players set @s zoneambienthcz 1

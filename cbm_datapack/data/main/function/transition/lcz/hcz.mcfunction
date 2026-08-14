@@ -1,5 +1,7 @@
 say lcz -> hcz
 
+function shader_control:effects/yellow/set {"value":"0.075"}
+
 #g mask?
 # playsound cb:zone1.ambient ambient @s
 
