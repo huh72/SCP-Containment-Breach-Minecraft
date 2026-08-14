@@ -297,6 +297,7 @@
 	"annouc.threat1": {"sounds": ["cb:character/mtf/threatannounc1"]},
 	"annouc.threat2": {"sounds": ["cb:character/mtf/threatannounc2"]},
 	"annouc.threatfinal": {"sounds": ["cb:character/mtf/threatannouncfinal"]},
-	"annouc.threatpos": {"sounds": ["cb:character/mtf/threatannouncpos"]}
+	"annouc.threatpos": {"sounds": ["cb:character/mtf/threatannouncpos"]},
+	"annouc.allcontained": {"sounds": ["cb:character/mtf/announcallcontained"]}
 }
 
