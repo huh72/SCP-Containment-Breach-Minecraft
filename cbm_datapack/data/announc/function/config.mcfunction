@@ -1,4 +1,5 @@
 scoreboard objectives add announcTimer dummy
+scoreboard objectives add isContained dummy
 
 #g basic
 scoreboard players set .0 announcTimer 60
@@ -18,10 +19,11 @@ scoreboard players set .camerafound0 announcTimer 36000
 
 #g scp contain
 scoreboard players set .173 announcTimer 40000
-scoreboard players set .939 announcTimer 50000
-scoreboard players set .049 announcTimer 65000
-scoreboard players set .966 announcTimer 80000
-scoreboard players set .096 announcTimer 100000
+scoreboard players set .939 announcTimer 48000
+scoreboard players set .049 announcTimer 56000
+scoreboard players set .966 announcTimer 66000
+scoreboard players set .096 announcTimer 80000
+scoreboard players set .all announcTimer 80220
 
 #g camerafound
-scoreboard players set .camerafound1 announcTimer 101000
+scoreboard players set .camerafound1 announcTimer 81400

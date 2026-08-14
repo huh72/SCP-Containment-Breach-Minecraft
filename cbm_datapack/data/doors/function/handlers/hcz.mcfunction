@@ -1,5 +1,6 @@
 tag @s add looking_on_door
 
+
 #button
 execute if score @s door_right_click matches 1.. as @n[type=marker,tag=door_marker_hcz,tag=!uninteractibale] at @s if entity @s[type=marker,tag=button,scores={door_interact_cd=0},tag=closed] as @n[type=item_display,tag=aj.door1.root] run function animated_java:door1/animations/open_close_toggle/play
 execute if score @s door_right_click matches 1.. as @n[type=marker,tag=door_marker_hcz,tag=!uninteractibale] at @s if entity @s[type=marker,tag=button,scores={door_interact_cd=0},tag=opened] as @n[type=item_display,tag=aj.door1.root] run function animated_java:door1/animations/open_close_toggle/resume

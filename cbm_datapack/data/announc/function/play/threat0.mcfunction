@@ -1,0 +1,1 @@
+playsound cb:annouc.threat0 ambient @a ~ ~1000000 ~ 100000 1 1
