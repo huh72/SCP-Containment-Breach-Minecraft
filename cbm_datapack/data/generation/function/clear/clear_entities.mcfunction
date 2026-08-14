@@ -10,6 +10,9 @@ function mtf:despawn_all
 function scp049_2:despawn
 function scp049_2:despawnd
 
+#g clear contained scps
+function scp173:despawn_contained
+
 kill @e[type=marker,tag=door_empty,tag=!i]
 kill @e[type=marker,tag=door_marker1,tag=!i]
 kill @e[type=marker,tag=door_marker_hcz,tag=!i]
@@ -25,12 +28,14 @@ kill @e[type=marker,tag=door_marker_ez]
 kill @e[type=marker,tag=door_marker_checkpoint]
 kill @e[type=marker,tag=tesla_origin]
 kill @e[type=marker, tag=save]
-kill @e[type=marker, tag=corpse]
+kill @e[type=armor_stand, tag=corpse]
 kill @e[type=marker, tag=ventroomtrigger]
 kill @e[type=marker, tag=scp1048spawnpoint]
 kill @e[type=marker, tag=event.914]
 kill @e[type=marker, tag=str4.event]
 kill @e[type=marker, tag=p.smokeup]
+kill @e[type=marker, tag=hcz.ddGateSpawn]
+kill @e[type=armor_stand, tag=drop]
 #g 008 event
 kill @e[type=marker, tag=008spawnpoint]
 kill @e[type=item_display, tag=singleButton0]

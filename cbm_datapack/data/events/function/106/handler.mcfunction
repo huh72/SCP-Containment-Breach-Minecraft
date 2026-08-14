@@ -45,6 +45,7 @@ execute if score .breakerTimer event106 = .106appear event106 if score .magnet e
 execute if score .breakerTimer event106 = .106appear event106 if score .magnet event106 matches 1 run function events:106/appearoutside
 
 execute if score .breakerTimer event106 = .106contain event106 if score .magnet event106 matches 0 run function events:106/appearoutside
+execute if score .breakerTimer event106 = .106contain event106 if score .magnet event106 matches 1 run scoreboard players set .106 isContained 1
 execute if score .breakerTimer event106 = .106contain event106 run scoreboard players set .breakerTimer event106 -1
 # execute if score .breakerTimer event106 = .106contain event106 if score .magnet event106 matches 1 run function events:106/levers/sound/play/breaker/13
 

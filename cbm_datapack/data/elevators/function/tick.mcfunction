@@ -3,8 +3,8 @@
 # execute at @e[type=marker, tag=finalElevator] positioned ~ ~0.45 ~ run particle damage_indicator
 
 #detect if player is inside the elevator
-tag @a remove insideElevator
-execute as @e[type=marker, tag=elevator] at @s as @a[distance=..3.75] run tag @s add insideElevator
+tag @e remove insideElevator
+execute as @e[type=marker, tag=elevator] at @s as @e[distance=..3.75, tag=!elevator] run tag @s add insideElevator
 
 #elevator interactions subtick
 execute as @a[tag=!dead] at @s as @e[type=item_display, tag=elevatorDoors, distance=..5] at @s run function elevators:interactions/subtick

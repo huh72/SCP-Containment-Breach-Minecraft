@@ -22,6 +22,10 @@ playsound cb:d9341.death ambient @s ~ ~1000000 ~ 100000 1 1
 function shader_control:effects/blur/set {"value":"1"}
 function shader_control:effects/trail/set {"value":"1"}
 
+#g diasble zone shader effect
+function shader_control:effects/yellow/set {"value":"0"}
+function shader_control:effects/blue/set {"value":"0"}
+
 function use:super_gasmask/end
 function use:gasmask/end
 function use:nightvisiongoggles/end
