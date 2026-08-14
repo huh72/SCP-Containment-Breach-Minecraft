@@ -30,9 +30,9 @@ execute as @e[type=marker, tag=event.914] at @s as @n[tag=aj.door0.root] if enti
 
 #g hcz str4 event
 #g init event
-execute as @e[type=marker, tag=str4.event] at @s unless entity @s[tag=encountered] if entity @p[tag=!dead, distance=..9] unless entity @n[tag=scp106] run function events:str4/init
+execute as @e[type=marker, tag=str4.event] at @s unless entity @s[tag=encountered] if entity @p[tag=!dead, distance=..9] unless entity @n[tag=106origin] run function events:str4/init
 #g handler
-execute as @e[type=marker, tag=str4.event] at @s unless score @s event.str4.ambient matches -1 if score @s event.str4.dummylifetime < .remove event.str4.dummylifetime run function events:str4/handler
+execute as @e[type=marker, tag=str4.event] at @s unless score @s event.str4.dummylifetime matches -1 if score @s event.str4.dummylifetime < .remove event.str4.dummylifetime run function events:str4/handler
 #g hcz str4 ambient
 execute as @e[type=marker, tag=str4.event] at @s run function events:str4/handler0
 
