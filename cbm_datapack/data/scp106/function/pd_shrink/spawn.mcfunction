@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Tags:['pd_shrink','pds','new','active'],attributes:[{id:"scale",base:0.09f}],NoGravity:1b,Silent:1b,Invisible:1b,Invulnerable:1b}
+summon armor_stand ~ ~ ~ {Tags:['pd_shrink','pds','new','active','elevatorTarget'],attributes:[{id:"scale",base:0.09f}],NoGravity:1b,Silent:1b,Invisible:1b,Invulnerable:1b}
 item replace entity @n[type=armor_stand, tag=new] armor.head with paper[item_model="cb:pd_decal0"]
 
 execute store result storage cb:pds rotation int 1 run random value 1..360 cb:pds_rotation

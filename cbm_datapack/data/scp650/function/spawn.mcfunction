@@ -1,4 +1,4 @@
-summon zombie ~ ~ ~ {Tags:["scp650"],Invulnerable:1b,Silent:1b,NoAI:1b}
+summon zombie ~ ~ ~ {Tags:["scp650", 'elevatorTarget'],Invulnerable:1b,Silent:1b,NoAI:1b}
 
 effect give @n[tag=scp650] invisibility infinite 1 true
 effect give @n[tag=scp650] weakness infinite 255 true

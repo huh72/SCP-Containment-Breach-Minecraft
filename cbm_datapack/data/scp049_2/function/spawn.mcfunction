@@ -1,5 +1,5 @@
 
-summon zombie ~ ~ ~ {Tags:['scp049_2','scp049_2g','tesla_trigger','new','hit'],Invulnerable:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1}],PersistenceRequired:1b}
+summon zombie ~ ~ ~ {Tags:['scp049_2','scp049_2g','tesla_trigger','new','hit', 'elevatorTarget'],Invulnerable:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1}],PersistenceRequired:1b}
 effect give @e[type=zombie,tag=scp049_2,tag=new] minecraft:fire_resistance infinite 0 true
 attribute @n[tag=new] movement_speed base set 0.185
 # attribute @n[tag=new] scale base set 1.25

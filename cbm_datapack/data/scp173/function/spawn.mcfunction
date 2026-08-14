@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Tags:['scp173','tesla_trigger','new'],Invulnerable:1b,Invisible:1b,PersistenceRequired:1b,Silent:1b,Passengers:[{id:"minecraft:shulker",Tags:['shulker_hitbox'],NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b}]}
+summon armor_stand ~ ~ ~ {Tags:['scp173','tesla_trigger','new','elevatorTarget'],Invulnerable:1b,Invisible:1b,PersistenceRequired:1b,Silent:1b,Passengers:[{id:"minecraft:shulker",Tags:['shulker_hitbox'],NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b}]}
 item replace entity @n[tag=new] armor.head with paper[minecraft:item_model="cb:scp/173"]
 attribute @n[tag=new] scale base set 0.91
 effect give @n[tag=shulker_hitbox] invisibility infinite 1 true
