@@ -70,6 +70,7 @@ scoreboard players set @e[type=marker,tag=card] card_interact_cd 0
 #g announc and mtf-related stuff
 scoreboard players set isEnteredEz announcTimer 0
 scoreboard players set . announcTimer -1
+scoreboard players set .state event.079 0
 
 tag @e[tag=door_marker] add door
 tag @e[tag=door_marker_hcz] add door
