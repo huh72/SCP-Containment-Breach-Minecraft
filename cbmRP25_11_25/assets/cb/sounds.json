@@ -302,6 +302,8 @@
 	"annouc.threat2": {"sounds": ["cb:character/mtf/threatannounc2"]},
 	"annouc.threatfinal": {"sounds": ["cb:character/mtf/threatannouncfinal"]},
 	"annouc.threatpos": {"sounds": ["cb:character/mtf/threatannouncpos"]},
-	"annouc.allcontained": {"sounds": ["cb:character/mtf/announcallcontained"]}
+	"annouc.allcontained": {"sounds": ["cb:character/mtf/announcallcontained"]},
+
+	"scp966.echo": {"sounds": ["cb:scp/966/echo0", "cb:scp/966/echo1", "cb:scp/966/echo2"]}
 }
 
