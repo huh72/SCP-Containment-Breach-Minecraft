@@ -28,6 +28,9 @@ execute as @n[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=gateA, tag=
 execute as @n[tag=tpTarget] at @s if entity @n[tag=elevator, tag=gateB, tag=1, distance=..5] run tag @s add location.surfaceB
 execute as @n[tag=tpTarget] at @s unless entity @n[tag=elevator, tag=gateB, tag=1, distance=..5] run tag @s remove location.surfaceB
 
+tag @s[tag=location.surfaceA] add location.surface
+tag @s[tag=location.surfaceB] add location.surface
+
 tag @n[tag=tpTarget] remove tpTarget
 
 # $say movepnX:$(moveOnX), diffRot:$(diffRotX), tpTarget:@p[tag=tpTarget]

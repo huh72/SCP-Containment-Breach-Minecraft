@@ -1,4 +1,4 @@
-
+# say drop!
 summon armor_stand ~ ~ ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
 data modify entity @e[type=armor_stand,sort=nearest,limit=1] ArmorItems[3] set from entity @s Item
 
