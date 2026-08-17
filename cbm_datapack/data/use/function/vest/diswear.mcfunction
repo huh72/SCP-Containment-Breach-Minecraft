@@ -10,7 +10,9 @@ function use:remove_item
 
 # function messages:usual {"text":"You feel much better."}
 
-say drop!
+function inventory:hotbar/set {"text":"'You took off a bulletproof vest."}
+
+# say drop!
 
 tag @s add can_ii
 

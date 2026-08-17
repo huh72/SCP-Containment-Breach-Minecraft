@@ -2,8 +2,8 @@ attribute @s minecraft:movement_speed modifier remove 4567-0-0-1-9
 attribute @s minecraft:movement_speed modifier add 4589-0-0-2-0 -0.0175 add_value
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 
-function messages:usual {"text":"You put on the vest and feel slightly encumbered."}
+function inventory:hotbar/set {"text":"'You put on the vest and feel slightly encumbered."}
 
 tag @s add vest
 tag @s add can_ii
-say wear!
+# say wear!
