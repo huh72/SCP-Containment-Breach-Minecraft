@@ -4,6 +4,9 @@ $execute if entity @s[tag=2] positioned ~-2 ~1 ~ run place template $(room)1
 # init hcz room elevators
 # scp049.elevator0Spawn , scp049.elevator1Spawn
 
+#g init
+scoreboard players set .state chamber049.event 0
+execute at @n[tag=card4, tag=loot.spawn, tag=neverRemove] as @n[tag=gate] if entity @s[tag=opened] run function animated_java:gate/animations/openclosetoggle/resume
 
 #g for type: 1
 execute if entity @s[tag=1] run function generation:hcz/int_room_gen/straight/init/049_0
