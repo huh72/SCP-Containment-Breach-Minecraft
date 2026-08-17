@@ -25,5 +25,9 @@ scoreboard players set @n[tag=nuke, tag=1, tag=neverRemove] onLevel 0
 #sent elevator
 execute as @n[tag=elevator, tag=nuke, tag=1] as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
 
+#g lever reset
+scoreboard players set .isWarheadEnabled e 1
+execute as @n[tag=lever, tag=warhead, tag=down] run function animated_java:lever/animations/switch/resume
+
 kill @n[type=marker,tag=warhead.elevatorspawnpoint]
 kill @s
