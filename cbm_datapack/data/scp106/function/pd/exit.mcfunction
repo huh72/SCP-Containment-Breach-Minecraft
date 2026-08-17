@@ -12,6 +12,9 @@ scoreboard players set @s[tag=lcz] zoneambientlcz 1
 scoreboard players set @s[tag=hcz] zoneambienthcz 1
 scoreboard players set @s[tag=ez] zoneambientez 1
 
+execute if entity @s[tag=hcz] run function shader_control:effects/yellow/set {"value":"0.2"}
+execute if entity @s[tag=ez] run function shader_control:effects/blue/set {"value":"0.2"}
+
 execute if entity @s[tag=!caughtInLcz, tag=!caughtInHcz, tag=!caughtInEz] at @e[type=marker, tag=door_marker, limit=1, sort=random] run tp @s ~ ~ ~0.35
 
 tag @s remove location.pocketDimension
