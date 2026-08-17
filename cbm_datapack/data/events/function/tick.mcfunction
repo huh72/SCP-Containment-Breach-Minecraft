@@ -43,3 +43,6 @@ execute as @e[tag=elc.primaryLighting] at @s positioned ~ ~5 ~ if entity @p[tag=
 #g ez elc center event (079_1)
 execute as @e[type=marker, tag=event079.trigger] at @s if entity @p[tag=!dead, distance=..6] if score .speech event.079 matches -1 run function events:scp079/1/speech
 execute if score .speech event.079 matches 0.. run function events:scp079/1/handler
+
+#g 066 spawn in cafeteria
+execute as @n[type=marker, tag=066.spawnpoint] at @s if entity @p[tag=!dead, distance=..14] run function events:066/init
