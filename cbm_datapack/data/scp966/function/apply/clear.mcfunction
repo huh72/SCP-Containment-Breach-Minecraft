@@ -1,0 +1,1 @@
+attribute @s movement_speed modifier remove 0996-0-0-0

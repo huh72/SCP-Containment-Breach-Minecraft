@@ -1,43 +1,43 @@
-particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.000 ^1.125 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^0.173 ^1.125 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1647,0.1647,0.1647],scale:1.075} ^0.000 ^0.952 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.173 ^0.952 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^-0.346 ^0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^-0.173 ^0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2157,0.2157,0.2157],scale:1.075} ^0.000 ^0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^0.173 ^0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2196,0.2196,0.2196],scale:1.075} ^0.346 ^0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^-0.346 ^0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^-0.173 ^0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2196,0.2196,0.2196],scale:1.075} ^0.000 ^0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^0.173 ^0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.346 ^0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^-0.346 ^0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1373,0.1373,0.1373],scale:1.075} ^-0.173 ^0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1686,0.1686,0.1686],scale:1.075} ^0.000 ^0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1098,0.1098,0.1098],scale:1.075} ^0.173 ^0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.346 ^0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1647,0.1647,0.1647],scale:1.075} ^-0.346 ^0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1608,0.1608,0.1608],scale:1.075} ^-0.173 ^0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.000 ^0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.2078,0.2078,0.2078],scale:1.075} ^0.173 ^0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1529,0.1529,0.1529],scale:1.075} ^0.346 ^0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1608,0.1608,0.1608],scale:1.075} ^-0.173 ^0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1255,0.1294,0.1294],scale:1.075} ^0.000 ^0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1412,0.1412,0.1412],scale:1.075} ^0.173 ^0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^-0.173 ^-0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.0784,0.0784,0.0784],scale:1.075} ^0.000 ^-0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1882,0.1882,0.1882],scale:1.075} ^0.173 ^-0.087 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1451,0.1451,0.1451],scale:1.075} ^-0.173 ^-0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.0667,0.0667,0.0667],scale:1.075} ^0.000 ^-0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1490,0.1490,0.1490],scale:1.075} ^0.173 ^-0.260 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1451,0.1451,0.1451],scale:1.075} ^-0.173 ^-0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1529,0.1529,0.1529],scale:1.075} ^0.173 ^-0.433 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^-0.173 ^-0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^0.173 ^-0.606 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^-0.173 ^-0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1804,0.1804,0.1804],scale:1.075} ^0.173 ^-0.779 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1882,0.1882,0.1882],scale:1.075} ^-0.173 ^-0.952 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.173 ^-0.952 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1294,0.1294,0.1294],scale:1.075} ^-0.173 ^-1.125 ^0.000 0 0 0 0 1 normal
-particle minecraft:dust{color:[0.1373,0.1373,0.1373],scale:1.075} ^0.173 ^-1.125 ^0.000 0 0 0 0 1 normal
+particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.000 ^1.125 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^0.173 ^1.125 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1647,0.1647,0.1647],scale:1.075} ^0.000 ^0.952 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.173 ^0.952 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^-0.346 ^0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^-0.173 ^0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2157,0.2157,0.2157],scale:1.075} ^0.000 ^0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2235,0.2235,0.2235],scale:1.075} ^0.173 ^0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2196,0.2196,0.2196],scale:1.075} ^0.346 ^0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^-0.346 ^0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^-0.173 ^0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2196,0.2196,0.2196],scale:1.075} ^0.000 ^0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2039,0.2039,0.2039],scale:1.075} ^0.173 ^0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2000,0.2000,0.2000],scale:1.075} ^0.346 ^0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^-0.346 ^0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1373,0.1373,0.1373],scale:1.075} ^-0.173 ^0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1686,0.1686,0.1686],scale:1.075} ^0.000 ^0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1098,0.1098,0.1098],scale:1.075} ^0.173 ^0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.346 ^0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1647,0.1647,0.1647],scale:1.075} ^-0.346 ^0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1608,0.1608,0.1608],scale:1.075} ^-0.173 ^0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.000 ^0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.2078,0.2078,0.2078],scale:1.075} ^0.173 ^0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1529,0.1529,0.1529],scale:1.075} ^0.346 ^0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1608,0.1608,0.1608],scale:1.075} ^-0.173 ^0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1255,0.1294,0.1294],scale:1.075} ^0.000 ^0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1412,0.1412,0.1412],scale:1.075} ^0.173 ^0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^-0.173 ^-0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.0784,0.0784,0.0784],scale:1.075} ^0.000 ^-0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1882,0.1882,0.1882],scale:1.075} ^0.173 ^-0.087 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1451,0.1451,0.1451],scale:1.075} ^-0.173 ^-0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.0667,0.0667,0.0667],scale:1.075} ^0.000 ^-0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1490,0.1490,0.1490],scale:1.075} ^0.173 ^-0.260 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1451,0.1451,0.1451],scale:1.075} ^-0.173 ^-0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1529,0.1529,0.1529],scale:1.075} ^0.173 ^-0.433 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^-0.173 ^-0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^0.173 ^-0.606 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1843,0.1843,0.1843],scale:1.075} ^-0.173 ^-0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1804,0.1804,0.1804],scale:1.075} ^0.173 ^-0.779 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1882,0.1882,0.1882],scale:1.075} ^-0.173 ^-0.952 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1765,0.1765,0.1765],scale:1.075} ^0.173 ^-0.952 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1294,0.1294,0.1294],scale:1.075} ^-0.173 ^-1.125 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
+particle minecraft:dust{color:[0.1373,0.1373,0.1373],scale:1.075} ^0.173 ^-1.125 ^0.000 0 0 0 0 1 force @a[tag=graphics5, distance=..14]
