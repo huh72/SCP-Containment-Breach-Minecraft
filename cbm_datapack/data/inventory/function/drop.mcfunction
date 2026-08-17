@@ -2,6 +2,7 @@ execute at @s[tag=!vest] run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],In
 
 scoreboard players operation @e[tag=new,tag=drop] item_num = max* item_num
 scoreboard players add max* item_num 1
+scoreboard players remove @s item_count 1
 
 $item replace entity @e[tag=new] armor.head from entity @s[tag=!vest] container.$(dropslot)
 #g vest

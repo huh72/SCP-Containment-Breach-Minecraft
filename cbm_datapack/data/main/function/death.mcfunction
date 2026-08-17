@@ -47,6 +47,9 @@ attribute @s minecraft:movement_speed modifier add 1488-0-0-1-1 -10 add_value
 attribute @s minecraft:movement_speed modifier remove 4589-0-0-2-0
 attribute @s minecraft:movement_speed modifier remove 4567-0-0-1-9
 
+#g 
+scoreboard players set @s item_count 0
+
 effect give @s invisibility infinite 1 true
 effect give @s regeneration infinite 10 true
 tag @s remove scp714
