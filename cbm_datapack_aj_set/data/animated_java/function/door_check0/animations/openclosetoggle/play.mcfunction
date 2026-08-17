@@ -5,3 +5,5 @@ scoreboard players set @s aj.openclosetoggle.frame 0
 tag @s add aj.transforms_only
 execute at @s run function animated_java:door_check0/animations/openclosetoggle/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
+
+execute as @p[scores={door_right_click=1..}] run function inventory:hotbar/set {"text":"'Keycard was inserted into the slot."}

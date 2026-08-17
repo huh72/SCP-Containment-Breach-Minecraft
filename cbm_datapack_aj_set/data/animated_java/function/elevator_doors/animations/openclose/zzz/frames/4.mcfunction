@@ -10,6 +10,20 @@ scoreboard players set @a[tag=location.939storage, tag=insideElevator] zoneambie
 stopsound @a[tag=location.049chamber, tag=insideElevator] * cb:zone2.mainambient
 scoreboard players set @a[tag=location.939chamber, tag=insideElevator] zoneambienthcz -1
 
+#g surface init
+stopsound @a[tag=location.surface, tag=insideElevator] * cb:zone3.mainambient
+scoreboard players set @a[tag=location.surface, tag=insideElevator] zoneambientez -1
+
+#g ending init
+execute if entity @p[tag=location.surfaceA] run scoreboard players set .gateSelected e 1
+execute if entity @p[tag=location.surfaceB] run scoreboard players set .gateSelected e 2
+
+execute if entity @p[tag=location.surface] unless score .selected e matches 0 unless score .selected e matches 1 unless score .selected e matches 2 unless score .selected e matches 3 run function endings:define
+
+#g
+execute as @a[tag=location.surface] at @s run function save_progress:save {"sound":"none"}
+tag @a[tag=location.surface] remove ez
+execute as @a[tag=location.surface] at @s run function shader_control:effects/blue/set {"value":"0.0"}
 
 scoreboard players operation @a[tag=location.049chamber, tag=insideElevator] chamber049.ambientTimer = .max chamber049.ambientTimer
 scoreboard players operation @a[tag=location.939storage, tag=insideElevator] 939.ambient = .loop 939.ambient

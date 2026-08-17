@@ -2,4 +2,5 @@
 execute unless entity @s[type=minecraft:item_display,tag=aj.door_card0.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'door_card0', 'function_path': 'animated_java:door_card0/animations/openclosetoggle/resume'}
 tag @s add aj.door_card0.animation.openclosetoggle.playing
 
+execute as @p[scores={door_right_click=1..}] run function inventory:hotbar/set {"text":"'Keycard was inserted into the slot."}
 scoreboard players set @a door_right_click 0 
