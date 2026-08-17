@@ -1,1 +1,1 @@
-say [legs] - right leg!
+function inventory:hotbar/set {"text":"'You feel burning pain in your left leg."}

@@ -12,4 +12,4 @@ execute if score @s health < @n[tag=bullet] damage run tag @s add d_mtf
 execute if score @s health < @n[tag=bullet] damage at @n[tag=mtf] run playsound cb:mtf.terminated ambient @a ~ ~ ~ 2 1 1
 scoreboard players operation @s health -= @n[tag=bullet] damage
 
-# function guns:bullet/player_hit/arms
+function guns:bullet/player_hit/arms
