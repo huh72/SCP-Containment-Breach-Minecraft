@@ -1,6 +1,6 @@
 #g aid kit 0
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:aidkit0}] if score @s health < classd health run function use:aidkit0/use
-$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:aidkit0}] if score @s health >= classd health run function messages:usual {"text":"Nah?"}
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:aidkit0}] if score @s health >= classd health run function inventory:hotbar/set {"text":"'You don't need medical treatment right now."}
 
 #g scp420j
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp420j}] run function use:scp420j/use
