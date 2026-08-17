@@ -1,6 +1,6 @@
 item replace entity @s weapon.offhand with minecraft:air
 tag @s remove radio
-say end!
+# say end!
 
 stopsound @s master
 

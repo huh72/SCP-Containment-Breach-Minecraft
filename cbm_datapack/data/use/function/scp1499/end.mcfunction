@@ -1,7 +1,7 @@
 function scp1499_1:despawn
 function scp1499_1:despawn
 function scp1499_1:despawn
-say end
+# say end
 
 execute in minecraft:overworld run tp @s ~ ~64 ~ ~ ~
 

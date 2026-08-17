@@ -1,7 +1,7 @@
 execute at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 item replace entity @s weapon.offhand with minecraft:lightning_rod
 tag @s add radio
-say use radio!
+# say use radio!
 
 #channel 1
 execute at @s[scores={radio_channel=1}] run function use:radio/channel1/1
