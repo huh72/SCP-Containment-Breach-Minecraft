@@ -3,10 +3,10 @@ $execute if entity @s[tag=14] positioned ~ ~ ~-1 run place template $(room)1
 $execute if entity @s[tag=15] positioned ~ ~ ~-1 run place template $(room)1
 $execute if entity @s[tag=16] positioned ~ ~ ~ run place template $(room)3
 
-execute if entity @s[tag=13] run say 13
-execute if entity @s[tag=14] run say 14
-execute if entity @s[tag=15] run say 15
-execute if entity @s[tag=16] run say 16
+# execute if entity @s[tag=13] run say 13
+# execute if entity @s[tag=14] run say 14
+# execute if entity @s[tag=15] run say 15
+# execute if entity @s[tag=16] run say 16
 
 
 #init doors
