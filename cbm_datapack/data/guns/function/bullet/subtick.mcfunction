@@ -10,19 +10,19 @@ execute positioned ^ ^ ^2 unless score @s global_num = @n[tag=hit, tag=!god] glo
 execute positioned ^ ^ ^3 unless score @s global_num = @n[tag=hit, tag=!god] global_num positioned ~-0.15 ~-0.15 ~-0.15 as @e[tag=hit,dx=0] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] positioned ~0.9 ~0.9 ~0.9 run function guns:bullet/hit_regester
 execute positioned ^ ^ ^4 unless score @s global_num = @n[tag=hit, tag=!god] global_num positioned ~-0.15 ~-0.15 ~-0.15 as @e[tag=hit,dx=0] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] positioned ~0.9 ~0.9 ~0.9 run function guns:bullet/hit_regester
 
-#block hit
-execute unless block ^ ^ ^ #raycast:air run kill @s
-execute unless block ^ ^ ^1 #raycast:air run kill @s
-execute unless block ^ ^ ^2 #raycast:air run kill @s
-execute unless block ^ ^ ^3 #raycast:air run kill @s
-execute unless block ^ ^ ^4 #raycast:air run kill @s
-
 #particles
 execute positioned ^-0.5 ^-0.325 ^2 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
 execute positioned ^-0.5 ^-0.325 ^3 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
 execute positioned ^-0.5 ^-0.325 ^4 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
 execute positioned ^-0.5 ^-0.325 ^5 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
 execute positioned ^-0.5 ^-0.325 ^6 run particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force @a[tag=particles_enabled]
+
+#block hit
+execute unless block ^ ^ ^ #raycast:air run return run function guns:bullet/hit_block
+execute unless block ^ ^ ^1 #raycast:air run return run function guns:bullet/hit_block
+execute unless block ^ ^ ^2 #raycast:air run return run function guns:bullet/hit_block
+execute unless block ^ ^ ^3 #raycast:air run return run function guns:bullet/hit_block
+execute unless block ^ ^ ^4 #raycast:air run return run function guns:bullet/hit_block
 
 #particial
 execute positioned ^ ^ ^ as @s at @s if block ~ ~ ~ #raycast:partial run function guns:bullet/particial/partial
