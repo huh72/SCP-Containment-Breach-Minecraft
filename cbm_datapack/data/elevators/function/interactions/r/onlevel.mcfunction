@@ -1,2 +1,1 @@
-title @a[tag=interactedWithElevator] actionbar {"text":"Are you dumb or smth???🤔🤔🤔"}
-say on level
+execute as @a[tag=interactedWithElevator] run function inventory:hotbar/set {"text":"'The elevator is on the floor."}

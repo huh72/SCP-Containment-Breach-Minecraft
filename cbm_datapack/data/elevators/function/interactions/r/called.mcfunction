@@ -1,2 +1,2 @@
-title @a[tag=interactedWithElevator] actionbar {"text":"You called the elevator."}
-say called(do nothing)!
+execute as @a[tag=interactedWithElevator] run function inventory:hotbar/set {"text":"'Stop spamming the button."}
+# say called(do nothing)!

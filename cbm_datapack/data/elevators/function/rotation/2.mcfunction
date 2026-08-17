@@ -3,6 +3,6 @@ execute store result storage cb:elevator moveOnZ float 0.001 run scoreboard play
 
 execute store result storage cb:elevator diffRotX int 1 run scoreboard players get .result elevator
 
-say rot2
+# say rot2
 
 function elevators:hood/tp with storage cb:elevator
