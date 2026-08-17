@@ -10,4 +10,4 @@ scoreboard players set @a shader.brightness 50
 
 scoreboard players set .state event.079 2
 
-say lighton!
+# say lighton!
