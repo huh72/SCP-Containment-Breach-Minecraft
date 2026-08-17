@@ -7,6 +7,7 @@ execute if entity @s[tag=cardomni] run function spawn:drop/card_omni {"state":"l
 execute if entity @s[tag=vest] run function spawn:drop/vest {"state":"loot"}
 execute if entity @s[tag=gasmask] run function spawn:drop/gasmask {"state":"loot"}
 execute if entity @s[tag=scp714] run function spawn:drop/scp714 {"state":"loot"}
+execute if entity @s[tag=scp860] run function spawn:drop/scp860 {"state":"loot"}
 execute if entity @s[tag=firstaidkit] run function spawn:drop/firstaidkit {"state":"loot"}
 execute if entity @s[tag=blackarm] run function spawn:drop/blackarm {"state":"loot"}
 execute if entity @s[tag=whitearm] run function spawn:drop/whitearm {"state":"loot"}
@@ -14,5 +15,9 @@ execute if entity @s[tag=nvg] run function spawn:drop/nvg {"state":"loot"}
 execute if entity @s[tag=scp1499] run function spawn:drop/scp1499 {"state":"loot"}
 execute if entity @s[tag=scp500] run function spawn:drop/scp500 {"state":"loot"}
 execute if entity @s[tag=coin] run function spawn:drop/coin {"state":"loot"}
+execute if entity @s[tag=radio] run function spawn:drop/radio {"state":"loot"}
+execute if entity @s[tag=battery] run function spawn:drop/battery {"state":"loot"}
+execute if entity @s[tag=battery18] run function spawn:drop/battery18 {"state":"loot"}
+execute if entity @s[tag=killbattery] run function spawn:drop/killbattery {"state":"loot"}
 
 kill @s[tag=!neverRemove]
