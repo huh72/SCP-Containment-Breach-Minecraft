@@ -1,1 +1,1 @@
-scoreboard players set @a[tag=location.049chamber] shader.brightness 0
+scoreboard players set @a[tag=location.049chamber] shader.brightness 4
