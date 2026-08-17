@@ -1,4 +1,4 @@
-say hcz -> lcz
+# say hcz -> lcz
 
 function shader_control:effects/yellow/set {"value":"0"}
 

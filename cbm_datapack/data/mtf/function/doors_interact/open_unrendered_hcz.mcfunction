@@ -10,4 +10,4 @@ execute as @n[tag=door_marker_hcz, tag=r1, distance=..1] at @s unless block ~ ~ 
 tag @n[tag=door_marker_hcz] add opened
 tag @n[tag=door_marker_hcz] remove closed
 
-say open unrendered hcz!
+# say open unrendered hcz!

@@ -1,4 +1,4 @@
-say ez -> hcz
+# say ez -> hcz
 
 function shader_control:effects/yellow/set {"value":"0.075"}
 function shader_control:effects/blue/set {"value":"0"}

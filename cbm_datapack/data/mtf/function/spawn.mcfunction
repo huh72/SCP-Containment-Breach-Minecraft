@@ -1,9 +1,10 @@
 #$: {"NoAI":"BOOLEAN","additionaltag":"STRING","rotatedAs":"SELECTOR"}
 #spawn origin entity
-$summon wandering_trader ~ ~ ~ {Tags:['mtf','solo_spawned','new','gun_damage_target','$(additionaltag)','elevatorTarget'],Invulnerable:1b,Silent:1b,NoAI:$(NoAI)b}
+$summon wandering_trader ~ ~ ~ {Tags:['mtf','solo_spawned','new','gun_damage_target','$(additionaltag)','elevatorTarget'],Invulnerable:1b,Silent:1b,PersistenceRequired:1b,NoAI:$(NoAI)b}
 $data modify entity @n[type=wandering_trader,tag=mtf,tag=new] Rotation set from entity $(rotatedAs) Rotation
 
 attribute @n[type=wandering_trader, tag=mtf, tag=new] minecraft:jump_strength base set 0
+attribute @n[type=wandering_trader, tag=mtf, tag=new] minecraft:step_height base set 1
 execute rotated 0 0 run function animated_java:mtf/summon with storage aj:temp
 
 #global num fix
