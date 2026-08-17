@@ -1,4 +1,4 @@
-say stop!
+# say stop!
 scoreboard players operation _temp ID = @s ID
 
 #'stopping' elevator

@@ -10,7 +10,7 @@ scoreboard objectives add e dummy
 #instances
 scoreboard players set .selected e -1
 scoreboard players set .timer e -1
-
+scoreboard players set .isWarheadEnabled e 1
 
 #constants
 scoreboard players set .a1.maxtimer e 123456
