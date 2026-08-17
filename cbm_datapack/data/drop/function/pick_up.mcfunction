@@ -1,6 +1,6 @@
-execute as @a[tag=caster] run function inventory:count_inventory_items
-
 execute if entity @s[tag=start] run function int:events/pickeduppaper
+
+execute as @a[tag=caster] if score @s item_count matches 10.. run return run function inventory:hotbar/set {"text":"'Your inventory is full."}
 
 #g put item in inventory
 execute if entity @s[tag=card1] as @a[tag=caster] if score @s right_click_item matches 1 run function give:card1
@@ -75,6 +75,9 @@ execute if entity @s[tag=scp1499] at @s run playsound cb:interact.pickitem2 ambi
 execute if entity @s[tag=white_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=black_arm] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @s[tag=radio] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
+
+#g count items
+execute as @a[tag=caster] run function inventory:count_inventory_items
 
 scoreboard players set @p[tag=caster,scores={right_click_item=1..}] right_click_item 0
 scoreboard players set @p[tag=caster,scores={right_click_item=1..}] door_right_click 0

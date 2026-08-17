@@ -11,7 +11,7 @@ execute if entity @s[tag=r1] run setblock ~ ~ ~-1 minecraft:lightning_rod
 execute if entity @s[tag=r1] run setblock ~ ~1 ~ minecraft:lightning_rod
 execute if entity @s[tag=r1] run setblock ~ ~ ~ minecraft:lightning_rod
 
-say spawn doors!
+# say spawn doors!
 
 
 ###!
