@@ -20,7 +20,8 @@
 
 attribute @s movement_speed modifier remove 0000-0-0-0-0
 attribute @s movement_speed modifier remove 0000-0-0-0-1
-attribute @s[tag=sprinting] movement_speed modifier add 0000-0-0-0-0 0.0225 add_value
+#g +43.75%
+attribute @s[tag=sprinting] movement_speed modifier add 0000-0-0-0-0 0.04 add_value
 
 attribute @s[tag=sprinting,scores={stamina=0}] movement_speed modifier add 0000-0-0-0-1 -0.015 add_value
 attribute @s[scores={stamina=0}] movement_speed modifier remove 0000-0-0-0-0
