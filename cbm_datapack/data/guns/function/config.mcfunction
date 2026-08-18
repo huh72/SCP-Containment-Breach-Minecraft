@@ -54,7 +54,7 @@ scoreboard players set acc stat_p90 1
 scoreboard players set acc stat_p90 100
 scoreboard players set mag_size stat_p90 50
 scoreboard players set damage stat_p90 2
-scoreboard players set shot_cd stat_p90 2
+scoreboard players set shot_cd stat_p90 3
 scoreboard players set reload stat_p90 45
 #?
 scoreboard players set max_mags stat_p90 10
