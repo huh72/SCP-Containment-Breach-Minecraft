@@ -1,8 +1,8 @@
 #effect so player can sprint
 effect give @a saturation infinite 10 true
 
-#basic move speed control
-execute as @a run attribute @s minecraft:movement_speed base set 0.085
+#basic move speed control -17.65%
+execute as @a run attribute @s minecraft:movement_speed base set 0.07
 
 # config
 scoreboard objectives add stamina dummy
@@ -22,7 +22,7 @@ scoreboard players set penalty stamina_restore_cd 40
 scoreboard players set const stamina_remove_cd 7
 scoreboard players set const stamina_remove 5
 
-scoreboard players set const stamina_restore_cd 5
+scoreboard players set const stamina_restore_cd 15
 scoreboard players set const stamina_restore 5
 
 scoreboard players set max_player breath_cd 75
