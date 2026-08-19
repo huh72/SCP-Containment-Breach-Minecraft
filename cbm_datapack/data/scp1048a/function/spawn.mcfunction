@@ -1,4 +1,4 @@
-summon husk ~ ~ ~ {Tags:['scp1048Aorigin', 'elevatorTarget'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
+summon husk ~ ~ ~ {Tags:['scp1048Aorigin', 'elevatorTarget', 'canOpenDoors'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
 effect give @n[type=husk, tag=scp1048Aorigin] invisibility infinite 1 true
 attribute @n[type=husk, tag=scp1048Aorigin] minecraft:movement_speed base set 0.15
 attribute @n[type=husk, tag=scp1048Aorigin] minecraft:follow_range base set 64
