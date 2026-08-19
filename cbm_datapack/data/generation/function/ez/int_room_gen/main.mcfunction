@@ -33,7 +33,7 @@ execute as @e[tag=str,tag=ez,sort=random,limit=1] at @s if predicate generation:
 execute as @e[tag=str,tag=ez,sort=random,limit=1] at @s run function generation:ez/int_room_gen/str {"room":"ez:str6_","x0":"0","y0":"1","z0":"-10","x1":"-10","y1":"1","z1":"0"}
 
 #type 7 (Cafeteria) - last str (on 16/06/25)
-execute as @e[tag=str,tag=ez,sort=random,limit=1] at @s run function generation:ez/int_room_gen/str {"room":"ez:str7_","x0":"0","y0":"-4","z0":"-7","x1":"-7","y1":"-4","z1":"0"}
+execute as @e[tag=str,tag=ez,sort=random,limit=1] at @s run function generation:ez/int_room_gen/str {"room":"ez:str7_","x0":"0","y0":"-4","z0":"-12","x1":"-12","y1":"-4","z1":"0"}
 
 
 #corner - electric center
