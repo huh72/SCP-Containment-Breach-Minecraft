@@ -1,7 +1,12 @@
+#g
+tag @a remove lcz
+tag @a remove ez
+
 #g clear all scps + mtf
 function scp049:despawn
 function scp173:despawn
 function scp106:despawn
+function scp066:despawn
 function scp650:despawn
 function scp457:despawnall
 function scp1048:despawn
@@ -9,6 +14,7 @@ function scp1048a:despawn
 function mtf:despawn_all
 function scp049_2:despawn
 function scp049_2:despawnd
+function infected008:despawnall
 
 #g clear contained scps
 function scp173:despawn_contained
