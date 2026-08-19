@@ -18,5 +18,8 @@ execute as @e[type=wandering_trader, tag=scp966] at @s run function scp966:handl
 # execute as @a[tag=!dead] at @s run function scp079:tick
 #function scp939_89:tick
 
-# spawn sys
+#g spawn sys
 execute unless entity @p[tag=location.surface] run function scps:spawnsystem/tick
+
+#g scp door open handler
+execute as @e[tag=canOpenDoors] at @s run function scps:dooropenhandler
