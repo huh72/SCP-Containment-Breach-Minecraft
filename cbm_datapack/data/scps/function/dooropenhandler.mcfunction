@@ -1,0 +1,2 @@
+execute as @n[tag=door, tag=button, tag=!door_marker_hcz, tag=!dr.not_rendered, distance=..5] if entity @s[tag=closed, tag=!proceed] as @n[tag=aj.door0.root] run function animated_java:door0/animations/openclosetoggle/resume
+execute as @n[tag=door, tag=button, tag=door_marker_hcz, tag=!dr.not_rendered, distance=..5] if entity @s[tag=closed, tag=!proceed] as @n[tag=aj.door1.root] run function animated_java:door1/animations/open_close_toggle/resume
