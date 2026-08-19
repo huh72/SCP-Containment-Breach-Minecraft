@@ -1,4 +1,4 @@
-summon pig ~ ~ ~ {Tags:['scp1048origin', 'elevatorTarget'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
+summon pig ~ ~ ~ {Tags:['scp1048origin', 'elevatorTarget', 'canOpenDoors'],Silent:1b,Invulnerable:1b,PersistenceRequired:1b}
 effect give @n[type=pig, tag=scp1048origin] invisibility infinite 1 true
 attribute @n[type=pig, tag=scp1048origin] minecraft:movement_speed base set 0.15
 attribute @n[type=pig, tag=scp1048origin] minecraft:follow_range base set 16
