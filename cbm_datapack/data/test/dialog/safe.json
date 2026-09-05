@@ -1,0 +1,30 @@
+{
+  "type": "confirmation",
+  "title": "dadsdda",
+  "can_close_with_escape": false,
+  "pause": false,
+  "inputs": [
+    {
+      "key": "name",
+      "type": "minecraft:text",
+      "label": "Name",
+      "initial": "Jeff"
+    },
+    {
+      "key": "enchant",
+      "type": "boolean",
+      "label": "Enchant item",
+      "initial": true
+    }
+  ],
+  "no": {
+      "label": "Cancel"
+  },
+  "yes": {
+      "label": "Confirm",
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "say @s $(name), $(enchant)"
+        }
+    }
+}

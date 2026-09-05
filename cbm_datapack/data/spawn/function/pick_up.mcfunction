@@ -11,7 +11,7 @@ execute if entity @s[tag=playingcard] as @a[tag=caster] if score @s right_click_
 execute if entity @s[tag=mastercard] as @a[tag=caster] if score @s right_click_item matches 1 run function give:mastercard
 execute if entity @s[tag=battery9] as @a[tag=caster] if score @s right_click_item matches 1 run function give:battery
 execute if entity @s[tag=battery18] as @a[tag=caster] if score @s right_click_item matches 1 run function give:battery18
-execute if entity @s[tag=killbattery] as @a[tag=caster] if score @s right_click_item matches 1 run function give:killbatery
+execute if entity @s[tag=killbattery] as @a[tag=caster] if score @s right_click_item matches 1 run function give:killbattery
 execute if entity @s[tag=paper] as @a[tag=caster] if score @s right_click_item matches 1 run function give:paper_
 execute if entity @s[tag=note] as @a[tag=caster] if score @s right_click_item matches 1 run function give:note
 execute if entity @s[tag=yellowpaper] as @a[tag=caster] if score @s right_click_item matches 1 run function give:yellow_paper
@@ -23,8 +23,11 @@ execute if entity @s[tag=nvg_blue] as @a[tag=caster] if score @s right_click_ite
 execute if entity @s[tag=gasmask] as @a[tag=caster] if score @s right_click_item matches 1 run function give:gasmask
 execute if entity @s[tag=radio] as @a[tag=caster] if score @s right_click_item matches 1 run function give:radio
 #vest
-execute if entity @s[tag=vest] as @a[tag=caster] if score @s right_click_item matches 1 run function give:vest
-execute if entity @s[tag=vest] as @a[tag=caster] if score @s right_click_item matches 1 run function use:vest/use
+execute if entity @s[tag=basicvest] as @a[tag=caster] if score @s right_click_item matches 1 run function give:vest
+execute if entity @s[tag=basicvest] as @a[tag=caster] if score @s right_click_item matches 1 run function use:vest/use
+
+execute if entity @s[tag=heavyvest] as @a[tag=caster] if score @s right_click_item matches 1 run function give:heavy_vest
+execute if entity @s[tag=heavyvest] as @a[tag=caster] if score @s right_click_item matches 1 run function use:heavyvest/use
 
 execute if entity @s[tag=aidkit0] as @a[tag=caster] if score @s right_click_item matches 1 run function give:aidkit0
 execute if entity @s[tag=coin] as @a[tag=caster] if score @s right_click_item matches 1 run function give:coin
