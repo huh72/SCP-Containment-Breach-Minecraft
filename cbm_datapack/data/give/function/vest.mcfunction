@@ -1,1 +1,1 @@
-function give:paper {"model":"cb:vest","name":"Ballistic Vest","data":"item:vest"}
+function give:paper {"model":"cb:vest","name":"Ballistic Vest","data":"item:basicvest"}

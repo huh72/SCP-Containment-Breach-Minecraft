@@ -1,0 +1,1 @@
+function give:paper {"model":"cb:vest","name":"Heavy Ballistic Vest","data":"item:heavyvest"}
