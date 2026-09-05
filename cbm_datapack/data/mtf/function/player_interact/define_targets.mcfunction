@@ -1,4 +1,4 @@
-tag @p[distance=..16,tag=!dead] add mtf_target
+tag @p[distance=..14,tag=!dead] add mtf_target
 tag @p[distance=..32,tag=b1.themechanged,tag=!dead] add mtf_target
 # execute if entity @p[distance=..16] run tag @s add have_target
 
