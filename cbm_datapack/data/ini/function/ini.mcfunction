@@ -36,6 +36,13 @@ scoreboard players set @s respawnCountdown 6
 scoreboard players set @s heartbeatTimer 0
 scoreboard players set @s heartbeatCd 0
 
+scoreboard players set @s health 100
+scoreboard players set @s bleeding 0
+
+#ambients
+scoreboard players set @s 939.ambient -1
+scoreboard players set @s chamber049.ambientTimer -1
+
 tag @s add can_ii
 
 tag @s add can_blink
