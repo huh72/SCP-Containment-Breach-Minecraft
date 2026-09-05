@@ -46,7 +46,6 @@ execute if score 106 breath_cd matches 0 run function scp106:sounds/breath
 
 #hit + caught animation
 execute positioned ^ ^ ^0.5 as @p[tag=106target, distance=..1, tag=!god] if score 106 106hit_cd matches 0 run function scp106:hit/hit
-execute as @a[tag=hitby106] at @s unless score @s fallinpdanimation matches -1 if score @s fallinpdanimation < max fallinpdanimation run function scp106:hit/fallanimation
 
 
 

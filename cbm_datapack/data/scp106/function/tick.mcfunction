@@ -12,3 +12,5 @@ execute as @e[type=item_display,tag=pds_roomsize] at @s run function scp106:room
 
 #g pocket dimension handler:
 execute as @n[type=marker,tag=pd.center] at @s run function scp106:pd/handler
+#g fall in handler:
+execute as @a[tag=hitby106] at @s unless score @s fallinpdanimation matches -1 if score @s fallinpdanimation < max fallinpdanimation run function scp106:hit/fallanimation
