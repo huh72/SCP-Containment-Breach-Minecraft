@@ -1,1 +1,1 @@
-tp @n[type=zombie, tag=scp096] @p[tag=!dead,tag=triggered096]
+execute at @p[tag=!dead, tag=triggered096] run tp @n[type=zombie, tag=scp096] ~ ~ ~
