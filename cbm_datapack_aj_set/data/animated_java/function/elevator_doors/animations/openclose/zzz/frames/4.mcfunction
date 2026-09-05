@@ -24,6 +24,8 @@ execute if entity @p[tag=location.surface] unless score .selected e matches 0 un
 execute as @a[tag=location.surface] at @s run function save_progress:save {"sound":"none"}
 tag @a[tag=location.surface] remove ez
 execute as @a[tag=location.surface] at @s run function shader_control:effects/blue/set {"value":"0.0"}
+execute as @a[tag=location.surface] at @s run scoreboard players set @s shader.brightness 60
+execute as @a[tag=location.surface] at @s run scoreboard players set @s shader.saturation 5
 
 scoreboard players operation @a[tag=location.049chamber, tag=insideElevator] chamber049.ambientTimer = .max chamber049.ambientTimer
 scoreboard players operation @a[tag=location.939storage, tag=insideElevator] 939.ambient = .loop 939.ambient
