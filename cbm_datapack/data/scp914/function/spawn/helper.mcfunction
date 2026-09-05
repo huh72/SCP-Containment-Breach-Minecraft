@@ -1,10 +1,10 @@
-execute positioned ^ ^2.8 ^3 rotated as @s rotated ~180 ~ run function animated_java:914_button/summon with storage aj:temp
+execute positioned ^ ^2.8 ^2.99 rotated as @s rotated ~180 ~ run function animated_java:914_button/summon with storage aj:temp
 execute as @n[type=item_display,tag=aj.914_button.root] run function animated_java:914_button/animations/change_mode/apply_frame {"frame":"0"}
-execute positioned ^ ^2.3 ^3 run summon interaction ~ ~ ~ {Tags:["+interact","mode914","marker914"]}
+execute positioned ^ ^2.3 ^2.99 run summon interaction ~ ~ ~ {Tags:["+interact","mode914","marker914"]}
 
-execute positioned ^ ^1.5 ^3 rotated as @s rotated ~180 ~ run function animated_java:914_start/summon with storage aj:temp
+execute positioned ^ ^1.5 ^2.99 rotated as @s rotated ~180 ~ run function animated_java:914_start/summon with storage aj:temp
 execute as @n[type=item_display,tag=aj.914_start.root] run function animated_java:914_start/animations/start/apply_frame {"frame":"0"}
-execute positioned ^ ^1 ^3 run summon interaction ~ ~ ~ {Tags:["+interact","startbutton914","marker914"]}
+execute positioned ^ ^1 ^2.99 run summon interaction ~ ~ ~ {Tags:["+interact","startbutton914","marker914"]}
 
 execute positioned ^ ^ ^5.3 rotated as @s rotated ~180 ~ run function animated_java:door914/summon with storage aj:temp
 execute as @n[type=item_display,tag=aj.door914.root] run function animated_java:door914/animations/close/apply_frame {"frame":"0"}
