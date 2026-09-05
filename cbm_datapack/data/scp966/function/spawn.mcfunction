@@ -7,6 +7,11 @@ effect give @n[tag=scp966] invisibility infinite 1 true
 effect give @n[tag=shulker_hitbox966] invisibility infinite 1 true
 effect give @n[tag=shulker_hitbox966] regeneration infinite 10 true
 
-scoreboard players set @s echo966 1
+attribute @n[tag=scp966] minecraft:movement_speed base set 0.35
+attribute @n[tag=scp966] minecraft:step_height base set 1
+attribute @n[tag=scp966] minecraft:jump_strength base set 0
+
+scoreboard players set @n[tag=scp966] hit_cd 60
+scoreboard players set @n[tag=scp966] echo966 1
 
 tag @n[tag=new] remove new
