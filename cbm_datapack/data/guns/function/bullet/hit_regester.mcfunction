@@ -15,8 +15,11 @@ execute positioned ^ ^ ^-0.5 run particle crit ~ ~ ~ 0 0 0 0 1 force @a
 
 execute if entity @s[tag=vest] run scoreboard players operation @n[tag=bullet] damage /= 3 math
 # tellraw @a [{"score":{"name":"@n[tag=bullet]","objective":"damage"}}]
-execute store result storage cb:vest pitch int 1 run random value 15..99 cb:vestrandom
-execute unless score @n[tag=bullet] damage matches 1.. run return run function guns:bullet/player_hit/vestabsorb with storage cb:vest
+execute store result storage cb:vest pitch0 int 1 run random value 15..99 cb:vestrandom
+execute store result storage cb:vest pitch1 int 1 run random value 15..50 cb:vestrandom
+execute if entity @s[tag=basicvest] unless score @n[tag=bullet] damage matches 1.. run return run function guns:bullet/player_hit/vestabsorb0 with storage cb:vest
+execute if entity @s[tag=heavyvest] unless score @n[tag=bullet] damage matches 1.. run return run function guns:bullet/player_hit/vestabsorb1 with storage cb:vest
+
 
 #hit types ( damage - in head/body/legs)
 #head
