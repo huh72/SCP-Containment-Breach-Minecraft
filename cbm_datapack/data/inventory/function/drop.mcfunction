@@ -1,12 +1,17 @@
-execute at @s[tag=!vest] run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+$execute unless items entity @s container.$(dropslot) minecraft:paper[custom_data={item:basicvest}] unless items entity @s container.$(dropslot) minecraft:paper[custom_data={item:heavyvest}] run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+
+$data modify storage cb:inventory dropslot0 set value "container.$(dropslot)"
 
 scoreboard players operation @e[tag=new,tag=drop] item_num = max* item_num
 scoreboard players add max* item_num 1
 scoreboard players remove @s item_count 1
 
-$item replace entity @e[tag=new] armor.head from entity @s[tag=!vest] container.$(dropslot)
 #g vest
-execute unless entity @n[type=armor_stand, tag=new] if entity @s[tag=vest] run function use:vest/end
+execute unless entity @n[type=armor_stand, tag=new] if entity @s[tag=basicvest] run return run function use:vest/end with storage cb:inventory
+execute unless entity @n[type=armor_stand, tag=new] if entity @s[tag=heavyvest] run return run function use:heavyvest/end with storage cb:inventory
+
+$item replace entity @n[tag=new] armor.head from entity @s container.$(dropslot)
+
 
 #what item is + SOUNDs
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:card1}] run tag @e[type=armor_stand, tag=new] add card1

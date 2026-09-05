@@ -1,10 +1,16 @@
-execute at @s run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+execute unless items entity @s weapon.offhand minecraft:paper[custom_data={item:basicvest}] unless items entity @s weapon.offhand minecraft:paper[custom_data={item:heavyvest}] run summon armor_stand ~ ~0.5 ~ {Tags:['drop','new'],Invisible:1b,Silent:1b,Invulnerable:1b,NoBasePlate:1b}
+
+data modify storage cb:inventory dropslot0 set value "weapon.offhand"
 
 scoreboard players operation @e[tag=new,tag=drop] item_num = max* item_num
 scoreboard players add max* item_num 1
 scoreboard players remove @s item_count 1
 
-item replace entity @n[tag=new] armor.head from entity @s weapon.offhand
+#g vest
+execute unless entity @n[type=armor_stand, tag=new] if entity @s[tag=basicvest] run return run function use:vest/end with storage cb:inventory
+execute unless entity @n[type=armor_stand, tag=new] if entity @s[tag=heavyvest] run return run function use:heavyvest/end with storage cb:inventory
+
+item replace entity @e[tag=new] armor.head from entity @s weapon.offhand
 
 #what item is + SOUNDs
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:card1}] run tag @e[type=armor_stand, tag=new] add card1
@@ -28,7 +34,6 @@ execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:nvg_blue}] run tag @e[type=armor_stand, tag=new] add nvg_blue
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:gasmask}] run tag @e[type=armor_stand, tag=new] add gasmask
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:super_gasmask}] run tag @e[type=armor_stand, tag=new] add supergasmask
-execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:vest}] run tag @e[type=armor_stand, tag=new] add vest
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:aidkit0}] run tag @e[type=armor_stand, tag=new] add aidkit0
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:coin}] run tag @e[type=armor_stand, tag=new] add coin
 execute if items entity @n[type=armor_stand, tag=new] armor.head minecraft:paper[custom_data={item:scp714}] run tag @e[type=armor_stand, tag=new] add scp714
@@ -62,7 +67,6 @@ execute if entity @n[type=armor_stand, tag=new, tag=nvg_red] at @s run playsound
 execute if entity @n[type=armor_stand, tag=new, tag=nvg_blue] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @n[type=armor_stand, tag=new, tag=gasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @n[type=armor_stand, tag=new, tag=supergasmask] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
-execute if entity @n[type=armor_stand, tag=new, tag=vest] at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @n[type=armor_stand, tag=new, tag=aidkit0] at @s run playsound cb:interact.pickitem1 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @n[type=armor_stand, tag=new, tag=coin] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 execute if entity @n[type=armor_stand, tag=new, tag=scp714] at @s run playsound cb:interact.pickitem3 ambient @a[distance=..8] ~ ~ ~ 1 1 1
