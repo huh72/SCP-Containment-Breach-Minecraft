@@ -8,6 +8,7 @@
 #g 650: first: 8-12, following: 2-5
 #g 457: first: 16-25, following: 9-12
 #g 049: after lcz el_room: every: 8-18
+#g 966: after entrance hcz: every: 4-10
 #g 096: after hcz server_room: every: 22-40
 #g 1048: every: 20-28
 
@@ -22,6 +23,7 @@
 
 #r ============ VARS ==================
 
+scoreboard objectives add playerAmount dummy
 scoreboard objectives add despawnTimer dummy
 scoreboard objectives add spawnTimer dummy
 scoreboard objectives add 106spawnTimer dummy
@@ -31,6 +33,7 @@ scoreboard objectives add 457spawnTimer dummy
 # scoreboard objectives add 096spawnTimer dummy
 scoreboard objectives add 1048spawnTimer dummy
 scoreboard objectives add 650spawnTimer dummy
+scoreboard objectives add 966spawnTimer dummy
 
 #g SCP-106 ============================================================
 # this should be set to 1 after breach
@@ -55,6 +58,18 @@ data modify storage cb:scpspawn firstSpawnMax173 set value 24000
 
 data modify storage cb:scpspawn SpawnMin173 set value 6000
 data modify storage cb:scpspawn SpawnMax173 set value 10800
+
+
+#g 966 ============================================================
+execute unless score .timerCanBeIncreased 966spawnTimer matches 0..1 run scoreboard players set .timerCanBeIncreased 966spawnTimer 0
+execute unless score .canSpawn 966spawnTimer matches 0..1 run scoreboard players set .canSpawn 966spawnTimer 0
+
+#g timings
+data modify storage cb:scpspawn firstSpawnMin966 set value 16800
+data modify storage cb:scpspawn firstSpawnMax966 set value 24000
+
+data modify storage cb:scpspawn SpawnMin966 set value 6000
+data modify storage cb:scpspawn SpawnMax966 set value 10800
 
 
 #g 650 ============================================================
