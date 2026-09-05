@@ -44,3 +44,15 @@ execute if entity @s[tag=radio] run return run function spawn:drop/radio {"state
 
 ### scp1499_1
 execute if entity @s[tag=scp1499] run return run function spawn:drop/spawn1499_1
+
+#g vest
+execute store result score chance scp914 run random value 0..99 cb:scp914chances
+execute if entity @s[tag=basicvest] if score chance scp914 matches 0..9 run function spawn:drop/heavyvest {"state":"914"}
+execute if entity @s[tag=basicvest] if score chance scp914 matches 10..99 run return run function spawn:drop/basicvest {"state":"914"}
+
+execute if entity @s[tag=heavyvest] run return run function spawn:drop/heavyvest {"state":"914"}
+
+#g battery
+execute if entity @s[tag=killbattery] run return run function spawn:drop/battery {"state":"914"}
+execute if entity @s[tag=battery9] run return run function spawn:drop/battery18 {"state":"914"}
+execute if entity @s[tag=battery18] run return run function spawn:drop/killbattery {"state":"914"}

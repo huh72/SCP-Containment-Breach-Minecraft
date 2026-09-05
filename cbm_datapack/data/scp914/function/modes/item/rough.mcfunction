@@ -27,3 +27,11 @@ execute if entity @s[tag=black_arm] run return run kill @s
 
 ### radio
 execute if entity @s[tag=radio] run return run kill @s
+
+#g
+execute if entity @s[tag=basicvest] run return run kill @s
+execute if entity @s[tag=heavyvest] run return run kill @s
+
+execute if entity @s[tag=killbattery] run return run function spawn:drop/battery {"state":"914"}
+execute if entity @s[tag=battery9] run return run kill @s
+execute if entity @s[tag=battery18] run return run kill @s
