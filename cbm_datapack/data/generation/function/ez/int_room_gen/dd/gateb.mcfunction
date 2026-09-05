@@ -32,7 +32,7 @@ execute at @n[tag=elevatorSpawnpoint] run scoreboard players set @e[tag=gate,sor
 execute at @n[type=marker, tag=elevator, tag=gateB, tag=1] as @n[tag=elevatorDoors] if entity @s[tag=opened] run function animated_java:elevator_doors/animations/openclose/resume
 scoreboard players set @n[type=marker, tag=elevator, tag=gateB, tag=1] level 1
 scoreboard players set @n[type=marker, tag=elevator, tag=gateB, tag=1] onLevel 0
-tag @n[type=marker, tag=elevator, tag=gateB, tag=1] add broken
+tag @n[type=marker, tag=elevator, tag=gate.gateB, tag=1] add broken
 
 
 
