@@ -43,12 +43,15 @@ scoreboard players set @a[tag=radio,nbt={SelectedItem:{id:"minecraft:carrot_on_a
 scoreboard players remove @a[scores={use_timer=0..}] use_timer 1
 execute as @a[tag=!dead] if score @s use_timer matches 0 run function use:aidkit0/end
 
-### VEST 0 ###
+### BASIC VEST ###
 scoreboard players remove @a[scores={wear_timer=0..}] wear_timer 1
-execute as @a[tag=!dead] if score @s wear_timer matches 0 run function use:vest/wear
-
+execute as @a[tag=!dead] if score @s[tag=wearing_basic] wear_timer matches 0 run function use:vest/wear
 scoreboard players remove @a[scores={_wear_timer=0..}] _wear_timer 1
-execute as @a[tag=!dead] if score @s _wear_timer matches 0 run function use:vest/diswear
+execute as @a[tag=!dead] if score @s[tag=wearing_basic] _wear_timer matches 0 run function use:vest/diswear
+
+### HEAVY VEST ###
+execute as @a[tag=!dead] if score @s[tag=wearing_heavy] wear_timer matches 0 run function use:heavyvest/wear
+execute as @a[tag=!dead] if score @s[tag=wearing_heavy] _wear_timer matches 0 run function use:heavyvest/diswear
 
 ### SCP-714 ###$
 scoreboard players set @p[tag=scp714,scores={stamina=15..}] stamina 15

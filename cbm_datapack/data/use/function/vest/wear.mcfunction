@@ -4,6 +4,8 @@ execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~
 
 function inventory:hotbar/set {"text":"'You put on the vest and feel slightly encumbered."}
 
+tag @s remove wearing_basic
 tag @s add vest
+tag @s add basicvest
 tag @s add can_ii
 # say wear!

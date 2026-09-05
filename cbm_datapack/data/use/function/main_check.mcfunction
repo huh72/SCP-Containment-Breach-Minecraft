@@ -105,6 +105,11 @@ $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_d
 # $execute unless items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:vest}] if score @s[tag=!vest] used_a matches 0 run function use:vest/use
 $execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:vest}] if score @s[tag=vest] used_a matches 0 run function use:vest/end
 
+#g heavy vest
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:heavyvest}] if score @s[tag=!vest] used_a matches 0 run function use:heavyvest/use
+# $execute unless items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:vest}] if score @s[tag=!vest] used_a matches 0 run function use:vest/use
+$execute if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:heavyvest}] if score @s[tag=vest] used_a matches 0 run function use:heavyvest/end
+
 #g scp 714
 $execute unless items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp714}] if score @s used_a matches 0 run function use:scp714/use
 $execute if items entity @s weapon.offhand minecraft:lightning_rod if items entity @s container.$(slot) minecraft:paper[minecraft:custom_data={item:scp714}] if score @s used_a matches 0 run function use:scp714/end

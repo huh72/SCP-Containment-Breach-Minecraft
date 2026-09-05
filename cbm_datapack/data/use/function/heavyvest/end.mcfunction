@@ -3,9 +3,9 @@ attribute @s minecraft:movement_speed modifier remove 4589-0-0-2-0
 scoreboard players operation @s _wear_timer = max_vest* _wear_timer
 execute at @s run playsound cb:interact.pickitem2 ambient @a[distance=..8] ~ ~ ~ 1 1 1
 
-function inventory:hotbar/set {"text":"'You take off a bulletproof vest."}
+function inventory:hotbar/set {"text":"'HHYou take off a bulletproof vest."}
 
 $item replace entity @s $(dropslot0) with air 
 
-tag @s add wearing_basic
+tag @s add wearing_heavy
 tag @s remove can_ii
