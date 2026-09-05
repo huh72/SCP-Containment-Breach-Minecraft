@@ -1,6 +1,6 @@
 #shot sound
 playsound cb:p90.shot_in ambient @a[distance=..20] ~ ~ ~ 1.25 1 1
-execute as @n[tag=mtf] if entity @s[tag=surface] at @s run playsound cb:p90.shot_out ambient @a[distance=20..64] ~ ~ ~ 1.25 1 1
+execute as @n[tag=mtf] if entity @s[tag=surface] at @s run playsound cb:p90.shot_out ambient @a[distance=..64] ~ ~ ~ 0.75 1 1
 
 
 #???
