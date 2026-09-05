@@ -6,4 +6,5 @@ tag @n[type=zombie, tag=scp096] add triggered
 tag @n[type=zombie, tag=scp096] remove idle
 tag @n[type=zombie, tag=scp096] remove readyToBeTriggered
 
+execute as @n[tag=aj.scp096.root] at @s run function animated_java:scp096/animations/idle_sit/stop
 execute as @n[tag=aj.scp096.root] at @s run function animated_java:scp096/animations/rage_in/play

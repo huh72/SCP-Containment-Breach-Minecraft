@@ -13,3 +13,6 @@ execute if score 096 rageCycle = .timeToTP rageCycle run function scp096:tptopla
 execute if score 096 rageCycle = .maxHuntTime rageCycle run function scp096:setstate/unrage
 
 execute if entity @s[tag=raged] as @a[tag=!dead] if entity @s[tag=!triggered096] run function scp096:setstate/unrage
+
+#g kill
+execute if entity @s[tag=raged] as @a[tag=!dead, distance=..2] at @s run function scp096:kill
