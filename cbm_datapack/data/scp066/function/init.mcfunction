@@ -13,4 +13,4 @@ data modify storage scp066hitdecal y set value 0
 data modify storage scp066hitdecal z set value 0
 
 
-tellraw @a [{"text":"SCP-066 have been initialized succesfully!"}]
+# tellraw @a [{"text":"SCP-066 have been initialized succesfully!"}]
