@@ -9,6 +9,8 @@
 scoreboard objectives add timeNear966 dummy
 scoreboard objectives add echo966 dummy
 
+scoreboard players set 966 hit_cd 35
+
 scoreboard players set .0 timeNear966 40
 scoreboard players set .1 timeNear966 250
 scoreboard players set .2 timeNear966 400
