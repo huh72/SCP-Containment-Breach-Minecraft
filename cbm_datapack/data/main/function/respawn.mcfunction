@@ -15,6 +15,15 @@ execute as @n[type=marker, tag=save] if entity @s[tag=save.location.106chamber] 
 execute as @n[type=marker, tag=save] if entity @s[tag=save.location.939storage] run tag @p[tag=save_f] add location.939storage
 execute as @n[type=marker, tag=save] if entity @s[tag=save.location.nuke] run tag @p[tag=save_f] add location.nuke
 
+scoreboard players operation @s[tag=location.939chamber] 939.ambient = .loop 939.ambient
+scoreboard players operation @s[tag=location.049chamber] chamber049.ambientTimer = .max chamber049.ambientTimer
+
+#g
+effect give @s[tag=!location.049chamber] darkness infinite 1 true
+effect give @s[tag=!location.nuke] darkness infinite 1 true
+effect give @s[tag=!location.106chamber] darkness infinite 1 true
+effect give @s[tag=!location.surface] darkness infinite 1 true
+
 #g load level tag
 tag @s remove lcz
 tag @s remove hcz
@@ -23,6 +32,9 @@ tag @s remove ez
 stopsound @s * cb:zone1.mainambient
 stopsound @s * cb:zone2.mainambient
 stopsound @s * cb:zone3.mainambient
+
+stopsound @s * cb:scp939.ambient
+stopsound @s * cb:scp049.chamber0
 
 execute as @n[type=marker, tag=save] if entity @s[tag=save.lcz] run tag @p[tag=save_f] add lcz
 execute as @n[type=marker, tag=save] if entity @s[tag=save.hcz] run tag @p[tag=save_f] add hcz
