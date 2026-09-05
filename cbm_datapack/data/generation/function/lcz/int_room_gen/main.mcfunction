@@ -103,7 +103,7 @@ execute at @e[type=marker,tag=door_marker_checkpoint,tag=hcz] rotated 0 0 run fu
 scoreboard players set @e[type=marker,tag=door_marker_checkpoint] door_checkpoint_timer 150
 tag @e[type=marker,tag=door_marker_checkpoint] add blocked
 
-execute at @e[type=marker,tag=door_marker_checkpoint,tag=hcz] as @n[tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/resume
+# execute at @e[type=marker,tag=door_marker_checkpoint,tag=hcz] as @n[tag=aj.door_check0.root] run function animated_java:door_check0/animations/openclosetoggle/resume
 
 #g
 scoreboard players set @a scanner_value 0
