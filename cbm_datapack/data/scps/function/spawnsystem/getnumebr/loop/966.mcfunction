@@ -1,4 +1,4 @@
-$execute store result score .request 1048spawnTimer run random value $(SpawnMin1048)..$(SpawnMax1048) cb:scp1048
+$execute store result score .request 966spawnTimer run random value $(SpawnMin966)..$(SpawnMax966) cb:scp966
 
 execute as @a run scoreboard players add global playerAmount 1
 
