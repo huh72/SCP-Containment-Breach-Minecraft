@@ -3,6 +3,8 @@ effect give @n[tag=new] invisibility infinite 1 true
 execute rotated 0 0 run function animated_java:scp049/summon with storage aj:temp
 attribute @n[tag=scp049] movement_speed base set 0.3125
 attribute @n[tag=scp049] follow_range base set 64
+attribute @n[tag=scp049] minecraft:jump_strength base set 0
+attribute @n[tag=scp049] minecraft:step_height base set 1
 effect give @n[tag=scp049] weakness infinite 255 true
 scoreboard players set 049 phrase 140
 scoreboard players set 049 door_open_cd 200
