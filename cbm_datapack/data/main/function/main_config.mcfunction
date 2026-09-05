@@ -1,5 +1,6 @@
 tellraw @a [{"text":"[ ! ]","color":"white"},{"text":" SCP: CONTAINMENT BREACH datapack succsesfuly reloaded! \nVersion 0.5.0 - alpha on Date 01/08/2026 on Minecraft version 1.21.6","color":"yellow"}]
 
+function menu:config
 function elevators:config
 function ms:config
 function fps:config

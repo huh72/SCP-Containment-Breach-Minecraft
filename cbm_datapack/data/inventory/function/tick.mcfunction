@@ -1,57 +1,59 @@
 #radio
-item replace entity @a[tag=dev,tag=radio] container.0 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:1}]
-item replace entity @a[tag=dev,tag=radio] container.1 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:2}]
-item replace entity @a[tag=dev,tag=radio] container.2 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:3}]
-item replace entity @a[tag=dev,tag=radio] container.3 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:4}]
-item replace entity @a[tag=dev,tag=radio] container.4 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:5}]
-item replace entity @a[tag=dev,tag=radio] container.5 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:6}]
-item replace entity @a[tag=dev,tag=radio] container.6 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:7}]
-item replace entity @a[tag=dev,tag=radio] container.7 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:8}]
-item replace entity @a[tag=dev,tag=radio] container.8 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:9}]
+item replace entity @a[tag=radio] container.0 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:1}]
+item replace entity @a[tag=radio] container.1 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:2}]
+item replace entity @a[tag=radio] container.2 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:3}]
+item replace entity @a[tag=radio] container.3 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:4}]
+item replace entity @a[tag=radio] container.4 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:5}]
+item replace entity @a[tag=radio] container.5 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:6}]
+item replace entity @a[tag=radio] container.6 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:7}]
+item replace entity @a[tag=radio] container.7 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:8}]
+item replace entity @a[tag=radio] container.8 with carrot_on_a_stick[item_name="You can switch between the channels by pressing key 1 to 9",custom_data={channel:9}]
 
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick"}]}] container.0 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:1b,id:"minecraft:carrot_on_a_stick"}]}] container.1 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick"}]}] container.2 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick"}]}] container.3 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:4b,id:"minecraft:carrot_on_a_stick"}]}] container.4 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick"}]}] container.5 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick"}]}] container.6 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick"}]}] container.7 with carrot_on_a_stick[item_name=""]
-item replace entity @a[tag=!dev,tag=!radio,nbt=!{Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_stick"}]}] container.8 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.0 carrot_on_a_stick run item replace entity @s container.0 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.1 carrot_on_a_stick run item replace entity @s container.1 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.2 carrot_on_a_stick run item replace entity @s container.2 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.3 carrot_on_a_stick run item replace entity @s container.3 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.4 carrot_on_a_stick run item replace entity @s container.4 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.5 carrot_on_a_stick run item replace entity @s container.5 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.6 carrot_on_a_stick run item replace entity @s container.6 with carrot_on_a_stick[item_name=""]
+execute as @a[tag=!dev, tag=!radio] unless items entity @s container.7 carrot_on_a_stick run item replace entity @s container.7 with carrot_on_a_stick[item_name=""]
+
+#g clear on ground items
+kill @e[type=item, nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 
 ### drop if not in custom inventory:
 #left
 # execute as @a at @s[nbt={Inventory:[{Slot:-106b,id:'minecraft:paper'}]}] run function inventory:drop_lh
 #hotbar
-execute as @a[tag=!dead] if items entity @s weapon.offhand paper run function inventory:drop_lh
-execute as @a[tag=!dead] if items entity @s container.0 paper run function inventory:drop {"dropslot":"0"}
-execute as @a[tag=!dead] if items entity @s container.1 paper run function inventory:drop {"dropslot":"1"}
-execute as @a[tag=!dead] if items entity @s container.2 paper run function inventory:drop {"dropslot":"2"}
-execute as @a[tag=!dead] if items entity @s container.3 paper run function inventory:drop {"dropslot":"3"}
-execute as @a[tag=!dead] if items entity @s container.4 paper run function inventory:drop {"dropslot":"4"}
-execute as @a[tag=!dead] if items entity @s container.5 paper run function inventory:drop {"dropslot":"5"}
-execute as @a[tag=!dead] if items entity @s container.6 paper run function inventory:drop {"dropslot":"6"}
-execute as @a[tag=!dead] if items entity @s container.7 paper run function inventory:drop {"dropslot":"7"}
-execute as @a[tag=!dead] if items entity @s container.8 paper run function inventory:drop {"dropslot":"8"}
-execute as @a[tag=!dead] if items entity @s container.9 paper run function inventory:drop {"dropslot":"9"}
-execute as @a[tag=!dead] if items entity @s container.10 paper run function inventory:drop {"dropslot":"10"}
+execute as @a[tag=!dead] at @s if items entity @s weapon.offhand paper run function inventory:drop_lh
+execute as @a[tag=!dead] at @s if items entity @s container.0 paper run function inventory:drop {"dropslot":"0"}
+execute as @a[tag=!dead] at @s if items entity @s container.1 paper run function inventory:drop {"dropslot":"1"}
+execute as @a[tag=!dead] at @s if items entity @s container.2 paper run function inventory:drop {"dropslot":"2"}
+execute as @a[tag=!dead] at @s if items entity @s container.3 paper run function inventory:drop {"dropslot":"3"}
+execute as @a[tag=!dead] at @s if items entity @s container.4 paper run function inventory:drop {"dropslot":"4"}
+execute as @a[tag=!dead] at @s if items entity @s container.5 paper run function inventory:drop {"dropslot":"5"}
+execute as @a[tag=!dead] at @s if items entity @s container.6 paper run function inventory:drop {"dropslot":"6"}
+execute as @a[tag=!dead] at @s if items entity @s container.7 paper run function inventory:drop {"dropslot":"7"}
+execute as @a[tag=!dead] at @s if items entity @s container.8 paper run function inventory:drop {"dropslot":"8"}
+execute as @a[tag=!dead] at @s if items entity @s container.9 paper run function inventory:drop {"dropslot":"9"}
+execute as @a[tag=!dead] at @s if items entity @s container.10 paper run function inventory:drop {"dropslot":"10"}
 
-execute as @a[tag=!dead] if items entity @s container.16 paper run function inventory:drop {"dropslot":"16"}
-execute as @a[tag=!dead] if items entity @s container.17 paper run function inventory:drop {"dropslot":"17"}
-execute as @a[tag=!dead] if items entity @s container.18 paper run function inventory:drop {"dropslot":"18"}
-execute as @a[tag=!dead] if items entity @s container.19 paper run function inventory:drop {"dropslot":"19"}
+execute as @a[tag=!dead] at @s if items entity @s container.16 paper run function inventory:drop {"dropslot":"16"}
+execute as @a[tag=!dead] at @s if items entity @s container.17 paper run function inventory:drop {"dropslot":"17"}
+execute as @a[tag=!dead] at @s if items entity @s container.18 paper run function inventory:drop {"dropslot":"18"}
+execute as @a[tag=!dead] at @s if items entity @s container.19 paper run function inventory:drop {"dropslot":"19"}
 
-execute as @a[tag=!dead] if items entity @s container.25 paper run function inventory:drop {"dropslot":"25"}
-execute as @a[tag=!dead] if items entity @s container.26 paper run function inventory:drop {"dropslot":"26"}
-execute as @a[tag=!dead] if items entity @s container.27 paper run function inventory:drop {"dropslot":"27"}
-execute as @a[tag=!dead] if items entity @s container.28 paper run function inventory:drop {"dropslot":"28"}
-execute as @a[tag=!dead] if items entity @s container.29 paper run function inventory:drop {"dropslot":"29"}
-execute as @a[tag=!dead] if items entity @s container.30 paper run function inventory:drop {"dropslot":"30"}
-execute as @a[tag=!dead] if items entity @s container.31 paper run function inventory:drop {"dropslot":"31"}
-execute as @a[tag=!dead] if items entity @s container.32 paper run function inventory:drop {"dropslot":"32"}
-execute as @a[tag=!dead] if items entity @s container.33 paper run function inventory:drop {"dropslot":"33"}
-execute as @a[tag=!dead] if items entity @s container.34 paper run function inventory:drop {"dropslot":"34"}
-execute as @a[tag=!dead] if items entity @s container.35 paper run function inventory:drop {"dropslot":"35"}
+execute as @a[tag=!dead] at @s if items entity @s container.25 paper run function inventory:drop {"dropslot":"25"}
+execute as @a[tag=!dead] at @s if items entity @s container.26 paper run function inventory:drop {"dropslot":"26"}
+execute as @a[tag=!dead] at @s if items entity @s container.27 paper run function inventory:drop {"dropslot":"27"}
+execute as @a[tag=!dead] at @s if items entity @s container.28 paper run function inventory:drop {"dropslot":"28"}
+execute as @a[tag=!dead] at @s if items entity @s container.29 paper run function inventory:drop {"dropslot":"29"}
+execute as @a[tag=!dead] at @s if items entity @s container.30 paper run function inventory:drop {"dropslot":"30"}
+execute as @a[tag=!dead] at @s if items entity @s container.31 paper run function inventory:drop {"dropslot":"31"}
+execute as @a[tag=!dead] at @s if items entity @s container.32 paper run function inventory:drop {"dropslot":"32"}
+execute as @a[tag=!dead] at @s if items entity @s container.33 paper run function inventory:drop {"dropslot":"33"}
+execute as @a[tag=!dead] at @s if items entity @s container.34 paper run function inventory:drop {"dropslot":"34"}
+execute as @a[tag=!dead] at @s if items entity @s container.35 paper run function inventory:drop {"dropslot":"35"}
 
 #execute if items entity @s container.* paper unless items entity @s container.11 ??? - and then just remove all vanilla inentory
 

@@ -5,6 +5,17 @@ tag @s remove tesla_trigger
 tag @s add dead
 tag @s remove hit
 tag @s remove location.pocketDimension
+tag @s remove location.939storage
+tag @s remove location.nuke
+tag @s remove location.049chamber
+tag @s remove location.106chamber
+
+execute unless entity @p[tag=location.939storage] run function scp939:53/despawn
+execute unless entity @p[tag=location.939storage] run function scp939:89/despawn
+execute unless entity @p[tag=location.939storage] run function scp939:96/despawn
+
+scoreboard players set @s 939.ambient -1
+scoreboard players set @s chamber049.ambientTimer -1
 
 tag @s remove caughtInLcz
 tag @s remove caughtInHcz
@@ -56,7 +67,11 @@ tag @s remove scp714
 scoreboard players set @s scp714timer 0
 tag @s remove vest
 
+tag @s remove triggered096
+
 scoreboard players set @s item_selected 0
+scoreboard players set @s access_level 0
+scoreboard players set @s scanner_value 0
 
 scoreboard players set @s playerOnFireTime 0
 scoreboard players set @s playerTo457Distance 0

@@ -16,3 +16,4 @@ tag @s remove d_suicide
 tag @s remove d_gas
 tag @s remove d_burn
 tag @s remove d_pd
+tag @s remove d_966
