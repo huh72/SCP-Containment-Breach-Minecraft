@@ -1,6 +1,6 @@
 # message
 # $title @s actionbar {"text":"$(text)"}
-title @s actionbar {"text":"saved!"}
+function inventory:hotbar/set {"text":"'Progress saved."}
 scoreboard players operation @s save_cd = max* save_cd
 tag @s add save_f
 
@@ -39,5 +39,6 @@ scoreboard players operation @n[type=marker, tag=s_new] onLevel = @s onLevel
 
 
 # remove tags
+scoreboard players set @s q 0
 tag @e remove s_new
 tag @s remove save_f
