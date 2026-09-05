@@ -8,7 +8,10 @@ playsound cb:d9341.damage3 ambient @s ~ ~ ~ 2 1 1
 playsound cb:d9341.damage3 ambient @a[distance=0.01..24] ~ ~ ~ 1.25 1 1
 
 execute store result score scp939 damage run random value 35..78 cb:scp939damage
-execute store result score scp939DamageReduced damage run random value 13..23 cb:scp939damage
+execute store result score scp939DamageReduced0 damage run random value 13..23 cb:scp939damage
+execute store result score scp939DamageReduced1 damage run random value 3..11 cb:scp939damage
 execute if score scp939 damage >= @s health run tag @s add d_939
 scoreboard players operation @s[tag=!vest] health -= scp939 damage
-scoreboard players operation @s[tag=vest] health -= scp939DamageReduced damage
+
+scoreboard players operation @s[tag=basicvest] health -= scp939DamageReduced0 damage
+scoreboard players operation @s[tag=heavyvest] health -= scp939DamageReduced1 damage
