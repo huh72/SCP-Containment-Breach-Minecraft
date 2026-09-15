@@ -1,2 +1,7 @@
 location.049chamber
 location.nuke
+location.storage939
+location.warhead
+location.surface
+location.gateA
+location.gateB
