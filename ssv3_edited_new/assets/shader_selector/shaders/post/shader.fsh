@@ -21,63 +21,6 @@ in vec2 texCoord;
 out vec4 fragColor;
 
 
-// Параметры шума
-const float noiseIntensity = 3.5;   // больше деталей
-const float noiseDefinition = 0.7;
-const float speed = 1800;            // скорость переливов
-
-// Шумовые функции
-float random(vec2 co) {
-    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
-}
-
-float noise(in vec2 p) {
-    p *= noiseIntensity;
-    vec2 i = floor(p);
-    vec2 f = fract(p);
-    vec2 u = f * f * (3.0 - 2.0 * f);
-    return mix(mix(random(i + vec2(0.0, 0.0)),
-                   random(i + vec2(1.0, 0.0)), u.x),
-               mix(random(i + vec2(0.0, 1.0)),
-                   random(i + vec2(1.0, 1.0)), u.x), u.y);
-}
-
-float fbm(in vec2 uv) {
-    uv *= 5.0;
-    mat2 m = mat2(1.6, 1.2, -1.2, 1.6);
-    float f  = 0.5000 * noise(uv); uv = m * uv;
-    f += 0.2500 * noise(uv); uv = m * uv;
-    f += 0.1250 * noise(uv); uv = m * uv;
-    f += 0.0625 * noise(uv); uv = m * uv;
-    return f;
-}
-
-// Анимированный фон с переливами
-vec3 animatedBackground(vec2 uv) {
-    float time0 = readChannel(TEST_CHANNEL);
-    float time = time0 * speed;
-
-    // Несколько слоёв ряби с разными скоростями
-    float ripple1 = fbm(vec2(uv.x * 0.9 + time * 0.2, uv.y));
-    float ripple2 = fbm(vec2(uv.y * 0.8 - time * 0.15, uv.x * 0.7));
-    float ripple = (ripple1 + ripple2) * 0.4;
-
-    // Плавно меняющаяся цветовая палитра (синие, фиолетовые, бирюзовые тона)
-    // vec3 colorA = vec3(0.05, 0.15, 0.5);  // глубокий синий
-    // vec3 colorB = vec3(0.5, 0.1, 0.6);    // фиолетовый
-    // vec3 colorC = vec3(0.0, 0.4, 0.6);    // бирюзовый
-    // float t1 = sin(time * 0.4) * 0.5 + 0.5;
-    // float t2 = cos(time * 0.7) * 0.5 + 0.5;
-    // vec3 baseColor = mix(mix(colorA, colorB, t1), colorC, t2);
-     vec3 baseColor = vec3(0.5, 0.5, 0.5);
-
-    // Усиливаем яркость рябью без тёмных провалов
-    float brightness = 0.7 + 0.6 * ripple;
-    brightness = clamp(brightness, 0.0, 1.0);   // гарантирует отсутствие чёрных пятен
-
-    return baseColor * brightness;
-}
-
 
 
 void main() {
@@ -204,17 +147,24 @@ void main() {
 
     // brightness and saturation
     float saturation = readChannel(SATURATION_CHANNEL) * 5.0 + 1.0;
-    float brightness = readChannel(BRIGHTNESS_CHANNEL) + 0.5;
+    // float brightness = readChannel(BRIGHTNESS_CHANNEL) + 0.5;
 
-    fragColor.rgb = fragColor.rgb * brightness;
+    // fragColor.rgb = fragColor.rgb * brightness;
+
+    float x = readChannel(BRIGHTNESS_CHANNEL);
+
+// gain = 1.0 — это твоё текущее поведение
+// gain > 1.0 — сильнее затемнение/осветление
+float gain = 2.0;
+
+float brightness = 1.0 + (x - 0.5) * gain;
+brightness = max(brightness, 0.0); // чтобы не уйти в отрицательную яркость
+
+fragColor.rgb *= brightness;
 
     float gray = dot(fragColor.rgb, vec3(0.2126, 0.7152, 0.0722));
     fragColor.rgb = mix(vec3(gray), fragColor.rgb, saturation);
 
-    //flicker
-    // float flicker = readChannel(FLICKER_CHANNEL) + 1;
-    // float flickerRand = fract((dot(vec2(flicker, 1.0), vec2(12.9898, 78.233))) * 43758.5453);
-    // fragColor.rgb = fragColor.rgb * flickerRand;
 
     // gasmask
     float gasmaskStrength = readChannel(GASMASK_CHANNEL);
@@ -277,27 +227,53 @@ void main() {
     }
     // =====================================================
 
-    float test = readChannel(TEST_CHANNEL);
 
-    // UV с коррекцией аспекта (заполняет весь экран)
-    uv = texCoord * 2.0 - 1.0;
-    uv.x *= OutSize.x / OutSize.y;
+    // ================== DIM EFFECT ==================
+    float gloomAmount = readChannel(DIM_CHANNEL);
 
-    // Игровая сцена
-    vec3 sceneColor = texture(MainSampler, texCoord).rgb;
+    float gloomLuma = max(max(fragColor.r, fragColor.g), fragColor.b); 
 
-    // Переливающаяся рябь
-    vec3 rippleColor = animatedBackground(uv);
+    float shadowMask = 1.0 - smoothstep(0.0, 0.6, gloomLuma);   
 
-    // Степень прозрачности (регулируйте на свой вкус)
-    float effectAlpha = 0.85;
+    fragColor.rgb *= 1.0 - shadowMask * gloomAmount * 0.8;  
+    // =====================================================
 
-    // Смешивание
-    vec3 finalColor = mix(sceneColor, rippleColor, effectAlpha);
 
-    fragColor = vec4(finalColor, 1.0);
+    // ======================= dynamic vingette =====================
+    float vigStrength = readChannel(DYNAMIC_VIGNETTE_CHANNEL); //; should be = 0.25
+    float vigPulseSpeed = 125;
+    float vigPulseDepth = 0.125;
 
-    
+    float d = length(texCoord - 0.5) * 1.35;
+    float pulse = 1.0 + sin(GameTime * vigPulseSpeed * 20) * vigPulseDepth;
+
+    float v = 1.0 - smoothstep(0.35, 0.95 * pulse, d);
+    fragColor.rgb *= mix(1.0, v, vigStrength);
+
+
+    // ============== Light Flicker Effect =============
+    //get value
+    float flickerAlpha = readChannel(LIGHT_FLICKER_CHANNEL);
+
+    if(flickerAlpha > 0.001) {
+    float brightnessMultiplier0 = (sin(GameTime * 16500) * sin(GameTime * 9500) * sin(GameTime * 4500));
+    brightnessMultiplier0 = clamp(brightnessMultiplier0, 0.05, 1.0);
+
+    fragColor.rgb *= (brightnessMultiplier0);
+
+    }
+
+    // ============== Light Flash Flicker Effect =============
+    //get value
+    float flashflickerAlpha = readChannel(FLASH_LIGHT_FLICKER_CHANNEL);
+
+    if(flashflickerAlpha > 0.001) {
+    float brightnessMultiplier1 = 0.1 + (sin(GameTime * 13000) * sin(GameTime * 15000));
+    brightnessMultiplier1 = clamp(brightnessMultiplier1, 0.0, 1.0);
+
+    fragColor.rgb /= (brightnessMultiplier1 + 0.5);
+
+    }
 
 
 
