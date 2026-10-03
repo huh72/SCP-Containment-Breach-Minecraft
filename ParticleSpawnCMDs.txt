@@ -1,13 +1,17 @@
-GRAY_CHANNEL       : particle minecraft:entity_effect{color:[0.996078431372549, 0.9921568627450981, 1.0, 0.984313725490196],scale:1f}
-ROTATION_CHANNEL   : particle minecraft:entity_effect{color:[0.996078431372549, 0.9882352941176471, 1.0, 0.984313725490196],scale:1f}
-GREEN_CHANNEL      : particle minecraft:entity_effect{color:[0.996078431372549, 0.984313725490196, 1.0, 0.984313725490196],scale:1f}
-BLUE_CHANNEL       : particle minecraft:entity_effect{color:[0.996078431372549, 0.9803921568627451, 1.0, 0.984313725490196],scale:1f}
-SHAKE_CHANNEL      : particle minecraft:entity_effect{color:[0.996078431372549, 0.9764705882352941, 1.0, 0.984313725490196],scale:1f}
-BLUR_CHANNEL       : particle minecraft:entity_effect{color:[0.996078431372549, 0.9725490196078431, 1.0, 0.984313725490196],scale:1f}
-GOGGLES_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9686274509803922, 1.0, 0.984313725490196],scale:1f}
-BRIGHTNESS_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9647058823529412, 1.0, 0.984313725490196],scale:1f}
-SATURATION_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9607843137254902, 1.0, 0.984313725490196],scale:1f}
-TRAIL_CHANNEL      : particle minecraft:entity_effect{color:[0.996078431372549, 0.9568627450980393, 1.0, 0.984313725490196],scale:1f}
-GASMASK_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9529411764705882, 1.0, 0.984313725490196],scale:1f} (243.0)
-ZOOM_CHANNEL       : particle minecraft:entity_effect{color:[0.996078431372549, 0.9490196078431372, 1.0, 0.984313725490196],scale:1f} (242.0)
-MOTIONBLUR_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9450980392156862, 1.0, 0.984313725490196],scale:1f} (241.0)
+GRAY_CHANNEL       	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9921568627450981, 1.0, 0.984313725490196],scale:1f}
+ROTATION_CHANNEL   	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9882352941176471, 1.0, 0.984313725490196],scale:1f}
+GREEN_CHANNEL      	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.984313725490196, 1.0, 0.984313725490196],scale:1f}
+BLUE_CHANNEL       	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9803921568627451, 1.0, 0.984313725490196],scale:1f}
+SHAKE_CHANNEL      	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9764705882352941, 1.0, 0.984313725490196],scale:1f}
+BLUR_CHANNEL       	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9725490196078431, 1.0, 0.984313725490196],scale:1f}
+GOGGLES_CHANNEL    	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9686274509803922, 1.0, 0.984313725490196],scale:1f}
+BRIGHTNESS_CHANNEL 	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9647058823529412, 1.0, 0.984313725490196],scale:1f}
+SATURATION_CHANNEL 	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9607843137254902, 1.0, 0.984313725490196],scale:1f}
+TRAIL_CHANNEL      	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9568627450980393, 1.0, 0.984313725490196],scale:1f}
+GASMASK_CHANNEL    	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9529411764705882, 1.0, 0.984313725490196],scale:1f} (243.0)
+ZOOM_CHANNEL       	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9490196078431372, 1.0, 0.984313725490196],scale:1f} (242.0)
+MOTIONBLUR_CHANNEL 	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9450980392156862, 1.0, 0.984313725490196],scale:1f} (241.0)
+DIM_CHANNEL                 : particle minecraft:entity_effect{color:[0.996078431372549, 0.9411764705882353, 1.0, 0.984313725490196],scale:1f} (240.0)
+DYNAMIC_VINGETTE_CHANNEL    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9372549019607843, 1.0, 0.984313725490196],scale:1f} (239.0)
+LIGHT_FLICKER_CHANNEL	    : particle minecraft:entity_effect{color:[0.996078431372549, 0.9333333333333333, 1.0, 0.984313725490196],scale:1f} (238.0)
+FLASH_LIGHT_FLICKER_CHANNEL : particle minecraft:entity_effect{color:[0.996078431372549, 0.9294117647058824, 1.0, 0.984313725490196],scale:1f} (237.0)
