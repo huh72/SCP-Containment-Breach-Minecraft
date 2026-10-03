@@ -12,6 +12,11 @@ execute unless score @s shader.zoom.prev = @s shader.zoom run function shader_co
 execute unless score @s shader.yellow.prev = @s shader.yellow run function shader_control:effects/yellow/helper
 execute unless score @s shader.burn.prev = @s shader.burn run function shader_control:effects/burn/helper
 
+execute unless score @s shader.dim.prev = @s shader.dim run function shader_control:effects/dim/helper
+execute unless score @s shader.dynamicVignette.prev = @s shader.dynamicVignette run function shader_control:effects/dynamic_vignette/helper
+execute unless score @s shader.lightFlicker.prev = @s shader.lightFlicker run function shader_control:effects/light_flicker/helper
+execute unless score @s shader.flashLightFlicker.prev = @s shader.flashLightFlicker run function shader_control:effects/flash_light_flicker/helper
+
 
 scoreboard players operation @s shader.green.prev = @s shader.green
 scoreboard players operation @s shader.blue.prev = @s shader.blue
@@ -26,3 +31,8 @@ scoreboard players operation @s shader.goggles.prev = @s shader.goggles
 scoreboard players operation @s shader.zoom.prev = @s shader.zoom
 scoreboard players operation @s shader.yellow.prev = @s shader.yellow
 scoreboard players operation @s shader.burn.prev = @s shader.burn
+
+scoreboard players operation @s shader.dim.prev = @s shader.dim
+scoreboard players operation @s shader.dynamicVignette = @s shader.dynamicVignette
+scoreboard players operation @s shader.lightFlicker = @s shader.lightFlicker
+scoreboard players operation @s shader.flashLightFlicker = @s shader.flashLightFlicker

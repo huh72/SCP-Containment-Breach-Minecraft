@@ -15,7 +15,7 @@ execute as @e[type=zombie, tag=scp650] at @s run function scp650:handler
 execute as @e[type=zombie, tag=scp096] at @s run function scp096:handler
 execute as @e[type=zombie, tag=scp457] at @s run function scp457:handler
 execute as @e[type=wandering_trader, tag=scp966] at @s run function scp966:handler
-# execute as @a[tag=!dead] at @s run function scp079:tick
+execute as @a at @s run function scp079:tick
 #function scp939_89:tick
 
 #g spawn sys

@@ -11,6 +11,11 @@ scoreboard objectives add shader.goggles dummy
 scoreboard objectives add shader.zoom dummy
 scoreboard objectives add shader.yellow dummy
 scoreboard objectives add shader.burn dummy
+#
+scoreboard objectives add shader.dim dummy
+scoreboard objectives add shader.dynamicVignette dummy
+scoreboard objectives add shader.lightFlicker dummy
+scoreboard objectives add shader.flashLightFlicker dummy
 
 scoreboard objectives add shader.green.prev dummy
 scoreboard objectives add shader.blue.prev dummy
@@ -25,6 +30,11 @@ scoreboard objectives add shader.goggles.prev dummy
 scoreboard objectives add shader.zoom.prev dummy
 scoreboard objectives add shader.yellow.prev dummy
 scoreboard objectives add shader.burn.prev dummy
+#
+scoreboard objectives add shader.dim.prev dummy
+scoreboard objectives add shader.dynamicVignette.prev dummy
+scoreboard objectives add shader.lightFlicker.prev dummy
+scoreboard objectives add shader.flashLightFlicker.prev dummy
 
 execute as @a unless score @s shader.green matches 0.. run scoreboard players set @s shader.green 0
 execute as @a unless score @s shader.blue matches 0.. run scoreboard players set @s shader.blue 0
@@ -39,3 +49,8 @@ execute as @a unless score @s shader.goggles matches 0.. run scoreboard players 
 execute as @a unless score @s shader.zoom matches 0.. run scoreboard players set @s shader.zoom 0
 execute as @a unless score @s shader.yellow matches 0.. run scoreboard players set @s shader.yellow 0
 execute as @a unless score @s shader.burn matches 0.. run scoreboard players set @s shader.burn 0
+#
+execute as @a unless score @s shader.dim matches 0.. run scoreboard players set @s shader.dim 0
+execute as @a unless score @s shader.dynamicVignette matches 0.. run scoreboard players set @s shader.dynamicVignette 0
+execute as @a unless score @s shader.lightFlicker matches 0.. run scoreboard players set @s shader.lightFlicker 0
+execute as @a unless score @s shader.flashLightFlicker matches 0.. run scoreboard players set @s shader.flashLightFlicker 0
