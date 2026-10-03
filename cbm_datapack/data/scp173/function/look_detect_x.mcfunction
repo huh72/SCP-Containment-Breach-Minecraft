@@ -1,10 +1,3 @@
-# 1.достает ли 173 до игрока лучем 20 бл -- тэг can_see_173
-# 2.смотрит ли игрок на печенье по х -- looking_on_173x
-# 3.смотрит ли игрок на печенье по у -- looking_on_173y
-# если верно только 1 -- тп, если верно хотя бы одно из 2 и 3 -- тп, но если верно 2 или 3, но не верно 1 -- афк, если ничего не верно -- 173 афк --> тп если есть 1, и нету 2 и 3
-
-
-
 #get player's marker rotation
 execute store result score @n[tag=scp173_playermarker] rot173x run data get entity @n[tag=scp173_playermarker] Rotation[0]
 

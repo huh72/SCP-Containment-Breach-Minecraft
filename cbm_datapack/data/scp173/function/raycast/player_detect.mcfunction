@@ -44,6 +44,6 @@ execute unless score air v matches 2 positioned ^ ^ ^20 run function scp173:play
 
 scoreboard players operation dist* air /= 2* math
 
-execute at @n[tag=scp173] run tp @n[tag=scp173_marker] ~ ~1 ~ facing entity @p[tag=!checked,tag=!dead] eyes
+execute at @n[type=zombie, tag=scp173] run tp @n[tag=scp173_marker] ~ ~1 ~ facing entity @p[tag=!checked,tag=!dead] eyes
 execute at @n[tag=scp173_marker] if entity @p[distance=..20,tag=!checked,tag=!dead] anchored eyes run function scp173:raycast/player_detect
 #tellraw @a {"score":{"name":"dist*","objective":"air"}}

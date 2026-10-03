@@ -1,5 +1,6 @@
 kill @e[tag=scp173]
 kill @e[tag=scp173_playermarker]
+kill @e[tag=173armor_stand]
 kill @e[tag=scp173_marker]
 execute as @n[tag=shulker_hitbox] at @s run tp @s ~ ~ ~
 kill @n[tag=shulker_hitbox]
