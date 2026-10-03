@@ -1,10 +1,14 @@
 #r/ [ $ : 'mode' (random/0/1/2/3/4/5/6); $ : 'player' (any selector) ]
 $summon marker ~ ~ ~ {Tags:['$(mode)','toRemove']}
 
+#g debug
+# $say mode: $(mode), player: $(player)
+
+#g if random
 execute as @n[tag=toRemove] if entity @s[tag=random] store result storage cb:scp079 broadcast int 1 run random value 0..6 cb:scp079broadcast
+execute as @n[tag=toRemove] run function scp079:broadcast/random with storage cb:scp079
 
-function scp079:broadcast/random with storage cb:scp079
-
+#g if selected
 $execute as @n[tag=toRemove] if entity @s[tag=0] as $(player) run scoreboard players set @s scp079.broadcast0 0
 $execute as @n[tag=toRemove] if entity @s[tag=1] as $(player) run scoreboard players set @s scp079.broadcast1 0
 $execute as @n[tag=toRemove] if entity @s[tag=2] as $(player) run scoreboard players set @s scp079.broadcast2 0
@@ -13,5 +17,6 @@ $execute as @n[tag=toRemove] if entity @s[tag=4] as $(player) run scoreboard pla
 $execute as @n[tag=toRemove] if entity @s[tag=5] as $(player) run scoreboard players set @s scp079.broadcast5 0
 $execute as @n[tag=toRemove] if entity @s[tag=6] as $(player) run scoreboard players set @s scp079.broadcast6 0
 
-
+#g clear and reset var
+execute if score .cd scp079.broadcast0 matches 0 store result score .cd scp079.broadcast0 run random value 1200..3600 cb:scp079broadcastcd
 kill @n[tag=toRemove]

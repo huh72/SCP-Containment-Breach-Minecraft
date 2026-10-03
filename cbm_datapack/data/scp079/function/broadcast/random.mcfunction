@@ -1,1 +1,1 @@
-$tag @n[tag=toRemove] add $(broadcast)
+$tag @s add $(broadcast)

@@ -1,10 +1,6 @@
-# scoreboard players add @s scp079.broadcast0 1
+scoreboard players add @s scp079.broadcast0 1
 
-# execute if score @s scp079.broadcast0 matches 1 run scoreboard players set @a shader.brightness 25
+execute if score @s scp079.broadcast0 matches 1 run playsound cb:scp079.broadcast0 ambient @a ~ ~ ~ 1 1 1
 
-# execute if score @s scp079.broadcast0 matches 9 run scoreboard players set @a shader.brightness 10
-
-# execute if score @s scp079.broadcast0 matches 19 run scoreboard players set @a shader.brightness 50
-
-# # say @s
-# # tellraw @a {"score":{"name":"@s","objective":"scp079.broadcast0"}}
+execute if score @s scp079.broadcast0 matches 1 run scoreboard players set @s shader.lightFlicker 100
+execute if score @s scp079.broadcast0 matches 16 run scoreboard players set @s shader.lightFlicker 0
