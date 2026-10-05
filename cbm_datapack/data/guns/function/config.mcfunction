@@ -13,6 +13,7 @@ scoreboard objectives add stat_m4a1s dummy
 scoreboard objectives add stat_m4a1 dummy
 scoreboard objectives add stat_tmp dummy
 scoreboard objectives add stat_usps dummy
+scoreboard objectives add stat_hkg36 dummy
 
 #drop vars
 scoreboard objectives add drop_live dummy
@@ -53,11 +54,20 @@ scoreboard objectives add hit_random dummy
 scoreboard players set acc stat_p90 1
 scoreboard players set acc stat_p90 100
 scoreboard players set mag_size stat_p90 50
-scoreboard players set damage stat_p90 2
+scoreboard players set damage stat_p90 12
 scoreboard players set shot_cd stat_p90 3
 scoreboard players set reload stat_p90 45
 #?
 scoreboard players set max_mags stat_p90 10
+
+#g HK-G36
+scoreboard players set acc stat_hkg36 1
+scoreboard players set mag_size stat_hkg36 50
+scoreboard players set damage stat_hkg36 14
+scoreboard players set shot_cd stat_hkg36 3
+scoreboard players set reload stat_hkg36 45
+#?
+scoreboard players set max_mags stat_hkg36 10
 
 #M4A1-S
 scoreboard players set acc stat_m4a1s 1
