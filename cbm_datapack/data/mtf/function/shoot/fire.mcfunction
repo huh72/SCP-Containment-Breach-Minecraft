@@ -1,0 +1,1 @@
+$playsound cb:p90.shot_in ambient @a[distance=..48] ~ ~ ~ 3.2 1.$(pitch) 1

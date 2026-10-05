@@ -1,0 +1,1 @@
+execute as @e[tag=cis] at @s run function ci:handler

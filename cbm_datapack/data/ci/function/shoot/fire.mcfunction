@@ -1,0 +1,1 @@
+$playsound cb:hkg36.fire ambient @a[distance=..48] ~ ~ ~ 3.2 1.$(pitch) 1
