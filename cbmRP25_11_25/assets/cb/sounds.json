@@ -304,6 +304,19 @@
 	"annouc.threatpos": {"sounds": ["cb:character/mtf/threatannouncpos"]},
 	"annouc.allcontained": {"sounds": ["cb:character/mtf/announcallcontained"]},
 
-	"scp966.echo": {"sounds": ["cb:scp/966/echo0", "cb:scp/966/echo1", "cb:scp/966/echo2"]}
+	"scp966.echo": {"sounds": ["cb:scp/966/echo0", "cb:scp/966/echo1", "cb:scp/966/echo2"]},
+
+	"hkg36.fire": {"sounds": ["cb:guns/hkg36/shot"]},
+
+	"ci.breath": {"sounds": ["cb:character/ci/breath"]},
+	"ci.cdkill": {"sounds": ["cb:character/ci/cdkill0", "cb:character/ci/cdkill1", "cb:character/ci/cdkill2", "cb:character/ci/cdkill3"]},
+	"ci.death": {"sounds": ["cb:character/ci/death0", "cb:character/ci/death1", "cb:character/ci/death2", "cb:character/ci/death3"]},
+	"ci.gunfight": {"sounds": ["cb:character/ci/gunfight0", "cb:character/ci/gunfight1", "cb:character/ci/gunfight2", "cb:character/ci/gunfight3"]},
+	"ci.mtfnearby": {"sounds": ["cb:character/ci/mtfnearby0", "cb:character/ci/mtfnearby1"]},
+	"ci.mtfspotted": {"sounds": ["cb:character/ci/mtfspotted0", "cb:character/ci/mtfspotted1"]},
+	"ci.secnearby": {"sounds": ["cb:character/ci/secnearby0", "cb:character/ci/secnearby1", "cb:character/ci/secnearby2", "cb:character/ci/secnearby3"]},
+	"ci.secspotted": {"sounds": ["cb:character/ci/secspotted0", "cb:character/ci/secspotted1", "cb:character/ci/secspotted2"]},
+	"ci.cdspotted": {"sounds": ["cb:character/ci/cdspotted0", "cb:character/ci/cdspotted1", "cb:character/ci/cdspotted3", "cb:character/ci/cdspotted4"]},
+	"gun.hit": {"sounds": ["cb:guns/hit"]}
 }
 
