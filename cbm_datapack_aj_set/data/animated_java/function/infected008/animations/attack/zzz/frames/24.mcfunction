@@ -12,4 +12,5 @@ execute store result storage cb:infected008 maxDamage int 1 run scoreboard playe
 execute store result storage cb:infected008 minBleeding int 1 run scoreboard players get minBleeding infected008
 execute store result storage cb:infected008 maxBleeding int 1 run scoreboard players get maxBleeding infected008
 
-execute as @n[tag=infected008] at @s positioned ^ ^ ^0.5 as @a[distance=..1.35] at @s run function infected008:damage with storage cb:infected008
+execute as @n[tag=infected008] at @s positioned ^ ^ ^0.5 as @p[tag=!dead, distance=..1.35] at @s run function infected008:damage with storage cb:infected008
+execute as @n[tag=infected008] at @s positioned ^ ^ ^0.5 as @e[tag=!dead, tag=008_enemy, distance=..2] at @s run function infected008:damage with storage cb:infected008

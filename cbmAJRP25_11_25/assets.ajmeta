@@ -54,6 +54,26 @@
 				"assets/animated_java/textures/blueprint/ci/texture.png"
 			]
 		},
+		"cisolder": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/cisolder/body.json",
+				"assets/animated_java/items/blueprint/cisolder/gun.json",
+				"assets/animated_java/items/blueprint/cisolder/head.json",
+				"assets/animated_java/items/blueprint/cisolder/l_arm.json",
+				"assets/animated_java/items/blueprint/cisolder/l_leg.json",
+				"assets/animated_java/items/blueprint/cisolder/r_arm.json",
+				"assets/animated_java/items/blueprint/cisolder/r_leg.json",
+				"assets/animated_java/models/blueprint/cisolder/body.json",
+				"assets/animated_java/models/blueprint/cisolder/gun.json",
+				"assets/animated_java/models/blueprint/cisolder/head.json",
+				"assets/animated_java/models/blueprint/cisolder/l_arm.json",
+				"assets/animated_java/models/blueprint/cisolder/l_leg.json",
+				"assets/animated_java/models/blueprint/cisolder/r_arm.json",
+				"assets/animated_java/models/blueprint/cisolder/r_leg.json",
+				"assets/animated_java/textures/blueprint/cisolder/texture.png"
+			]
+		},
 		"class_d": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [
@@ -631,6 +651,18 @@
 				"assets/animated_java/models/blueprint/singledoor0/wind0.json",
 				"assets/animated_java/models/blueprint/singledoor0/wind1.json",
 				"assets/animated_java/textures/blueprint/singledoor0/door0.png"
+			]
+		},
+		"singledoor1": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/singledoor1/base.json",
+				"assets/animated_java/items/blueprint/singledoor1/wing0.json",
+				"assets/animated_java/items/blueprint/singledoor1/wing1.json",
+				"assets/animated_java/models/blueprint/singledoor1/base.json",
+				"assets/animated_java/models/blueprint/singledoor1/wing0.json",
+				"assets/animated_java/models/blueprint/singledoor1/wing1.json",
+				"assets/animated_java/textures/blueprint/singledoor1/door1.png"
 			]
 		}
 	}

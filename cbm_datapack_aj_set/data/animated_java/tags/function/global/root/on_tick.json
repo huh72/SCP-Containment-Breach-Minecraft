@@ -6,6 +6,7 @@
 		"animated_java:airlockdoors/root/on_tick",
 		"animated_java:celldoor/root/on_tick",
 		"animated_java:ci/root/on_tick",
+		"animated_java:cisolder/root/on_tick",
 		"animated_java:class_d/root/on_tick",
 		"animated_java:door_card0/root/on_tick",
 		"animated_java:door_check0/root/on_tick",

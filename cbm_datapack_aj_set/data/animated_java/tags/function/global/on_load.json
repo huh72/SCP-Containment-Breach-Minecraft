@@ -6,6 +6,7 @@
 		"animated_java:airlockdoors/on_load",
 		"animated_java:celldoor/on_load",
 		"animated_java:ci/on_load",
+		"animated_java:cisolder/on_load",
 		"animated_java:class_d/on_load",
 		"animated_java:door_card0/on_load",
 		"animated_java:door_check0/on_load",
