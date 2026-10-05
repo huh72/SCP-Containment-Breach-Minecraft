@@ -43,6 +43,11 @@ scoreboard players set @s bleeding 0
 scoreboard players set @s 939.ambient -1
 scoreboard players set @s chamber049.ambientTimer -1
 
+#g enemy tags setup
+tag @s add ci_enemy
+tag @s add mtf_enemy
+tag @s add 008_enemy
+
 tag @s add can_ii
 
 tag @s add can_blink
