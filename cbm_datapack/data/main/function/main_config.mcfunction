@@ -33,6 +33,7 @@ function look_check:config
 function ambient:config
 function announc:config
 function mtf:path_finding/config
+function ci:config
 
 #scps
 function scps:load
