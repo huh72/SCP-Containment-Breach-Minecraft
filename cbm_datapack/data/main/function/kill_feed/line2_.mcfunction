@@ -17,3 +17,4 @@ execute if entity @s[tag=d_gas] run function main:kill_feed/line2 {"text":" suff
 execute if entity @s[tag=d_burn] run function main:kill_feed/line2 {"text":" was burned to death"}
 execute if entity @s[tag=d_pd] run function main:kill_feed/line2 {"text":" decayed in pocket dimension"}
 execute if entity @s[tag=d_966] run function main:kill_feed/line2 {"text":" was killed by an instance of SCP-966"}
+execute if entity @s[tag=d_ci] run function main:kill_feed/line2 {"text":" was killed by an unknown unit forces"}

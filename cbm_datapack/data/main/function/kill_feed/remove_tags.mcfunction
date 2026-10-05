@@ -17,3 +17,4 @@ tag @s remove d_gas
 tag @s remove d_burn
 tag @s remove d_pd
 tag @s remove d_966
+tag @s remove d_ci
