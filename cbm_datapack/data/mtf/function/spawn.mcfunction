@@ -1,6 +1,6 @@
 #$: {"NoAI":"BOOLEAN","additionaltag":"STRING","rotatedAs":"SELECTOR"}
 #spawn origin entity
-$summon wandering_trader ~ ~ ~ {Tags:['mtf','solo_spawned','new','gun_damage_target','$(additionaltag)','elevatorTarget'],Invulnerable:1b,Silent:1b,PersistenceRequired:1b,NoAI:$(NoAI)b}
+$summon wandering_trader ~ ~ ~ {Tags:['mtf', 'ci_enemy', '008_enemy', 'solo_spawned','new','gun_damage_target','$(additionaltag)','elevatorTarget'],Invulnerable:1b,Silent:1b,PersistenceRequired:1b,NoAI:$(NoAI)b}
 $data modify entity @n[type=wandering_trader,tag=mtf,tag=new] Rotation set from entity $(rotatedAs) Rotation
 
 attribute @n[type=wandering_trader, tag=mtf, tag=new] minecraft:jump_strength base set 0
@@ -13,9 +13,16 @@ scoreboard players add @n[tag=mtf,tag=new] global_num 1
 scoreboard players operation max* global_num = @n[tag=mtf,tag=new] global_num
 scoreboard players operation .mtf classdDetect = max classdDetect
 
+scoreboard players set @n[type=wandering_trader, tag=new] breath_cd 1
+scoreboard players operation @n[type=wandering_trader, tag=new] health = _health mtf
+scoreboard players set @n[type=wandering_trader, tag=new] shot_cd 60
+scoreboard players set look_check_cd mtf 60
+scoreboard players set cd_spot_cd mtf 1
+scoreboard players set anger_time mtf 0
+
 scoreboard players operation @n[type=wandering_trader,tag=new] acc = acc stat_p90
 scoreboard players operation @n[type=wandering_trader,tag=new] shot_cd = shot_cd stat_p90
-scoreboard players set @n[type=wandering_trader,tag=new] health 200
+# scoreboard players set @n[type=wandering_trader,tag=new] health 200
 
 # sounds init
 scoreboard players set @e[type=wandering_trader, tag=new] breath_cd 1
