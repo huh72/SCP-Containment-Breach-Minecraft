@@ -4,6 +4,8 @@
 damage @s 0.0001 cactus
 execute positioned ^ ^ ^-0.5 run particle crit ~ ~ ~ 0 0 0 0 1 force @a
 
+playsound cb:gun.hit ambient @a[distance=..10] ~ ~ ~ 0.7 1 1
+
 # say HIT REGESTER! + @s
 #blood --> blood' func
 # data modify storage gun_main blood_x0 set from entity @n[tag=bullet] Rotation[0]
