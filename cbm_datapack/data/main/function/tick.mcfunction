@@ -19,3 +19,8 @@ execute as @a[tag=!dead] at @s if entity @n[type=wandering_trader, distance=..7]
 
 #g sound-zone transition
 execute as @a[tag=!dead] run function main:transition/handler
+
+#g blood-stains size up handler
+execute if score .blood_stains_resize.cd pd_shrink_scale matches 1.. run scoreboard players remove .blood_stains_resize.cd pd_shrink_scale 1
+
+execute if score .blood_stains_resize.cd pd_shrink_scale matches 0 as @e[type=item_display, tag=blood_stains, tag=toSizeup] run function main:blood_stains/handler
