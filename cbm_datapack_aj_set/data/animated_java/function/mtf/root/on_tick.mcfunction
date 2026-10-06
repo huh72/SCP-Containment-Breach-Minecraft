@@ -2,4 +2,5 @@
 execute unless entity @s[tag=aj.mtf.root] run return 0
 execute if entity @s[tag=aj.mtf.animation.walk.playing] run function animated_java:mtf/animations/walk/zzz/on_tick
 execute if entity @s[tag=aj.mtf.animation.idle.playing] run function animated_java:mtf/animations/idle/zzz/on_tick
+execute if entity @s[tag=aj.mtf.animation.death.playing] run function animated_java:mtf/animations/death/zzz/on_tick
 execute on passengers run rotate @s ~ ~

@@ -2,3 +2,4 @@
 data modify storage animated_java:mtf rig_hash set value '904f39e5bd44a721252db8116f562ede9c465f2f0f3bf9c65886b026a543c17d'
 scoreboard objectives add aj.walk.frame dummy
 scoreboard objectives add aj.idle.frame dummy
+scoreboard objectives add aj.death.frame dummy
