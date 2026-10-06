@@ -5,7 +5,7 @@ rotate @n[type=item_display, tag=cis.model] facing entity @n[tag=ci_enemy, tag=!
 data modify entity @n[type=item_display, tag=cis.model] Rotation[1] set value 0.0f
 
 #g death
-execute if score @s health matches ..0 run function ci:death
+execute if score @s health matches ..0 run function ci:_death
 
 #g handle animations
 execute if predicate ci:idle as @n[type=item_display, tag=cis.model] if entity @s[tag=!aj.cisolder.animation.idle.playing,tag=!aj.cisolder.animation.death.playing] run function animated_java:cisolder/animations/idle/play

@@ -7,4 +7,3 @@ execute at @n[tag=gate.gateA] at @n[tag=door] run function mtf:spawn {"NoAI":"0"
 
 #g setup path to random player in ez zone
 function mtf:path_finding/definetarget
-

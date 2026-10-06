@@ -62,7 +62,7 @@ execute if score @s beep_cd matches 0 run function mtf:beep
 
 
 #death func
-execute if score @s health matches ..0 run function mtf:despawn
+execute if score @s health matches ..0 run function mtf:_death
 
 
 #g clear y rotation
