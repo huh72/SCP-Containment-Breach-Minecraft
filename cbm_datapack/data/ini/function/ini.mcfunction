@@ -1,5 +1,4 @@
-#fps
-
+#g init ::
 tag @s add ini
 
 effect give @s weakness infinite 255 true
@@ -23,6 +22,11 @@ scoreboard players set @s fallinpdanimation -1
 
 scoreboard players set @s card_interact_cd 0
 
+#g bleeding setup
+scoreboard players set @s bleeding 0
+scoreboard players set @s bleeding_damage_cd 600
+scoreboard players set @s bleeding_level_up_cd 200
+
 #939
 scoreboard players set @s chase_cd 0
 scoreboard players set @s 939.ambient -1
@@ -37,7 +41,6 @@ scoreboard players set @s heartbeatTimer 0
 scoreboard players set @s heartbeatCd 0
 
 scoreboard players set @s health 100
-scoreboard players set @s bleeding 0
 
 #ambients
 scoreboard players set @s 939.ambient -1
