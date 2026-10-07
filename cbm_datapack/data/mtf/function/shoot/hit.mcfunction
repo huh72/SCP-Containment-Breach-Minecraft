@@ -11,6 +11,9 @@ execute at @s run playsound cb:gun.hit ambient @a[distance=..10] ~ ~ ~ 1 1 1
 execute at @s run particle block{block_state:{Name:redstone_block}} ~ ~1 ~ 0 0 0 0 2
 execute if score _temp.hit? mtf matches 2 at @s run particle block{block_state:{Name:redstone_block}} ~ ~2 ~ 0 0 0 0 4
 
+#g add bleeding level
+execute if predicate mtf:bleeding_level_up run scoreboard players add @s bleeding 1
+
 #g apply damage
 scoreboard players operation _temp_mtf damage = damage stat_p90
 
