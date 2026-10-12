@@ -28,6 +28,7 @@
         "shader_control:tick",
         "announc:tick",
         "ci:tick",
-        "inventory:tick"
+        "inventory:tick",
+        "light:handler"
     ]
 }
